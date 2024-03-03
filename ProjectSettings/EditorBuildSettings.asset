@@ -4,5 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Asian Far East Environment/Demo 1/Demo 1.unity
+    guid: cbb8ea778d2657549957f5917f25a3ad
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 61681252bc0612b41b24c8417f4ebb9e, type: 2}
+    Unity.XR.PICO.LivePreview.Settings: {fileID: 11400000, guid: 9f453be1aa5c6464392f37bf205a68ee, type: 2}
+    Unity.XR.PXR.Settings: {fileID: 11400000, guid: baf543917260e2d4e87483424a1a8b8a, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 79358ae5d2692bd44bfb607ed4c8f453, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 466542c0a2b007d4f968ee7d5547f81b, type: 2}
