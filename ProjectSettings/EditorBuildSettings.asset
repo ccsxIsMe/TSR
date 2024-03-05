@@ -9,8 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
+    path: Assets/Scenes/startScene.unity
+    guid: c0a16a29420b17041a0b0c941543f4f2
+  - enabled: 1
     path: Assets/Asian Far East Environment/Demo 1/Demo 1.unity
     guid: cbb8ea778d2657549957f5917f25a3ad
+  - enabled: 0
+    path: Assets/Samples/XR Interaction Toolkit/2.5.3/Hands Interaction Demo/HandsDemoScene.unity
+    guid: 3ff35cecbcc52cc42945cf531638a60a
+  - enabled: 0
+    path: Assets/Samples/XR Interaction Toolkit/2.5.3/Starter Assets/DemoScene.unity
+    guid: 319dafa5c80f29f428dc1e0d03f04177
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 61681252bc0612b41b24c8417f4ebb9e, type: 2}
     Unity.XR.PICO.LivePreview.Settings: {fileID: 11400000, guid: 9f453be1aa5c6464392f37bf205a68ee, type: 2}

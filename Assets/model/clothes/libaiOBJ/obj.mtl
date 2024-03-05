@@ -1,0 +1,64 @@
+# MTL Exporter v1.0 by Seungwoo Oh at CLO - Virtual Fashion Inc.
+newmtl collor_FRONT_11151
+Kd 1.000000 1.000000 1.000000
+Ks 0.075000 0.075000 0.075000
+Ns 28.763239
+illum 2
+d 1.000000
+map_Kd Cotton_Gabardine_FCL1PSC001_2_teat3_COL_R255_G255_B255.png
+map_Kn Cotton_Gabardine_FCL1PSC001_2_teat3_COL_11141.jpg
+map_Bump Cotton_Gabardine_FCL1PSC001_2_teat3_COL_NRM_10.jpg
+newmtl top Copy 1_FRONT_11167
+Kd 1.000000 1.000000 1.000000
+Ks 0.075000 0.075000 0.075000
+Ns 28.763239
+illum 2
+d 1.000000
+map_Kd Cotton_Gabardine_FCL1PSC001_2_teat3_COL_R0_G19_B25.png
+map_Kn Cotton_Gabardine_FCL1PSC001_2_teat3_COL_11141.jpg
+map_Bump Cotton_Gabardine_FCL1PSC001_2_teat3_COL_NRM_30.jpg
+newmtl top_FRONT_11133
+Kd 1.000000 1.000000 1.000000
+Ks 0.075000 0.075000 0.075000
+Ns 28.763239
+illum 2
+d 1.000000
+map_Kd Cotton_Gabardine_FCL1PSC001_2_teat3_COL_R255_G255_B255.png
+map_Kn Cotton_Gabardine_FCL1PSC001_2_teat3_COL_11141.jpg
+map_Bump Cotton_Gabardine_FCL1PSC001_2_teat3_COL_NRM_30.jpg
+newmtl Silk_Knit_Jersey_FRONT_11175
+Kd 1.000000 1.000000 1.000000
+Ks 0.450000 0.450000 0.450000
+Ns 49.022923
+illum 2
+d 0.700000
+map_Kn Silk_Knit_Jersey_normal.jpg
+map_Kd Silk_Knit_Jersey_diffuse_R82_G90_B97_DESATURATION.png
+map_Bump Silk_Knit_Jersey_normal_NRM_10.jpg
+newmtl Silk_Knit_Jersey Copy 1_FRONT_11187
+Kd 1.000000 1.000000 1.000000
+Ks 0.150000 0.150000 0.150000
+Ns 128.000000
+illum 2
+d 0.800000
+map_Kn Silk_Knit_Jersey_normal.jpg
+map_Kd Silk_Knit_Jersey_diffuse_R1_G12_B30_DESATURATION.png
+map_Bump Silk_Knit_Jersey_normal_NRM_10.jpg
+newmtl collor Copy 1_FRONT_11159
+Kd 1.000000 1.000000 1.000000
+Ks 0.075000 0.075000 0.075000
+Ns 28.763239
+illum 2
+d 1.000000
+map_Kd Cotton_Gabardine_FCL1PSC001_2_teat3_COL_R173_G174_B175.png
+map_Kn Cotton_Gabardine_FCL1PSC001_2_teat3_COL_11141.jpg
+map_Bump Cotton_Gabardine_FCL1PSC001_2_teat3_COL_NRM_10.jpg
+newmtl skirt_FRONT_11143
+Kd 1.000000 1.000000 1.000000
+Ks 0.300000 0.300000 0.300000
+Ns 49.022923
+illum 2
+d 1.000000
+map_Kd Cotton_Gabardine_FCL1PSC001_2_teat3_COL_R21_G50_B76.png
+map_Kn Cotton_Gabardine_FCL1PSC001_2_teat3_COL_11141.jpg
+map_Bump Cotton_Gabardine_FCL1PSC001_2_teat3_COL_NRM_50.jpg
