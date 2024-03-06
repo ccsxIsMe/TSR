@@ -450,7 +450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7782198575597785486, guid: 7bbb1960bab3e75459304488d8d1ffba, type: 3}
       propertyPath: m_Text
-      value: Option A
+      value: "\u65C5\u7A0B\u4E00"
       objectReference: {fileID: 0}
     - target: {fileID: 7782198575597785486, guid: 7bbb1960bab3e75459304488d8d1ffba, type: 3}
       propertyPath: m_FontData.m_Font

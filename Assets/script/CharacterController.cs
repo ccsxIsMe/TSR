@@ -31,13 +31,13 @@ public class CharacterController : MonoBehaviour
         {
             // 到达终点则改变移动方向为返回起点，并翻转物体
             movingToEnd = false;
-            FlipCharacter1();
+            //FlipCharacter1();
         }
         else if (Vector3.Distance(transform.position, startPoint.position) < 0.01f)
         {
             // 到达起点则改变移动方向为前往终点，并翻转物体
             movingToEnd = true;
-            FlipCharacter2();
+            //FlipCharacter2();
         }
     }
 
