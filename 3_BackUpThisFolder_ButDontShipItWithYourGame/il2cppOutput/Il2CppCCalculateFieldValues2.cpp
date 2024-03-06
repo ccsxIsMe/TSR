@@ -8083,6 +8083,12 @@ struct TextUpdater_tB65B3D55C38A698C231E9A3ACAEE1DD573A359AF  : public MonoBehav
 	TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___inputField_4;
 	// UnityEngine.UI.Text TextUpdater::targetText
 	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___targetText_5;
+	// UnityEngine.GameObject TextUpdater::libaiText
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___libaiText_6;
+	// UnityEngine.GameObject TextUpdater::libai
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___libai_7;
+	// UnityEngine.Animator TextUpdater::myAnimator
+	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___myAnimator_8;
 };
 
 // UnityEngine.XR.Interaction.Toolkit.Samples.Hands.ToggleGameObject
@@ -9153,9 +9159,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6047[4] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6048[1] = 
 {
 	static_cast<int32_t>(offsetof(SwitchScene_t9688B1ED1B73D992F6DD75DE112AC5ACD5FC362E, ___sceneIndex_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6049[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6049[5] = 
 {
-	static_cast<int32_t>(offsetof(TextUpdater_tB65B3D55C38A698C231E9A3ACAEE1DD573A359AF, ___inputField_4)),static_cast<int32_t>(offsetof(TextUpdater_tB65B3D55C38A698C231E9A3ACAEE1DD573A359AF, ___targetText_5)),};
+	static_cast<int32_t>(offsetof(TextUpdater_tB65B3D55C38A698C231E9A3ACAEE1DD573A359AF, ___inputField_4)),static_cast<int32_t>(offsetof(TextUpdater_tB65B3D55C38A698C231E9A3ACAEE1DD573A359AF, ___targetText_5)),static_cast<int32_t>(offsetof(TextUpdater_tB65B3D55C38A698C231E9A3ACAEE1DD573A359AF, ___libaiText_6)),static_cast<int32_t>(offsetof(TextUpdater_tB65B3D55C38A698C231E9A3ACAEE1DD573A359AF, ___libai_7)),static_cast<int32_t>(offsetof(TextUpdater_tB65B3D55C38A698C231E9A3ACAEE1DD573A359AF, ___myAnimator_8)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6050[2] = 
 {
 	static_cast<int32_t>(offsetof(FallingSphere_tE12F80B78F3B25C609125CF5384A42AD3F5EF9EA, ___starting_4)),static_cast<int32_t>(offsetof(FallingSphere_tE12F80B78F3B25C609125CF5384A42AD3F5EF9EA, ___rb_5)),};

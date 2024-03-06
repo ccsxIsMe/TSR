@@ -18584,6 +18584,12 @@ struct TextUpdater_tB65B3D55C38A698C231E9A3ACAEE1DD573A359AF  : public MonoBehav
 	TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___inputField_4;
 	// UnityEngine.UI.Text TextUpdater::targetText
 	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___targetText_5;
+	// UnityEngine.GameObject TextUpdater::libaiText
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___libaiText_6;
+	// UnityEngine.GameObject TextUpdater::libai
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___libai_7;
+	// UnityEngine.Animator TextUpdater::myAnimator
+	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___myAnimator_8;
 };
 
 // Unity.ThrowStub

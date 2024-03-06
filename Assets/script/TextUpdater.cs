@@ -8,16 +8,19 @@ public class TextUpdater : MonoBehaviour
     //public TextMeshProUGUI targetText; // 指向要更新的TextMeshPro文本对象的引用
     public Text targetText; // 现在是Unity的Text类型，不是TextMeshProUGUI
     public GameObject libaiText;
+    public GameObject libai;
+    private Animator myAnimator;
 
 
-    //void Start()
-    //{
-    //    if (inputField != null)
-    //    {
-    //        // 为inputField的文本更改事件添加监听器
-    //        inputField.onValueChanged.AddListener(UpdateTargetText);
-    //    }
-    //}
+    void Start()
+    {
+        //if (inputField != null)
+        //{
+        //    // 为inputField的文本更改事件添加监听器
+        //    inputField.onValueChanged.AddListener(UpdateTargetText);
+        //}
+        myAnimator= libai.GetComponent<Animator>();
+    }
 
     //void UpdateTargetText(string newText)
     //{
@@ -32,5 +35,6 @@ public class TextUpdater : MonoBehaviour
         //targetText.text = inputField.text;
         libaiText.SetActive(true);
         targetText.text = "你请讲，我在听。";
+        myAnimator.SetBool("startTalk", true);
     }
 }
