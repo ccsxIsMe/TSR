@@ -10,7 +10,7 @@ public class TextUpdater : MonoBehaviour
     public GameObject libaiText;
     public GameObject libai;
     private Animator myAnimator;
-
+    private testTry libaiWord;
 
     void Start()
     {
@@ -20,6 +20,7 @@ public class TextUpdater : MonoBehaviour
         //    inputField.onValueChanged.AddListener(UpdateTargetText);
         //}
         myAnimator= libai.GetComponent<Animator>();
+        libaiWord = libai.GetComponent<testTry>();
     }
 
     //void UpdateTargetText(string newText)
@@ -30,11 +31,23 @@ public class TextUpdater : MonoBehaviour
     //        targetText.text = newText;
     //    }
     //}
-    public void ChangeMyText()
+    public void ChangeMyTextA()
     {
-        //targetText.text = inputField.text;
         libaiText.SetActive(true);
-        targetText.text = "你请讲，我在听。";
+        targetText.text = inputField.text;
+        libaiWord.talk("请你引用《静夜思》中的诗句回答以下问题：我最近很想家");
+        myAnimator.SetBool("startTalk", true);
+    }
+    public void ChangeMyTextB()
+    {
+        libaiText.SetActive(true);
+        libaiWord.talk("你知道静夜思吗");
+        myAnimator.SetBool("startTalk", true);
+    }
+    public void ChangeMyTextC()
+    {
+        libaiText.SetActive(true);
+        libaiWord.talk(inputField.text);
         myAnimator.SetBool("startTalk", true);
     }
 }

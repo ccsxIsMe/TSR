@@ -517,6 +517,10 @@ struct Tables_t3285C3F9CEEC90BFCC0B378A397396F6328B5A67;
 struct TaskCompletionSource_1_tB47C2552475FE6BBC966863229F3E5F2070BBE40;
 // System.Threading.Tasks.TaskCompletionSource`1<System.Object>
 struct TaskCompletionSource_1_tB4EF81F69CCF7C4F0D956F9B26127C0634A24A37;
+// System.Threading.Tasks.TaskFactory`1<Pico.Platform.Message>
+struct TaskFactory_1_t3D16AB69F781B58B91262585C7C931661363A065;
+// System.Threading.Tasks.TaskFactory`1<System.Object>
+struct TaskFactory_1_t6F188FE70F3006B0386002E392B799D85100732B;
 // Pico.Platform.Task`1<Pico.Platform.Models.AchievementDefinitionList>
 struct Task_1_t3BB9252814249EDB4374C31CE2FCBEE1952FB9D7;
 // Pico.Platform.Task`1<Pico.Platform.Models.AchievementProgressList>
@@ -4107,11 +4111,23 @@ struct Task_1_t3371DA467FDACB998274F987B36BF5CE4170DEE8  : public Task_t751C4CC3
 	Message_t2DF6F94E79BCFC7D36B4D1219F09D5DF8D241F83* ___m_result_22;
 };
 
+struct Task_1_t3371DA467FDACB998274F987B36BF5CE4170DEE8_StaticFields
+{
+	// System.Threading.Tasks.TaskFactory`1<TResult> System.Threading.Tasks.Task`1::s_defaultFactory
+	TaskFactory_1_t3D16AB69F781B58B91262585C7C931661363A065* ___s_defaultFactory_23;
+};
+
 // System.Threading.Tasks.Task`1<System.Object>
 struct Task_1_t0C4CD3A5BB93A184420D73218644C56C70FDA7E2  : public Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572
 {
 	// TResult System.Threading.Tasks.Task`1::m_result
 	RuntimeObject* ___m_result_22;
+};
+
+struct Task_1_t0C4CD3A5BB93A184420D73218644C56C70FDA7E2_StaticFields
+{
+	// System.Threading.Tasks.TaskFactory`1<TResult> System.Threading.Tasks.Task`1::s_defaultFactory
+	TaskFactory_1_t6F188FE70F3006B0386002E392B799D85100732B* ___s_defaultFactory_23;
 };
 
 // UnityEngine.AndroidJavaClass
@@ -45283,7 +45299,7 @@ IL_0009:
 		String_t* L_3 = ___s0;
 		NullCheck(L_2);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4;
-		L_4 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(16 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_2, L_3);
+		L_4 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(17 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_2, L_3);
 		V_0 = L_4;
 		// IntPtr buffer = Marshal.AllocHGlobal(strbuf.Length + 1);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_5 = V_0;
@@ -45485,7 +45501,7 @@ IL_0067:
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_30 = V_1;
 		NullCheck(L_29);
 		String_t* L_31;
-		L_31 = VirtualFuncInvoker1< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(33 /* System.String System.Text.Encoding::GetString(System.Byte[]) */, L_29, L_30);
+		L_31 = VirtualFuncInvoker1< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(34 /* System.String System.Text.Encoding::GetString(System.Byte[]) */, L_29, L_30);
 		return L_31;
 	}
 }
