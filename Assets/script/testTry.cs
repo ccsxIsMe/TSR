@@ -10,7 +10,7 @@ using static UnityEngine.Rendering.DebugUI;
 public class testTry: MonoBehaviour
 {
     [SerializeField]
-    private string apiKey = "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"; // 请替换成你的API密钥
+    private string apiKey = ""; // 请替换成你的API密钥
     public Text targetText;
 
     void Start()
@@ -46,7 +46,7 @@ public class testTry: MonoBehaviour
             request.SetRequestHeader("Content-Type", "application/json");
             request.SetRequestHeader("Authorization", "Bearer " + apiKey);
 
-            // 设置超时时间为10秒
+            // 设置超时时间
             request.timeout = 20;
 
             yield return request.SendWebRequest();

@@ -263,313 +263,407 @@ extern void CharacterController_FlipCharacter1_m5A7DE99558A5CD18DFD273F22A5CBE4F
 extern void CharacterController_FlipCharacter2_m328A788D77C0993523D76567D501EB2A03BB9E8E (void);
 // 0x00000083 System.Void CharacterController::.ctor()
 extern void CharacterController__ctor_m7803E87E16EAC42354D013EC14681149D80373A7 (void);
-// 0x00000084 System.Void OpenAIChat::Start()
+// 0x00000084 System.Void BisaIntro::Start()
+extern void BisaIntro_Start_m715D82EA2AA335CC1C7E0AA77D139D67B1662186 (void);
+// 0x00000085 System.Void BisaIntro::ChangeMyTextA()
+extern void BisaIntro_ChangeMyTextA_m7E6E584403E100A256C8D6804ECF6E69FF4B0A7A (void);
+// 0x00000086 System.Void BisaIntro::ChangeMyTextB()
+extern void BisaIntro_ChangeMyTextB_m068796902CB2AA90B44767B363A25FC929C0B108 (void);
+// 0x00000087 System.Void BisaIntro::ChangeMyTextC()
+extern void BisaIntro_ChangeMyTextC_m28431D30F293146DF85CCAA9A4A4CAAF520F474A (void);
+// 0x00000088 System.Void BisaIntro::.ctor()
+extern void BisaIntro__ctor_mEF4837E8439B3C3F8E5AF16294639E77FBBACC49 (void);
+// 0x00000089 System.Void CNTowerIntro::Start()
+extern void CNTowerIntro_Start_mD7E766859A89F5F2EE7B6957E92BA8654376ADA8 (void);
+// 0x0000008A System.Void CNTowerIntro::ChangeMyTextA()
+extern void CNTowerIntro_ChangeMyTextA_m7E8285022A3EDC235A567D3D9D6BCCCC17D4C435 (void);
+// 0x0000008B System.Void CNTowerIntro::ChangeMyTextB()
+extern void CNTowerIntro_ChangeMyTextB_m5B6454F7686CEC2490BDC12C25C007ED06C94125 (void);
+// 0x0000008C System.Void CNTowerIntro::ChangeMyTextC()
+extern void CNTowerIntro_ChangeMyTextC_m993EC39BE77B48D7539FA80E55F5A58497A874B0 (void);
+// 0x0000008D System.Void CNTowerIntro::.ctor()
+extern void CNTowerIntro__ctor_m895C2300145DAF4AC3964E1C87B233025B7F8D75 (void);
+// 0x0000008E System.Void CristoIntro::Start()
+extern void CristoIntro_Start_m1C90FED4605506C2DB97CA9E568B69601261B324 (void);
+// 0x0000008F System.Void CristoIntro::ChangeMyTextA()
+extern void CristoIntro_ChangeMyTextA_m25CD3F8451305DF64BA517F2E75DD30804DB6AA8 (void);
+// 0x00000090 System.Void CristoIntro::ChangeMyTextB()
+extern void CristoIntro_ChangeMyTextB_mDD468A8F68B5A35A7D320788596025E47697A649 (void);
+// 0x00000091 System.Void CristoIntro::ChangeMyTextC()
+extern void CristoIntro_ChangeMyTextC_mD38BA38FDAC61931763CC47740C011BF1F55F0F7 (void);
+// 0x00000092 System.Void CristoIntro::.ctor()
+extern void CristoIntro__ctor_mFF61D25540562BE45AB6B29E9A54685CF603A3AF (void);
+// 0x00000093 System.Void EiffelIntro::Start()
+extern void EiffelIntro_Start_m35D59BD7B44759B16854B798181A1AC31F2D9387 (void);
+// 0x00000094 System.Void EiffelIntro::ChangeMyTextA()
+extern void EiffelIntro_ChangeMyTextA_m3AFF44B12CD07A64C986BC2EE6472B99AE75C170 (void);
+// 0x00000095 System.Void EiffelIntro::ChangeMyTextB()
+extern void EiffelIntro_ChangeMyTextB_m5A0D6C1D3A87CDE92EC5FE23A582D5E32D45C047 (void);
+// 0x00000096 System.Void EiffelIntro::ChangeMyTextC()
+extern void EiffelIntro_ChangeMyTextC_m2420DF1C52551AAE0DC6E5670D3C0FDA4CA4AE77 (void);
+// 0x00000097 System.Void EiffelIntro::.ctor()
+extern void EiffelIntro__ctor_m51EDCCFBDAAC17EC54D144DDDE537A6C7CF28950 (void);
+// 0x00000098 System.Void LondonTowerIntro::Start()
+extern void LondonTowerIntro_Start_m37DB5A0DC78CE1C89FB630DDB31AF16DAC94DEDB (void);
+// 0x00000099 System.Void LondonTowerIntro::ChangeMyTextA()
+extern void LondonTowerIntro_ChangeMyTextA_mA68BF19EF282CC06807B710DC30EE4210153BDCF (void);
+// 0x0000009A System.Void LondonTowerIntro::ChangeMyTextB()
+extern void LondonTowerIntro_ChangeMyTextB_mFB0DECEDF47BE0857092C74E5AA1802261B2D3CC (void);
+// 0x0000009B System.Void LondonTowerIntro::ChangeMyTextC()
+extern void LondonTowerIntro_ChangeMyTextC_mB75511B4C281C73C7DC67C5F6578692C1A85A2F5 (void);
+// 0x0000009C System.Void LondonTowerIntro::.ctor()
+extern void LondonTowerIntro__ctor_m4A763EB5D8AE52C29A4F848CE1279FA359B49E03 (void);
+// 0x0000009D System.Void pyramidIntro::Start()
+extern void pyramidIntro_Start_m4353B06DC0D840496E554A3E62B230C299E9F78B (void);
+// 0x0000009E System.Void pyramidIntro::ChangeMyTextA()
+extern void pyramidIntro_ChangeMyTextA_m20F5302D8C2C4FC37FC4309D8445EDFBB74A2AC2 (void);
+// 0x0000009F System.Void pyramidIntro::ChangeMyTextB()
+extern void pyramidIntro_ChangeMyTextB_mD5DD97684AE67D5FDC2D52C5C8D5C2423B072662 (void);
+// 0x000000A0 System.Void pyramidIntro::ChangeMyTextC()
+extern void pyramidIntro_ChangeMyTextC_m2871C9AEA380888112EE2BEEE5351BAFD81842A9 (void);
+// 0x000000A1 System.Void pyramidIntro::.ctor()
+extern void pyramidIntro__ctor_mD64C9FE60E995D64D5DB07DF8AE3F998045A0B41 (void);
+// 0x000000A2 System.Void RobeRoleIntro::Start()
+extern void RobeRoleIntro_Start_m23DAFC9367EF6B06345F62CC89D04B313FD7E92C (void);
+// 0x000000A3 System.Void RobeRoleIntro::ChangeMyTextA()
+extern void RobeRoleIntro_ChangeMyTextA_mD836CB4D4D9A84C38380B32894D127B4A04D4DE1 (void);
+// 0x000000A4 System.Void RobeRoleIntro::ChangeMyTextB()
+extern void RobeRoleIntro_ChangeMyTextB_m0FB57FCDF58E48CE251483C0C42D8CE89DFABF78 (void);
+// 0x000000A5 System.Void RobeRoleIntro::ChangeMyTextC()
+extern void RobeRoleIntro_ChangeMyTextC_m753C8AA9AD1B15BE510BABE8BDD13BFF027C4602 (void);
+// 0x000000A6 System.Void RobeRoleIntro::.ctor()
+extern void RobeRoleIntro__ctor_m57068E0240C5A9D091034A4B1E6146D26434FF16 (void);
+// 0x000000A7 System.Void OpenAIChat::Start()
 extern void OpenAIChat_Start_m5E9B674E3CB5A0CF9A94FBD587B8749B09F66485 (void);
-// 0x00000085 System.Collections.IEnumerator OpenAIChat::CreateChatCompletionCoroutine()
+// 0x000000A8 System.Collections.IEnumerator OpenAIChat::CreateChatCompletionCoroutine()
 extern void OpenAIChat_CreateChatCompletionCoroutine_m9EF28A4927F2734C9A97B5078A06CD547ADBF0FA (void);
-// 0x00000086 System.Void OpenAIChat::.ctor()
+// 0x000000A9 System.Void OpenAIChat::.ctor()
 extern void OpenAIChat__ctor_m6508C38F3AA72DE2D70DE34521C5E028379D82E1 (void);
-// 0x00000087 System.Void OpenAIChat/<CreateChatCompletionCoroutine>d__2::.ctor(System.Int32)
+// 0x000000AA System.Void OpenAIChat/<CreateChatCompletionCoroutine>d__2::.ctor(System.Int32)
 extern void U3CCreateChatCompletionCoroutineU3Ed__2__ctor_m5D103400EB7528DD61BD5E65C572E307CC290096 (void);
-// 0x00000088 System.Void OpenAIChat/<CreateChatCompletionCoroutine>d__2::System.IDisposable.Dispose()
+// 0x000000AB System.Void OpenAIChat/<CreateChatCompletionCoroutine>d__2::System.IDisposable.Dispose()
 extern void U3CCreateChatCompletionCoroutineU3Ed__2_System_IDisposable_Dispose_mBC6D55000C1B218E5A26F818288692286669E17D (void);
-// 0x00000089 System.Boolean OpenAIChat/<CreateChatCompletionCoroutine>d__2::MoveNext()
+// 0x000000AC System.Boolean OpenAIChat/<CreateChatCompletionCoroutine>d__2::MoveNext()
 extern void U3CCreateChatCompletionCoroutineU3Ed__2_MoveNext_m7304F6E897255F7A5AAF0312EC1000BA2C135805 (void);
-// 0x0000008A System.Void OpenAIChat/<CreateChatCompletionCoroutine>d__2::<>m__Finally1()
+// 0x000000AD System.Void OpenAIChat/<CreateChatCompletionCoroutine>d__2::<>m__Finally1()
 extern void U3CCreateChatCompletionCoroutineU3Ed__2_U3CU3Em__Finally1_mA5A968C0DBBA5CD49762C34A30D77148EC2875EB (void);
-// 0x0000008B System.Object OpenAIChat/<CreateChatCompletionCoroutine>d__2::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000000AE System.Object OpenAIChat/<CreateChatCompletionCoroutine>d__2::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CCreateChatCompletionCoroutineU3Ed__2_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mE84F1AE29D01C0DA880099698A29F165DD6784AF (void);
-// 0x0000008C System.Void OpenAIChat/<CreateChatCompletionCoroutine>d__2::System.Collections.IEnumerator.Reset()
+// 0x000000AF System.Void OpenAIChat/<CreateChatCompletionCoroutine>d__2::System.Collections.IEnumerator.Reset()
 extern void U3CCreateChatCompletionCoroutineU3Ed__2_System_Collections_IEnumerator_Reset_m27FE46C43A1B92FE63372D7A5AEFE5D416F35AFF (void);
-// 0x0000008D System.Object OpenAIChat/<CreateChatCompletionCoroutine>d__2::System.Collections.IEnumerator.get_Current()
+// 0x000000B0 System.Object OpenAIChat/<CreateChatCompletionCoroutine>d__2::System.Collections.IEnumerator.get_Current()
 extern void U3CCreateChatCompletionCoroutineU3Ed__2_System_Collections_IEnumerator_get_Current_mC8878CD731CADD12C1FE852F25A853E320083400 (void);
-// 0x0000008E System.Void RotateObject::Update()
+// 0x000000B1 System.Void RotateObject::Update()
 extern void RotateObject_Update_mECF506F1D0575C45638D5E97A9352E88D2DB4530 (void);
-// 0x0000008F System.Void RotateObject::.ctor()
+// 0x000000B2 System.Void RotateObject::.ctor()
 extern void RotateObject__ctor_m47FED6A0A715C09D80A746CF61B770974AFB89A9 (void);
-// 0x00000090 System.Void SwitchScene::SwitchToScene()
+// 0x000000B3 System.Void SwitchScene::SwitchToScene()
 extern void SwitchScene_SwitchToScene_m3BC4B0BCC20CD2436CD64883C6F3EB9726469AC6 (void);
-// 0x00000091 System.Void SwitchScene::.ctor()
+// 0x000000B4 System.Void SwitchScene::.ctor()
 extern void SwitchScene__ctor_m952ED4020DD0C41DFC96B2088E72F87611E4F028 (void);
-// 0x00000092 System.Void testTry::Start()
+// 0x000000B5 System.Void testTry::Start()
 extern void testTry_Start_mE06E4C81308274144442BC58B89078AE7F956D3E (void);
-// 0x00000093 System.Void testTry::talk(System.String)
+// 0x000000B6 System.Void testTry::talk(System.String)
 extern void testTry_talk_mA1F5F432378386E03B7C232294795BE4C174DDCD (void);
-// 0x00000094 System.Collections.IEnumerator testTry::CreateChatCompletionCoroutine(System.String)
+// 0x000000B7 System.Collections.IEnumerator testTry::CreateChatCompletionCoroutine(System.String)
 extern void testTry_CreateChatCompletionCoroutine_mBD878A9CA4E9C5FF623E040D1687FB0AB2C8248D (void);
-// 0x00000095 System.Void testTry::ExtractContentFromResponse(System.String)
+// 0x000000B8 System.Void testTry::ExtractContentFromResponse(System.String)
 extern void testTry_ExtractContentFromResponse_mC6061FAC3F203039111505FC6BF8D8AECF09D235 (void);
-// 0x00000096 System.Void testTry::.ctor()
+// 0x000000B9 System.Void testTry::.ctor()
 extern void testTry__ctor_mE1828631F8C0BED7B1BC6AE590798AC9F6B27391 (void);
-// 0x00000097 System.Void testTry/<CreateChatCompletionCoroutine>d__4::.ctor(System.Int32)
+// 0x000000BA System.Void testTry/<CreateChatCompletionCoroutine>d__4::.ctor(System.Int32)
 extern void U3CCreateChatCompletionCoroutineU3Ed__4__ctor_mFED20FBE81DA880DBD3BFED1F8D0A697CC8F6D5D (void);
-// 0x00000098 System.Void testTry/<CreateChatCompletionCoroutine>d__4::System.IDisposable.Dispose()
+// 0x000000BB System.Void testTry/<CreateChatCompletionCoroutine>d__4::System.IDisposable.Dispose()
 extern void U3CCreateChatCompletionCoroutineU3Ed__4_System_IDisposable_Dispose_m6DE0D8BF1D795EAA5119C3A97BB37921EDE25FB0 (void);
-// 0x00000099 System.Boolean testTry/<CreateChatCompletionCoroutine>d__4::MoveNext()
+// 0x000000BC System.Boolean testTry/<CreateChatCompletionCoroutine>d__4::MoveNext()
 extern void U3CCreateChatCompletionCoroutineU3Ed__4_MoveNext_m6187E41DA6679129744CA4043794A1490990AA46 (void);
-// 0x0000009A System.Void testTry/<CreateChatCompletionCoroutine>d__4::<>m__Finally1()
+// 0x000000BD System.Void testTry/<CreateChatCompletionCoroutine>d__4::<>m__Finally1()
 extern void U3CCreateChatCompletionCoroutineU3Ed__4_U3CU3Em__Finally1_m928F2BCB996F267EB4856CFD5B5EDD7D387C0214 (void);
-// 0x0000009B System.Object testTry/<CreateChatCompletionCoroutine>d__4::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000000BE System.Object testTry/<CreateChatCompletionCoroutine>d__4::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CCreateChatCompletionCoroutineU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA7A6A219A0372D8D8A82E4A3A29C0C40A6B45A1E (void);
-// 0x0000009C System.Void testTry/<CreateChatCompletionCoroutine>d__4::System.Collections.IEnumerator.Reset()
+// 0x000000BF System.Void testTry/<CreateChatCompletionCoroutine>d__4::System.Collections.IEnumerator.Reset()
 extern void U3CCreateChatCompletionCoroutineU3Ed__4_System_Collections_IEnumerator_Reset_m152891BD6C3C0AF73F188A4C13DD0B6C192DD9A8 (void);
-// 0x0000009D System.Object testTry/<CreateChatCompletionCoroutine>d__4::System.Collections.IEnumerator.get_Current()
+// 0x000000C0 System.Object testTry/<CreateChatCompletionCoroutine>d__4::System.Collections.IEnumerator.get_Current()
 extern void U3CCreateChatCompletionCoroutineU3Ed__4_System_Collections_IEnumerator_get_Current_m3F0588530054ED52C328D4507E3CDE7C15365699 (void);
-// 0x0000009E System.Void ChatCompletionResponse::.ctor()
+// 0x000000C1 System.Void ChatCompletionResponse::.ctor()
 extern void ChatCompletionResponse__ctor_m82B4B6CAA90718832644F7135ACD09B5DFADE2D1 (void);
-// 0x0000009F System.Void Choice::.ctor()
+// 0x000000C2 System.Void Choice::.ctor()
 extern void Choice__ctor_m28DAD1AC708BE65DF1FEF37B81A380A0B5FCA6D8 (void);
-// 0x000000A0 System.Void Message::.ctor()
+// 0x000000C3 System.Void Message::.ctor()
 extern void Message__ctor_m4B34B407C9C10627022C55648F679C2844877969 (void);
-// 0x000000A1 System.Void Usage::.ctor()
+// 0x000000C4 System.Void Usage::.ctor()
 extern void Usage__ctor_m50A479C6D41F025A3697CE83CE864EC62DDFB627 (void);
-// 0x000000A2 System.Void TextUpdater::Start()
+// 0x000000C5 System.Void TextUpdater::Start()
 extern void TextUpdater_Start_m84D7B8308D1E08B34DF8FCC781FE146CE55327A2 (void);
-// 0x000000A3 System.Void TextUpdater::ChangeMyTextA()
+// 0x000000C6 System.Void TextUpdater::ChangeMyTextA()
 extern void TextUpdater_ChangeMyTextA_m33A17A407BD15BEE64313433CA461179424AA4C1 (void);
-// 0x000000A4 System.Void TextUpdater::ChangeMyTextB()
+// 0x000000C7 System.Void TextUpdater::ChangeMyTextB()
 extern void TextUpdater_ChangeMyTextB_m8A292D6596D8D65C77617489EBD276E454BE3EA6 (void);
-// 0x000000A5 System.Void TextUpdater::ChangeMyTextC()
+// 0x000000C8 System.Void TextUpdater::ChangeMyTextC()
 extern void TextUpdater_ChangeMyTextC_mEB0708C5ABFE1ABE21EB815F3968211257811FF4 (void);
-// 0x000000A6 System.Void TextUpdater::.ctor()
+// 0x000000C9 System.Void TextUpdater::.ctor()
 extern void TextUpdater__ctor_m9BBC1E8727AA8893FF83B45AEE2BDCA8E232B885 (void);
-// 0x000000A7 System.Void VisibilityByDistance::Update()
+// 0x000000CA System.Void TourAI::Start()
+extern void TourAI_Start_mA8B729A8FA93F38D19DE520290988248B179A0F5 (void);
+// 0x000000CB System.Void TourAI::talk(System.String)
+extern void TourAI_talk_m1133CACB968755E5172602FAD3338825ABD73F7C (void);
+// 0x000000CC System.Collections.IEnumerator TourAI::CreateChatCompletionCoroutine(System.String)
+extern void TourAI_CreateChatCompletionCoroutine_mC64325CD9CABBF8F579DA153FCDB117AF0E57595 (void);
+// 0x000000CD System.Void TourAI::ExtractContentFromResponse(System.String)
+extern void TourAI_ExtractContentFromResponse_mACBF4C54B3A59CC6D151E9F0C8745D871F0605D9 (void);
+// 0x000000CE System.Void TourAI::.ctor()
+extern void TourAI__ctor_m7186AFD0B7E4A5F9128E0EFDDBDF797B8D5368E2 (void);
+// 0x000000CF System.Void TourAI/<CreateChatCompletionCoroutine>d__4::.ctor(System.Int32)
+extern void U3CCreateChatCompletionCoroutineU3Ed__4__ctor_m10693422231315FB12A44BA5C8FE891FC539ACD0 (void);
+// 0x000000D0 System.Void TourAI/<CreateChatCompletionCoroutine>d__4::System.IDisposable.Dispose()
+extern void U3CCreateChatCompletionCoroutineU3Ed__4_System_IDisposable_Dispose_mD7C354ED4D63BAF3F3A0BF3B5ED0E3898E3DFE49 (void);
+// 0x000000D1 System.Boolean TourAI/<CreateChatCompletionCoroutine>d__4::MoveNext()
+extern void U3CCreateChatCompletionCoroutineU3Ed__4_MoveNext_mF4FCE312B0839E97EBCA278D4A190360A272D18A (void);
+// 0x000000D2 System.Void TourAI/<CreateChatCompletionCoroutine>d__4::<>m__Finally1()
+extern void U3CCreateChatCompletionCoroutineU3Ed__4_U3CU3Em__Finally1_mB2A3B79278C1D58478A18B4185AB1CCB6BDF6D26 (void);
+// 0x000000D3 System.Object TourAI/<CreateChatCompletionCoroutine>d__4::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CCreateChatCompletionCoroutineU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mDB7E0A94A041DB81493D1B142DD9CB9FE62E3B1F (void);
+// 0x000000D4 System.Void TourAI/<CreateChatCompletionCoroutine>d__4::System.Collections.IEnumerator.Reset()
+extern void U3CCreateChatCompletionCoroutineU3Ed__4_System_Collections_IEnumerator_Reset_m9143890AC618F4B9965694C327675B60340D4E1B (void);
+// 0x000000D5 System.Object TourAI/<CreateChatCompletionCoroutine>d__4::System.Collections.IEnumerator.get_Current()
+extern void U3CCreateChatCompletionCoroutineU3Ed__4_System_Collections_IEnumerator_get_Current_mF12ED0DEDC6E4FDB8F1054B30E62D26F40DD892C (void);
+// 0x000000D6 System.Void VisibilityByDistance::Update()
 extern void VisibilityByDistance_Update_mEECA1BB650BA462203D2CC8F532277FEA0E12350 (void);
-// 0x000000A8 System.Void VisibilityByDistance::.ctor()
+// 0x000000D7 System.Void VisibilityByDistance::.ctor()
 extern void VisibilityByDistance__ctor_m18BDA42AF8DF98934FF862A34433D15CEC5B637F (void);
-// 0x000000A9 System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.FallingSphere::Start()
+// 0x000000D8 System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.FallingSphere::Start()
 extern void FallingSphere_Start_mA5F656B736FA5AC265D51582444E4682CB83FFA2 (void);
-// 0x000000AA System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.FallingSphere::FixedUpdate()
+// 0x000000D9 System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.FallingSphere::FixedUpdate()
 extern void FallingSphere_FixedUpdate_m3A15CC58648EAD2033911C4D517E1D4A4567A947 (void);
-// 0x000000AB System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.FallingSphere::.ctor()
+// 0x000000DA System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.FallingSphere::.ctor()
 extern void FallingSphere__ctor_mF045BE8913869389EAB2B517053BD0A91A010722 (void);
-// 0x000000AC System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.MeshingBehaviour::Start()
+// 0x000000DB System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.MeshingBehaviour::Start()
 extern void MeshingBehaviour_Start_m0FD2D4DA344B65CE5140E4BEA7E12D957E41F897 (void);
-// 0x000000AD System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.MeshingBehaviour::Update()
+// 0x000000DC System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.MeshingBehaviour::Update()
 extern void MeshingBehaviour_Update_m65D2787A869C31C638CA19643B72C0EC151739AC (void);
-// 0x000000AE System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.MeshingBehaviour::.ctor()
+// 0x000000DD System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.MeshingBehaviour::.ctor()
 extern void MeshingBehaviour__ctor_mAAC064E80F89337602B32FEF8304AD3516E542AA (void);
-// 0x000000AF System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.MeshingBehaviour/<>c::.cctor()
+// 0x000000DE System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.MeshingBehaviour/<>c::.cctor()
 extern void U3CU3Ec__cctor_mEB0AA84168607FF0187D9E783FE3FDB7D8A0C796 (void);
-// 0x000000B0 System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.MeshingBehaviour/<>c::.ctor()
+// 0x000000DF System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.MeshingBehaviour/<>c::.ctor()
 extern void U3CU3Ec__ctor_m726994FB513CD5C23A758B095B7F2050D7A88F00 (void);
-// 0x000000B1 System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.MeshingBehaviour/<>c::<Update>b__7_0(UnityEngine.XR.MeshGenerationResult)
+// 0x000000E0 System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.MeshingBehaviour/<>c::<Update>b__7_0(UnityEngine.XR.MeshGenerationResult)
 extern void U3CU3Ec_U3CUpdateU3Eb__7_0_mD2B7D1DD8BF091248BC6B4734E36263EFBDC15FD (void);
-// 0x000000B2 System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.MeshingTeapotFeature::OnSubsystemCreate()
+// 0x000000E1 System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.MeshingTeapotFeature::OnSubsystemCreate()
 extern void MeshingTeapotFeature_OnSubsystemCreate_m829E4DB978C5C6CA1E12C31FE355F5ED7E4132B0 (void);
-// 0x000000B3 System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.MeshingTeapotFeature::OnSubsystemStart()
+// 0x000000E2 System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.MeshingTeapotFeature::OnSubsystemStart()
 extern void MeshingTeapotFeature_OnSubsystemStart_m781F9E63F36D607B8B505B7101497FA62CD8FB8D (void);
-// 0x000000B4 System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.MeshingTeapotFeature::OnSubsystemStop()
+// 0x000000E3 System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.MeshingTeapotFeature::OnSubsystemStop()
 extern void MeshingTeapotFeature_OnSubsystemStop_mF4964F832C2E3E45335C024632FD7237C24E3639 (void);
-// 0x000000B5 System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.MeshingTeapotFeature::OnSubsystemDestroy()
+// 0x000000E4 System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.MeshingTeapotFeature::OnSubsystemDestroy()
 extern void MeshingTeapotFeature_OnSubsystemDestroy_m72B93C7FE5846BAEAFF000426012519A6D582C16 (void);
-// 0x000000B6 System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.MeshingTeapotFeature::.ctor()
+// 0x000000E5 System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.MeshingTeapotFeature::.ctor()
 extern void MeshingTeapotFeature__ctor_mF9443C25EBF36C2E2B75A0EC646AE3D6A1F951C4 (void);
-// 0x000000B7 System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.MeshingTeapotFeature::.cctor()
+// 0x000000E6 System.Void UnityEngine.XR.OpenXR.Samples.MeshingFeature.MeshingTeapotFeature::.cctor()
 extern void MeshingTeapotFeature__cctor_m86122B69143A66DAD457A42EFDB9B397D646A1ED (void);
-// 0x000000B8 System.String UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature::get_receivedMessage()
+// 0x000000E7 System.String UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature::get_receivedMessage()
 extern void InterceptCreateSessionFeature_get_receivedMessage_m3783793E40B12DC8AE9770D6DBB7F981D36C92D6 (void);
-// 0x000000B9 System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature::set_receivedMessage(System.String)
+// 0x000000E8 System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature::set_receivedMessage(System.String)
 extern void InterceptCreateSessionFeature_set_receivedMessage_m06924CA717DBCA3DCFCCC136AF8F1C86CE98756D (void);
-// 0x000000BA System.IntPtr UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature::HookGetInstanceProcAddr(System.IntPtr)
+// 0x000000E9 System.IntPtr UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature::HookGetInstanceProcAddr(System.IntPtr)
 extern void InterceptCreateSessionFeature_HookGetInstanceProcAddr_m8E62A8EF76425D5CBC6EF2086C66402653FC9C0A (void);
-// 0x000000BB System.Boolean UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature::OnInstanceCreate(System.UInt64)
+// 0x000000EA System.Boolean UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature::OnInstanceCreate(System.UInt64)
 extern void InterceptCreateSessionFeature_OnInstanceCreate_mDB9D5F1E18BAA436FEF1C4433D779A8A961A8E21 (void);
-// 0x000000BC System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature::OnMessage(System.String)
+// 0x000000EB System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature::OnMessage(System.String)
 extern void InterceptCreateSessionFeature_OnMessage_mDC10AA02BB5ED0AA93C96BAEA118F3923E2E4354 (void);
-// 0x000000BD System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature::OnSessionCreate(System.UInt64)
+// 0x000000EC System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature::OnSessionCreate(System.UInt64)
 extern void InterceptCreateSessionFeature_OnSessionCreate_mDACF4FF80A5496A2D82814AFA71F799E3C437D56 (void);
-// 0x000000BE System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature::OnSessionBegin(System.UInt64)
+// 0x000000ED System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature::OnSessionBegin(System.UInt64)
 extern void InterceptCreateSessionFeature_OnSessionBegin_m15CD5550E062FBEC79260F9228CFC77FC07856CB (void);
-// 0x000000BF System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature::OnSessionEnd(System.UInt64)
+// 0x000000EE System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature::OnSessionEnd(System.UInt64)
 extern void InterceptCreateSessionFeature_OnSessionEnd_m7CB13DAC61C6312563F892F8FD8C0CF6A687A95A (void);
-// 0x000000C0 System.IntPtr UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature::intercept_xrCreateSession_xrGetInstanceProcAddr(System.IntPtr)
+// 0x000000EF System.IntPtr UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature::intercept_xrCreateSession_xrGetInstanceProcAddr(System.IntPtr)
 extern void InterceptCreateSessionFeature_intercept_xrCreateSession_xrGetInstanceProcAddr_mB3560C7616943DE21C2260F2F9D28BAC2846F3D1 (void);
-// 0x000000C1 System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature::Internal_SetMessage(System.String)
+// 0x000000F0 System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature::Internal_SetMessage(System.String)
 extern void InterceptCreateSessionFeature_Internal_SetMessage_m7B17D2CD0BB04E55B3A9CB05DCFC2182A8436E10 (void);
-// 0x000000C2 System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature::Internal_SetCallback(UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature/ReceiveMessageDelegate)
+// 0x000000F1 System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature::Internal_SetCallback(UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature/ReceiveMessageDelegate)
 extern void InterceptCreateSessionFeature_Internal_SetCallback_m43E93F76F34966289CB788334D87FEB66850C491 (void);
-// 0x000000C3 System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature::.ctor()
+// 0x000000F2 System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature::.ctor()
 extern void InterceptCreateSessionFeature__ctor_mD0FAEE0D99BDF012EE612DEDA4407BEA51D1E40B (void);
-// 0x000000C4 System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature/OnMessageDelegate::.ctor(System.Object,System.IntPtr)
+// 0x000000F3 System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature/OnMessageDelegate::.ctor(System.Object,System.IntPtr)
 extern void OnMessageDelegate__ctor_m801B609CB0434789C86EAD1684D20BF61DE06498 (void);
-// 0x000000C5 System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature/OnMessageDelegate::Invoke(System.String)
+// 0x000000F4 System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature/OnMessageDelegate::Invoke(System.String)
 extern void OnMessageDelegate_Invoke_m84C09CC1A93644DB772323D0788A7115F3D836C0 (void);
-// 0x000000C6 System.IAsyncResult UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature/OnMessageDelegate::BeginInvoke(System.String,System.AsyncCallback,System.Object)
+// 0x000000F5 System.IAsyncResult UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature/OnMessageDelegate::BeginInvoke(System.String,System.AsyncCallback,System.Object)
 extern void OnMessageDelegate_BeginInvoke_m28732DC47EBF67DA6238B054994108A78625BF49 (void);
-// 0x000000C7 System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature/OnMessageDelegate::EndInvoke(System.IAsyncResult)
+// 0x000000F6 System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature/OnMessageDelegate::EndInvoke(System.IAsyncResult)
 extern void OnMessageDelegate_EndInvoke_m652C2BA612DB540A590E2356FF221E2BB80DCDFE (void);
-// 0x000000C8 System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature/ReceiveMessageDelegate::.ctor(System.Object,System.IntPtr)
+// 0x000000F7 System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature/ReceiveMessageDelegate::.ctor(System.Object,System.IntPtr)
 extern void ReceiveMessageDelegate__ctor_m152A9C050292D523407A94CA7A708C9C89C00E06 (void);
-// 0x000000C9 System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature/ReceiveMessageDelegate::Invoke(System.String)
+// 0x000000F8 System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature/ReceiveMessageDelegate::Invoke(System.String)
 extern void ReceiveMessageDelegate_Invoke_mB9A0465F24A5AD6094104C8892DFC8654DA63064 (void);
-// 0x000000CA System.IAsyncResult UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature/ReceiveMessageDelegate::BeginInvoke(System.String,System.AsyncCallback,System.Object)
+// 0x000000F9 System.IAsyncResult UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature/ReceiveMessageDelegate::BeginInvoke(System.String,System.AsyncCallback,System.Object)
 extern void ReceiveMessageDelegate_BeginInvoke_m70F1F6CA07C4219A74CBBE7C0EBD6777D600230F (void);
-// 0x000000CB System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature/ReceiveMessageDelegate::EndInvoke(System.IAsyncResult)
+// 0x000000FA System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptCreateSessionFeature/ReceiveMessageDelegate::EndInvoke(System.IAsyncResult)
 extern void ReceiveMessageDelegate_EndInvoke_m5F92BB28F37C771DDBE557852F74F8E1312EE9F2 (void);
-// 0x000000CC System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptMessageHandler::Start()
+// 0x000000FB System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptMessageHandler::Start()
 extern void InterceptMessageHandler_Start_m9DCC386E18B0022AED0CCF7659795C6CEAAE7ECD (void);
-// 0x000000CD System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptMessageHandler::.ctor()
+// 0x000000FC System.Void UnityEngine.XR.OpenXR.Samples.InterceptFeature.InterceptMessageHandler::.ctor()
 extern void InterceptMessageHandler__ctor_mA197DD6FF64EDDB88CAF44B9A607AC5BBB812EBF (void);
-// 0x000000CE System.Void CrazyMinnow.SALSA.CM_RuntimeSetupExample::Start()
+// 0x000000FD System.Void CrazyMinnow.SALSA.CM_RuntimeSetupExample::Start()
 extern void CM_RuntimeSetupExample_Start_mADD5244BAE88F58DA2A924A168996B43AD5E8E98 (void);
-// 0x000000CF System.Void CrazyMinnow.SALSA.CM_RuntimeSetupExample::Update()
+// 0x000000FE System.Void CrazyMinnow.SALSA.CM_RuntimeSetupExample::Update()
 extern void CM_RuntimeSetupExample_Update_m9E2FA92C0F80DF45C8D649DB3EA8CE51C8B12D9B (void);
-// 0x000000D0 System.Collections.IEnumerator CrazyMinnow.SALSA.CM_RuntimeSetupExample::RemoveComponents()
+// 0x000000FF System.Collections.IEnumerator CrazyMinnow.SALSA.CM_RuntimeSetupExample::RemoveComponents()
 extern void CM_RuntimeSetupExample_RemoveComponents_mCA68706D6A42B848E136A7700BC6FCD1940AD368 (void);
-// 0x000000D1 System.Void CrazyMinnow.SALSA.CM_RuntimeSetupExample::.ctor()
+// 0x00000100 System.Void CrazyMinnow.SALSA.CM_RuntimeSetupExample::.ctor()
 extern void CM_RuntimeSetupExample__ctor_mFFC7F7E07EC28DB8B77C79080EEDEDE47C808770 (void);
-// 0x000000D2 System.Void CrazyMinnow.SALSA.CM_RuntimeSetupExample/<RemoveComponents>d__7::.ctor(System.Int32)
+// 0x00000101 System.Void CrazyMinnow.SALSA.CM_RuntimeSetupExample/<RemoveComponents>d__7::.ctor(System.Int32)
 extern void U3CRemoveComponentsU3Ed__7__ctor_m28062C139E1D896A4D0659676B5B560E2B46412F (void);
-// 0x000000D3 System.Void CrazyMinnow.SALSA.CM_RuntimeSetupExample/<RemoveComponents>d__7::System.IDisposable.Dispose()
+// 0x00000102 System.Void CrazyMinnow.SALSA.CM_RuntimeSetupExample/<RemoveComponents>d__7::System.IDisposable.Dispose()
 extern void U3CRemoveComponentsU3Ed__7_System_IDisposable_Dispose_mAE4455C20C083D58DC4B011E240B86E4FCAD8D74 (void);
-// 0x000000D4 System.Boolean CrazyMinnow.SALSA.CM_RuntimeSetupExample/<RemoveComponents>d__7::MoveNext()
+// 0x00000103 System.Boolean CrazyMinnow.SALSA.CM_RuntimeSetupExample/<RemoveComponents>d__7::MoveNext()
 extern void U3CRemoveComponentsU3Ed__7_MoveNext_mCD4676FCC55B09A4975FDEB198F4429E3188394D (void);
-// 0x000000D5 System.Object CrazyMinnow.SALSA.CM_RuntimeSetupExample/<RemoveComponents>d__7::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000104 System.Object CrazyMinnow.SALSA.CM_RuntimeSetupExample/<RemoveComponents>d__7::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CRemoveComponentsU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mDD3E253B5E55973758BECFCDDA8D23C68B14DF7C (void);
-// 0x000000D6 System.Void CrazyMinnow.SALSA.CM_RuntimeSetupExample/<RemoveComponents>d__7::System.Collections.IEnumerator.Reset()
+// 0x00000105 System.Void CrazyMinnow.SALSA.CM_RuntimeSetupExample/<RemoveComponents>d__7::System.Collections.IEnumerator.Reset()
 extern void U3CRemoveComponentsU3Ed__7_System_Collections_IEnumerator_Reset_m5A6128D96F12CCA8180A6D4ADD67C0264A26FD40 (void);
-// 0x000000D7 System.Object CrazyMinnow.SALSA.CM_RuntimeSetupExample/<RemoveComponents>d__7::System.Collections.IEnumerator.get_Current()
+// 0x00000106 System.Object CrazyMinnow.SALSA.CM_RuntimeSetupExample/<RemoveComponents>d__7::System.Collections.IEnumerator.get_Current()
 extern void U3CRemoveComponentsU3Ed__7_System_Collections_IEnumerator_get_Current_m7F8EADBF9A9C53B640633294A3E82B2D5057A67E (void);
-// 0x000000D8 System.Void CrazyMinnow.SALSA.Examples.CM_SalsaTypeAndObject::.ctor()
+// 0x00000107 System.Void CrazyMinnow.SALSA.Examples.CM_SalsaTypeAndObject::.ctor()
 extern void CM_SalsaTypeAndObject__ctor_m1EEE495E094B8F7637071999F10160183553100B (void);
-// 0x000000D9 System.Void CrazyMinnow.SALSA.Examples.CM_PlayerResponse::.ctor()
+// 0x00000108 System.Void CrazyMinnow.SALSA.Examples.CM_PlayerResponse::.ctor()
 extern void CM_PlayerResponse__ctor_m89033E782EE5ECD050E8DE40D58B60F404196D90 (void);
-// 0x000000DA System.Void CrazyMinnow.SALSA.Examples.CM_NPCDialog::.ctor()
+// 0x00000109 System.Void CrazyMinnow.SALSA.Examples.CM_NPCDialog::.ctor()
 extern void CM_NPCDialog__ctor_mD02676B9F254E1E2E99B83D04882E90F5A086956 (void);
-// 0x000000DB System.Void CrazyMinnow.SALSA.Examples.CM_DialogSystem::Start()
+// 0x0000010A System.Void CrazyMinnow.SALSA.Examples.CM_DialogSystem::Start()
 extern void CM_DialogSystem_Start_m8DF846952A3CB7D5C7A43E438320D7D5EB603CA2 (void);
-// 0x000000DC System.Void CrazyMinnow.SALSA.Examples.CM_DialogSystem::Salsa_OnTalkStatusChanged(CrazyMinnow.SALSA.SalsaStatus)
+// 0x0000010B System.Void CrazyMinnow.SALSA.Examples.CM_DialogSystem::Salsa_OnTalkStatusChanged(CrazyMinnow.SALSA.SalsaStatus)
 extern void CM_DialogSystem_Salsa_OnTalkStatusChanged_m4EAA9E1719CF20D97E2DBB9E6D7A069E7A8E4885 (void);
-// 0x000000DD System.Void CrazyMinnow.SALSA.Examples.CM_DialogSystem::OnGUI()
+// 0x0000010C System.Void CrazyMinnow.SALSA.Examples.CM_DialogSystem::OnGUI()
 extern void CM_DialogSystem_OnGUI_m0207ED435FED8711A56AADE4507FB5B0AAAD14D7 (void);
-// 0x000000DE CrazyMinnow.SALSA.Examples.CM_SalsaTypeAndObject CrazyMinnow.SALSA.Examples.CM_DialogSystem::GetSalsaType(UnityEngine.GameObject)
+// 0x0000010D CrazyMinnow.SALSA.Examples.CM_SalsaTypeAndObject CrazyMinnow.SALSA.Examples.CM_DialogSystem::GetSalsaType(UnityEngine.GameObject)
 extern void CM_DialogSystem_GetSalsaType_mE810946B62F2B00DF3DAB4423C61A3110BB2C666 (void);
-// 0x000000DF System.Void CrazyMinnow.SALSA.Examples.CM_DialogSystem::EndDialog()
+// 0x0000010E System.Void CrazyMinnow.SALSA.Examples.CM_DialogSystem::EndDialog()
 extern void CM_DialogSystem_EndDialog_mB72658C747B78CB36052960512DBB80BB7F6C4EC (void);
-// 0x000000E0 System.Void CrazyMinnow.SALSA.Examples.CM_DialogSystem::ResetDialog()
+// 0x0000010F System.Void CrazyMinnow.SALSA.Examples.CM_DialogSystem::ResetDialog()
 extern void CM_DialogSystem_ResetDialog_mA32A0FE5054904D6FD93E9AFF4545C988A9DDB0B (void);
-// 0x000000E1 System.Void CrazyMinnow.SALSA.Examples.CM_DialogSystem::.ctor()
+// 0x00000110 System.Void CrazyMinnow.SALSA.Examples.CM_DialogSystem::.ctor()
 extern void CM_DialogSystem__ctor_m599338FEEE5618C13AF5D3F06CC2E9235E385C7F (void);
-// 0x000000E2 System.Void CrazyMinnow.SALSA.Examples.CM_Ethan_Demo::Start()
+// 0x00000111 System.Void CrazyMinnow.SALSA.Examples.CM_Ethan_Demo::Start()
 extern void CM_Ethan_Demo_Start_m8F350FB7527F64569BC4F16CCF4FF308A2D40075 (void);
-// 0x000000E3 System.Void CrazyMinnow.SALSA.Examples.CM_Ethan_Demo::Salsa_OnTalkStatusChanged(CrazyMinnow.SALSA.SalsaStatus)
+// 0x00000112 System.Void CrazyMinnow.SALSA.Examples.CM_Ethan_Demo::Salsa_OnTalkStatusChanged(CrazyMinnow.SALSA.SalsaStatus)
 extern void CM_Ethan_Demo_Salsa_OnTalkStatusChanged_m9D412212B9EB5C6E964094EFC2256D809E60342F (void);
-// 0x000000E4 System.Void CrazyMinnow.SALSA.Examples.CM_Ethan_Demo::RandomEyes_OnLookStatusChanged(CrazyMinnow.SALSA.RandomEyesLookStatus)
+// 0x00000113 System.Void CrazyMinnow.SALSA.Examples.CM_Ethan_Demo::RandomEyes_OnLookStatusChanged(CrazyMinnow.SALSA.RandomEyesLookStatus)
 extern void CM_Ethan_Demo_RandomEyes_OnLookStatusChanged_mFE6535D3510B7A6FA280F86D0C7EEA02D1162703 (void);
-// 0x000000E5 System.Void CrazyMinnow.SALSA.Examples.CM_Ethan_Demo::RandomEyes_OnCustomShapeChanged(CrazyMinnow.SALSA.RandomEyesCustomShapeStatus)
+// 0x00000114 System.Void CrazyMinnow.SALSA.Examples.CM_Ethan_Demo::RandomEyes_OnCustomShapeChanged(CrazyMinnow.SALSA.RandomEyesCustomShapeStatus)
 extern void CM_Ethan_Demo_RandomEyes_OnCustomShapeChanged_m68BDD6FC3363CDC43C14A1C26095B94B044D859A (void);
-// 0x000000E6 System.Collections.IEnumerator CrazyMinnow.SALSA.Examples.CM_Ethan_Demo::Look(System.Single,System.Single,UnityEngine.GameObject)
+// 0x00000115 System.Collections.IEnumerator CrazyMinnow.SALSA.Examples.CM_Ethan_Demo::Look(System.Single,System.Single,UnityEngine.GameObject)
 extern void CM_Ethan_Demo_Look_m77CF6D8463FCFD5DE03F9F5788EF872F7663B4FC (void);
-// 0x000000E7 System.Collections.IEnumerator CrazyMinnow.SALSA.Examples.CM_Ethan_Demo::WaitStart(System.Single)
+// 0x00000116 System.Collections.IEnumerator CrazyMinnow.SALSA.Examples.CM_Ethan_Demo::WaitStart(System.Single)
 extern void CM_Ethan_Demo_WaitStart_mD451B92F9683E67F41458CB3A77F2CB34361F686 (void);
-// 0x000000E8 System.Void CrazyMinnow.SALSA.Examples.CM_Ethan_Demo::.ctor()
+// 0x00000117 System.Void CrazyMinnow.SALSA.Examples.CM_Ethan_Demo::.ctor()
 extern void CM_Ethan_Demo__ctor_mC15A384C66644419CBC59D836B683F3AA3B58E2E (void);
-// 0x000000E9 System.Void CrazyMinnow.SALSA.Examples.CM_Ethan_Demo/<Look>d__11::.ctor(System.Int32)
+// 0x00000118 System.Void CrazyMinnow.SALSA.Examples.CM_Ethan_Demo/<Look>d__11::.ctor(System.Int32)
 extern void U3CLookU3Ed__11__ctor_m820B04E97E802D9FC263C4A4F315BC7EAA6B551D (void);
-// 0x000000EA System.Void CrazyMinnow.SALSA.Examples.CM_Ethan_Demo/<Look>d__11::System.IDisposable.Dispose()
+// 0x00000119 System.Void CrazyMinnow.SALSA.Examples.CM_Ethan_Demo/<Look>d__11::System.IDisposable.Dispose()
 extern void U3CLookU3Ed__11_System_IDisposable_Dispose_mF0560C68DF09960D4D9D52FC44C2BA5D2D4BDA04 (void);
-// 0x000000EB System.Boolean CrazyMinnow.SALSA.Examples.CM_Ethan_Demo/<Look>d__11::MoveNext()
+// 0x0000011A System.Boolean CrazyMinnow.SALSA.Examples.CM_Ethan_Demo/<Look>d__11::MoveNext()
 extern void U3CLookU3Ed__11_MoveNext_m6CF32B4D654A7962806999C06858584BBBB94EB6 (void);
-// 0x000000EC System.Object CrazyMinnow.SALSA.Examples.CM_Ethan_Demo/<Look>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x0000011B System.Object CrazyMinnow.SALSA.Examples.CM_Ethan_Demo/<Look>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CLookU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5EE408B6BCDC0A1C48B775D3E7ADE91801799320 (void);
-// 0x000000ED System.Void CrazyMinnow.SALSA.Examples.CM_Ethan_Demo/<Look>d__11::System.Collections.IEnumerator.Reset()
+// 0x0000011C System.Void CrazyMinnow.SALSA.Examples.CM_Ethan_Demo/<Look>d__11::System.Collections.IEnumerator.Reset()
 extern void U3CLookU3Ed__11_System_Collections_IEnumerator_Reset_m9D6270A933B29672641EA0779909A8594820DF4B (void);
-// 0x000000EE System.Object CrazyMinnow.SALSA.Examples.CM_Ethan_Demo/<Look>d__11::System.Collections.IEnumerator.get_Current()
+// 0x0000011D System.Object CrazyMinnow.SALSA.Examples.CM_Ethan_Demo/<Look>d__11::System.Collections.IEnumerator.get_Current()
 extern void U3CLookU3Ed__11_System_Collections_IEnumerator_get_Current_m1ACED0EF27A7A19B80E95C4D51C5E8611880A85B (void);
-// 0x000000EF System.Void CrazyMinnow.SALSA.Examples.CM_Ethan_Demo/<WaitStart>d__12::.ctor(System.Int32)
+// 0x0000011E System.Void CrazyMinnow.SALSA.Examples.CM_Ethan_Demo/<WaitStart>d__12::.ctor(System.Int32)
 extern void U3CWaitStartU3Ed__12__ctor_m129736C90AF581DF8EBFDD4CD139DC4B5CC00F03 (void);
-// 0x000000F0 System.Void CrazyMinnow.SALSA.Examples.CM_Ethan_Demo/<WaitStart>d__12::System.IDisposable.Dispose()
+// 0x0000011F System.Void CrazyMinnow.SALSA.Examples.CM_Ethan_Demo/<WaitStart>d__12::System.IDisposable.Dispose()
 extern void U3CWaitStartU3Ed__12_System_IDisposable_Dispose_m064992AC559F1DAF7D98807C01C43653D4EF3C06 (void);
-// 0x000000F1 System.Boolean CrazyMinnow.SALSA.Examples.CM_Ethan_Demo/<WaitStart>d__12::MoveNext()
+// 0x00000120 System.Boolean CrazyMinnow.SALSA.Examples.CM_Ethan_Demo/<WaitStart>d__12::MoveNext()
 extern void U3CWaitStartU3Ed__12_MoveNext_mC5A0AE6C0E7E67046FDD42A6125407B532C9B7F7 (void);
-// 0x000000F2 System.Object CrazyMinnow.SALSA.Examples.CM_Ethan_Demo/<WaitStart>d__12::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000121 System.Object CrazyMinnow.SALSA.Examples.CM_Ethan_Demo/<WaitStart>d__12::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CWaitStartU3Ed__12_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA7513FCFAD196FEDD9C419D5D299AB1A73C057B0 (void);
-// 0x000000F3 System.Void CrazyMinnow.SALSA.Examples.CM_Ethan_Demo/<WaitStart>d__12::System.Collections.IEnumerator.Reset()
+// 0x00000122 System.Void CrazyMinnow.SALSA.Examples.CM_Ethan_Demo/<WaitStart>d__12::System.Collections.IEnumerator.Reset()
 extern void U3CWaitStartU3Ed__12_System_Collections_IEnumerator_Reset_m7EB70C52F410CCE0CCD135EF988CF21D57300DB2 (void);
-// 0x000000F4 System.Object CrazyMinnow.SALSA.Examples.CM_Ethan_Demo/<WaitStart>d__12::System.Collections.IEnumerator.get_Current()
+// 0x00000123 System.Object CrazyMinnow.SALSA.Examples.CM_Ethan_Demo/<WaitStart>d__12::System.Collections.IEnumerator.get_Current()
 extern void U3CWaitStartU3Ed__12_System_Collections_IEnumerator_get_Current_m0057969787CC0D987B046FA71CA966A771077F04 (void);
-// 0x000000F5 System.Void CrazyMinnow.SALSA.Examples.CM_GameManager::OnGUI()
+// 0x00000124 System.Void CrazyMinnow.SALSA.Examples.CM_GameManager::OnGUI()
 extern void CM_GameManager_OnGUI_m099EEC9B3F541EB9583DA8387AE2EB690964DD1C (void);
-// 0x000000F6 System.Void CrazyMinnow.SALSA.Examples.CM_GameManager::.ctor()
+// 0x00000125 System.Void CrazyMinnow.SALSA.Examples.CM_GameManager::.ctor()
 extern void CM_GameManager__ctor_mC93A73E54A3C2803A72DCDA2B16B00DE252007C0 (void);
-// 0x000000F7 System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyes2D_Functions::Start()
+// 0x00000126 System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyes2D_Functions::Start()
 extern void CM_RandomEyes2D_Functions_Start_mCD1444E82D42FF492091E3ED5D1EC42BB071B220 (void);
-// 0x000000F8 System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyes2D_Functions::OnGUI()
+// 0x00000127 System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyes2D_Functions::OnGUI()
 extern void CM_RandomEyes2D_Functions_OnGUI_m44B991309D709BDC61FEBD9EDFFCE0E92B51A648 (void);
-// 0x000000F9 System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyes2D_Functions::.ctor()
+// 0x00000128 System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyes2D_Functions::.ctor()
 extern void CM_RandomEyes2D_Functions__ctor_m64BB06A917F09C64AB73BD4887BC184A2A7CC8F8 (void);
-// 0x000000FA System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyes3D_Functions::Start()
+// 0x00000129 System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyes3D_Functions::Start()
 extern void CM_RandomEyes3D_Functions_Start_mC17EFFA2C91E92AF05EB19C6F89478D697426F75 (void);
-// 0x000000FB System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyes3D_Functions::OnGUI()
+// 0x0000012A System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyes3D_Functions::OnGUI()
 extern void CM_RandomEyes3D_Functions_OnGUI_mB5213B877B7C125214D6CDBF426ACC7658654CB4 (void);
-// 0x000000FC System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyes3D_Functions::.ctor()
+// 0x0000012B System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyes3D_Functions::.ctor()
 extern void CM_RandomEyes3D_Functions__ctor_m4719DD920CC280962767217E5D942578A9E1814F (void);
-// 0x000000FD System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyesBroadcastEventTester::RandomEyes_OnLookStatusChanged(CrazyMinnow.SALSA.RandomEyesLookStatus)
+// 0x0000012C System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyesBroadcastEventTester::RandomEyes_OnLookStatusChanged(CrazyMinnow.SALSA.RandomEyesLookStatus)
 extern void CM_RandomEyesBroadcastEventTester_RandomEyes_OnLookStatusChanged_m819A37137AD5F86E000F0DE21D9F6AC5E5F5F387 (void);
-// 0x000000FE System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyesBroadcastEventTester::RandomEyes_OnCustomShapeChanged(CrazyMinnow.SALSA.RandomEyesCustomShapeStatus)
+// 0x0000012D System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyesBroadcastEventTester::RandomEyes_OnCustomShapeChanged(CrazyMinnow.SALSA.RandomEyesCustomShapeStatus)
 extern void CM_RandomEyesBroadcastEventTester_RandomEyes_OnCustomShapeChanged_mFCCA1A232D01FF50B793095CA6218055A54D1C26 (void);
-// 0x000000FF System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyesBroadcastEventTester::.ctor()
+// 0x0000012E System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyesBroadcastEventTester::.ctor()
 extern void CM_RandomEyesBroadcastEventTester__ctor_mE9C4207F83EE82B44B11A4D5C39344ABD3C499C0 (void);
-// 0x00000100 System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyesCustomShapeIterator::Start()
+// 0x0000012F System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyesCustomShapeIterator::Start()
 extern void CM_RandomEyesCustomShapeIterator_Start_mA7A7E2116D9BA5C0CDF52AB711D6A5BC0C523142 (void);
-// 0x00000101 System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyesCustomShapeIterator::RandomEyes_OnCustomShapeChanged(CrazyMinnow.SALSA.RandomEyesCustomShapeStatus)
+// 0x00000130 System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyesCustomShapeIterator::RandomEyes_OnCustomShapeChanged(CrazyMinnow.SALSA.RandomEyesCustomShapeStatus)
 extern void CM_RandomEyesCustomShapeIterator_RandomEyes_OnCustomShapeChanged_mAA8248C3D107E09C73E13D3CBF8240FEA4EBA97D (void);
-// 0x00000102 System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyesCustomShapeIterator::.ctor()
+// 0x00000131 System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyesCustomShapeIterator::.ctor()
 extern void CM_RandomEyesCustomShapeIterator__ctor_mC7D07CF5CE9D0299957575D766AA46C799963456 (void);
-// 0x00000103 System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyesTriggerTracking::Start()
+// 0x00000132 System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyesTriggerTracking::Start()
 extern void CM_RandomEyesTriggerTracking_Start_m2E1D3F47B1FB69FA845ED96B79837792C6B1391E (void);
-// 0x00000104 System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyesTriggerTracking::OnTriggerEnter(UnityEngine.Collider)
+// 0x00000133 System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyesTriggerTracking::OnTriggerEnter(UnityEngine.Collider)
 extern void CM_RandomEyesTriggerTracking_OnTriggerEnter_mE4925DAB79960DE01C3C8F46D09FCCB786EFBB2D (void);
-// 0x00000105 System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyesTriggerTracking::OnTriggerExit(UnityEngine.Collider)
+// 0x00000134 System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyesTriggerTracking::OnTriggerExit(UnityEngine.Collider)
 extern void CM_RandomEyesTriggerTracking_OnTriggerExit_mD87AD10E3DCA87717845C27022B1C1F75E5E44A4 (void);
-// 0x00000106 System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyesTriggerTracking::.ctor()
+// 0x00000135 System.Void CrazyMinnow.SALSA.Examples.CM_RandomEyesTriggerTracking::.ctor()
 extern void CM_RandomEyesTriggerTracking__ctor_m391F3EF51BC7D8239D7F52E8D971F8CA705919F7 (void);
-// 0x00000107 System.Void CrazyMinnow.SALSA.Examples.CM_Salsa2D_Functions::Start()
+// 0x00000136 System.Void CrazyMinnow.SALSA.Examples.CM_Salsa2D_Functions::Start()
 extern void CM_Salsa2D_Functions_Start_mC6C8220129A92BD3D0D9CCDA8FBA6D8B4C536440 (void);
-// 0x00000108 System.Void CrazyMinnow.SALSA.Examples.CM_Salsa2D_Functions::OnGUI()
+// 0x00000137 System.Void CrazyMinnow.SALSA.Examples.CM_Salsa2D_Functions::OnGUI()
 extern void CM_Salsa2D_Functions_OnGUI_mB3EC9E8DDC7FADAB780FE86DC88AFC205A302272 (void);
-// 0x00000109 System.Void CrazyMinnow.SALSA.Examples.CM_Salsa2D_Functions::.ctor()
+// 0x00000138 System.Void CrazyMinnow.SALSA.Examples.CM_Salsa2D_Functions::.ctor()
 extern void CM_Salsa2D_Functions__ctor_m107B6B93E0AB8028623282790536A74DE44A30A3 (void);
-// 0x0000010A System.Void CrazyMinnow.SALSA.Examples.CM_Salsa3D_Functions::Start()
+// 0x00000139 System.Void CrazyMinnow.SALSA.Examples.CM_Salsa3D_Functions::Start()
 extern void CM_Salsa3D_Functions_Start_mDBC0C9EE2E564D42CF0BF60DFA48CD61A2DB973D (void);
-// 0x0000010B System.Void CrazyMinnow.SALSA.Examples.CM_Salsa3D_Functions::OnGUI()
+// 0x0000013A System.Void CrazyMinnow.SALSA.Examples.CM_Salsa3D_Functions::OnGUI()
 extern void CM_Salsa3D_Functions_OnGUI_mD20E34FA1D7C19665103A68414C1618464CAE780 (void);
-// 0x0000010C System.Void CrazyMinnow.SALSA.Examples.CM_Salsa3D_Functions::.ctor()
+// 0x0000013B System.Void CrazyMinnow.SALSA.Examples.CM_Salsa3D_Functions::.ctor()
 extern void CM_Salsa3D_Functions__ctor_m1FA51E89786486819AF9DDA9B296CDE68E7AEFF9 (void);
-// 0x0000010D System.Void CrazyMinnow.SALSA.Examples.CM_SalsaBroadcastEventTester::Salsa_OnTalkStatusChanged(CrazyMinnow.SALSA.SalsaStatus)
+// 0x0000013C System.Void CrazyMinnow.SALSA.Examples.CM_SalsaBroadcastEventTester::Salsa_OnTalkStatusChanged(CrazyMinnow.SALSA.SalsaStatus)
 extern void CM_SalsaBroadcastEventTester_Salsa_OnTalkStatusChanged_mEEB33349A2C4CA1B58B759018A5340FA9F5BAFCC (void);
-// 0x0000010E System.Void CrazyMinnow.SALSA.Examples.CM_SalsaBroadcastEventTester::.ctor()
+// 0x0000013D System.Void CrazyMinnow.SALSA.Examples.CM_SalsaBroadcastEventTester::.ctor()
 extern void CM_SalsaBroadcastEventTester__ctor_m38A041B1E5BB012988C6D091F3E58D26091DE5A1 (void);
-// 0x0000010F System.Void CrazyMinnow.SALSA.Examples.CM_SalsaWaypointTriggers::.ctor()
+// 0x0000013E System.Void CrazyMinnow.SALSA.Examples.CM_SalsaWaypointTriggers::.ctor()
 extern void CM_SalsaWaypointTriggers__ctor_m7F645E3B68895D54002491C4E442E9993B96E174 (void);
-// 0x00000110 System.Void CrazyMinnow.SALSA.Examples.CM_SalsaWaypoints::Start()
+// 0x0000013F System.Void CrazyMinnow.SALSA.Examples.CM_SalsaWaypoints::Start()
 extern void CM_SalsaWaypoints_Start_m2361291670D1D8BC53C068BA12DCB69692E88969 (void);
-// 0x00000111 System.Void CrazyMinnow.SALSA.Examples.CM_SalsaWaypoints::Update()
+// 0x00000140 System.Void CrazyMinnow.SALSA.Examples.CM_SalsaWaypoints::Update()
 extern void CM_SalsaWaypoints_Update_m5F0471447040608AFE5AFE78D0DA2BACA3831BAB (void);
-// 0x00000112 System.Void CrazyMinnow.SALSA.Examples.CM_SalsaWaypoints::Salsa_OnTalkStatusChanged(CrazyMinnow.SALSA.SalsaStatus)
+// 0x00000141 System.Void CrazyMinnow.SALSA.Examples.CM_SalsaWaypoints::Salsa_OnTalkStatusChanged(CrazyMinnow.SALSA.SalsaStatus)
 extern void CM_SalsaWaypoints_Salsa_OnTalkStatusChanged_m1865F7E18CBF9470065B06E3E02C883798DED9E4 (void);
-// 0x00000113 System.Void CrazyMinnow.SALSA.Examples.CM_SalsaWaypoints::SetWaypoint(System.Int32)
+// 0x00000142 System.Void CrazyMinnow.SALSA.Examples.CM_SalsaWaypoints::SetWaypoint(System.Int32)
 extern void CM_SalsaWaypoints_SetWaypoint_m75244D46A9CAD7BC214AB5DAA4C104876B7BBE0B (void);
-// 0x00000114 System.Void CrazyMinnow.SALSA.Examples.CM_SalsaWaypoints::SetSpeed(System.Single)
+// 0x00000143 System.Void CrazyMinnow.SALSA.Examples.CM_SalsaWaypoints::SetSpeed(System.Single)
 extern void CM_SalsaWaypoints_SetSpeed_m7C862C69A367FC337A12DF214089DB9077D2BD90 (void);
-// 0x00000115 System.Void CrazyMinnow.SALSA.Examples.CM_SalsaWaypoints::ResetSalsaWaypoints()
+// 0x00000144 System.Void CrazyMinnow.SALSA.Examples.CM_SalsaWaypoints::ResetSalsaWaypoints()
 extern void CM_SalsaWaypoints_ResetSalsaWaypoints_m44D875FCD330E6FC2A0ACECA8A11470811B01700 (void);
-// 0x00000116 System.Void CrazyMinnow.SALSA.Examples.CM_SalsaWaypoints::.ctor()
+// 0x00000145 System.Void CrazyMinnow.SALSA.Examples.CM_SalsaWaypoints::.ctor()
 extern void CM_SalsaWaypoints__ctor_m1626D98EB84EF3A578EC700C32430E57A549DE28 (void);
-// 0x00000117 System.Void CrazyMinnow.SALSA.Examples.CM_WaypointItems::.ctor()
+// 0x00000146 System.Void CrazyMinnow.SALSA.Examples.CM_WaypointItems::.ctor()
 extern void CM_WaypointItems__ctor_m06518697B278D7B56BCAB05D0CB5FD96A0624BD3 (void);
-// 0x00000118 System.Void CrazyMinnow.SALSA.Examples.CM_Waypoints::Start()
+// 0x00000147 System.Void CrazyMinnow.SALSA.Examples.CM_Waypoints::Start()
 extern void CM_Waypoints_Start_m476AD5DEECF76894847A2A59BCA1E2890E11479C (void);
-// 0x00000119 System.Void CrazyMinnow.SALSA.Examples.CM_Waypoints::Update()
+// 0x00000148 System.Void CrazyMinnow.SALSA.Examples.CM_Waypoints::Update()
 extern void CM_Waypoints_Update_m30CB60AAB6DC95793358127067BB19E13C93D25E (void);
-// 0x0000011A System.Void CrazyMinnow.SALSA.Examples.CM_Waypoints::WaypointCheck()
+// 0x00000149 System.Void CrazyMinnow.SALSA.Examples.CM_Waypoints::WaypointCheck()
 extern void CM_Waypoints_WaypointCheck_mFC849C4640037FF0D4F31C7DE51D149C1E85F72A (void);
-// 0x0000011B System.Void CrazyMinnow.SALSA.Examples.CM_Waypoints::SetAnimationType(CrazyMinnow.SALSA.Examples.CM_Waypoints/AnimationType)
+// 0x0000014A System.Void CrazyMinnow.SALSA.Examples.CM_Waypoints::SetAnimationType(CrazyMinnow.SALSA.Examples.CM_Waypoints/AnimationType)
 extern void CM_Waypoints_SetAnimationType_mE579622AAE99C4DDEAB4DCFBE9EC3378EF135B3E (void);
-// 0x0000011C System.Void CrazyMinnow.SALSA.Examples.CM_Waypoints::.ctor()
+// 0x0000014B System.Void CrazyMinnow.SALSA.Examples.CM_Waypoints::.ctor()
 extern void CM_Waypoints__ctor_m080BAE692D6644C9A10FE403DF5B45DE4A50915C (void);
-static Il2CppMethodPointer s_methodPointers[284] = 
+static Il2CppMethodPointer s_methodPointers[331] = 
 {
 	NULL,
 	NULL,
@@ -702,6 +796,41 @@ static Il2CppMethodPointer s_methodPointers[284] =
 	CharacterController_FlipCharacter1_m5A7DE99558A5CD18DFD273F22A5CBE4F1A4F723C,
 	CharacterController_FlipCharacter2_m328A788D77C0993523D76567D501EB2A03BB9E8E,
 	CharacterController__ctor_m7803E87E16EAC42354D013EC14681149D80373A7,
+	BisaIntro_Start_m715D82EA2AA335CC1C7E0AA77D139D67B1662186,
+	BisaIntro_ChangeMyTextA_m7E6E584403E100A256C8D6804ECF6E69FF4B0A7A,
+	BisaIntro_ChangeMyTextB_m068796902CB2AA90B44767B363A25FC929C0B108,
+	BisaIntro_ChangeMyTextC_m28431D30F293146DF85CCAA9A4A4CAAF520F474A,
+	BisaIntro__ctor_mEF4837E8439B3C3F8E5AF16294639E77FBBACC49,
+	CNTowerIntro_Start_mD7E766859A89F5F2EE7B6957E92BA8654376ADA8,
+	CNTowerIntro_ChangeMyTextA_m7E8285022A3EDC235A567D3D9D6BCCCC17D4C435,
+	CNTowerIntro_ChangeMyTextB_m5B6454F7686CEC2490BDC12C25C007ED06C94125,
+	CNTowerIntro_ChangeMyTextC_m993EC39BE77B48D7539FA80E55F5A58497A874B0,
+	CNTowerIntro__ctor_m895C2300145DAF4AC3964E1C87B233025B7F8D75,
+	CristoIntro_Start_m1C90FED4605506C2DB97CA9E568B69601261B324,
+	CristoIntro_ChangeMyTextA_m25CD3F8451305DF64BA517F2E75DD30804DB6AA8,
+	CristoIntro_ChangeMyTextB_mDD468A8F68B5A35A7D320788596025E47697A649,
+	CristoIntro_ChangeMyTextC_mD38BA38FDAC61931763CC47740C011BF1F55F0F7,
+	CristoIntro__ctor_mFF61D25540562BE45AB6B29E9A54685CF603A3AF,
+	EiffelIntro_Start_m35D59BD7B44759B16854B798181A1AC31F2D9387,
+	EiffelIntro_ChangeMyTextA_m3AFF44B12CD07A64C986BC2EE6472B99AE75C170,
+	EiffelIntro_ChangeMyTextB_m5A0D6C1D3A87CDE92EC5FE23A582D5E32D45C047,
+	EiffelIntro_ChangeMyTextC_m2420DF1C52551AAE0DC6E5670D3C0FDA4CA4AE77,
+	EiffelIntro__ctor_m51EDCCFBDAAC17EC54D144DDDE537A6C7CF28950,
+	LondonTowerIntro_Start_m37DB5A0DC78CE1C89FB630DDB31AF16DAC94DEDB,
+	LondonTowerIntro_ChangeMyTextA_mA68BF19EF282CC06807B710DC30EE4210153BDCF,
+	LondonTowerIntro_ChangeMyTextB_mFB0DECEDF47BE0857092C74E5AA1802261B2D3CC,
+	LondonTowerIntro_ChangeMyTextC_mB75511B4C281C73C7DC67C5F6578692C1A85A2F5,
+	LondonTowerIntro__ctor_m4A763EB5D8AE52C29A4F848CE1279FA359B49E03,
+	pyramidIntro_Start_m4353B06DC0D840496E554A3E62B230C299E9F78B,
+	pyramidIntro_ChangeMyTextA_m20F5302D8C2C4FC37FC4309D8445EDFBB74A2AC2,
+	pyramidIntro_ChangeMyTextB_mD5DD97684AE67D5FDC2D52C5C8D5C2423B072662,
+	pyramidIntro_ChangeMyTextC_m2871C9AEA380888112EE2BEEE5351BAFD81842A9,
+	pyramidIntro__ctor_mD64C9FE60E995D64D5DB07DF8AE3F998045A0B41,
+	RobeRoleIntro_Start_m23DAFC9367EF6B06345F62CC89D04B313FD7E92C,
+	RobeRoleIntro_ChangeMyTextA_mD836CB4D4D9A84C38380B32894D127B4A04D4DE1,
+	RobeRoleIntro_ChangeMyTextB_m0FB57FCDF58E48CE251483C0C42D8CE89DFABF78,
+	RobeRoleIntro_ChangeMyTextC_m753C8AA9AD1B15BE510BABE8BDD13BFF027C4602,
+	RobeRoleIntro__ctor_m57068E0240C5A9D091034A4B1E6146D26434FF16,
 	OpenAIChat_Start_m5E9B674E3CB5A0CF9A94FBD587B8749B09F66485,
 	OpenAIChat_CreateChatCompletionCoroutine_m9EF28A4927F2734C9A97B5078A06CD547ADBF0FA,
 	OpenAIChat__ctor_m6508C38F3AA72DE2D70DE34521C5E028379D82E1,
@@ -737,6 +866,18 @@ static Il2CppMethodPointer s_methodPointers[284] =
 	TextUpdater_ChangeMyTextB_m8A292D6596D8D65C77617489EBD276E454BE3EA6,
 	TextUpdater_ChangeMyTextC_mEB0708C5ABFE1ABE21EB815F3968211257811FF4,
 	TextUpdater__ctor_m9BBC1E8727AA8893FF83B45AEE2BDCA8E232B885,
+	TourAI_Start_mA8B729A8FA93F38D19DE520290988248B179A0F5,
+	TourAI_talk_m1133CACB968755E5172602FAD3338825ABD73F7C,
+	TourAI_CreateChatCompletionCoroutine_mC64325CD9CABBF8F579DA153FCDB117AF0E57595,
+	TourAI_ExtractContentFromResponse_mACBF4C54B3A59CC6D151E9F0C8745D871F0605D9,
+	TourAI__ctor_m7186AFD0B7E4A5F9128E0EFDDBDF797B8D5368E2,
+	U3CCreateChatCompletionCoroutineU3Ed__4__ctor_m10693422231315FB12A44BA5C8FE891FC539ACD0,
+	U3CCreateChatCompletionCoroutineU3Ed__4_System_IDisposable_Dispose_mD7C354ED4D63BAF3F3A0BF3B5ED0E3898E3DFE49,
+	U3CCreateChatCompletionCoroutineU3Ed__4_MoveNext_mF4FCE312B0839E97EBCA278D4A190360A272D18A,
+	U3CCreateChatCompletionCoroutineU3Ed__4_U3CU3Em__Finally1_mB2A3B79278C1D58478A18B4185AB1CCB6BDF6D26,
+	U3CCreateChatCompletionCoroutineU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mDB7E0A94A041DB81493D1B142DD9CB9FE62E3B1F,
+	U3CCreateChatCompletionCoroutineU3Ed__4_System_Collections_IEnumerator_Reset_m9143890AC618F4B9965694C327675B60340D4E1B,
+	U3CCreateChatCompletionCoroutineU3Ed__4_System_Collections_IEnumerator_get_Current_mF12ED0DEDC6E4FDB8F1054B30E62D26F40DD892C,
 	VisibilityByDistance_Update_mEECA1BB650BA462203D2CC8F532277FEA0E12350,
 	VisibilityByDistance__ctor_m18BDA42AF8DF98934FF862A34433D15CEC5B637F,
 	FallingSphere_Start_mA5F656B736FA5AC265D51582444E4682CB83FFA2,
@@ -856,7 +997,7 @@ static Il2CppMethodPointer s_methodPointers[284] =
 	CM_Waypoints_SetAnimationType_mE579622AAE99C4DDEAB4DCFBE9EC3378EF135B3E,
 	CM_Waypoints__ctor_m080BAE692D6644C9A10FE403DF5B45DE4A50915C,
 };
-static const int32_t s_InvokerIndices[284] = 
+static const int32_t s_InvokerIndices[331] = 
 {
 	0,
 	0,
@@ -990,6 +1131,41 @@ static const int32_t s_InvokerIndices[284] =
 	8743,
 	8743,
 	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
+	8743,
 	8586,
 	8743,
 	6861,
@@ -1024,6 +1200,18 @@ static const int32_t s_InvokerIndices[284] =
 	8743,
 	8743,
 	8743,
+	8743,
+	6894,
+	6109,
+	6894,
+	8743,
+	6861,
+	8743,
+	8475,
+	8743,
+	8586,
+	8743,
+	8586,
 	8743,
 	8743,
 	8743,
@@ -1145,7 +1333,7 @@ static const int32_t s_InvokerIndices[284] =
 };
 static const Il2CppTokenIndexMethodTuple s_reversePInvokeIndices[1] = 
 {
-	{ 0x060000BC, 4,  (void**)&InterceptCreateSessionFeature_OnMessage_mDC10AA02BB5ED0AA93C96BAEA118F3923E2E4354_RuntimeMethod_var, 0 },
+	{ 0x060000EB, 4,  (void**)&InterceptCreateSessionFeature_OnMessage_mDC10AA02BB5ED0AA93C96BAEA118F3923E2E4354_RuntimeMethod_var, 0 },
 };
 static const Il2CppTokenRangePair s_rgctxIndices[2] = 
 {
@@ -1219,7 +1407,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	284,
+	331,
 	s_methodPointers,
 	0,
 	NULL,
