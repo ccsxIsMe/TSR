@@ -34,21 +34,28 @@ public class TextUpdater : MonoBehaviour
     public void ChangeMyTextA()
     {
         libaiText.SetActive(true);
-        targetText.text = "我思考一下...";
+        targetText.text = "吾思考一下...";
         libaiWord.talk("请你引用《静夜思》中的诗句回答以下问题：我最近很想家");
         myAnimator.SetBool("startTalk", true);
     }
     public void ChangeMyTextB()
     {
         libaiText.SetActive(true);
-        targetText.text = "我思考一下...";
+        targetText.text = "吾思考一下...";
         libaiWord.talk("你知道静夜思吗");
         myAnimator.SetBool("startTalk", true);
     }
     public void ChangeMyTextC()
     {
         libaiText.SetActive(true);
-        targetText.text = "我思考一下...";
+        targetText.text = "吾思考一下...";
+        libaiWord.talk("你是谁？");
+        myAnimator.SetBool("startTalk", true);
+    }
+    public void ChangeMyTextD()
+    {
+        libaiText.SetActive(true);
+        targetText.text = "吾思考一下...";
         libaiWord.talk(inputField.text);
         myAnimator.SetBool("startTalk", true);
     }

@@ -26,4 +26,9 @@ public class SwitchScene : MonoBehaviour
             }
         }
     }
+
+    public void easySwitch()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
