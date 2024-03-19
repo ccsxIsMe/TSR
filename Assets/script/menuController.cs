@@ -19,7 +19,7 @@ public class menuController: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (hands[1].TryGetFeatureValue(CommonUsages.triggerButton, out bool istriggerButton) && istriggerButton)
+        if (hands[1].TryGetFeatureValue(CommonUsages.gripButton, out bool istriggerButton) && istriggerButton)
         {
             Debug.Log("右手按下了扳机trigger键");
             if (!isGripPressed)
