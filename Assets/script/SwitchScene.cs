@@ -29,6 +29,19 @@ public class SwitchScene : MonoBehaviour
 
     public void easySwitch()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
+    }
+
+    public void switchToStory1()
+    {
+        SceneManager.LoadScene(2);
+    }
+    public void switchToStory2()
+    {
+        SceneManager.LoadScene(3);
+    }
+    public void switchToConstruct()
+    {
+        SceneManager.LoadScene(4);
     }
 }

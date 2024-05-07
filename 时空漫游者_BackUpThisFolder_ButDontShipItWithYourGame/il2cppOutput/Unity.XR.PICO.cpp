@@ -2981,9 +2981,9 @@ struct Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C
 struct Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE  : public MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE
 {
 	// System.IO.Stream/ReadWriteTask System.IO.Stream::_activeReadWriteTask
-	ReadWriteTask_t0821BF49EE38596C7734E86E1A6A39D769BE2C05* ____activeReadWriteTask_2;
+	ReadWriteTask_t0821BF49EE38596C7734E86E1A6A39D769BE2C05* ____activeReadWriteTask_3;
 	// System.Threading.SemaphoreSlim System.IO.Stream::_asyncActiveSemaphore
-	SemaphoreSlim_t0D5CB5685D9BFA5BF95CEC6E7395490F933E8DB2* ____asyncActiveSemaphore_3;
+	SemaphoreSlim_t0D5CB5685D9BFA5BF95CEC6E7395490F933E8DB2* ____asyncActiveSemaphore_4;
 };
 
 struct Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE_StaticFields
@@ -3474,43 +3474,43 @@ struct Exception_t_marshaled_com
 struct FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8  : public Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE
 {
 	// System.Byte[] System.IO.FileStream::buf
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buf_6;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buf_7;
 	// System.String System.IO.FileStream::name
-	String_t* ___name_7;
+	String_t* ___name_8;
 	// Microsoft.Win32.SafeHandles.SafeFileHandle System.IO.FileStream::safeHandle
-	SafeFileHandle_t033FA6AAAC65F4BB25F4CBA9A242A58C95CD406E* ___safeHandle_8;
+	SafeFileHandle_t033FA6AAAC65F4BB25F4CBA9A242A58C95CD406E* ___safeHandle_9;
 	// System.Boolean System.IO.FileStream::isExposed
-	bool ___isExposed_9;
+	bool ___isExposed_10;
 	// System.Int64 System.IO.FileStream::append_startpos
-	int64_t ___append_startpos_10;
+	int64_t ___append_startpos_11;
 	// System.IO.FileAccess System.IO.FileStream::access
-	int32_t ___access_11;
+	int32_t ___access_12;
 	// System.Boolean System.IO.FileStream::owner
-	bool ___owner_12;
+	bool ___owner_13;
 	// System.Boolean System.IO.FileStream::async
-	bool ___async_13;
+	bool ___async_14;
 	// System.Boolean System.IO.FileStream::canseek
-	bool ___canseek_14;
+	bool ___canseek_15;
 	// System.Boolean System.IO.FileStream::anonymous
-	bool ___anonymous_15;
+	bool ___anonymous_16;
 	// System.Boolean System.IO.FileStream::buf_dirty
-	bool ___buf_dirty_16;
+	bool ___buf_dirty_17;
 	// System.Int32 System.IO.FileStream::buf_size
-	int32_t ___buf_size_17;
+	int32_t ___buf_size_18;
 	// System.Int32 System.IO.FileStream::buf_length
-	int32_t ___buf_length_18;
+	int32_t ___buf_length_19;
 	// System.Int32 System.IO.FileStream::buf_offset
-	int32_t ___buf_offset_19;
+	int32_t ___buf_offset_20;
 	// System.Int64 System.IO.FileStream::buf_start
-	int64_t ___buf_start_20;
+	int64_t ___buf_start_21;
 };
 
 struct FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8_StaticFields
 {
 	// System.Byte[] System.IO.FileStream::buf_recycle
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buf_recycle_4;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buf_recycle_5;
 	// System.Object System.IO.FileStream::buf_recycle_lock
-	RuntimeObject* ___buf_recycle_lock_5;
+	RuntimeObject* ___buf_recycle_lock_6;
 };
 
 // System.Reflection.MethodInfo
@@ -15360,7 +15360,7 @@ IL_0116:
 		Type_t* L_68 = V_1;
 		NullCheck(L_68);
 		bool L_69;
-		L_69 = VirtualFuncInvoker0< bool >::Invoke(69 /* System.Boolean System.Type::get_IsEnum() */, L_68);
+		L_69 = VirtualFuncInvoker0< bool >::Invoke(73 /* System.Boolean System.Type::get_IsEnum() */, L_68);
 		if (!L_69)
 		{
 			goto IL_012b;
@@ -15755,7 +15755,7 @@ IL_02ec:
 		PropertyInfo_t* L_165 = V_14;
 		NullCheck(L_165);
 		bool L_166;
-		L_166 = VirtualFuncInvoker0< bool >::Invoke(19 /* System.Boolean System.Reflection.PropertyInfo::get_CanWrite() */, L_165);
+		L_166 = VirtualFuncInvoker0< bool >::Invoke(21 /* System.Boolean System.Reflection.PropertyInfo::get_CanWrite() */, L_165);
 		if (!L_166)
 		{
 			goto IL_031e;
@@ -15775,7 +15775,7 @@ IL_02ec:
 		RuntimeObject* L_172;
 		L_172 = JsonMapper_ReadValue_m516068DAC0356A47067E59E0DC6BCBF3010A4AC1(L_170, L_171, NULL);
 		NullCheck(L_167);
-		VirtualActionInvoker3< RuntimeObject*, RuntimeObject*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(26 /* System.Void System.Reflection.PropertyInfo::SetValue(System.Object,System.Object,System.Object[]) */, L_167, L_168, L_172, (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)NULL);
+		VirtualActionInvoker3< RuntimeObject*, RuntimeObject*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(28 /* System.Void System.Reflection.PropertyInfo::SetValue(System.Object,System.Object,System.Object[]) */, L_167, L_168, L_172, (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)NULL);
 		goto IL_0282;
 	}
 
@@ -18446,7 +18446,7 @@ IL_036b_1:
 				RuntimeObject* L_172 = ___obj0;
 				NullCheck(((FieldInfo_t*)CastclassClass((RuntimeObject*)L_171, FieldInfo_t_il2cpp_TypeInfo_var)));
 				RuntimeObject* L_173;
-				L_173 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(25 /* System.Object System.Reflection.FieldInfo::GetValue(System.Object) */, ((FieldInfo_t*)CastclassClass((RuntimeObject*)L_171, FieldInfo_t_il2cpp_TypeInfo_var)), L_172);
+				L_173 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(30 /* System.Object System.Reflection.FieldInfo::GetValue(System.Object) */, ((FieldInfo_t*)CastclassClass((RuntimeObject*)L_171, FieldInfo_t_il2cpp_TypeInfo_var)), L_172);
 				JsonWriter_t1E72D3C1BBBBBE39B1A0D3382F219C906A317BD5* L_174 = ___writer1;
 				bool L_175 = ___writer_is_private2;
 				int32_t L_176 = ___depth3;
@@ -18465,7 +18465,7 @@ IL_03ad_1:
 				PropertyInfo_t* L_179 = V_11;
 				NullCheck(L_179);
 				bool L_180;
-				L_180 = VirtualFuncInvoker0< bool >::Invoke(18 /* System.Boolean System.Reflection.PropertyInfo::get_CanRead() */, L_179);
+				L_180 = VirtualFuncInvoker0< bool >::Invoke(20 /* System.Boolean System.Reflection.PropertyInfo::get_CanRead() */, L_179);
 				if (!L_180)
 				{
 					goto IL_03e9_1;
@@ -18487,7 +18487,7 @@ IL_03ad_1:
 				RuntimeObject* L_186 = ___obj0;
 				NullCheck(L_185);
 				RuntimeObject* L_187;
-				L_187 = VirtualFuncInvoker2< RuntimeObject*, RuntimeObject*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(24 /* System.Object System.Reflection.PropertyInfo::GetValue(System.Object,System.Object[]) */, L_185, L_186, (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)NULL);
+				L_187 = VirtualFuncInvoker2< RuntimeObject*, RuntimeObject*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(26 /* System.Object System.Reflection.PropertyInfo::GetValue(System.Object,System.Object[]) */, L_185, L_186, (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)NULL);
 				JsonWriter_t1E72D3C1BBBBBE39B1A0D3382F219C906A317BD5* L_188 = ___writer1;
 				bool L_189 = ___writer_is_private2;
 				int32_t L_190 = ___depth3;
@@ -28799,7 +28799,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 		L_10 = VirtualFuncInvoker0< int64_t >::Invoke(11 /* System.Int64 System.IO.Stream::get_Length() */, L_9);
 		NullCheck(L_7);
 		int32_t L_11;
-		L_11 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(31 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_7, L_8, 0, ((int32_t)L_10));
+		L_11 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(32 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_7, L_8, 0, ((int32_t)L_10));
 		// fileStream.Close();
 		FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_12 = V_0;
 		NullCheck(L_12);

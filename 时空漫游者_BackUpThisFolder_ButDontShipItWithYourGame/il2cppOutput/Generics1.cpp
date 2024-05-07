@@ -76,53 +76,12 @@ struct VirtualFuncInvoker1
 		return ((Func)invokeData.methodPtr)(obj, p1, invokeData.method);
 	}
 };
-struct GenericVirtualActionInvoker0
-{
-	typedef void (*Action)(void*, const RuntimeMethod*);
-
-	static inline void Invoke (const RuntimeMethod* method, RuntimeObject* obj)
-	{
-		VirtualInvokeData invokeData;
-		il2cpp_codegen_get_generic_virtual_invoke_data(method, obj, &invokeData);
-		((Action)invokeData.methodPtr)(obj, invokeData.method);
-	}
-};
-struct InterfaceActionInvoker0
-{
-	typedef void (*Action)(void*, const RuntimeMethod*);
-
-	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
-	{
-		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
-		((Action)invokeData.methodPtr)(obj, invokeData.method);
-	}
-};
-struct GenericInterfaceActionInvoker0
-{
-	typedef void (*Action)(void*, const RuntimeMethod*);
-
-	static inline void Invoke (const RuntimeMethod* method, RuntimeObject* obj)
-	{
-		VirtualInvokeData invokeData;
-		il2cpp_codegen_get_generic_interface_invoke_data(method, obj, &invokeData);
-		((Action)invokeData.methodPtr)(obj, invokeData.method);
-	}
-};
 template <typename T1>
 struct InvokerActionInvoker1
 {
 	static inline void Invoke (Il2CppMethodPointer methodPtr, const RuntimeMethod* method, void* obj, T1 p1)
 	{
 		void* params[1] = { &p1 };
-		method->invoker_method(methodPtr, method, obj, params, NULL);
-	}
-};
-template <typename T1>
-struct InvokerActionInvoker1<T1*>
-{
-	static inline void Invoke (Il2CppMethodPointer methodPtr, const RuntimeMethod* method, void* obj, T1* p1)
-	{
-		void* params[1] = { p1 };
 		method->invoker_method(methodPtr, method, obj, params, NULL);
 	}
 };
@@ -137,16 +96,13 @@ struct InvokerActionInvoker2<T1*, T2>
 		method->invoker_method(methodPtr, method, obj, params, NULL);
 	}
 };
-template <typename T1, typename T2>
-struct InvokerActionInvoker2<T1*, T2*>
-{
-	static inline void Invoke (Il2CppMethodPointer methodPtr, const RuntimeMethod* method, void* obj, T1* p1, T2* p2)
-	{
-		void* params[2] = { p1, p2 };
-		method->invoker_method(methodPtr, method, obj, params, NULL);
-	}
-};
 
+// UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>
+struct ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465;
+// UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>
+struct ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884;
+// UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>
+struct ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C;
 // UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRHumanBody,System.Object>
 struct ARTrackableManager_5_tAFB0AD849260B6C33E8F815788CCACE8E5D66AD8;
 // UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRParticipant,System.Object>
@@ -333,138 +289,12 @@ struct Action_1_t79208492E4B33BF885B0CA6F528341CF1C869B15;
 struct Action_1_t5BA030A354EB4C15ED7375FC5F593FFAF3F6693B;
 // System.Action`1<UnityEngine.InputSystem.Utilities.NamedValue>
 struct Action_1_tB952E159C9AA77923ECB95116E7F5CDC67BF9FD9;
+// System.Action`1<UnityEngine.AI.NavMeshBuildMarkup>
+struct Action_1_tF525E5733633D2EECADCEF3861F1BE51E823D195;
+// System.Action`1<UnityEngine.AI.NavMeshBuildSource>
+struct Action_1_t1A796349365CD92A950A9B137A7731CFF8B1BF88;
 // System.Action`1<System.Object>
 struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87;
-// System.Action`1<UnityEngine.LowLevel.PlayerLoopSystem>
-struct Action_1_t090269A2B5C140A371E43D40D015CA8179AF6344;
-// System.Action`1<UnityEngine.LowLevel.PlayerLoopSystemInternal>
-struct Action_1_tEF194BAB5A8B7CCAC71ED08DB2DD45476C91047E;
-// System.Action`1<UnityEngine.XR.Interaction.Toolkit.Filtering.PokeStateData>
-struct Action_1_t1FB720A83B3555E719F665FB0110E7C51487F3F8;
-// System.Action`1<UnityEngine.Pose>
-struct Action_1_t62C38AF61BFF03BE1DB5E1C54773DC9975D958CD;
-// System.Action`1<LitJson.PropertyMetadata>
-struct Action_1_tEB59E92BBDCF15504B4F6E38B926550BCCBA2932;
-// System.Action`1<Unity.XR.PXR.PxrEventAnchorEntityCleared>
-struct Action_1_t0516BCDA7F518F6B8CBC3DD3E52B14D466D0EE7E;
-// System.Action`1<Unity.XR.PXR.PxrEventAnchorEntityCreated>
-struct Action_1_t80E16328E6C04D2480ECB2CB93591FF99563B055;
-// System.Action`1<Unity.XR.PXR.PxrEventAnchorEntityLoaded>
-struct Action_1_tBE08246DA4A3CDFA74D95757E8A4F354965C27CE;
-// System.Action`1<Unity.XR.PXR.PxrEventAnchorEntityPersisted>
-struct Action_1_t458FF1DF3D360350B8FB017575308013D9A4B5DA;
-// System.Action`1<Unity.XR.PXR.PxrEventAnchorEntityUnPersisted>
-struct Action_1_tC456AB70EC8BFFAD1D90D487FD4CFBA8CF37EE89;
-// System.Action`1<Unity.XR.PXR.PxrEventDataBuffer>
-struct Action_1_tEE4E85A3D28F201F4FDC5498736CFB20B828C030;
-// System.Action`1<Unity.XR.PXR.PxrEventRoomSceneDataDeleteResult>
-struct Action_1_tDA5F46040840F1FA0E391F8406DEC3BDA167F639;
-// System.Action`1<Unity.XR.PXR.PxrEventRoomSceneDataSaveResult>
-struct Action_1_t0F54075BC96703B61F0A86C15C907AF90C16C6F2;
-// System.Action`1<Unity.XR.PXR.PxrEventRoomSceneDataUpdateResult>
-struct Action_1_tCAFBCF7B5A94887259E3B0AF0DF9DD924BEE00E8;
-// System.Action`1<Unity.XR.PXR.PxrEventRoomSceneLoadResultsComplete>
-struct Action_1_t08BB27D6BBCF23B19AA3D3977C271742CAB904C3;
-// System.Action`1<Unity.XR.PXR.PxrEventSemiAutoCandidatesUpdate>
-struct Action_1_t9C8A2CFBD48C3292C87EE19518FA210EBF1CA027;
-// System.Action`1<Unity.XR.PXR.PxrEventSpatialAnchorDeleteResult>
-struct Action_1_t0EBA64AE68C5EE7668204C4EC9DE8DE4A6F2C888;
-// System.Action`1<Unity.XR.PXR.PxrEventSpatialAnchorLoadResults>
-struct Action_1_t89C351745B14DEE5459D5315E343CF7FCB74581B;
-// System.Action`1<Unity.XR.PXR.PxrEventSpatialAnchorLoadResultsAvailable>
-struct Action_1_t15F614222681BBA326EF9BB8725C201A4096469A;
-// System.Action`1<Unity.XR.PXR.PxrEventSpatialAnchorLoadResultsComplete>
-struct Action_1_t58E5EED64CDA983FD77791B422319A72DD74EBFC;
-// System.Action`1<Unity.XR.PXR.PxrEventSpatialAnchorSaveResult>
-struct Action_1_t938E856EC1E857F4BDD1713F383CCB8CEA2EA435;
-// System.Action`1<Unity.XR.PXR.PxrEventSpatialSceneCaptured>
-struct Action_1_t6D269C2D4522A2B4E6EF723760BF87F01272FF51;
-// System.Action`1<Unity.XR.PXR.PxrEventSpatialTrackingStateInfo>
-struct Action_1_t5BEBCD62AEA6CA0890665B0164180DCD30923A1D;
-// System.Action`1<Unity.XR.PXR.PxrEventSpatialTrackingStateUpdate>
-struct Action_1_t19FFBD94C207F8B26A37C05BB7827FD13935EAF7;
-// System.Action`1<Unity.XR.PXR.PxrSemiAutoRoomCaptureCandidatesUpdate>
-struct Action_1_tB3F88746E4C15C38959C37E7120EBF026E706AA8;
-// System.Action`1<UnityEngine.Quaternion>
-struct Action_1_tD0624B0C9A4314C84D75B0C2A563B322540AB9AE;
-// System.Action`1<System.Xml.Schema.RangePositionInfo>
-struct Action_1_t39CC104F93D48513594959A5D74E69F27CB86D5E;
-// System.Action`1<UnityEngine.RaycastHit>
-struct Action_1_tD9564038902E921666D3553B1D0CC836506BA577;
-// System.Action`1<UnityEngine.RaycastHit2D>
-struct Action_1_tB190FB6312D47E8191741EA92FB16E944FB8422E;
-// System.Action`1<UnityEngine.EventSystems.RaycastResult>
-struct Action_1_t03385AB239814E9CBE8F8EE1A653171DABEF4738;
-// System.Action`1<UnityEngine.UIElements.UIR.RenderChainTextEntry>
-struct Action_1_t7D7D8AAD5A6C2503AD767CE28606E49F24A77310;
-// System.Action`1<UnityEngine.Rendering.RendererUtils.RendererList>
-struct Action_1_tB5BD5F83968E0055E0F2474D44E0F203D1396193;
-// System.Action`1<UnityEngine.Experimental.Rendering.RenderGraphModule.RendererListHandle>
-struct Action_1_t93D9ECEA7055ECFE152198CB2BD3C91F0A54B4BF;
-// System.Action`1<UnityEngine.Experimental.Rendering.RenderGraphModule.ResourceHandle>
-struct Action_1_t1953259FFC626CB4D1EB46D608F3222477CCA6D7;
-// System.Action`1<UnityEngine.UIElements.RuleMatcher>
-struct Action_1_tB0037EB63A784B363B381F64BD4D0E1EB6D88FD6;
-// System.Action`1<System.SByte>
-struct Action_1_t9544EB93A9EF3B557A4A37F89E5E5CDF670EDF3A;
-// System.Action`1<UnityEngine.UIElements.StyleSheets.SelectorMatchRecord>
-struct Action_1_t92C5FDA781FC11766BA810CAA0C836E80A7FFE4C;
-// System.Action`1<System.Single>
-struct Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A;
-// System.Action`1<UnityEngine.UIElements.StylePropertyName>
-struct Action_1_t3104132B6015C879F4B3C59428F1B9C5DAAE0FD3;
-// System.Action`1<UnityEngine.UIElements.StyleSheets.StylePropertyValue>
-struct Action_1_t01BBD70132EC9C777FD7A1202C563EB8CF818918;
-// System.Action`1<UnityEngine.UIElements.StyleSelectorPart>
-struct Action_1_t6D5F08ECE8E1419CFB2D849F9D5BFA0EEA07B0D7;
-// System.Action`1<UnityEngine.UIElements.StyleSheets.Syntax.StyleSyntaxToken>
-struct Action_1_t0017BECCF03CD9F57758F6E00F11467544CAA765;
-// System.Action`1<UnityEngine.UIElements.StyleSheets.StyleValue>
-struct Action_1_t8FDB42FA0057B33A522A9A961AFB57C008636F27;
-// System.Action`1<UnityEngine.UIElements.StyleSheets.StyleValueManaged>
-struct Action_1_t701048A3F596A40A59BF140B250A3AD5305BEC5C;
-// System.Action`1<UnityEngine.UIElements.StyleVariable>
-struct Action_1_t473E1FC7B10AE23DF991B9F7A0798DA7743C7F49;
-// System.Action`1<UnityEngine.InputSystem.Utilities.Substring>
-struct Action_1_t81C1E63293911894C4354C6E1293F63A5D512D4D;
-// System.Action`1<System.TimeSpan>
-struct Action_1_t3CA76D608A67A30E535C626537063BAF8FE972D0;
-// System.Action`1<UnityEngine.UIElements.TimeValue>
-struct Action_1_t42ADFE3801D27254F622BE4C06E4F1091DE42AFA;
-// System.Action`1<UnityEngine.UIElements.TimerState>
-struct Action_1_t05F6A7FC9FBB588EC4A828E23375838E340354CB;
-// System.Action`1<UnityEngine.UICharInfo>
-struct Action_1_tB9951FC7E63341E8FF985E49D0A293DA6DDACC77;
-// System.Action`1<UnityEngine.UILineInfo>
-struct Action_1_t59246BF77C1095A0F51FE1BCDD0A2A914173131C;
-// System.Action`1<UnityEngine.UIVertex>
-struct Action_1_t1F149523898B0E3185EF5726203627492497D292;
-// System.Action`1<System.UInt16>
-struct Action_1_t2DE95E477A86F144593CC7965E86728C71D0E75D;
-// System.Action`1<System.UInt32>
-struct Action_1_t831946BFD83EBA9DE498D3E682F1D4F14D17878D;
-// System.Action`1<System.UInt64>
-struct Action_1_t2F07B42BD085A4AC03ECE5676157E93B9A344C1C;
-// System.Action`1<UnityEngine.InputSystem.XR.UsageHint>
-struct Action_1_t3F4EEB7C225C6BBE1549938D6708722DBB39C2DC;
-// System.Action`1<UnityEngine.Vector2>
-struct Action_1_t17E52B12DC24FA6C9DD52F87043C85BEA889BB81;
-// System.Action`1<UnityEngine.Vector3>
-struct Action_1_t2EDB30EAB747FDF563DD6410FC76AF861A09A0C2;
-// System.Action`1<UnityEngine.Vector4>
-struct Action_1_t84D0CA347FC997E1202ECA3ED828B057841444EF;
-// System.Action`1<System.Security.Cryptography.X509Certificates.X509ChainStatus>
-struct Action_1_t8211FDBB28EEB761B566A466344EDAFA85BC3023;
-// System.Action`1<UnityEngine.InputSystem.XR.XRFeatureDescriptor>
-struct Action_1_tC8CC18F6848AAE74469E78A12EC004873F4332A7;
-// System.Action`1<UnityEngine.XR.Hands.XRHand>
-struct Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752;
-// System.Action`1<UnityEngine.XR.XRNodeState>
-struct Action_1_t290119641EBA3C1EAC8AF78274C63CE01C3046D8;
-// System.Action`1<UnityEngine.XR.ARSubsystems.XRReferenceImage>
-struct Action_1_t66705B6D063592F5BBA926F05597B1FDCECB3293;
-// System.Action`1<UnityEngine.XR.ARSubsystems.XRReferenceObject>
-struct Action_1_tEB948825D936789B1E02F85CD5D223A8C08F1586;
 // UnityEngine.UIElements.UIR.BasicNode`1<UnityEngine.UIElements.UIR.TextureEntry>
 struct BasicNode_1_t7B4D545DCD6949B2E1C85D63DF038E44602F7DDB;
 // System.Collections.Generic.Dictionary`2<System.String,UnityEngine.UIElements.StyleSheets.StylePropertyValue>
@@ -523,14 +353,10 @@ struct List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD;
 struct List_1_tEA16F82F7871418E28EB6F551D77A8AD9F2E337F;
 // System.Collections.Generic.List`1<UnityEngine.Texture2D>
 struct List_1_t0F231C3F13EBA1FF9081BD61489D01AA3CBE59D4;
-// System.Collections.Generic.List`1<UnityEngine.InputSystem.XR.UsageHint>
-struct List_1_t41896DF347A129D13205BBFADE03DFB21E05E459;
 // System.Collections.Generic.List`1<UnityEngine.UIElements.VisualElement>
 struct List_1_t6115BBE78FE9310B180A2027321DF46F2A06AC95;
 // System.Collections.Generic.List`1<UnityEngine.XR.XRInputSubsystem>
 struct List_1_t90832B88D7207769654164CC28440CF594CC397D;
-// System.Collections.Generic.List`1<UnityEngine.XR.ARSubsystems.XRReferenceObjectEntry>
-struct List_1_tC0E7595725AFEF62394C64B77712190FBAC6C2C5;
 // System.Collections.Generic.List`1<UnityEngine.InputSystem.Utilities.JsonParser/JsonValue>
 struct List_1_t4A80BCCFB0BC8742C8BB601365DB07226750573A;
 // UnityEngine.UIElements.StyleDataRef`1/RefCounted<UnityEngine.UIElements.InheritedData>
@@ -557,8 +383,6 @@ struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
 struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
 // UnityEngine.UIElements.ComputedTransitionProperty[]
 struct ComputedTransitionPropertyU5BU5D_t25B9E78F5276CDA297C8215C316452CAB8219E82;
-// System.Decimal[]
-struct DecimalU5BU5D_t93BA0C88FA80728F73B792EE1A5199D0C060B615;
 // System.Delegate[]
 struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
 // UnityEngine.InputSystem.EnhancedTouch.Finger[]
@@ -571,14 +395,8 @@ struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
 struct NamedValueU5BU5D_tADD8F1373B88C55F68499688D72C21A97F63303A;
 // System.Object[]
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
-// UnityEngine.LowLevel.PlayerLoopSystem[]
-struct PlayerLoopSystemU5BU5D_t07C04E53AAC3CDA17603E8BA1B41D7E1AC083C6D;
-// Unity.XR.PXR.PxrSpatialAnchorLoadResult[]
-struct PxrSpatialAnchorLoadResultU5BU5D_tEE0B739AB59348A3CB8771FB3F758E357F14D957;
 // System.Diagnostics.StackTrace[]
 struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
-// UnityEngine.UIElements.StyleValueHandle[]
-struct StyleValueHandleU5BU5D_t66B7732469E9E30B1FB9A6E386315DAB36914ADE;
 // UnityEngine.InputSystem.EnhancedTouch.Touch[]
 struct TouchU5BU5D_t32B2235E604E83356406C886C1A817C01F7C6354;
 // UnityEngine.InputSystem.Touchscreen[]
@@ -595,14 +413,10 @@ struct ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3;
 struct ARTrackable_t1D98417758C08E98A333CDEC0C2C1688CE10B2E0;
 // System.ArgumentNullException
 struct ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129;
-// UnityEngine.EventSystems.BaseRaycaster
-struct BaseRaycaster_t7DC8158FD3CA0193455344379DD5FF7CD5F1F832;
 // UnityEngine.UIElements.BaseVisualElementPanel
 struct BaseVisualElementPanel_tE3811F3D1474B72CB6CD5BCEECFF5B5CBEC1E303;
 // UnityEngine.Behaviour
 struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA;
-// System.Xml.Schema.BitSet
-struct BitSet_t89F906D542C052F4565FBEF32E1E9713B966026B;
 // UnityEngine.Camera
 struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184;
 // UnityEngine.Component
@@ -627,8 +441,6 @@ struct InlineStyleAccess_t5CA7877999C9442491A220AE50D605C84D09A165;
 struct InputEvent_t10F727342D1A79DCFC06529C203BB61C194AEBC5;
 // UnityEngine.Material
 struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3;
-// System.Reflection.MemberInfo
-struct MemberInfo_t;
 // UnityEngine.Mesh
 struct Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4;
 // UnityEngine.MeshCollider
@@ -659,14 +471,10 @@ struct SubsystemProvider_tE1865B8FE698C81A59AED35E0E536BD53F402455;
 struct SubsystemWithProvider_tC72E35EE2D413A4B0635B058154BABF265F31242;
 // UnityEngine.Texture
 struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700;
-// UnityEngine.Texture2D
-struct Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4;
 // UnityEngine.InputSystem.Touchscreen
 struct Touchscreen_t5A3B494C10A53A822AEDB3508093860D142D84CE;
 // UnityEngine.Transform
 struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1;
-// System.Type
-struct Type_t;
 // UnityEngine.UIElements.VisualElement
 struct VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115;
 // UnityEngine.UIElements.VisualTreeAsset
@@ -677,8 +485,6 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 struct XROrigin_t5E534A6D886991AF3C1C64127E19A3A510009CFE;
 // UnityEngine.Yoga.YogaNode
 struct YogaNode_t4B5B593220CCB315B5A60CB48BA4795636F04DDA;
-// UnityEngine.LowLevel.PlayerLoopSystem/UpdateFunction
-struct UpdateFunction_t1C48B7EECBE47AC123A9D9D7D9D2A9EE951C56C4;
 // UnityEngine.UIElements.UQuery/UQueryMatcher
 struct UQueryMatcher_tF8783F54BA397641240DA7025126F6301EF53FF8;
 // UnityEngine.UIElements.VisualElement/CustomStyleAccess
@@ -698,12 +504,15 @@ IL2CPP_EXTERN_C String_t* _stringLiteral2DC0198B89999C6E86C5CF2260C4264FF55D7903
 IL2CPP_EXTERN_C String_t* _stringLiteral393DD49F8AA9554CD1BB1DA05E5D90C3A4F7CC3D;
 IL2CPP_EXTERN_C String_t* _stringLiteralCCC539F743E3F97210255E70596588570DD34D8E;
 IL2CPP_EXTERN_C String_t* _stringLiteralE6EF062EC4F6D2568BF5B77100709C7764EAEFE6;
+IL2CPP_EXTERN_C const RuntimeMethod* ARTrackableManager_5_CanBeAddedToSubsystem_m0868F806A39D0EF12BDF5D920F96BF8797D34F8A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ARTrackableManager_5_CanBeAddedToSubsystem_m0DFE917C69877672C389E3768E22FA4BFA6EC1EC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ARTrackableManager_5_CanBeAddedToSubsystem_m120F5BDA86606FFFE5BF0CFFFEEAF0E9DC877AAF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ARTrackableManager_5_CanBeAddedToSubsystem_m1F637060DB2C46D45938129F8E52DCC3661338C2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ARTrackableManager_5_CanBeAddedToSubsystem_m58BA85A3B00881DBBD8397AEB0EF2AA925F56ED4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ARTrackableManager_5_CanBeAddedToSubsystem_m9C5BADE50675477BC0F4D8F8FACD095D1641AB51_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ARTrackableManager_5_CanBeAddedToSubsystem_mB60345B3C2C238FD427E08991116E91BBBC08598_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ARTrackableManager_5_CanBeAddedToSubsystem_mC0129176DDF720A16D468C822AC649B8E58B13E3_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ARTrackableManager_5_CanBeAddedToSubsystem_mCF4CF19E0BE32FABD1CE39E337ACE1676E8930B3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ARTrackableManager_5_CanBeAddedToSubsystem_mD0329CAC4BBD0205D8E48744D22E71B9A3BBC276_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3_mF7E0A4EC84273D7FF5240FC39482D1D2740F7684_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m5D1D6FDED91C2254BB2731C2A979F3016E037147_RuntimeMethod_var;
@@ -714,15 +523,10 @@ IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisGameObject_t76FEDD663
 IL2CPP_EXTERN_C const RuntimeMethod* ValueTuple_2__ctor_mC564D526A92ADAED1606CF8F0D6C9E846F0F4DF0_RuntimeMethod_var;
 struct ComputedTransitionProperty_tD8E4D8EB5DD69E063944F27A48D9263F4F1354E1_marshaled_com;
 struct ComputedTransitionProperty_tD8E4D8EB5DD69E063944F27A48D9263F4F1354E1_marshaled_pinvoke;
-struct Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
 struct Exception_t_marshaled_com;
 struct Exception_t_marshaled_pinvoke;
-struct PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F_marshaled_com;
-struct PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F_marshaled_pinvoke;
-struct PxrSpatialAnchorLoadResult_t10ACC8E9DEE3AA31154491DDF242E75587654FE6;
-struct StyleValueHandle_t5831643AAA7AD8C5C43A4498C5E0A2545F78227D;
 struct Touch_t07A55E11962F143607E917F0B6FEFB36EE2DDA70_marshaled_com;
 struct Touch_t07A55E11962F143607E917F0B6FEFB36EE2DDA70_marshaled_pinvoke;
 
@@ -926,8 +730,30 @@ struct NativeArray_1_tB60512C6E4578B7CC8EB79321680E495E69ABF81
 	int32_t ___m_AllocatorLabel_2;
 };
 
-// Unity.Collections.NativeArray`1<UnityEngine.XR.Hands.XRHandJoint>
-struct NativeArray_1_t8B168617F2E2FBA4473810E911C21C95E6A2E9F6 
+// Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.XRAnchor>
+struct NativeArray_1_tAE2F2F17B6A4F98F44324897A00F6A9D2151DC3A 
+{
+	// System.Void* Unity.Collections.NativeArray`1::m_Buffer
+	void* ___m_Buffer_0;
+	// System.Int32 Unity.Collections.NativeArray`1::m_Length
+	int32_t ___m_Length_1;
+	// Unity.Collections.Allocator Unity.Collections.NativeArray`1::m_AllocatorLabel
+	int32_t ___m_AllocatorLabel_2;
+};
+
+// Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.XREnvironmentProbe>
+struct NativeArray_1_t27110FD746D2F878E09169A93400CE1027082DA2 
+{
+	// System.Void* Unity.Collections.NativeArray`1::m_Buffer
+	void* ___m_Buffer_0;
+	// System.Int32 Unity.Collections.NativeArray`1::m_Length
+	int32_t ___m_Length_1;
+	// Unity.Collections.Allocator Unity.Collections.NativeArray`1::m_AllocatorLabel
+	int32_t ___m_AllocatorLabel_2;
+};
+
+// Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.XRFace>
+struct NativeArray_1_t944085523DA105D6BBD308E9159C874CE60B3009 
 {
 	// System.Void* Unity.Collections.NativeArray`1::m_Buffer
 	void* ___m_Buffer_0;
@@ -2279,15 +2105,6 @@ struct JsonPosition_t7788656A280615072710710E8C15D23285850E8E_marshaled_com
 	int32_t ___HasIndex_4;
 };
 
-// UnityEngine.UIElements.Length
-struct Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 
-{
-	// System.Single UnityEngine.UIElements.Length::m_Value
-	float ___m_Value_1;
-	// UnityEngine.UIElements.Length/Unit UnityEngine.UIElements.Length::m_Unit
-	int32_t ___m_Unit_2;
-};
-
 // UnityEngine.UIElements.ManipulatorActivationFilter
 struct ManipulatorActivationFilter_t866A0295DA75EA271B30BDC1F9EEA2C4FDEB1A81 
 {
@@ -2357,6 +2174,19 @@ struct MeshId_t2CF122567F06D0AA4F80DDA5CB51E8CD3B7EA2AC_StaticFields
 {
 	// UnityEngine.XR.MeshId UnityEngine.XR.MeshId::s_InvalidId
 	MeshId_t2CF122567F06D0AA4F80DDA5CB51E8CD3B7EA2AC ___s_InvalidId_0;
+};
+
+// UnityEngine.AI.NavMeshBuildMarkup
+struct NavMeshBuildMarkup_tC2D636663691297A05F32A8B2B8CAA7108FEE8AC 
+{
+	// System.Int32 UnityEngine.AI.NavMeshBuildMarkup::m_OverrideArea
+	int32_t ___m_OverrideArea_0;
+	// System.Int32 UnityEngine.AI.NavMeshBuildMarkup::m_Area
+	int32_t ___m_Area_1;
+	// System.Int32 UnityEngine.AI.NavMeshBuildMarkup::m_IgnoreFromBuild
+	int32_t ___m_IgnoreFromBuild_2;
+	// System.Int32 UnityEngine.AI.NavMeshBuildMarkup::m_InstanceID
+	int32_t ___m_InstanceID_3;
 };
 
 // UnityEngine.InputSystem.Utilities.PrimitiveValue
@@ -2856,211 +2686,11 @@ struct PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4_marshaled_com
 	};
 };
 
-// LitJson.PropertyMetadata
-struct PropertyMetadata_tFA5BF9DE81DE69FEB4F1C660D33AB638C2ED0941 
-{
-	// System.Reflection.MemberInfo LitJson.PropertyMetadata::Info
-	MemberInfo_t* ___Info_0;
-	// System.Boolean LitJson.PropertyMetadata::IsField
-	bool ___IsField_1;
-	// System.Type LitJson.PropertyMetadata::Type
-	Type_t* ___Type_2;
-};
-// Native definition for P/Invoke marshalling of LitJson.PropertyMetadata
-struct PropertyMetadata_tFA5BF9DE81DE69FEB4F1C660D33AB638C2ED0941_marshaled_pinvoke
-{
-	MemberInfo_t* ___Info_0;
-	int32_t ___IsField_1;
-	Type_t* ___Type_2;
-};
-// Native definition for COM marshalling of LitJson.PropertyMetadata
-struct PropertyMetadata_tFA5BF9DE81DE69FEB4F1C660D33AB638C2ED0941_marshaled_com
-{
-	MemberInfo_t* ___Info_0;
-	int32_t ___IsField_1;
-	Type_t* ___Type_2;
-};
-
 // UnityEngine.PropertyName
 struct PropertyName_tE4B4AAA58AF3BF2C0CD95509EB7B786F096901C2 
 {
 	// System.Int32 UnityEngine.PropertyName::id
 	int32_t ___id_0;
-};
-
-// Unity.XR.PXR.PxrEventAnchorEntityCleared
-struct PxrEventAnchorEntityCleared_tF2D8CFF76F12A6DCBD6267C3B32B90819E2629B8 
-{
-	// System.UInt64 Unity.XR.PXR.PxrEventAnchorEntityCleared::taskId
-	uint64_t ___taskId_0;
-	// Unity.XR.PXR.PxrResult Unity.XR.PXR.PxrEventAnchorEntityCleared::result
-	int32_t ___result_1;
-	// Unity.XR.PXR.PxrPersistLocation Unity.XR.PXR.PxrEventAnchorEntityCleared::location
-	int32_t ___location_2;
-};
-
-// Unity.XR.PXR.PxrEventAnchorEntityLoaded
-struct PxrEventAnchorEntityLoaded_t4BA53742441FD4A810A953B1A537B8043C434584 
-{
-	// System.UInt64 Unity.XR.PXR.PxrEventAnchorEntityLoaded::taskId
-	uint64_t ___taskId_0;
-	// Unity.XR.PXR.PxrResult Unity.XR.PXR.PxrEventAnchorEntityLoaded::result
-	int32_t ___result_1;
-	// System.UInt32 Unity.XR.PXR.PxrEventAnchorEntityLoaded::count
-	uint32_t ___count_2;
-	// Unity.XR.PXR.PxrPersistLocation Unity.XR.PXR.PxrEventAnchorEntityLoaded::location
-	int32_t ___location_3;
-};
-
-// Unity.XR.PXR.PxrEventAnchorEntityPersisted
-struct PxrEventAnchorEntityPersisted_tD659D17AE54499B03BF70C495B26D7478E6DC44F 
-{
-	// System.UInt64 Unity.XR.PXR.PxrEventAnchorEntityPersisted::taskId
-	uint64_t ___taskId_0;
-	// Unity.XR.PXR.PxrResult Unity.XR.PXR.PxrEventAnchorEntityPersisted::result
-	int32_t ___result_1;
-	// Unity.XR.PXR.PxrPersistLocation Unity.XR.PXR.PxrEventAnchorEntityPersisted::location
-	int32_t ___location_2;
-};
-
-// Unity.XR.PXR.PxrEventAnchorEntityUnPersisted
-struct PxrEventAnchorEntityUnPersisted_tEB3FCFCFA64C504C11843099178FE8686DE49069 
-{
-	// System.UInt64 Unity.XR.PXR.PxrEventAnchorEntityUnPersisted::taskId
-	uint64_t ___taskId_0;
-	// Unity.XR.PXR.PxrResult Unity.XR.PXR.PxrEventAnchorEntityUnPersisted::result
-	int32_t ___result_1;
-	// Unity.XR.PXR.PxrPersistLocation Unity.XR.PXR.PxrEventAnchorEntityUnPersisted::location
-	int32_t ___location_2;
-};
-
-// Unity.XR.PXR.PxrEventRoomSceneDataDeleteResult
-struct PxrEventRoomSceneDataDeleteResult_t929EEFD59788CB43808DD062A5E7E5E2797BBA09 
-{
-	// Unity.XR.PXR.PxrStructureType Unity.XR.PXR.PxrEventRoomSceneDataDeleteResult::type
-	int32_t ___type_0;
-	// Unity.XR.PXR.PxrEventLevel Unity.XR.PXR.PxrEventRoomSceneDataDeleteResult::eventLevel
-	int32_t ___eventLevel_1;
-	// Unity.XR.PXR.PxrSpatialPersistenceResult Unity.XR.PXR.PxrEventRoomSceneDataDeleteResult::result
-	int32_t ___result_2;
-	// System.UInt64 Unity.XR.PXR.PxrEventRoomSceneDataDeleteResult::asyncRequestId
-	uint64_t ___asyncRequestId_3;
-	// System.UInt64 Unity.XR.PXR.PxrEventRoomSceneDataDeleteResult::handle
-	uint64_t ___handle_4;
-	// Unity.XR.PXR.PxrSpatialPersistenceLocation Unity.XR.PXR.PxrEventRoomSceneDataDeleteResult::location
-	int32_t ___location_5;
-};
-
-// Unity.XR.PXR.PxrEventRoomSceneDataSaveResult
-struct PxrEventRoomSceneDataSaveResult_t6CA2E5CA3E69A202D8DD935787FC9B03B8D161EC 
-{
-	// Unity.XR.PXR.PxrStructureType Unity.XR.PXR.PxrEventRoomSceneDataSaveResult::type
-	int32_t ___type_0;
-	// Unity.XR.PXR.PxrEventLevel Unity.XR.PXR.PxrEventRoomSceneDataSaveResult::eventLevel
-	int32_t ___eventLevel_1;
-	// Unity.XR.PXR.PxrSpatialPersistenceResult Unity.XR.PXR.PxrEventRoomSceneDataSaveResult::result
-	int32_t ___result_2;
-	// System.UInt64 Unity.XR.PXR.PxrEventRoomSceneDataSaveResult::asyncRequestId
-	uint64_t ___asyncRequestId_3;
-	// System.UInt64 Unity.XR.PXR.PxrEventRoomSceneDataSaveResult::handle
-	uint64_t ___handle_4;
-	// Unity.XR.PXR.PxrSpatialPersistenceLocation Unity.XR.PXR.PxrEventRoomSceneDataSaveResult::location
-	int32_t ___location_5;
-};
-
-// Unity.XR.PXR.PxrEventRoomSceneLoadResultsComplete
-struct PxrEventRoomSceneLoadResultsComplete_t034B4BA239192E4D8C7AF0E917F9A702FE9D2596 
-{
-	// Unity.XR.PXR.PxrStructureType Unity.XR.PXR.PxrEventRoomSceneLoadResultsComplete::type
-	int32_t ___type_0;
-	// Unity.XR.PXR.PxrEventLevel Unity.XR.PXR.PxrEventRoomSceneLoadResultsComplete::eventLevel
-	int32_t ___eventLevel_1;
-	// System.UInt64 Unity.XR.PXR.PxrEventRoomSceneLoadResultsComplete::asyncRequestId
-	uint64_t ___asyncRequestId_2;
-	// Unity.XR.PXR.PxrSpatialPersistenceResult Unity.XR.PXR.PxrEventRoomSceneLoadResultsComplete::result
-	int32_t ___result_3;
-};
-
-// Unity.XR.PXR.PxrEventSemiAutoCandidatesUpdate
-struct PxrEventSemiAutoCandidatesUpdate_t12D08E37F16A6D64A08357F6CB23A4C352D0869E 
-{
-	// System.UInt32 Unity.XR.PXR.PxrEventSemiAutoCandidatesUpdate::state
-	uint32_t ___state_0;
-	// System.UInt32 Unity.XR.PXR.PxrEventSemiAutoCandidatesUpdate::count
-	uint32_t ___count_1;
-};
-
-// Unity.XR.PXR.PxrEventSpatialAnchorLoadResultsAvailable
-struct PxrEventSpatialAnchorLoadResultsAvailable_tB2231DF88975F6BB2BC60E7CC621555652064684 
-{
-	// Unity.XR.PXR.PxrStructureType Unity.XR.PXR.PxrEventSpatialAnchorLoadResultsAvailable::type
-	int32_t ___type_0;
-	// Unity.XR.PXR.PxrEventLevel Unity.XR.PXR.PxrEventSpatialAnchorLoadResultsAvailable::eventLevel
-	int32_t ___eventLevel_1;
-	// System.UInt64 Unity.XR.PXR.PxrEventSpatialAnchorLoadResultsAvailable::asyncRequestId
-	uint64_t ___asyncRequestId_2;
-};
-
-// Unity.XR.PXR.PxrEventSpatialAnchorLoadResultsComplete
-struct PxrEventSpatialAnchorLoadResultsComplete_t13F411575AC590A738AAC499B1D595F1D3A83DB8 
-{
-	// Unity.XR.PXR.PxrStructureType Unity.XR.PXR.PxrEventSpatialAnchorLoadResultsComplete::type
-	int32_t ___type_0;
-	// Unity.XR.PXR.PxrEventLevel Unity.XR.PXR.PxrEventSpatialAnchorLoadResultsComplete::eventLevel
-	int32_t ___eventLevel_1;
-	// System.UInt64 Unity.XR.PXR.PxrEventSpatialAnchorLoadResultsComplete::asyncRequestId
-	uint64_t ___asyncRequestId_2;
-	// Unity.XR.PXR.PxrSpatialPersistenceResult Unity.XR.PXR.PxrEventSpatialAnchorLoadResultsComplete::result
-	int32_t ___result_3;
-};
-
-// Unity.XR.PXR.PxrEventSpatialSceneCaptured
-struct PxrEventSpatialSceneCaptured_t8E8608600DB18CCBBC50BCC317F63E4A6C17D071 
-{
-	// System.UInt64 Unity.XR.PXR.PxrEventSpatialSceneCaptured::taskId
-	uint64_t ___taskId_0;
-	// Unity.XR.PXR.PxrResult Unity.XR.PXR.PxrEventSpatialSceneCaptured::result
-	int32_t ___result_1;
-	// Unity.XR.PXR.PxrSpatialSceneCaptureStatus Unity.XR.PXR.PxrEventSpatialSceneCaptured::status
-	int32_t ___status_2;
-};
-
-// Unity.XR.PXR.PxrEventSpatialTrackingStateUpdate
-struct PxrEventSpatialTrackingStateUpdate_t95BA84576C74D3BC3DEFA6B2EBCDE9957DF10723 
-{
-	// Unity.XR.PXR.PxrSpatialTrackingState Unity.XR.PXR.PxrEventSpatialTrackingStateUpdate::state
-	int32_t ___state_0;
-	// Unity.XR.PXR.PxrSpatialTrackingStateMessage Unity.XR.PXR.PxrEventSpatialTrackingStateUpdate::message
-	int32_t ___message_1;
-};
-
-// Unity.XR.PXR.PxrSemiAutoRoomCaptureCandidatesUpdate
-struct PxrSemiAutoRoomCaptureCandidatesUpdate_t20AF62F67CCA449A4F8CC2BD014DF3D55D90D9EF 
-{
-	// Unity.XR.PXR.PxrStructureType Unity.XR.PXR.PxrSemiAutoRoomCaptureCandidatesUpdate::type
-	int32_t ___type_0;
-	// Unity.XR.PXR.PxrEventLevel Unity.XR.PXR.PxrSemiAutoRoomCaptureCandidatesUpdate::eventLevel
-	int32_t ___eventLevel_1;
-	// Unity.XR.PXR.PxrSpatialPersistenceResult Unity.XR.PXR.PxrSemiAutoRoomCaptureCandidatesUpdate::result
-	int32_t ___result_2;
-};
-
-// Unity.XR.PXR.PxrSpatialInstanceUuid
-struct PxrSpatialInstanceUuid_tE0BA1376CB6D8B9A223F48E97992720932A31D58 
-{
-	// System.UInt64 Unity.XR.PXR.PxrSpatialInstanceUuid::value0
-	uint64_t ___value0_0;
-	// System.UInt64 Unity.XR.PXR.PxrSpatialInstanceUuid::value1
-	uint64_t ___value1_1;
-};
-
-// Unity.XR.PXR.PxrSpatialTrackingStateInfo
-struct PxrSpatialTrackingStateInfo_t964E64698008FBCAD693832A94D6DD11F98D78AB 
-{
-	// Unity.XR.PXR.PxrSpatialTrackingState Unity.XR.PXR.PxrSpatialTrackingStateInfo::state
-	int32_t ___state_0;
-	// Unity.XR.PXR.PxrSpatialTrackingStateMessage Unity.XR.PXR.PxrSpatialTrackingStateInfo::message
-	int32_t ___message_1;
 };
 
 // UnityEngine.Quaternion
@@ -3082,27 +2712,6 @@ struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields
 	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___identityQuaternion_4;
 };
 
-// System.Xml.Schema.RangePositionInfo
-struct RangePositionInfo_t27BA7EB1EC12061DD5ACFD24BD71A915D412223F 
-{
-	// System.Xml.Schema.BitSet System.Xml.Schema.RangePositionInfo::curpos
-	BitSet_t89F906D542C052F4565FBEF32E1E9713B966026B* ___curpos_0;
-	// System.Decimal[] System.Xml.Schema.RangePositionInfo::rangeCounters
-	DecimalU5BU5D_t93BA0C88FA80728F73B792EE1A5199D0C060B615* ___rangeCounters_1;
-};
-// Native definition for P/Invoke marshalling of System.Xml.Schema.RangePositionInfo
-struct RangePositionInfo_t27BA7EB1EC12061DD5ACFD24BD71A915D412223F_marshaled_pinvoke
-{
-	BitSet_t89F906D542C052F4565FBEF32E1E9713B966026B* ___curpos_0;
-	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* ___rangeCounters_1;
-};
-// Native definition for COM marshalling of System.Xml.Schema.RangePositionInfo
-struct RangePositionInfo_t27BA7EB1EC12061DD5ACFD24BD71A915D412223F_marshaled_com
-{
-	BitSet_t89F906D542C052F4565FBEF32E1E9713B966026B* ___curpos_0;
-	Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* ___rangeCounters_1;
-};
-
 // UnityEngine.Rect
 struct Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D 
 {
@@ -3114,69 +2723,6 @@ struct Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D
 	float ___m_Width_2;
 	// System.Single UnityEngine.Rect::m_Height
 	float ___m_Height_3;
-};
-
-// UnityEngine.UIElements.UIR.RenderChainTextEntry
-struct RenderChainTextEntry_t3B07A86ED897E1859552D13B1CF046F585CF9D11 
-{
-	// UnityEngine.UIElements.UIR.RenderChainCommand UnityEngine.UIElements.UIR.RenderChainTextEntry::command
-	RenderChainCommand_t4F70E36AF4BC3645C8F9C822B7A3ACE9CB815727* ___command_0;
-	// System.Int32 UnityEngine.UIElements.UIR.RenderChainTextEntry::firstVertex
-	int32_t ___firstVertex_1;
-	// System.Int32 UnityEngine.UIElements.UIR.RenderChainTextEntry::vertexCount
-	int32_t ___vertexCount_2;
-};
-// Native definition for P/Invoke marshalling of UnityEngine.UIElements.UIR.RenderChainTextEntry
-struct RenderChainTextEntry_t3B07A86ED897E1859552D13B1CF046F585CF9D11_marshaled_pinvoke
-{
-	RenderChainCommand_t4F70E36AF4BC3645C8F9C822B7A3ACE9CB815727* ___command_0;
-	int32_t ___firstVertex_1;
-	int32_t ___vertexCount_2;
-};
-// Native definition for COM marshalling of UnityEngine.UIElements.UIR.RenderChainTextEntry
-struct RenderChainTextEntry_t3B07A86ED897E1859552D13B1CF046F585CF9D11_marshaled_com
-{
-	RenderChainCommand_t4F70E36AF4BC3645C8F9C822B7A3ACE9CB815727* ___command_0;
-	int32_t ___firstVertex_1;
-	int32_t ___vertexCount_2;
-};
-
-// UnityEngine.Experimental.Rendering.RenderGraphModule.RendererListHandle
-struct RendererListHandle_t21AFDDE69B0048546497B890088B880F8080C62D 
-{
-	// System.Boolean UnityEngine.Experimental.Rendering.RenderGraphModule.RendererListHandle::m_IsValid
-	bool ___m_IsValid_0;
-	// System.Int32 UnityEngine.Experimental.Rendering.RenderGraphModule.RendererListHandle::<handle>k__BackingField
-	int32_t ___U3ChandleU3Ek__BackingField_1;
-};
-// Native definition for P/Invoke marshalling of UnityEngine.Experimental.Rendering.RenderGraphModule.RendererListHandle
-struct RendererListHandle_t21AFDDE69B0048546497B890088B880F8080C62D_marshaled_pinvoke
-{
-	int32_t ___m_IsValid_0;
-	int32_t ___U3ChandleU3Ek__BackingField_1;
-};
-// Native definition for COM marshalling of UnityEngine.Experimental.Rendering.RenderGraphModule.RendererListHandle
-struct RendererListHandle_t21AFDDE69B0048546497B890088B880F8080C62D_marshaled_com
-{
-	int32_t ___m_IsValid_0;
-	int32_t ___U3ChandleU3Ek__BackingField_1;
-};
-
-// UnityEngine.Experimental.Rendering.RenderGraphModule.ResourceHandle
-struct ResourceHandle_t0B9B0555328A08152F1EDA2BE4024446D670531A 
-{
-	// System.UInt32 UnityEngine.Experimental.Rendering.RenderGraphModule.ResourceHandle::m_Value
-	uint32_t ___m_Value_2;
-	// UnityEngine.Experimental.Rendering.RenderGraphModule.RenderGraphResourceType UnityEngine.Experimental.Rendering.RenderGraphModule.ResourceHandle::<type>k__BackingField
-	int32_t ___U3CtypeU3Ek__BackingField_5;
-};
-
-struct ResourceHandle_t0B9B0555328A08152F1EDA2BE4024446D670531A_StaticFields
-{
-	// System.UInt32 UnityEngine.Experimental.Rendering.RenderGraphModule.ResourceHandle::s_CurrentValidBit
-	uint32_t ___s_CurrentValidBit_3;
-	// System.UInt32 UnityEngine.Experimental.Rendering.RenderGraphModule.ResourceHandle::s_SharedResourceValidBit
-	uint32_t ___s_SharedResourceValidBit_4;
 };
 
 // UnityEngine.UIElements.RuleMatcher
@@ -3200,13 +2746,6 @@ struct RuleMatcher_t327CFEB02C81AA20E639DE949DCBBAB5E92FF28E_marshaled_com
 	StyleComplexSelector_tE46C29F65FDBA48D3152781187401C8B55B7D8AD* ___complexSelector_1;
 };
 
-// System.SByte
-struct SByte_tFEFFEF5D2FEBF5207950AE6FAC150FC53B668DB5 
-{
-	// System.SByte System.SByte::m_value
-	int8_t ___m_value_0;
-};
-
 // UnityEngine.XR.ARSubsystems.ScopedProfiler
 struct ScopedProfiler_tA2CF63F6C047FB63643D2263A4AC86C6A363EC6F 
 {
@@ -3217,53 +2756,6 @@ struct ScopedProfiler_tA2CF63F6C047FB63643D2263A4AC86C6A363EC6F
 		};
 		uint8_t ScopedProfiler_tA2CF63F6C047FB63643D2263A4AC86C6A363EC6F__padding[1];
 	};
-};
-
-// UnityEngine.UIElements.StyleSheets.SelectorMatchRecord
-struct SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7 
-{
-	// UnityEngine.UIElements.StyleSheet UnityEngine.UIElements.StyleSheets.SelectorMatchRecord::sheet
-	StyleSheet_t6FAF43FCDB45BC6BED0522A222FD4C1A9BB10428* ___sheet_0;
-	// System.Int32 UnityEngine.UIElements.StyleSheets.SelectorMatchRecord::styleSheetIndexInStack
-	int32_t ___styleSheetIndexInStack_1;
-	// UnityEngine.UIElements.StyleComplexSelector UnityEngine.UIElements.StyleSheets.SelectorMatchRecord::complexSelector
-	StyleComplexSelector_tE46C29F65FDBA48D3152781187401C8B55B7D8AD* ___complexSelector_2;
-};
-// Native definition for P/Invoke marshalling of UnityEngine.UIElements.StyleSheets.SelectorMatchRecord
-struct SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7_marshaled_pinvoke
-{
-	StyleSheet_t6FAF43FCDB45BC6BED0522A222FD4C1A9BB10428* ___sheet_0;
-	int32_t ___styleSheetIndexInStack_1;
-	StyleComplexSelector_tE46C29F65FDBA48D3152781187401C8B55B7D8AD* ___complexSelector_2;
-};
-// Native definition for COM marshalling of UnityEngine.UIElements.StyleSheets.SelectorMatchRecord
-struct SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7_marshaled_com
-{
-	StyleSheet_t6FAF43FCDB45BC6BED0522A222FD4C1A9BB10428* ___sheet_0;
-	int32_t ___styleSheetIndexInStack_1;
-	StyleComplexSelector_tE46C29F65FDBA48D3152781187401C8B55B7D8AD* ___complexSelector_2;
-};
-
-// UnityEngine.XR.ARSubsystems.SerializableGuid
-struct SerializableGuid_tCEABDCED6CD954AC100159BDEFC5D414049C0378 
-{
-	// System.UInt64 UnityEngine.XR.ARSubsystems.SerializableGuid::m_GuidLow
-	uint64_t ___m_GuidLow_1;
-	// System.UInt64 UnityEngine.XR.ARSubsystems.SerializableGuid::m_GuidHigh
-	uint64_t ___m_GuidHigh_2;
-};
-
-struct SerializableGuid_tCEABDCED6CD954AC100159BDEFC5D414049C0378_StaticFields
-{
-	// UnityEngine.XR.ARSubsystems.SerializableGuid UnityEngine.XR.ARSubsystems.SerializableGuid::k_Empty
-	SerializableGuid_tCEABDCED6CD954AC100159BDEFC5D414049C0378 ___k_Empty_0;
-};
-
-// System.Single
-struct Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C 
-{
-	// System.Single System.Single::m_value
-	float ___m_value_0;
 };
 
 // UnityEngine.Rendering.SphericalHarmonicsL2
@@ -3325,136 +2817,6 @@ struct SphericalHarmonicsL2_tCBFB646455D2069E738976E5B745C6DF023B6BA2
 	float ___shb8_26;
 };
 
-// UnityEngine.UIElements.StylePropertyName
-struct StylePropertyName_tCBE2B561C690538C8514BF56426AC486DC35B6FF 
-{
-	// UnityEngine.UIElements.StyleSheets.StylePropertyId UnityEngine.UIElements.StylePropertyName::<id>k__BackingField
-	int32_t ___U3CidU3Ek__BackingField_0;
-	// System.String UnityEngine.UIElements.StylePropertyName::<name>k__BackingField
-	String_t* ___U3CnameU3Ek__BackingField_1;
-};
-// Native definition for P/Invoke marshalling of UnityEngine.UIElements.StylePropertyName
-struct StylePropertyName_tCBE2B561C690538C8514BF56426AC486DC35B6FF_marshaled_pinvoke
-{
-	int32_t ___U3CidU3Ek__BackingField_0;
-	char* ___U3CnameU3Ek__BackingField_1;
-};
-// Native definition for COM marshalling of UnityEngine.UIElements.StylePropertyName
-struct StylePropertyName_tCBE2B561C690538C8514BF56426AC486DC35B6FF_marshaled_com
-{
-	int32_t ___U3CidU3Ek__BackingField_0;
-	Il2CppChar* ___U3CnameU3Ek__BackingField_1;
-};
-
-// UnityEngine.UIElements.StyleSelectorPart
-struct StyleSelectorPart_tEE5B8ADC7D114C7486CC8301FF96C114FF3C9470 
-{
-	// System.String UnityEngine.UIElements.StyleSelectorPart::m_Value
-	String_t* ___m_Value_0;
-	// UnityEngine.UIElements.StyleSelectorType UnityEngine.UIElements.StyleSelectorPart::m_Type
-	int32_t ___m_Type_1;
-	// System.Object UnityEngine.UIElements.StyleSelectorPart::tempData
-	RuntimeObject* ___tempData_2;
-};
-// Native definition for P/Invoke marshalling of UnityEngine.UIElements.StyleSelectorPart
-struct StyleSelectorPart_tEE5B8ADC7D114C7486CC8301FF96C114FF3C9470_marshaled_pinvoke
-{
-	char* ___m_Value_0;
-	int32_t ___m_Type_1;
-	Il2CppIUnknown* ___tempData_2;
-};
-// Native definition for COM marshalling of UnityEngine.UIElements.StyleSelectorPart
-struct StyleSelectorPart_tEE5B8ADC7D114C7486CC8301FF96C114FF3C9470_marshaled_com
-{
-	Il2CppChar* ___m_Value_0;
-	int32_t ___m_Type_1;
-	Il2CppIUnknown* ___tempData_2;
-};
-
-// UnityEngine.UIElements.StyleSheets.Syntax.StyleSyntaxToken
-struct StyleSyntaxToken_tE4474F86F800F298F966FFDE947528453E769E0C 
-{
-	// UnityEngine.UIElements.StyleSheets.Syntax.StyleSyntaxTokenType UnityEngine.UIElements.StyleSheets.Syntax.StyleSyntaxToken::type
-	int32_t ___type_0;
-	// System.String UnityEngine.UIElements.StyleSheets.Syntax.StyleSyntaxToken::text
-	String_t* ___text_1;
-	// System.Int32 UnityEngine.UIElements.StyleSheets.Syntax.StyleSyntaxToken::number
-	int32_t ___number_2;
-};
-// Native definition for P/Invoke marshalling of UnityEngine.UIElements.StyleSheets.Syntax.StyleSyntaxToken
-struct StyleSyntaxToken_tE4474F86F800F298F966FFDE947528453E769E0C_marshaled_pinvoke
-{
-	int32_t ___type_0;
-	char* ___text_1;
-	int32_t ___number_2;
-};
-// Native definition for COM marshalling of UnityEngine.UIElements.StyleSheets.Syntax.StyleSyntaxToken
-struct StyleSyntaxToken_tE4474F86F800F298F966FFDE947528453E769E0C_marshaled_com
-{
-	int32_t ___type_0;
-	Il2CppChar* ___text_1;
-	int32_t ___number_2;
-};
-
-// UnityEngine.UIElements.StyleValueHandle
-struct StyleValueHandle_t5831643AAA7AD8C5C43A4498C5E0A2545F78227D 
-{
-	// UnityEngine.UIElements.StyleValueType UnityEngine.UIElements.StyleValueHandle::m_ValueType
-	int32_t ___m_ValueType_0;
-	// System.Int32 UnityEngine.UIElements.StyleValueHandle::valueIndex
-	int32_t ___valueIndex_1;
-};
-
-// UnityEngine.UIElements.StyleSheets.StyleValueManaged
-struct StyleValueManaged_t68DFBEC1594279E4DC56634FD5092318D1E9A5F4 
-{
-	// UnityEngine.UIElements.StyleSheets.StylePropertyId UnityEngine.UIElements.StyleSheets.StyleValueManaged::id
-	int32_t ___id_0;
-	// UnityEngine.UIElements.StyleKeyword UnityEngine.UIElements.StyleSheets.StyleValueManaged::keyword
-	int32_t ___keyword_1;
-	// System.Object UnityEngine.UIElements.StyleSheets.StyleValueManaged::value
-	RuntimeObject* ___value_2;
-};
-// Native definition for P/Invoke marshalling of UnityEngine.UIElements.StyleSheets.StyleValueManaged
-struct StyleValueManaged_t68DFBEC1594279E4DC56634FD5092318D1E9A5F4_marshaled_pinvoke
-{
-	int32_t ___id_0;
-	int32_t ___keyword_1;
-	Il2CppIUnknown* ___value_2;
-};
-// Native definition for COM marshalling of UnityEngine.UIElements.StyleSheets.StyleValueManaged
-struct StyleValueManaged_t68DFBEC1594279E4DC56634FD5092318D1E9A5F4_marshaled_com
-{
-	int32_t ___id_0;
-	int32_t ___keyword_1;
-	Il2CppIUnknown* ___value_2;
-};
-
-// UnityEngine.UIElements.StyleVariable
-struct StyleVariable_t5D4DEC936102A13961F4F2C6214B83D6CDC56269 
-{
-	// System.String UnityEngine.UIElements.StyleVariable::name
-	String_t* ___name_0;
-	// UnityEngine.UIElements.StyleSheet UnityEngine.UIElements.StyleVariable::sheet
-	StyleSheet_t6FAF43FCDB45BC6BED0522A222FD4C1A9BB10428* ___sheet_1;
-	// UnityEngine.UIElements.StyleValueHandle[] UnityEngine.UIElements.StyleVariable::handles
-	StyleValueHandleU5BU5D_t66B7732469E9E30B1FB9A6E386315DAB36914ADE* ___handles_2;
-};
-// Native definition for P/Invoke marshalling of UnityEngine.UIElements.StyleVariable
-struct StyleVariable_t5D4DEC936102A13961F4F2C6214B83D6CDC56269_marshaled_pinvoke
-{
-	char* ___name_0;
-	StyleSheet_t6FAF43FCDB45BC6BED0522A222FD4C1A9BB10428* ___sheet_1;
-	StyleValueHandle_t5831643AAA7AD8C5C43A4498C5E0A2545F78227D* ___handles_2;
-};
-// Native definition for COM marshalling of UnityEngine.UIElements.StyleVariable
-struct StyleVariable_t5D4DEC936102A13961F4F2C6214B83D6CDC56269_marshaled_com
-{
-	Il2CppChar* ___name_0;
-	StyleSheet_t6FAF43FCDB45BC6BED0522A222FD4C1A9BB10428* ___sheet_1;
-	StyleValueHandle_t5831643AAA7AD8C5C43A4498C5E0A2545F78227D* ___handles_2;
-};
-
 // UnityEngine.InputSystem.Utilities.Substring
 struct Substring_t2E16755269E6716C22074D6BC0A9099915E67849 
 {
@@ -3480,41 +2842,6 @@ struct Substring_t2E16755269E6716C22074D6BC0A9099915E67849_marshaled_com
 	int32_t ___m_Length_2;
 };
 
-// System.TimeSpan
-struct TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A 
-{
-	// System.Int64 System.TimeSpan::_ticks
-	int64_t ____ticks_22;
-};
-
-struct TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A_StaticFields
-{
-	// System.TimeSpan System.TimeSpan::Zero
-	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___Zero_19;
-	// System.TimeSpan System.TimeSpan::MaxValue
-	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___MaxValue_20;
-	// System.TimeSpan System.TimeSpan::MinValue
-	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___MinValue_21;
-};
-
-// UnityEngine.UIElements.TimeValue
-struct TimeValue_t45AE43B219493F9459363F32C79E8986B5F82E0E 
-{
-	// System.Single UnityEngine.UIElements.TimeValue::m_Value
-	float ___m_Value_0;
-	// UnityEngine.UIElements.TimeUnit UnityEngine.UIElements.TimeValue::m_Unit
-	int32_t ___m_Unit_1;
-};
-
-// UnityEngine.UIElements.TimerState
-struct TimerState_t82C7C29B095D6ACDC06AC172C269E9D5F0508ECE 
-{
-	// System.Int64 UnityEngine.UIElements.TimerState::<start>k__BackingField
-	int64_t ___U3CstartU3Ek__BackingField_0;
-	// System.Int64 UnityEngine.UIElements.TimerState::<now>k__BackingField
-	int64_t ___U3CnowU3Ek__BackingField_1;
-};
-
 // UnityEngine.XR.ARSubsystems.TrackableId
 struct TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 
 {
@@ -3530,70 +2857,6 @@ struct TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7_StaticFields
 	Regex_tE773142C2BE45C5D362B0F815AFF831707A51772* ___s_TrackableIdRegex_0;
 	// UnityEngine.XR.ARSubsystems.TrackableId UnityEngine.XR.ARSubsystems.TrackableId::s_InvalidId
 	TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 ___s_InvalidId_1;
-};
-
-// UnityEngine.UILineInfo
-struct UILineInfo_tC6FF4F85BD2316FADA2148A1789B3FF0B05A6CAC 
-{
-	// System.Int32 UnityEngine.UILineInfo::startCharIdx
-	int32_t ___startCharIdx_0;
-	// System.Int32 UnityEngine.UILineInfo::height
-	int32_t ___height_1;
-	// System.Single UnityEngine.UILineInfo::topY
-	float ___topY_2;
-	// System.Single UnityEngine.UILineInfo::leading
-	float ___leading_3;
-};
-
-// System.UInt16
-struct UInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455 
-{
-	// System.UInt16 System.UInt16::m_value
-	uint16_t ___m_value_0;
-};
-
-// System.UInt32
-struct UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B 
-{
-	// System.UInt32 System.UInt32::m_value
-	uint32_t ___m_value_0;
-};
-
-// System.UInt64
-struct UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF 
-{
-	// System.UInt64 System.UInt64::m_value
-	uint64_t ___m_value_0;
-};
-
-// System.UIntPtr
-struct UIntPtr_t 
-{
-	// System.Void* System.UIntPtr::_pointer
-	void* ____pointer_1;
-};
-
-struct UIntPtr_t_StaticFields
-{
-	// System.UIntPtr System.UIntPtr::Zero
-	uintptr_t ___Zero_0;
-};
-
-// UnityEngine.InputSystem.XR.UsageHint
-struct UsageHint_tFD7259AF9E91500CF1D0CE602394B40FD2397AB1 
-{
-	// System.String UnityEngine.InputSystem.XR.UsageHint::content
-	String_t* ___content_0;
-};
-// Native definition for P/Invoke marshalling of UnityEngine.InputSystem.XR.UsageHint
-struct UsageHint_tFD7259AF9E91500CF1D0CE602394B40FD2397AB1_marshaled_pinvoke
-{
-	char* ___content_0;
-};
-// Native definition for COM marshalling of UnityEngine.InputSystem.XR.UsageHint
-struct UsageHint_tFD7259AF9E91500CF1D0CE602394B40FD2397AB1_marshaled_com
-{
-	Il2CppChar* ___content_0;
 };
 
 // UnityEngine.Vector2
@@ -3685,31 +2948,6 @@ struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___negativeInfinityVector_14;
 };
 
-// UnityEngine.Vector4
-struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 
-{
-	// System.Single UnityEngine.Vector4::x
-	float ___x_1;
-	// System.Single UnityEngine.Vector4::y
-	float ___y_2;
-	// System.Single UnityEngine.Vector4::z
-	float ___z_3;
-	// System.Single UnityEngine.Vector4::w
-	float ___w_4;
-};
-
-struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_StaticFields
-{
-	// UnityEngine.Vector4 UnityEngine.Vector4::zeroVector
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___zeroVector_5;
-	// UnityEngine.Vector4 UnityEngine.Vector4::oneVector
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___oneVector_6;
-	// UnityEngine.Vector4 UnityEngine.Vector4::positiveInfinityVector
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___positiveInfinityVector_7;
-	// UnityEngine.Vector4 UnityEngine.Vector4::negativeInfinityVector
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___negativeInfinityVector_8;
-};
-
 // System.Void
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915 
 {
@@ -3720,85 +2958,6 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 		};
 		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
 	};
-};
-
-// System.Security.Cryptography.X509Certificates.X509ChainStatus
-struct X509ChainStatus_t5A57DDA24AA1FCA9F2B8D70B767CDDF388E4A80D 
-{
-	// System.Security.Cryptography.X509Certificates.X509ChainStatusFlags System.Security.Cryptography.X509Certificates.X509ChainStatus::status
-	int32_t ___status_0;
-	// System.String System.Security.Cryptography.X509Certificates.X509ChainStatus::info
-	String_t* ___info_1;
-};
-// Native definition for P/Invoke marshalling of System.Security.Cryptography.X509Certificates.X509ChainStatus
-struct X509ChainStatus_t5A57DDA24AA1FCA9F2B8D70B767CDDF388E4A80D_marshaled_pinvoke
-{
-	int32_t ___status_0;
-	char* ___info_1;
-};
-// Native definition for COM marshalling of System.Security.Cryptography.X509Certificates.X509ChainStatus
-struct X509ChainStatus_t5A57DDA24AA1FCA9F2B8D70B767CDDF388E4A80D_marshaled_com
-{
-	int32_t ___status_0;
-	Il2CppChar* ___info_1;
-};
-
-// UnityEngine.InputSystem.XR.XRFeatureDescriptor
-struct XRFeatureDescriptor_t690E672A6BBBEFBB8AF221485C1884507EAFB5B2 
-{
-	// System.String UnityEngine.InputSystem.XR.XRFeatureDescriptor::name
-	String_t* ___name_0;
-	// System.Collections.Generic.List`1<UnityEngine.InputSystem.XR.UsageHint> UnityEngine.InputSystem.XR.XRFeatureDescriptor::usageHints
-	List_1_t41896DF347A129D13205BBFADE03DFB21E05E459* ___usageHints_1;
-	// UnityEngine.InputSystem.XR.FeatureType UnityEngine.InputSystem.XR.XRFeatureDescriptor::featureType
-	int32_t ___featureType_2;
-	// System.UInt32 UnityEngine.InputSystem.XR.XRFeatureDescriptor::customSize
-	uint32_t ___customSize_3;
-};
-// Native definition for P/Invoke marshalling of UnityEngine.InputSystem.XR.XRFeatureDescriptor
-struct XRFeatureDescriptor_t690E672A6BBBEFBB8AF221485C1884507EAFB5B2_marshaled_pinvoke
-{
-	char* ___name_0;
-	List_1_t41896DF347A129D13205BBFADE03DFB21E05E459* ___usageHints_1;
-	int32_t ___featureType_2;
-	uint32_t ___customSize_3;
-};
-// Native definition for COM marshalling of UnityEngine.InputSystem.XR.XRFeatureDescriptor
-struct XRFeatureDescriptor_t690E672A6BBBEFBB8AF221485C1884507EAFB5B2_marshaled_com
-{
-	Il2CppChar* ___name_0;
-	List_1_t41896DF347A129D13205BBFADE03DFB21E05E459* ___usageHints_1;
-	int32_t ___featureType_2;
-	uint32_t ___customSize_3;
-};
-
-// UnityEngine.XR.ARSubsystems.XRReferenceObject
-struct XRReferenceObject_tDC04E77BBDCC6428C8B852A7CF1208DD2AF9AE14 
-{
-	// System.UInt64 UnityEngine.XR.ARSubsystems.XRReferenceObject::m_GuidLow
-	uint64_t ___m_GuidLow_0;
-	// System.UInt64 UnityEngine.XR.ARSubsystems.XRReferenceObject::m_GuidHigh
-	uint64_t ___m_GuidHigh_1;
-	// System.String UnityEngine.XR.ARSubsystems.XRReferenceObject::m_Name
-	String_t* ___m_Name_2;
-	// System.Collections.Generic.List`1<UnityEngine.XR.ARSubsystems.XRReferenceObjectEntry> UnityEngine.XR.ARSubsystems.XRReferenceObject::m_Entries
-	List_1_tC0E7595725AFEF62394C64B77712190FBAC6C2C5* ___m_Entries_3;
-};
-// Native definition for P/Invoke marshalling of UnityEngine.XR.ARSubsystems.XRReferenceObject
-struct XRReferenceObject_tDC04E77BBDCC6428C8B852A7CF1208DD2AF9AE14_marshaled_pinvoke
-{
-	uint64_t ___m_GuidLow_0;
-	uint64_t ___m_GuidHigh_1;
-	char* ___m_Name_2;
-	List_1_tC0E7595725AFEF62394C64B77712190FBAC6C2C5* ___m_Entries_3;
-};
-// Native definition for COM marshalling of UnityEngine.XR.ARSubsystems.XRReferenceObject
-struct XRReferenceObject_tDC04E77BBDCC6428C8B852A7CF1208DD2AF9AE14_marshaled_com
-{
-	uint64_t ___m_GuidLow_0;
-	uint64_t ___m_GuidHigh_1;
-	Il2CppChar* ___m_Name_2;
-	List_1_tC0E7595725AFEF62394C64B77712190FBAC6C2C5* ___m_Entries_3;
 };
 
 // UnityEngine.InputSystem.LowLevel.IMECompositionString/<buffer>e__FixedBuffer
@@ -3949,6 +3108,33 @@ struct Enumerator_tC8A26D390552986367A8B556DCF22FAAF6E7AAAD
 	int32_t ___m_Index_1;
 };
 
+// Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRAnchor>
+struct Enumerator_t6F8582E7CB46ABAB8F6FDFA62CAFDDD5EF6AB953 
+{
+	// Unity.Collections.NativeArray`1<T> Unity.Collections.NativeArray`1/Enumerator::m_Array
+	NativeArray_1_tAE2F2F17B6A4F98F44324897A00F6A9D2151DC3A ___m_Array_0;
+	// System.Int32 Unity.Collections.NativeArray`1/Enumerator::m_Index
+	int32_t ___m_Index_1;
+};
+
+// Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XREnvironmentProbe>
+struct Enumerator_t8A9E97CA5C90C762E693D02011DD73E7870F3BD2 
+{
+	// Unity.Collections.NativeArray`1<T> Unity.Collections.NativeArray`1/Enumerator::m_Array
+	NativeArray_1_t27110FD746D2F878E09169A93400CE1027082DA2 ___m_Array_0;
+	// System.Int32 Unity.Collections.NativeArray`1/Enumerator::m_Index
+	int32_t ___m_Index_1;
+};
+
+// Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRFace>
+struct Enumerator_t03EC424AAB00E50A639522E4490FAC2B29B80F11 
+{
+	// Unity.Collections.NativeArray`1<T> Unity.Collections.NativeArray`1/Enumerator::m_Array
+	NativeArray_1_t944085523DA105D6BBD308E9159C874CE60B3009 ___m_Array_0;
+	// System.Int32 Unity.Collections.NativeArray`1/Enumerator::m_Index
+	int32_t ___m_Index_1;
+};
+
 // Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRHumanBody>
 struct Enumerator_t4684A3B2EF4932BDD7B7BA77FBE925A2858235F0 
 {
@@ -4066,6 +3252,45 @@ struct Nullable_1_t9C51B084784B716FFF4ED4575C63CFD8A71A86FE
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___value_1;
 };
 
+// UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRAnchor>
+struct TrackableChanges_1_t6971CD7F709E7353F4365FE06A109B21A0F0C931 
+{
+	// System.Boolean UnityEngine.XR.ARSubsystems.TrackableChanges`1::<isCreated>k__BackingField
+	bool ___U3CisCreatedU3Ek__BackingField_0;
+	// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1::m_Added
+	NativeArray_1_tAE2F2F17B6A4F98F44324897A00F6A9D2151DC3A ___m_Added_1;
+	// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1::m_Updated
+	NativeArray_1_tAE2F2F17B6A4F98F44324897A00F6A9D2151DC3A ___m_Updated_2;
+	// Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.TrackableId> UnityEngine.XR.ARSubsystems.TrackableChanges`1::m_Removed
+	NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E ___m_Removed_3;
+};
+
+// UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XREnvironmentProbe>
+struct TrackableChanges_1_t03BF8B384A61E7421A4748384189C50C3A2C323F 
+{
+	// System.Boolean UnityEngine.XR.ARSubsystems.TrackableChanges`1::<isCreated>k__BackingField
+	bool ___U3CisCreatedU3Ek__BackingField_0;
+	// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1::m_Added
+	NativeArray_1_t27110FD746D2F878E09169A93400CE1027082DA2 ___m_Added_1;
+	// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1::m_Updated
+	NativeArray_1_t27110FD746D2F878E09169A93400CE1027082DA2 ___m_Updated_2;
+	// Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.TrackableId> UnityEngine.XR.ARSubsystems.TrackableChanges`1::m_Removed
+	NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E ___m_Removed_3;
+};
+
+// UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRFace>
+struct TrackableChanges_1_t244050823CF4D8F3C9DFAE4AB0CEFA639C719119 
+{
+	// System.Boolean UnityEngine.XR.ARSubsystems.TrackableChanges`1::<isCreated>k__BackingField
+	bool ___U3CisCreatedU3Ek__BackingField_0;
+	// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1::m_Added
+	NativeArray_1_t944085523DA105D6BBD308E9159C874CE60B3009 ___m_Added_1;
+	// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1::m_Updated
+	NativeArray_1_t944085523DA105D6BBD308E9159C874CE60B3009 ___m_Updated_2;
+	// Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.TrackableId> UnityEngine.XR.ARSubsystems.TrackableChanges`1::m_Removed
+	NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E ___m_Removed_3;
+};
+
 // UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRHumanBody>
 struct TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6 
 {
@@ -4155,6 +3380,21 @@ struct TrackableChanges_1_tBC4635C00390DED792828CD9C45501D0F38AFEE6
 	NativeArray_1_t0F4B76D476AFCD1C3D325B2AF615317AF55BE50B ___m_Updated_2;
 	// Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.TrackableId> UnityEngine.XR.ARSubsystems.TrackableChanges`1::m_Removed
 	NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E ___m_Removed_3;
+};
+
+// UnityEngine.XR.ARSubsystems.TrackingSubsystem`4<UnityEngine.XR.ARSubsystems.XRAnchor,System.Object,System.Object,System.Object>
+struct TrackingSubsystem_4_t7A10D71D38CC667281CC808FAB8ED27CD44C8D7C  : public SubsystemWithProvider_3_t548D9C2A4778C7ADB62496A2A07F8B7563309893
+{
+};
+
+// UnityEngine.XR.ARSubsystems.TrackingSubsystem`4<UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object,System.Object,System.Object>
+struct TrackingSubsystem_4_t7DE914E74A1CEE72FA08F5B2721AB39D67DAACFF  : public SubsystemWithProvider_3_t548D9C2A4778C7ADB62496A2A07F8B7563309893
+{
+};
+
+// UnityEngine.XR.ARSubsystems.TrackingSubsystem`4<UnityEngine.XR.ARSubsystems.XRFace,System.Object,System.Object,System.Object>
+struct TrackingSubsystem_4_t159B1435C9EEDD50D28042D569A17020B06CC9AD  : public SubsystemWithProvider_3_t548D9C2A4778C7ADB62496A2A07F8B7563309893
+{
 };
 
 // UnityEngine.XR.ARSubsystems.TrackingSubsystem`4<UnityEngine.XR.ARSubsystems.XRHumanBody,System.Object,System.Object,System.Object>
@@ -4434,13 +3674,6 @@ struct Exception_t_marshaled_com
 	int32_t ___caught_in_unmanaged_16;
 };
 
-// System.Runtime.InteropServices.GCHandle
-struct GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC 
-{
-	// System.IntPtr System.Runtime.InteropServices.GCHandle::handle
-	intptr_t ___handle_0;
-};
-
 // UnityEngine.TextCore.LowLevel.GlyphAdjustmentRecord
 struct GlyphAdjustmentRecord_tC7A1B2E0AC7C4ED9CDB8E95E48790A46B6F315F7 
 {
@@ -4672,6 +3905,23 @@ struct NamedValue_t1D89B1ACD11D2B5284666865014E67683742B8ED_marshaled_com
 	PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4_marshaled_com ___U3CvalueU3Ek__BackingField_2;
 };
 
+// UnityEngine.AI.NavMeshBuildSource
+struct NavMeshBuildSource_tAC4DFC9A75D986628DC167421C2ECB3606F0C5DD 
+{
+	// UnityEngine.Matrix4x4 UnityEngine.AI.NavMeshBuildSource::m_Transform
+	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___m_Transform_0;
+	// UnityEngine.Vector3 UnityEngine.AI.NavMeshBuildSource::m_Size
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Size_1;
+	// UnityEngine.AI.NavMeshBuildSourceShape UnityEngine.AI.NavMeshBuildSource::m_Shape
+	int32_t ___m_Shape_2;
+	// System.Int32 UnityEngine.AI.NavMeshBuildSource::m_Area
+	int32_t ___m_Area_3;
+	// System.Int32 UnityEngine.AI.NavMeshBuildSource::m_InstanceID
+	int32_t ___m_InstanceID_4;
+	// System.Int32 UnityEngine.AI.NavMeshBuildSource::m_ComponentID
+	int32_t ___m_ComponentID_5;
+};
+
 // UnityEngine.Object
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
 {
@@ -4695,109 +3945,6 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
 	intptr_t ___m_CachedPtr_0;
 };
 
-// UnityEngine.LowLevel.PlayerLoopSystem
-struct PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F 
-{
-	// System.Type UnityEngine.LowLevel.PlayerLoopSystem::type
-	Type_t* ___type_0;
-	// UnityEngine.LowLevel.PlayerLoopSystem[] UnityEngine.LowLevel.PlayerLoopSystem::subSystemList
-	PlayerLoopSystemU5BU5D_t07C04E53AAC3CDA17603E8BA1B41D7E1AC083C6D* ___subSystemList_1;
-	// UnityEngine.LowLevel.PlayerLoopSystem/UpdateFunction UnityEngine.LowLevel.PlayerLoopSystem::updateDelegate
-	UpdateFunction_t1C48B7EECBE47AC123A9D9D7D9D2A9EE951C56C4* ___updateDelegate_2;
-	// System.IntPtr UnityEngine.LowLevel.PlayerLoopSystem::updateFunction
-	intptr_t ___updateFunction_3;
-	// System.IntPtr UnityEngine.LowLevel.PlayerLoopSystem::loopConditionFunction
-	intptr_t ___loopConditionFunction_4;
-};
-// Native definition for P/Invoke marshalling of UnityEngine.LowLevel.PlayerLoopSystem
-struct PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F_marshaled_pinvoke
-{
-	Type_t* ___type_0;
-	PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F_marshaled_pinvoke* ___subSystemList_1;
-	Il2CppMethodPointer ___updateDelegate_2;
-	intptr_t ___updateFunction_3;
-	intptr_t ___loopConditionFunction_4;
-};
-// Native definition for COM marshalling of UnityEngine.LowLevel.PlayerLoopSystem
-struct PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F_marshaled_com
-{
-	Type_t* ___type_0;
-	PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F_marshaled_com* ___subSystemList_1;
-	Il2CppMethodPointer ___updateDelegate_2;
-	intptr_t ___updateFunction_3;
-	intptr_t ___loopConditionFunction_4;
-};
-
-// UnityEngine.LowLevel.PlayerLoopSystemInternal
-struct PlayerLoopSystemInternal_tA4BFB5E55A895153CF14333B866219B77AAF1BC5 
-{
-	// System.Type UnityEngine.LowLevel.PlayerLoopSystemInternal::type
-	Type_t* ___type_0;
-	// UnityEngine.LowLevel.PlayerLoopSystem/UpdateFunction UnityEngine.LowLevel.PlayerLoopSystemInternal::updateDelegate
-	UpdateFunction_t1C48B7EECBE47AC123A9D9D7D9D2A9EE951C56C4* ___updateDelegate_1;
-	// System.IntPtr UnityEngine.LowLevel.PlayerLoopSystemInternal::updateFunction
-	intptr_t ___updateFunction_2;
-	// System.IntPtr UnityEngine.LowLevel.PlayerLoopSystemInternal::loopConditionFunction
-	intptr_t ___loopConditionFunction_3;
-	// System.Int32 UnityEngine.LowLevel.PlayerLoopSystemInternal::numSubSystems
-	int32_t ___numSubSystems_4;
-};
-// Native definition for P/Invoke marshalling of UnityEngine.LowLevel.PlayerLoopSystemInternal
-struct PlayerLoopSystemInternal_tA4BFB5E55A895153CF14333B866219B77AAF1BC5_marshaled_pinvoke
-{
-	Type_t* ___type_0;
-	Il2CppMethodPointer ___updateDelegate_1;
-	intptr_t ___updateFunction_2;
-	intptr_t ___loopConditionFunction_3;
-	int32_t ___numSubSystems_4;
-};
-// Native definition for COM marshalling of UnityEngine.LowLevel.PlayerLoopSystemInternal
-struct PlayerLoopSystemInternal_tA4BFB5E55A895153CF14333B866219B77AAF1BC5_marshaled_com
-{
-	Type_t* ___type_0;
-	Il2CppMethodPointer ___updateDelegate_1;
-	intptr_t ___updateFunction_2;
-	intptr_t ___loopConditionFunction_3;
-	int32_t ___numSubSystems_4;
-};
-
-// UnityEngine.XR.Interaction.Toolkit.Filtering.PokeStateData
-struct PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032 
-{
-	// System.Boolean UnityEngine.XR.Interaction.Toolkit.Filtering.PokeStateData::<meetsRequirements>k__BackingField
-	bool ___U3CmeetsRequirementsU3Ek__BackingField_0;
-	// UnityEngine.Vector3 UnityEngine.XR.Interaction.Toolkit.Filtering.PokeStateData::<pokeInteractionPoint>k__BackingField
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CpokeInteractionPointU3Ek__BackingField_1;
-	// UnityEngine.Vector3 UnityEngine.XR.Interaction.Toolkit.Filtering.PokeStateData::<axisAlignedPokeInteractionPoint>k__BackingField
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CaxisAlignedPokeInteractionPointU3Ek__BackingField_2;
-	// System.Single UnityEngine.XR.Interaction.Toolkit.Filtering.PokeStateData::<interactionStrength>k__BackingField
-	float ___U3CinteractionStrengthU3Ek__BackingField_3;
-	// UnityEngine.Vector3 UnityEngine.XR.Interaction.Toolkit.Filtering.PokeStateData::<axisNormal>k__BackingField
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CaxisNormalU3Ek__BackingField_4;
-	// UnityEngine.Transform UnityEngine.XR.Interaction.Toolkit.Filtering.PokeStateData::<target>k__BackingField
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CtargetU3Ek__BackingField_5;
-};
-// Native definition for P/Invoke marshalling of UnityEngine.XR.Interaction.Toolkit.Filtering.PokeStateData
-struct PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032_marshaled_pinvoke
-{
-	int32_t ___U3CmeetsRequirementsU3Ek__BackingField_0;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CpokeInteractionPointU3Ek__BackingField_1;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CaxisAlignedPokeInteractionPointU3Ek__BackingField_2;
-	float ___U3CinteractionStrengthU3Ek__BackingField_3;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CaxisNormalU3Ek__BackingField_4;
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CtargetU3Ek__BackingField_5;
-};
-// Native definition for COM marshalling of UnityEngine.XR.Interaction.Toolkit.Filtering.PokeStateData
-struct PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032_marshaled_com
-{
-	int32_t ___U3CmeetsRequirementsU3Ek__BackingField_0;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CpokeInteractionPointU3Ek__BackingField_1;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CaxisAlignedPokeInteractionPointU3Ek__BackingField_2;
-	float ___U3CinteractionStrengthU3Ek__BackingField_3;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CaxisNormalU3Ek__BackingField_4;
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___U3CtargetU3Ek__BackingField_5;
-};
-
 // UnityEngine.Pose
 struct Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 
 {
@@ -4818,232 +3965,6 @@ struct ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD
 {
 	// System.IntPtr Unity.Profiling.ProfilerMarker::m_Ptr
 	intptr_t ___m_Ptr_0;
-};
-
-// Unity.XR.PXR.PxrEventAnchorEntityCreated
-struct PxrEventAnchorEntityCreated_tEE1C1CD6CF80E8702D80B4BD726F2EBC2CE5B794 
-{
-	// System.UInt64 Unity.XR.PXR.PxrEventAnchorEntityCreated::taskId
-	uint64_t ___taskId_0;
-	// Unity.XR.PXR.PxrResult Unity.XR.PXR.PxrEventAnchorEntityCreated::result
-	int32_t ___result_1;
-	// System.UInt64 Unity.XR.PXR.PxrEventAnchorEntityCreated::anchorHandle
-	uint64_t ___anchorHandle_2;
-	// System.Guid Unity.XR.PXR.PxrEventAnchorEntityCreated::uuid
-	Guid_t ___uuid_3;
-};
-
-// Unity.XR.PXR.PxrEventDataBuffer
-struct PxrEventDataBuffer_tF6D95D1CF3990CCBE471CE73261357AC77A4F0CF 
-{
-	// Unity.XR.PXR.PxrStructureType Unity.XR.PXR.PxrEventDataBuffer::type
-	int32_t ___type_0;
-	// Unity.XR.PXR.PxrEventLevel Unity.XR.PXR.PxrEventDataBuffer::eventLevel
-	int32_t ___eventLevel_1;
-	// System.Byte[] Unity.XR.PXR.PxrEventDataBuffer::data
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___data_2;
-};
-// Native definition for P/Invoke marshalling of Unity.XR.PXR.PxrEventDataBuffer
-struct PxrEventDataBuffer_tF6D95D1CF3990CCBE471CE73261357AC77A4F0CF_marshaled_pinvoke
-{
-	int32_t ___type_0;
-	int32_t ___eventLevel_1;
-	uint8_t ___data_2[500];
-};
-// Native definition for COM marshalling of Unity.XR.PXR.PxrEventDataBuffer
-struct PxrEventDataBuffer_tF6D95D1CF3990CCBE471CE73261357AC77A4F0CF_marshaled_com
-{
-	int32_t ___type_0;
-	int32_t ___eventLevel_1;
-	uint8_t ___data_2[500];
-};
-
-// Unity.XR.PXR.PxrEventRoomSceneDataUpdateResult
-struct PxrEventRoomSceneDataUpdateResult_tAD3FA94F4EB12A41AD22A328884611E48B5AE615 
-{
-	// Unity.XR.PXR.PxrStructureType Unity.XR.PXR.PxrEventRoomSceneDataUpdateResult::type
-	int32_t ___type_0;
-	// Unity.XR.PXR.PxrEventLevel Unity.XR.PXR.PxrEventRoomSceneDataUpdateResult::level
-	int32_t ___level_1;
-	// Unity.XR.PXR.PxrSpatialInstanceUuid Unity.XR.PXR.PxrEventRoomSceneDataUpdateResult::anchorUuid
-	PxrSpatialInstanceUuid_tE0BA1376CB6D8B9A223F48E97992720932A31D58 ___anchorUuid_2;
-	// System.UInt64 Unity.XR.PXR.PxrEventRoomSceneDataUpdateResult::roomSceneDataHandle
-	uint64_t ___roomSceneDataHandle_3;
-	// System.UInt32 Unity.XR.PXR.PxrEventRoomSceneDataUpdateResult::result
-	uint32_t ___result_4;
-	// System.UInt32 Unity.XR.PXR.PxrEventRoomSceneDataUpdateResult::dataLength
-	uint32_t ___dataLength_5;
-	// System.Byte[] Unity.XR.PXR.PxrEventRoomSceneDataUpdateResult::roomSceneData
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___roomSceneData_6;
-};
-// Native definition for P/Invoke marshalling of Unity.XR.PXR.PxrEventRoomSceneDataUpdateResult
-struct PxrEventRoomSceneDataUpdateResult_tAD3FA94F4EB12A41AD22A328884611E48B5AE615_marshaled_pinvoke
-{
-	int32_t ___type_0;
-	int32_t ___level_1;
-	PxrSpatialInstanceUuid_tE0BA1376CB6D8B9A223F48E97992720932A31D58 ___anchorUuid_2;
-	uint64_t ___roomSceneDataHandle_3;
-	uint32_t ___result_4;
-	uint32_t ___dataLength_5;
-	uint8_t ___roomSceneData_6[128];
-};
-// Native definition for COM marshalling of Unity.XR.PXR.PxrEventRoomSceneDataUpdateResult
-struct PxrEventRoomSceneDataUpdateResult_tAD3FA94F4EB12A41AD22A328884611E48B5AE615_marshaled_com
-{
-	int32_t ___type_0;
-	int32_t ___level_1;
-	PxrSpatialInstanceUuid_tE0BA1376CB6D8B9A223F48E97992720932A31D58 ___anchorUuid_2;
-	uint64_t ___roomSceneDataHandle_3;
-	uint32_t ___result_4;
-	uint32_t ___dataLength_5;
-	uint8_t ___roomSceneData_6[128];
-};
-
-// Unity.XR.PXR.PxrEventSpatialAnchorDeleteResult
-struct PxrEventSpatialAnchorDeleteResult_t5BD947B67D4AF616A68D4491E0D5B85918B003CC 
-{
-	// Unity.XR.PXR.PxrStructureType Unity.XR.PXR.PxrEventSpatialAnchorDeleteResult::type
-	int32_t ___type_0;
-	// Unity.XR.PXR.PxrEventLevel Unity.XR.PXR.PxrEventSpatialAnchorDeleteResult::eventLevel
-	int32_t ___eventLevel_1;
-	// Unity.XR.PXR.PxrSpatialPersistenceResult Unity.XR.PXR.PxrEventSpatialAnchorDeleteResult::result
-	int32_t ___result_2;
-	// System.UInt64 Unity.XR.PXR.PxrEventSpatialAnchorDeleteResult::asyncRequestId
-	uint64_t ___asyncRequestId_3;
-	// Unity.XR.PXR.PxrSpatialInstanceUuid Unity.XR.PXR.PxrEventSpatialAnchorDeleteResult::uuid
-	PxrSpatialInstanceUuid_tE0BA1376CB6D8B9A223F48E97992720932A31D58 ___uuid_4;
-	// Unity.XR.PXR.PxrSpatialPersistenceLocation Unity.XR.PXR.PxrEventSpatialAnchorDeleteResult::location
-	int32_t ___location_5;
-};
-
-// Unity.XR.PXR.PxrEventSpatialAnchorSaveResult
-struct PxrEventSpatialAnchorSaveResult_tCC0847643822AC5399A67FBCDAD220483A15B11D 
-{
-	// Unity.XR.PXR.PxrStructureType Unity.XR.PXR.PxrEventSpatialAnchorSaveResult::type
-	int32_t ___type_0;
-	// Unity.XR.PXR.PxrEventLevel Unity.XR.PXR.PxrEventSpatialAnchorSaveResult::eventLevel
-	int32_t ___eventLevel_1;
-	// Unity.XR.PXR.PxrSpatialPersistenceResult Unity.XR.PXR.PxrEventSpatialAnchorSaveResult::result
-	int32_t ___result_2;
-	// System.UInt64 Unity.XR.PXR.PxrEventSpatialAnchorSaveResult::asyncRequestId
-	uint64_t ___asyncRequestId_3;
-	// Unity.XR.PXR.PxrSpatialInstanceUuid Unity.XR.PXR.PxrEventSpatialAnchorSaveResult::uuid
-	PxrSpatialInstanceUuid_tE0BA1376CB6D8B9A223F48E97992720932A31D58 ___uuid_4;
-	// System.UInt64 Unity.XR.PXR.PxrEventSpatialAnchorSaveResult::handle
-	uint64_t ___handle_5;
-	// Unity.XR.PXR.PxrSpatialPersistenceLocation Unity.XR.PXR.PxrEventSpatialAnchorSaveResult::location
-	int32_t ___location_6;
-};
-
-// Unity.XR.PXR.PxrEventSpatialTrackingStateInfo
-struct PxrEventSpatialTrackingStateInfo_t3C2991FCF3ABABEE677E706F785B5986C67AC9F0 
-{
-	// Unity.XR.PXR.PxrStructureType Unity.XR.PXR.PxrEventSpatialTrackingStateInfo::type
-	int32_t ___type_0;
-	// Unity.XR.PXR.PxrEventLevel Unity.XR.PXR.PxrEventSpatialTrackingStateInfo::eventLevel
-	int32_t ___eventLevel_1;
-	// Unity.XR.PXR.PxrSpatialTrackingStateInfo Unity.XR.PXR.PxrEventSpatialTrackingStateInfo::stateInfo
-	PxrSpatialTrackingStateInfo_t964E64698008FBCAD693832A94D6DD11F98D78AB ___stateInfo_2;
-};
-
-// Unity.XR.PXR.PxrSpatialAnchorLoadResult
-struct PxrSpatialAnchorLoadResult_t10ACC8E9DEE3AA31154491DDF242E75587654FE6 
-{
-	// System.UInt64 Unity.XR.PXR.PxrSpatialAnchorLoadResult::anchorHandle
-	uint64_t ___anchorHandle_0;
-	// Unity.XR.PXR.PxrSpatialInstanceUuid Unity.XR.PXR.PxrSpatialAnchorLoadResult::uuid
-	PxrSpatialInstanceUuid_tE0BA1376CB6D8B9A223F48E97992720932A31D58 ___uuid_1;
-};
-
-// UnityEngine.RaycastHit
-struct RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 
-{
-	// UnityEngine.Vector3 UnityEngine.RaycastHit::m_Point
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Point_0;
-	// UnityEngine.Vector3 UnityEngine.RaycastHit::m_Normal
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Normal_1;
-	// System.UInt32 UnityEngine.RaycastHit::m_FaceID
-	uint32_t ___m_FaceID_2;
-	// System.Single UnityEngine.RaycastHit::m_Distance
-	float ___m_Distance_3;
-	// UnityEngine.Vector2 UnityEngine.RaycastHit::m_UV
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_UV_4;
-	// System.Int32 UnityEngine.RaycastHit::m_Collider
-	int32_t ___m_Collider_5;
-};
-
-// UnityEngine.RaycastHit2D
-struct RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA 
-{
-	// UnityEngine.Vector2 UnityEngine.RaycastHit2D::m_Centroid
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_Centroid_0;
-	// UnityEngine.Vector2 UnityEngine.RaycastHit2D::m_Point
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_Point_1;
-	// UnityEngine.Vector2 UnityEngine.RaycastHit2D::m_Normal
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_Normal_2;
-	// System.Single UnityEngine.RaycastHit2D::m_Distance
-	float ___m_Distance_3;
-	// System.Single UnityEngine.RaycastHit2D::m_Fraction
-	float ___m_Fraction_4;
-	// System.Int32 UnityEngine.RaycastHit2D::m_Collider
-	int32_t ___m_Collider_5;
-};
-
-// UnityEngine.EventSystems.RaycastResult
-struct RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023 
-{
-	// UnityEngine.GameObject UnityEngine.EventSystems.RaycastResult::m_GameObject
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_GameObject_0;
-	// UnityEngine.EventSystems.BaseRaycaster UnityEngine.EventSystems.RaycastResult::module
-	BaseRaycaster_t7DC8158FD3CA0193455344379DD5FF7CD5F1F832* ___module_1;
-	// System.Single UnityEngine.EventSystems.RaycastResult::distance
-	float ___distance_2;
-	// System.Single UnityEngine.EventSystems.RaycastResult::index
-	float ___index_3;
-	// System.Int32 UnityEngine.EventSystems.RaycastResult::depth
-	int32_t ___depth_4;
-	// System.Int32 UnityEngine.EventSystems.RaycastResult::sortingLayer
-	int32_t ___sortingLayer_5;
-	// System.Int32 UnityEngine.EventSystems.RaycastResult::sortingOrder
-	int32_t ___sortingOrder_6;
-	// UnityEngine.Vector3 UnityEngine.EventSystems.RaycastResult::worldPosition
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___worldPosition_7;
-	// UnityEngine.Vector3 UnityEngine.EventSystems.RaycastResult::worldNormal
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___worldNormal_8;
-	// UnityEngine.Vector2 UnityEngine.EventSystems.RaycastResult::screenPosition
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___screenPosition_9;
-	// System.Int32 UnityEngine.EventSystems.RaycastResult::displayIndex
-	int32_t ___displayIndex_10;
-};
-// Native definition for P/Invoke marshalling of UnityEngine.EventSystems.RaycastResult
-struct RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023_marshaled_pinvoke
-{
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_GameObject_0;
-	BaseRaycaster_t7DC8158FD3CA0193455344379DD5FF7CD5F1F832* ___module_1;
-	float ___distance_2;
-	float ___index_3;
-	int32_t ___depth_4;
-	int32_t ___sortingLayer_5;
-	int32_t ___sortingOrder_6;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___worldPosition_7;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___worldNormal_8;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___screenPosition_9;
-	int32_t ___displayIndex_10;
-};
-// Native definition for COM marshalling of UnityEngine.EventSystems.RaycastResult
-struct RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023_marshaled_com
-{
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_GameObject_0;
-	BaseRaycaster_t7DC8158FD3CA0193455344379DD5FF7CD5F1F832* ___module_1;
-	float ___distance_2;
-	float ___index_3;
-	int32_t ___depth_4;
-	int32_t ___sortingLayer_5;
-	int32_t ___sortingOrder_6;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___worldPosition_7;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___worldNormal_8;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___screenPosition_9;
-	int32_t ___displayIndex_10;
 };
 
 // UnityEngine.UIElements.UIR.RenderChainVEData
@@ -5231,44 +4152,6 @@ struct RenderChainVEData_t582DE9DA38C6B608A9A38286FCF6FA70398B5847_marshaled_com
 	BasicNode_1_t7B4D545DCD6949B2E1C85D63DF038E44602F7DDB* ___textures_42;
 };
 
-// UnityEngine.Rendering.RendererUtils.RendererList
-struct RendererList_t84DD8775E9B0759757DE88FBCB50A06A7C80D20E 
-{
-	// System.UIntPtr UnityEngine.Rendering.RendererUtils.RendererList::context
-	uintptr_t ___context_0;
-	// System.UInt32 UnityEngine.Rendering.RendererUtils.RendererList::index
-	uint32_t ___index_1;
-	// System.UInt32 UnityEngine.Rendering.RendererUtils.RendererList::frame
-	uint32_t ___frame_2;
-};
-
-struct RendererList_t84DD8775E9B0759757DE88FBCB50A06A7C80D20E_StaticFields
-{
-	// UnityEngine.Rendering.RendererUtils.RendererList UnityEngine.Rendering.RendererUtils.RendererList::nullRendererList
-	RendererList_t84DD8775E9B0759757DE88FBCB50A06A7C80D20E ___nullRendererList_3;
-};
-
-// UnityEngine.UIElements.StyleSheets.StylePropertyValue
-struct StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2 
-{
-	// UnityEngine.UIElements.StyleSheet UnityEngine.UIElements.StyleSheets.StylePropertyValue::sheet
-	StyleSheet_t6FAF43FCDB45BC6BED0522A222FD4C1A9BB10428* ___sheet_0;
-	// UnityEngine.UIElements.StyleValueHandle UnityEngine.UIElements.StyleSheets.StylePropertyValue::handle
-	StyleValueHandle_t5831643AAA7AD8C5C43A4498C5E0A2545F78227D ___handle_1;
-};
-// Native definition for P/Invoke marshalling of UnityEngine.UIElements.StyleSheets.StylePropertyValue
-struct StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2_marshaled_pinvoke
-{
-	StyleSheet_t6FAF43FCDB45BC6BED0522A222FD4C1A9BB10428* ___sheet_0;
-	StyleValueHandle_t5831643AAA7AD8C5C43A4498C5E0A2545F78227D ___handle_1;
-};
-// Native definition for COM marshalling of UnityEngine.UIElements.StyleSheets.StylePropertyValue
-struct StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2_marshaled_com
-{
-	StyleSheet_t6FAF43FCDB45BC6BED0522A222FD4C1A9BB10428* ___sheet_0;
-	StyleValueHandle_t5831643AAA7AD8C5C43A4498C5E0A2545F78227D ___handle_1;
-};
-
 // UnityEngine.Touch
 struct Touch_t03E51455ED508492B3F278903A0114FA0E87B417 
 {
@@ -5300,108 +4183,6 @@ struct Touch_t03E51455ED508492B3F278903A0114FA0E87B417
 	float ___m_AltitudeAngle_12;
 	// System.Single UnityEngine.Touch::m_AzimuthAngle
 	float ___m_AzimuthAngle_13;
-};
-
-// UnityEngine.UICharInfo
-struct UICharInfo_t24C2EA0F2F3A938100C271891D9DEB015ABA5FBD 
-{
-	// UnityEngine.Vector2 UnityEngine.UICharInfo::cursorPos
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___cursorPos_0;
-	// System.Single UnityEngine.UICharInfo::charWidth
-	float ___charWidth_1;
-};
-
-// UnityEngine.UIVertex
-struct UIVertex_tF5C663F4BBC786C9D56C28016FF66E6C6BF85207 
-{
-	// UnityEngine.Vector3 UnityEngine.UIVertex::position
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position_0;
-	// UnityEngine.Vector3 UnityEngine.UIVertex::normal
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___normal_1;
-	// UnityEngine.Vector4 UnityEngine.UIVertex::tangent
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___tangent_2;
-	// UnityEngine.Color32 UnityEngine.UIVertex::color
-	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___color_3;
-	// UnityEngine.Vector4 UnityEngine.UIVertex::uv0
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___uv0_4;
-	// UnityEngine.Vector4 UnityEngine.UIVertex::uv1
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___uv1_5;
-	// UnityEngine.Vector4 UnityEngine.UIVertex::uv2
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___uv2_6;
-	// UnityEngine.Vector4 UnityEngine.UIVertex::uv3
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___uv3_7;
-};
-
-struct UIVertex_tF5C663F4BBC786C9D56C28016FF66E6C6BF85207_StaticFields
-{
-	// UnityEngine.Color32 UnityEngine.UIVertex::s_DefaultColor
-	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___s_DefaultColor_8;
-	// UnityEngine.Vector4 UnityEngine.UIVertex::s_DefaultTangent
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___s_DefaultTangent_9;
-	// UnityEngine.UIVertex UnityEngine.UIVertex::simpleVert
-	UIVertex_tF5C663F4BBC786C9D56C28016FF66E6C6BF85207 ___simpleVert_10;
-};
-
-// UnityEngine.XR.XRNodeState
-struct XRNodeState_t683158812A1D80A6BC73DB97405BB0B795A9111A 
-{
-	// UnityEngine.XR.XRNode UnityEngine.XR.XRNodeState::m_Type
-	int32_t ___m_Type_0;
-	// UnityEngine.XR.AvailableTrackingData UnityEngine.XR.XRNodeState::m_AvailableFields
-	int32_t ___m_AvailableFields_1;
-	// UnityEngine.Vector3 UnityEngine.XR.XRNodeState::m_Position
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Position_2;
-	// UnityEngine.Quaternion UnityEngine.XR.XRNodeState::m_Rotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___m_Rotation_3;
-	// UnityEngine.Vector3 UnityEngine.XR.XRNodeState::m_Velocity
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Velocity_4;
-	// UnityEngine.Vector3 UnityEngine.XR.XRNodeState::m_AngularVelocity
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_AngularVelocity_5;
-	// UnityEngine.Vector3 UnityEngine.XR.XRNodeState::m_Acceleration
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Acceleration_6;
-	// UnityEngine.Vector3 UnityEngine.XR.XRNodeState::m_AngularAcceleration
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_AngularAcceleration_7;
-	// System.Int32 UnityEngine.XR.XRNodeState::m_Tracked
-	int32_t ___m_Tracked_8;
-	// System.UInt64 UnityEngine.XR.XRNodeState::m_UniqueID
-	uint64_t ___m_UniqueID_9;
-};
-
-// UnityEngine.XR.ARSubsystems.XRReferenceImage
-struct XRReferenceImage_tB2544D6E18E55CD44F4EED1B0573A6A7154C1E2F 
-{
-	// UnityEngine.XR.ARSubsystems.SerializableGuid UnityEngine.XR.ARSubsystems.XRReferenceImage::m_SerializedGuid
-	SerializableGuid_tCEABDCED6CD954AC100159BDEFC5D414049C0378 ___m_SerializedGuid_0;
-	// UnityEngine.XR.ARSubsystems.SerializableGuid UnityEngine.XR.ARSubsystems.XRReferenceImage::m_SerializedTextureGuid
-	SerializableGuid_tCEABDCED6CD954AC100159BDEFC5D414049C0378 ___m_SerializedTextureGuid_1;
-	// UnityEngine.Vector2 UnityEngine.XR.ARSubsystems.XRReferenceImage::m_Size
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_Size_2;
-	// System.Boolean UnityEngine.XR.ARSubsystems.XRReferenceImage::m_SpecifySize
-	bool ___m_SpecifySize_3;
-	// System.String UnityEngine.XR.ARSubsystems.XRReferenceImage::m_Name
-	String_t* ___m_Name_4;
-	// UnityEngine.Texture2D UnityEngine.XR.ARSubsystems.XRReferenceImage::m_Texture
-	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___m_Texture_5;
-};
-// Native definition for P/Invoke marshalling of UnityEngine.XR.ARSubsystems.XRReferenceImage
-struct XRReferenceImage_tB2544D6E18E55CD44F4EED1B0573A6A7154C1E2F_marshaled_pinvoke
-{
-	SerializableGuid_tCEABDCED6CD954AC100159BDEFC5D414049C0378 ___m_SerializedGuid_0;
-	SerializableGuid_tCEABDCED6CD954AC100159BDEFC5D414049C0378 ___m_SerializedTextureGuid_1;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_Size_2;
-	int32_t ___m_SpecifySize_3;
-	char* ___m_Name_4;
-	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___m_Texture_5;
-};
-// Native definition for COM marshalling of UnityEngine.XR.ARSubsystems.XRReferenceImage
-struct XRReferenceImage_tB2544D6E18E55CD44F4EED1B0573A6A7154C1E2F_marshaled_com
-{
-	SerializableGuid_tCEABDCED6CD954AC100159BDEFC5D414049C0378 ___m_SerializedGuid_0;
-	SerializableGuid_tCEABDCED6CD954AC100159BDEFC5D414049C0378 ___m_SerializedTextureGuid_1;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_Size_2;
-	int32_t ___m_SpecifySize_3;
-	Il2CppChar* ___m_Name_4;
-	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___m_Texture_5;
 };
 
 // UnityEngine.XR.ARSubsystems.XRTextureDescriptor
@@ -5596,131 +4377,6 @@ struct MulticastDelegate_t_marshaled_pinvoke : public Delegate_t_marshaled_pinvo
 struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
 {
 	Delegate_t_marshaled_com** ___delegates_13;
-};
-
-// Unity.XR.PXR.PxrEventSpatialAnchorLoadResults
-struct PxrEventSpatialAnchorLoadResults_t38389A5A532C4CC6E75193AAC80627B80430650C 
-{
-	// Unity.XR.PXR.PxrStructureType Unity.XR.PXR.PxrEventSpatialAnchorLoadResults::type
-	int32_t ___type_0;
-	// Unity.XR.PXR.PxrEventLevel Unity.XR.PXR.PxrEventSpatialAnchorLoadResults::eventLevel
-	int32_t ___eventLevel_1;
-	// Unity.XR.PXR.PxrSpatialPersistenceResult Unity.XR.PXR.PxrEventSpatialAnchorLoadResults::result
-	int32_t ___result_2;
-	// System.Boolean Unity.XR.PXR.PxrEventSpatialAnchorLoadResults::hasNext
-	bool ___hasNext_3;
-	// System.UInt64 Unity.XR.PXR.PxrEventSpatialAnchorLoadResults::asyncRequestId
-	uint64_t ___asyncRequestId_4;
-	// System.UInt32 Unity.XR.PXR.PxrEventSpatialAnchorLoadResults::numResults
-	uint32_t ___numResults_5;
-	// Unity.XR.PXR.PxrSpatialAnchorLoadResult[] Unity.XR.PXR.PxrEventSpatialAnchorLoadResults::loadResults
-	PxrSpatialAnchorLoadResultU5BU5D_tEE0B739AB59348A3CB8771FB3F758E357F14D957* ___loadResults_6;
-};
-// Native definition for P/Invoke marshalling of Unity.XR.PXR.PxrEventSpatialAnchorLoadResults
-struct PxrEventSpatialAnchorLoadResults_t38389A5A532C4CC6E75193AAC80627B80430650C_marshaled_pinvoke
-{
-	int32_t ___type_0;
-	int32_t ___eventLevel_1;
-	int32_t ___result_2;
-	int32_t ___hasNext_3;
-	uint64_t ___asyncRequestId_4;
-	uint32_t ___numResults_5;
-	PxrSpatialAnchorLoadResult_t10ACC8E9DEE3AA31154491DDF242E75587654FE6 ___loadResults_6[128];
-};
-// Native definition for COM marshalling of Unity.XR.PXR.PxrEventSpatialAnchorLoadResults
-struct PxrEventSpatialAnchorLoadResults_t38389A5A532C4CC6E75193AAC80627B80430650C_marshaled_com
-{
-	int32_t ___type_0;
-	int32_t ___eventLevel_1;
-	int32_t ___result_2;
-	int32_t ___hasNext_3;
-	uint64_t ___asyncRequestId_4;
-	uint32_t ___numResults_5;
-	PxrSpatialAnchorLoadResult_t10ACC8E9DEE3AA31154491DDF242E75587654FE6 ___loadResults_6[128];
-};
-
-// UnityEngine.UIElements.StyleSheets.StyleValue
-struct StyleValue_t56307594EC04E04EFBCC3220595B4AAD66FF93C5 
-{
-	union
-	{
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			// UnityEngine.UIElements.StyleSheets.StylePropertyId UnityEngine.UIElements.StyleSheets.StyleValue::id
-			int32_t ___id_0;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			int32_t ___id_0_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___keyword_1_OffsetPadding[4];
-			// UnityEngine.UIElements.StyleKeyword UnityEngine.UIElements.StyleSheets.StyleValue::keyword
-			int32_t ___keyword_1;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___keyword_1_OffsetPadding_forAlignmentOnly[4];
-			int32_t ___keyword_1_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___number_2_OffsetPadding[8];
-			// System.Single UnityEngine.UIElements.StyleSheets.StyleValue::number
-			float ___number_2;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___number_2_OffsetPadding_forAlignmentOnly[8];
-			float ___number_2_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___length_3_OffsetPadding[8];
-			// UnityEngine.UIElements.Length UnityEngine.UIElements.StyleSheets.StyleValue::length
-			Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 ___length_3;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___length_3_OffsetPadding_forAlignmentOnly[8];
-			Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 ___length_3_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___color_4_OffsetPadding[8];
-			// UnityEngine.Color UnityEngine.UIElements.StyleSheets.StyleValue::color
-			Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color_4;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___color_4_OffsetPadding_forAlignmentOnly[8];
-			Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color_4_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			char ___resource_5_OffsetPadding[8];
-			// System.Runtime.InteropServices.GCHandle UnityEngine.UIElements.StyleSheets.StyleValue::resource
-			GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC ___resource_5;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			char ___resource_5_OffsetPadding_forAlignmentOnly[8];
-			GCHandle_tC44F6F72EE68BD4CFABA24309DA7A179D41127DC ___resource_5_forAlignmentOnly;
-		};
-	};
 };
 
 // System.SystemException
@@ -5922,35 +4578,6 @@ struct XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB_StaticFields
 {
 	// UnityEngine.XR.ARSubsystems.XRFace UnityEngine.XR.ARSubsystems.XRFace::s_Default
 	XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB ___s_Default_7;
-};
-
-// UnityEngine.XR.Hands.XRHand
-struct XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 
-{
-	// Unity.Collections.NativeArray`1<UnityEngine.XR.Hands.XRHandJoint> UnityEngine.XR.Hands.XRHand::m_Joints
-	NativeArray_1_t8B168617F2E2FBA4473810E911C21C95E6A2E9F6 ___m_Joints_0;
-	// UnityEngine.Pose UnityEngine.XR.Hands.XRHand::m_RootPose
-	Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 ___m_RootPose_1;
-	// UnityEngine.XR.Hands.Handedness UnityEngine.XR.Hands.XRHand::m_Handedness
-	int32_t ___m_Handedness_2;
-	// System.Boolean UnityEngine.XR.Hands.XRHand::<isTracked>k__BackingField
-	bool ___U3CisTrackedU3Ek__BackingField_3;
-};
-// Native definition for P/Invoke marshalling of UnityEngine.XR.Hands.XRHand
-struct XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471_marshaled_pinvoke
-{
-	NativeArray_1_t8B168617F2E2FBA4473810E911C21C95E6A2E9F6 ___m_Joints_0;
-	Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 ___m_RootPose_1;
-	int32_t ___m_Handedness_2;
-	int32_t ___U3CisTrackedU3Ek__BackingField_3;
-};
-// Native definition for COM marshalling of UnityEngine.XR.Hands.XRHand
-struct XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471_marshaled_com
-{
-	NativeArray_1_t8B168617F2E2FBA4473810E911C21C95E6A2E9F6 ___m_Joints_0;
-	Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 ___m_RootPose_1;
-	int32_t ___m_Handedness_2;
-	int32_t ___U3CisTrackedU3Ek__BackingField_3;
 };
 
 // UnityEngine.XR.ARSubsystems.XRHumanBody
@@ -6543,333 +5170,18 @@ struct Action_1_tB952E159C9AA77923ECB95116E7F5CDC67BF9FD9  : public MulticastDel
 {
 };
 
+// System.Action`1<UnityEngine.AI.NavMeshBuildMarkup>
+struct Action_1_tF525E5733633D2EECADCEF3861F1BE51E823D195  : public MulticastDelegate_t
+{
+};
+
+// System.Action`1<UnityEngine.AI.NavMeshBuildSource>
+struct Action_1_t1A796349365CD92A950A9B137A7731CFF8B1BF88  : public MulticastDelegate_t
+{
+};
+
 // System.Action`1<System.Object>
 struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.LowLevel.PlayerLoopSystem>
-struct Action_1_t090269A2B5C140A371E43D40D015CA8179AF6344  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.LowLevel.PlayerLoopSystemInternal>
-struct Action_1_tEF194BAB5A8B7CCAC71ED08DB2DD45476C91047E  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.XR.Interaction.Toolkit.Filtering.PokeStateData>
-struct Action_1_t1FB720A83B3555E719F665FB0110E7C51487F3F8  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.Pose>
-struct Action_1_t62C38AF61BFF03BE1DB5E1C54773DC9975D958CD  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<LitJson.PropertyMetadata>
-struct Action_1_tEB59E92BBDCF15504B4F6E38B926550BCCBA2932  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<Unity.XR.PXR.PxrEventAnchorEntityCleared>
-struct Action_1_t0516BCDA7F518F6B8CBC3DD3E52B14D466D0EE7E  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<Unity.XR.PXR.PxrEventAnchorEntityCreated>
-struct Action_1_t80E16328E6C04D2480ECB2CB93591FF99563B055  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<Unity.XR.PXR.PxrEventAnchorEntityLoaded>
-struct Action_1_tBE08246DA4A3CDFA74D95757E8A4F354965C27CE  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<Unity.XR.PXR.PxrEventAnchorEntityPersisted>
-struct Action_1_t458FF1DF3D360350B8FB017575308013D9A4B5DA  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<Unity.XR.PXR.PxrEventAnchorEntityUnPersisted>
-struct Action_1_tC456AB70EC8BFFAD1D90D487FD4CFBA8CF37EE89  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<Unity.XR.PXR.PxrEventDataBuffer>
-struct Action_1_tEE4E85A3D28F201F4FDC5498736CFB20B828C030  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<Unity.XR.PXR.PxrEventRoomSceneDataDeleteResult>
-struct Action_1_tDA5F46040840F1FA0E391F8406DEC3BDA167F639  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<Unity.XR.PXR.PxrEventRoomSceneDataSaveResult>
-struct Action_1_t0F54075BC96703B61F0A86C15C907AF90C16C6F2  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<Unity.XR.PXR.PxrEventRoomSceneDataUpdateResult>
-struct Action_1_tCAFBCF7B5A94887259E3B0AF0DF9DD924BEE00E8  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<Unity.XR.PXR.PxrEventRoomSceneLoadResultsComplete>
-struct Action_1_t08BB27D6BBCF23B19AA3D3977C271742CAB904C3  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<Unity.XR.PXR.PxrEventSemiAutoCandidatesUpdate>
-struct Action_1_t9C8A2CFBD48C3292C87EE19518FA210EBF1CA027  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<Unity.XR.PXR.PxrEventSpatialAnchorDeleteResult>
-struct Action_1_t0EBA64AE68C5EE7668204C4EC9DE8DE4A6F2C888  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<Unity.XR.PXR.PxrEventSpatialAnchorLoadResults>
-struct Action_1_t89C351745B14DEE5459D5315E343CF7FCB74581B  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<Unity.XR.PXR.PxrEventSpatialAnchorLoadResultsAvailable>
-struct Action_1_t15F614222681BBA326EF9BB8725C201A4096469A  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<Unity.XR.PXR.PxrEventSpatialAnchorLoadResultsComplete>
-struct Action_1_t58E5EED64CDA983FD77791B422319A72DD74EBFC  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<Unity.XR.PXR.PxrEventSpatialAnchorSaveResult>
-struct Action_1_t938E856EC1E857F4BDD1713F383CCB8CEA2EA435  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<Unity.XR.PXR.PxrEventSpatialSceneCaptured>
-struct Action_1_t6D269C2D4522A2B4E6EF723760BF87F01272FF51  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<Unity.XR.PXR.PxrEventSpatialTrackingStateInfo>
-struct Action_1_t5BEBCD62AEA6CA0890665B0164180DCD30923A1D  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<Unity.XR.PXR.PxrEventSpatialTrackingStateUpdate>
-struct Action_1_t19FFBD94C207F8B26A37C05BB7827FD13935EAF7  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<Unity.XR.PXR.PxrSemiAutoRoomCaptureCandidatesUpdate>
-struct Action_1_tB3F88746E4C15C38959C37E7120EBF026E706AA8  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.Quaternion>
-struct Action_1_tD0624B0C9A4314C84D75B0C2A563B322540AB9AE  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<System.Xml.Schema.RangePositionInfo>
-struct Action_1_t39CC104F93D48513594959A5D74E69F27CB86D5E  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.RaycastHit>
-struct Action_1_tD9564038902E921666D3553B1D0CC836506BA577  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.RaycastHit2D>
-struct Action_1_tB190FB6312D47E8191741EA92FB16E944FB8422E  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.EventSystems.RaycastResult>
-struct Action_1_t03385AB239814E9CBE8F8EE1A653171DABEF4738  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.UIElements.UIR.RenderChainTextEntry>
-struct Action_1_t7D7D8AAD5A6C2503AD767CE28606E49F24A77310  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.Rendering.RendererUtils.RendererList>
-struct Action_1_tB5BD5F83968E0055E0F2474D44E0F203D1396193  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.Experimental.Rendering.RenderGraphModule.RendererListHandle>
-struct Action_1_t93D9ECEA7055ECFE152198CB2BD3C91F0A54B4BF  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.Experimental.Rendering.RenderGraphModule.ResourceHandle>
-struct Action_1_t1953259FFC626CB4D1EB46D608F3222477CCA6D7  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.UIElements.RuleMatcher>
-struct Action_1_tB0037EB63A784B363B381F64BD4D0E1EB6D88FD6  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<System.SByte>
-struct Action_1_t9544EB93A9EF3B557A4A37F89E5E5CDF670EDF3A  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.UIElements.StyleSheets.SelectorMatchRecord>
-struct Action_1_t92C5FDA781FC11766BA810CAA0C836E80A7FFE4C  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<System.Single>
-struct Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.UIElements.StylePropertyName>
-struct Action_1_t3104132B6015C879F4B3C59428F1B9C5DAAE0FD3  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.UIElements.StyleSheets.StylePropertyValue>
-struct Action_1_t01BBD70132EC9C777FD7A1202C563EB8CF818918  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.UIElements.StyleSelectorPart>
-struct Action_1_t6D5F08ECE8E1419CFB2D849F9D5BFA0EEA07B0D7  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.UIElements.StyleSheets.Syntax.StyleSyntaxToken>
-struct Action_1_t0017BECCF03CD9F57758F6E00F11467544CAA765  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.UIElements.StyleSheets.StyleValue>
-struct Action_1_t8FDB42FA0057B33A522A9A961AFB57C008636F27  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.UIElements.StyleSheets.StyleValueManaged>
-struct Action_1_t701048A3F596A40A59BF140B250A3AD5305BEC5C  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.UIElements.StyleVariable>
-struct Action_1_t473E1FC7B10AE23DF991B9F7A0798DA7743C7F49  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.InputSystem.Utilities.Substring>
-struct Action_1_t81C1E63293911894C4354C6E1293F63A5D512D4D  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<System.TimeSpan>
-struct Action_1_t3CA76D608A67A30E535C626537063BAF8FE972D0  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.UIElements.TimeValue>
-struct Action_1_t42ADFE3801D27254F622BE4C06E4F1091DE42AFA  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.UIElements.TimerState>
-struct Action_1_t05F6A7FC9FBB588EC4A828E23375838E340354CB  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.UICharInfo>
-struct Action_1_tB9951FC7E63341E8FF985E49D0A293DA6DDACC77  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.UILineInfo>
-struct Action_1_t59246BF77C1095A0F51FE1BCDD0A2A914173131C  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.UIVertex>
-struct Action_1_t1F149523898B0E3185EF5726203627492497D292  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<System.UInt16>
-struct Action_1_t2DE95E477A86F144593CC7965E86728C71D0E75D  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<System.UInt32>
-struct Action_1_t831946BFD83EBA9DE498D3E682F1D4F14D17878D  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<System.UInt64>
-struct Action_1_t2F07B42BD085A4AC03ECE5676157E93B9A344C1C  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.InputSystem.XR.UsageHint>
-struct Action_1_t3F4EEB7C225C6BBE1549938D6708722DBB39C2DC  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.Vector2>
-struct Action_1_t17E52B12DC24FA6C9DD52F87043C85BEA889BB81  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.Vector3>
-struct Action_1_t2EDB30EAB747FDF563DD6410FC76AF861A09A0C2  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.Vector4>
-struct Action_1_t84D0CA347FC997E1202ECA3ED828B057841444EF  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<System.Security.Cryptography.X509Certificates.X509ChainStatus>
-struct Action_1_t8211FDBB28EEB761B566A466344EDAFA85BC3023  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.InputSystem.XR.XRFeatureDescriptor>
-struct Action_1_tC8CC18F6848AAE74469E78A12EC004873F4332A7  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.XR.Hands.XRHand>
-struct Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.XR.XRNodeState>
-struct Action_1_t290119641EBA3C1EAC8AF78274C63CE01C3046D8  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.XR.ARSubsystems.XRReferenceImage>
-struct Action_1_t66705B6D063592F5BBA926F05597B1FDCECB3293  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.XR.ARSubsystems.XRReferenceObject>
-struct Action_1_tEB948825D936789B1E02F85CD5D223A8C08F1586  : public MulticastDelegate_t
 {
 };
 
@@ -7109,6 +5421,75 @@ struct ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3  : public MonoB
 // UnityEngine.XR.ARFoundation.ARTrackable
 struct ARTrackable_t1D98417758C08E98A333CDEC0C2C1688CE10B2E0  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+};
+
+// UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>
+struct ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465  : public SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55
+{
+	// UnityEngine.XR.ARFoundation.ARSessionOrigin UnityEngine.XR.ARFoundation.ARTrackableManager`5::<sessionOrigin>k__BackingField
+	ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* ___U3CsessionOriginU3Ek__BackingField_8;
+	// System.Collections.Generic.Dictionary`2<UnityEngine.XR.ARSubsystems.TrackableId,TTrackable> UnityEngine.XR.ARFoundation.ARTrackableManager`5::m_Trackables
+	Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* ___m_Trackables_9;
+	// System.Collections.Generic.Dictionary`2<UnityEngine.XR.ARSubsystems.TrackableId,TTrackable> UnityEngine.XR.ARFoundation.ARTrackableManager`5::m_PendingAdds
+	Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* ___m_PendingAdds_10;
+};
+
+struct ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465_StaticFields
+{
+	// UnityEngine.XR.ARFoundation.ARTrackableManager`5<TSubsystem,TSubsystemDescriptor,TProvider,TSessionRelativeData,TTrackable> UnityEngine.XR.ARFoundation.ARTrackableManager`5::<instance>k__BackingField
+	ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* ___U3CinstanceU3Ek__BackingField_7;
+	// System.Collections.Generic.List`1<TTrackable> UnityEngine.XR.ARFoundation.ARTrackableManager`5::s_Added
+	List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___s_Added_11;
+	// System.Collections.Generic.List`1<TTrackable> UnityEngine.XR.ARFoundation.ARTrackableManager`5::s_Updated
+	List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___s_Updated_12;
+	// System.Collections.Generic.List`1<TTrackable> UnityEngine.XR.ARFoundation.ARTrackableManager`5::s_Removed
+	List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___s_Removed_13;
+};
+
+// UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>
+struct ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884  : public SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55
+{
+	// UnityEngine.XR.ARFoundation.ARSessionOrigin UnityEngine.XR.ARFoundation.ARTrackableManager`5::<sessionOrigin>k__BackingField
+	ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* ___U3CsessionOriginU3Ek__BackingField_8;
+	// System.Collections.Generic.Dictionary`2<UnityEngine.XR.ARSubsystems.TrackableId,TTrackable> UnityEngine.XR.ARFoundation.ARTrackableManager`5::m_Trackables
+	Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* ___m_Trackables_9;
+	// System.Collections.Generic.Dictionary`2<UnityEngine.XR.ARSubsystems.TrackableId,TTrackable> UnityEngine.XR.ARFoundation.ARTrackableManager`5::m_PendingAdds
+	Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* ___m_PendingAdds_10;
+};
+
+struct ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884_StaticFields
+{
+	// UnityEngine.XR.ARFoundation.ARTrackableManager`5<TSubsystem,TSubsystemDescriptor,TProvider,TSessionRelativeData,TTrackable> UnityEngine.XR.ARFoundation.ARTrackableManager`5::<instance>k__BackingField
+	ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* ___U3CinstanceU3Ek__BackingField_7;
+	// System.Collections.Generic.List`1<TTrackable> UnityEngine.XR.ARFoundation.ARTrackableManager`5::s_Added
+	List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___s_Added_11;
+	// System.Collections.Generic.List`1<TTrackable> UnityEngine.XR.ARFoundation.ARTrackableManager`5::s_Updated
+	List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___s_Updated_12;
+	// System.Collections.Generic.List`1<TTrackable> UnityEngine.XR.ARFoundation.ARTrackableManager`5::s_Removed
+	List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___s_Removed_13;
+};
+
+// UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>
+struct ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C  : public SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55
+{
+	// UnityEngine.XR.ARFoundation.ARSessionOrigin UnityEngine.XR.ARFoundation.ARTrackableManager`5::<sessionOrigin>k__BackingField
+	ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* ___U3CsessionOriginU3Ek__BackingField_8;
+	// System.Collections.Generic.Dictionary`2<UnityEngine.XR.ARSubsystems.TrackableId,TTrackable> UnityEngine.XR.ARFoundation.ARTrackableManager`5::m_Trackables
+	Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* ___m_Trackables_9;
+	// System.Collections.Generic.Dictionary`2<UnityEngine.XR.ARSubsystems.TrackableId,TTrackable> UnityEngine.XR.ARFoundation.ARTrackableManager`5::m_PendingAdds
+	Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* ___m_PendingAdds_10;
+};
+
+struct ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C_StaticFields
+{
+	// UnityEngine.XR.ARFoundation.ARTrackableManager`5<TSubsystem,TSubsystemDescriptor,TProvider,TSessionRelativeData,TTrackable> UnityEngine.XR.ARFoundation.ARTrackableManager`5::<instance>k__BackingField
+	ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* ___U3CinstanceU3Ek__BackingField_7;
+	// System.Collections.Generic.List`1<TTrackable> UnityEngine.XR.ARFoundation.ARTrackableManager`5::s_Added
+	List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___s_Added_11;
+	// System.Collections.Generic.List`1<TTrackable> UnityEngine.XR.ARFoundation.ARTrackableManager`5::s_Updated
+	List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___s_Updated_12;
+	// System.Collections.Generic.List`1<TTrackable> UnityEngine.XR.ARFoundation.ARTrackableManager`5::s_Removed
+	List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___s_Removed_13;
 };
 
 // UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRHumanBody,System.Object>
@@ -7444,22 +5825,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m2DFDA23C7884D9A93FF
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 // System.Void System.Action`1<UnityEngine.XR.ARFoundation.ARTrackablesParentTransformChangedEventArgs>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mF83057A5B46235D3B94069DE8AA97564FBC38082_gshared (Action_1_t2096FCE7327B89C5101BFB38155839F3166605FB* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
-// System.Void UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRHumanBody>::Dispose()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackableChanges_1_Dispose_m009F3E273F28D1C17F4CF3FFA9CFDF76A8F811E5_gshared (TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6* __this, const RuntimeMethod* method) ;
-// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRHumanBody>::get_added()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_t5B6781386C81B6DAD0A46599F36186F644DC17D0 TrackableChanges_1_get_added_m7F31AA8A5F6934F83681E8BD6BBA797F87E5D1E0_gshared_inline (TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6* __this, const RuntimeMethod* method) ;
-// Unity.Collections.NativeArray`1/Enumerator<T> Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.XRHumanBody>::GetEnumerator()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_t4684A3B2EF4932BDD7B7BA77FBE925A2858235F0 NativeArray_1_GetEnumerator_m29739A61F8F1BBA42DB3781B2CC754C8551A8D35_gshared (NativeArray_1_t5B6781386C81B6DAD0A46599F36186F644DC17D0* __this, const RuntimeMethod* method) ;
-// System.Void Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRHumanBody>::Dispose()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_m4CB3FA20348E113538842E240B3906A19AC6C166_gshared (Enumerator_t4684A3B2EF4932BDD7B7BA77FBE925A2858235F0* __this, const RuntimeMethod* method) ;
-// T Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRHumanBody>::get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRHumanBody_t88EF91F599A4F22EABB233F85DE7782EE8B86692 Enumerator_get_Current_m0E26F83CF06A0660F43F30F6425902AC487178C7_gshared (Enumerator_t4684A3B2EF4932BDD7B7BA77FBE925A2858235F0* __this, const RuntimeMethod* method) ;
-// System.Boolean Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRHumanBody>::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mCABC4D658526DEFE9ECF08AED5D5F32ADDFBBAB7_gshared (Enumerator_t4684A3B2EF4932BDD7B7BA77FBE925A2858235F0* __this, const RuntimeMethod* method) ;
-// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRHumanBody>::get_updated()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_t5B6781386C81B6DAD0A46599F36186F644DC17D0 TrackableChanges_1_get_updated_mC79BCE7C56B99C53E6340EB5683F7DEDF1C3AA8E_gshared_inline (TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6* __this, const RuntimeMethod* method) ;
-// Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.TrackableId> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRHumanBody>::get_removed()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E TrackableChanges_1_get_removed_m9ED605C97CF3E20830DA7B6811B123B09C1B2585_gshared_inline (TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRAnchor>::Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackableChanges_1_Dispose_m5DD2DC8F7FD6773D16E7C0A7C4382C2FA20DA89C_gshared (TrackableChanges_1_t6971CD7F709E7353F4365FE06A109B21A0F0C931* __this, const RuntimeMethod* method) ;
+// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRAnchor>::get_added()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_tAE2F2F17B6A4F98F44324897A00F6A9D2151DC3A TrackableChanges_1_get_added_m247464F980D46DD4B1BC63D35DEF4F0B10835FB7_gshared_inline (TrackableChanges_1_t6971CD7F709E7353F4365FE06A109B21A0F0C931* __this, const RuntimeMethod* method) ;
+// Unity.Collections.NativeArray`1/Enumerator<T> Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.XRAnchor>::GetEnumerator()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_t6F8582E7CB46ABAB8F6FDFA62CAFDDD5EF6AB953 NativeArray_1_GetEnumerator_m715F0D8F7B8F47734D62294D193B357E3DAFDFDC_gshared (NativeArray_1_tAE2F2F17B6A4F98F44324897A00F6A9D2151DC3A* __this, const RuntimeMethod* method) ;
+// System.Void Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRAnchor>::Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_mF69D4ACD38C3EA25EC9280A912BDA953A0B309B3_gshared (Enumerator_t6F8582E7CB46ABAB8F6FDFA62CAFDDD5EF6AB953* __this, const RuntimeMethod* method) ;
+// T Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRAnchor>::get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 Enumerator_get_Current_m0FB9E0CDF48720C23EF12B33C7D51DBCC9959681_gshared (Enumerator_t6F8582E7CB46ABAB8F6FDFA62CAFDDD5EF6AB953* __this, const RuntimeMethod* method) ;
+// System.Boolean Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRAnchor>::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m3D4D3AE7BBF856539A509727B1A453CB1FCE2873_gshared (Enumerator_t6F8582E7CB46ABAB8F6FDFA62CAFDDD5EF6AB953* __this, const RuntimeMethod* method) ;
+// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRAnchor>::get_updated()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_tAE2F2F17B6A4F98F44324897A00F6A9D2151DC3A TrackableChanges_1_get_updated_mF8CD50C65A76F68ED3EFCE8A4316153A2CAF3999_gshared_inline (TrackableChanges_1_t6971CD7F709E7353F4365FE06A109B21A0F0C931* __this, const RuntimeMethod* method) ;
+// Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.TrackableId> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRAnchor>::get_removed()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E TrackableChanges_1_get_removed_m0E574DBEEC409628E125B65A3437EA9C9D73F06F_gshared_inline (TrackableChanges_1_t6971CD7F709E7353F4365FE06A109B21A0F0C931* __this, const RuntimeMethod* method) ;
 // Unity.Collections.NativeArray`1/Enumerator<T> Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.TrackableId>::GetEnumerator()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_tC8A26D390552986367A8B556DCF22FAAF6E7AAAD NativeArray_1_GetEnumerator_mE980205B99190A020484F10CBAC64EB8C743AAF0_gshared (NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E* __this, const RuntimeMethod* method) ;
 // System.Void Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.TrackableId>::Dispose()
@@ -7478,6 +5859,54 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mE921CC8F29FBBDE7CC3
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValueTuple_2__ctor_m9880D07FACAFFFC99440E1BCC59DA9667125FBB9_gshared (ValueTuple_2_tBAB581C4F7C7A850493D1F133E22C5683F495DC8* __this, RuntimeObject* ___item10, bool ___item21, const RuntimeMethod* method) ;
 // T UnityEngine.Object::Instantiate<System.Object>(T,UnityEngine.Transform)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_Instantiate_TisRuntimeObject_m75BF3B0A3747B60491845FA41612FE7F795F0A59_gshared (RuntimeObject* ___original0, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___parent1, const RuntimeMethod* method) ;
+// System.Void UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XREnvironmentProbe>::Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackableChanges_1_Dispose_m83C5617202AF34BF17844B80195A0238CF7589CB_gshared (TrackableChanges_1_t03BF8B384A61E7421A4748384189C50C3A2C323F* __this, const RuntimeMethod* method) ;
+// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XREnvironmentProbe>::get_added()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_t27110FD746D2F878E09169A93400CE1027082DA2 TrackableChanges_1_get_added_m8E0E28C84E03CC94A82F70D77D5E8F753F39363A_gshared_inline (TrackableChanges_1_t03BF8B384A61E7421A4748384189C50C3A2C323F* __this, const RuntimeMethod* method) ;
+// Unity.Collections.NativeArray`1/Enumerator<T> Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.XREnvironmentProbe>::GetEnumerator()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_t8A9E97CA5C90C762E693D02011DD73E7870F3BD2 NativeArray_1_GetEnumerator_m841C992D910D6224AFA3A6455730BBC57AA93600_gshared (NativeArray_1_t27110FD746D2F878E09169A93400CE1027082DA2* __this, const RuntimeMethod* method) ;
+// System.Void Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XREnvironmentProbe>::Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_m5FA16B93D03F31304C8879E2186706041E54C5DF_gshared (Enumerator_t8A9E97CA5C90C762E693D02011DD73E7870F3BD2* __this, const RuntimeMethod* method) ;
+// T Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XREnvironmentProbe>::get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 Enumerator_get_Current_m9481DF20F1D73C2C1813EBEEC03FEAB12BEF74ED_gshared (Enumerator_t8A9E97CA5C90C762E693D02011DD73E7870F3BD2* __this, const RuntimeMethod* method) ;
+// System.Boolean Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XREnvironmentProbe>::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m8270D0DDE3ECF7A166EBC2747D4809AB27F6D238_gshared (Enumerator_t8A9E97CA5C90C762E693D02011DD73E7870F3BD2* __this, const RuntimeMethod* method) ;
+// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XREnvironmentProbe>::get_updated()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_t27110FD746D2F878E09169A93400CE1027082DA2 TrackableChanges_1_get_updated_mB7A87D602027E36E117065D68A04692716D37388_gshared_inline (TrackableChanges_1_t03BF8B384A61E7421A4748384189C50C3A2C323F* __this, const RuntimeMethod* method) ;
+// Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.TrackableId> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XREnvironmentProbe>::get_removed()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E TrackableChanges_1_get_removed_mB692C4B8E9682871345D028184FD08CA66224E56_gshared_inline (TrackableChanges_1_t03BF8B384A61E7421A4748384189C50C3A2C323F* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRFace>::Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackableChanges_1_Dispose_m8D027CBE51AE683E048A1C10C98D707FD0408A0E_gshared (TrackableChanges_1_t244050823CF4D8F3C9DFAE4AB0CEFA639C719119* __this, const RuntimeMethod* method) ;
+// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRFace>::get_added()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_t944085523DA105D6BBD308E9159C874CE60B3009 TrackableChanges_1_get_added_mC976D7B10EA3881871F38F0098CB782D2B4F3CC0_gshared_inline (TrackableChanges_1_t244050823CF4D8F3C9DFAE4AB0CEFA639C719119* __this, const RuntimeMethod* method) ;
+// Unity.Collections.NativeArray`1/Enumerator<T> Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.XRFace>::GetEnumerator()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_t03EC424AAB00E50A639522E4490FAC2B29B80F11 NativeArray_1_GetEnumerator_m9D250B38EACD7902C608E5625555327F3803DC41_gshared (NativeArray_1_t944085523DA105D6BBD308E9159C874CE60B3009* __this, const RuntimeMethod* method) ;
+// System.Void Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRFace>::Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_m84E9F7FC3BDC4F752EC10DC8EFE1551646F0C8D1_gshared (Enumerator_t03EC424AAB00E50A639522E4490FAC2B29B80F11* __this, const RuntimeMethod* method) ;
+// T Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRFace>::get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB Enumerator_get_Current_mBEBB844F02024390539313429D6EEE527D55D69C_gshared (Enumerator_t03EC424AAB00E50A639522E4490FAC2B29B80F11* __this, const RuntimeMethod* method) ;
+// System.Boolean Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRFace>::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m42CA670C820B92DEC79BA4610D1853D157755300_gshared (Enumerator_t03EC424AAB00E50A639522E4490FAC2B29B80F11* __this, const RuntimeMethod* method) ;
+// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRFace>::get_updated()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_t944085523DA105D6BBD308E9159C874CE60B3009 TrackableChanges_1_get_updated_m7600C09050F548113163F28357515FA195925891_gshared_inline (TrackableChanges_1_t244050823CF4D8F3C9DFAE4AB0CEFA639C719119* __this, const RuntimeMethod* method) ;
+// Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.TrackableId> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRFace>::get_removed()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E TrackableChanges_1_get_removed_m8B0967F38BE46C987E2C0A104323BBCD97AB8927_gshared_inline (TrackableChanges_1_t244050823CF4D8F3C9DFAE4AB0CEFA639C719119* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRHumanBody>::Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackableChanges_1_Dispose_m009F3E273F28D1C17F4CF3FFA9CFDF76A8F811E5_gshared (TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6* __this, const RuntimeMethod* method) ;
+// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRHumanBody>::get_added()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_t5B6781386C81B6DAD0A46599F36186F644DC17D0 TrackableChanges_1_get_added_m7F31AA8A5F6934F83681E8BD6BBA797F87E5D1E0_gshared_inline (TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6* __this, const RuntimeMethod* method) ;
+// Unity.Collections.NativeArray`1/Enumerator<T> Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.XRHumanBody>::GetEnumerator()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_t4684A3B2EF4932BDD7B7BA77FBE925A2858235F0 NativeArray_1_GetEnumerator_m29739A61F8F1BBA42DB3781B2CC754C8551A8D35_gshared (NativeArray_1_t5B6781386C81B6DAD0A46599F36186F644DC17D0* __this, const RuntimeMethod* method) ;
+// System.Void Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRHumanBody>::Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_m4CB3FA20348E113538842E240B3906A19AC6C166_gshared (Enumerator_t4684A3B2EF4932BDD7B7BA77FBE925A2858235F0* __this, const RuntimeMethod* method) ;
+// T Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRHumanBody>::get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRHumanBody_t88EF91F599A4F22EABB233F85DE7782EE8B86692 Enumerator_get_Current_m0E26F83CF06A0660F43F30F6425902AC487178C7_gshared (Enumerator_t4684A3B2EF4932BDD7B7BA77FBE925A2858235F0* __this, const RuntimeMethod* method) ;
+// System.Boolean Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRHumanBody>::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mCABC4D658526DEFE9ECF08AED5D5F32ADDFBBAB7_gshared (Enumerator_t4684A3B2EF4932BDD7B7BA77FBE925A2858235F0* __this, const RuntimeMethod* method) ;
+// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRHumanBody>::get_updated()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_t5B6781386C81B6DAD0A46599F36186F644DC17D0 TrackableChanges_1_get_updated_mC79BCE7C56B99C53E6340EB5683F7DEDF1C3AA8E_gshared_inline (TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6* __this, const RuntimeMethod* method) ;
+// Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.TrackableId> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRHumanBody>::get_removed()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E TrackableChanges_1_get_removed_m9ED605C97CF3E20830DA7B6811B123B09C1B2585_gshared_inline (TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRParticipant>::Dispose()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackableChanges_1_Dispose_mD897F6FDA80053D9BF0649ABEF887D1F083D9B4F_gshared (TrackableChanges_1_t2CDAB668CF6C2AB6D755F9C2911626A1C9140179* __this, const RuntimeMethod* method) ;
 // Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRParticipant>::get_added()
@@ -7645,45 +6074,45 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool SubsystemWithProvider_get_ru
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScopedProfiler__ctor_m652B5689DE1A3C3EF7D12801DA27FA3B40E4412F (ScopedProfiler_tA2CF63F6C047FB63643D2263A4AC86C6A363EC6F* __this, String_t* ___name0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.XR.ARSubsystems.ScopedProfiler::Dispose()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScopedProfiler_Dispose_m7B646405B4E52CC4677329D3B860BE9C17A9DAC4 (ScopedProfiler_tA2CF63F6C047FB63643D2263A4AC86C6A363EC6F* __this, const RuntimeMethod* method) ;
-// System.Void UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRHumanBody>::Dispose()
-inline void TrackableChanges_1_Dispose_m009F3E273F28D1C17F4CF3FFA9CFDF76A8F811E5 (TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6* __this, const RuntimeMethod* method)
+// System.Void UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRAnchor>::Dispose()
+inline void TrackableChanges_1_Dispose_m5DD2DC8F7FD6773D16E7C0A7C4382C2FA20DA89C (TrackableChanges_1_t6971CD7F709E7353F4365FE06A109B21A0F0C931* __this, const RuntimeMethod* method)
 {
-	((  void (*) (TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6*, const RuntimeMethod*))TrackableChanges_1_Dispose_m009F3E273F28D1C17F4CF3FFA9CFDF76A8F811E5_gshared)(__this, method);
+	((  void (*) (TrackableChanges_1_t6971CD7F709E7353F4365FE06A109B21A0F0C931*, const RuntimeMethod*))TrackableChanges_1_Dispose_m5DD2DC8F7FD6773D16E7C0A7C4382C2FA20DA89C_gshared)(__this, method);
 }
-// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRHumanBody>::get_added()
-inline NativeArray_1_t5B6781386C81B6DAD0A46599F36186F644DC17D0 TrackableChanges_1_get_added_m7F31AA8A5F6934F83681E8BD6BBA797F87E5D1E0_inline (TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6* __this, const RuntimeMethod* method)
+// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRAnchor>::get_added()
+inline NativeArray_1_tAE2F2F17B6A4F98F44324897A00F6A9D2151DC3A TrackableChanges_1_get_added_m247464F980D46DD4B1BC63D35DEF4F0B10835FB7_inline (TrackableChanges_1_t6971CD7F709E7353F4365FE06A109B21A0F0C931* __this, const RuntimeMethod* method)
 {
-	return ((  NativeArray_1_t5B6781386C81B6DAD0A46599F36186F644DC17D0 (*) (TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6*, const RuntimeMethod*))TrackableChanges_1_get_added_m7F31AA8A5F6934F83681E8BD6BBA797F87E5D1E0_gshared_inline)(__this, method);
+	return ((  NativeArray_1_tAE2F2F17B6A4F98F44324897A00F6A9D2151DC3A (*) (TrackableChanges_1_t6971CD7F709E7353F4365FE06A109B21A0F0C931*, const RuntimeMethod*))TrackableChanges_1_get_added_m247464F980D46DD4B1BC63D35DEF4F0B10835FB7_gshared_inline)(__this, method);
 }
-// Unity.Collections.NativeArray`1/Enumerator<T> Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.XRHumanBody>::GetEnumerator()
-inline Enumerator_t4684A3B2EF4932BDD7B7BA77FBE925A2858235F0 NativeArray_1_GetEnumerator_m29739A61F8F1BBA42DB3781B2CC754C8551A8D35 (NativeArray_1_t5B6781386C81B6DAD0A46599F36186F644DC17D0* __this, const RuntimeMethod* method)
+// Unity.Collections.NativeArray`1/Enumerator<T> Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.XRAnchor>::GetEnumerator()
+inline Enumerator_t6F8582E7CB46ABAB8F6FDFA62CAFDDD5EF6AB953 NativeArray_1_GetEnumerator_m715F0D8F7B8F47734D62294D193B357E3DAFDFDC (NativeArray_1_tAE2F2F17B6A4F98F44324897A00F6A9D2151DC3A* __this, const RuntimeMethod* method)
 {
-	return ((  Enumerator_t4684A3B2EF4932BDD7B7BA77FBE925A2858235F0 (*) (NativeArray_1_t5B6781386C81B6DAD0A46599F36186F644DC17D0*, const RuntimeMethod*))NativeArray_1_GetEnumerator_m29739A61F8F1BBA42DB3781B2CC754C8551A8D35_gshared)(__this, method);
+	return ((  Enumerator_t6F8582E7CB46ABAB8F6FDFA62CAFDDD5EF6AB953 (*) (NativeArray_1_tAE2F2F17B6A4F98F44324897A00F6A9D2151DC3A*, const RuntimeMethod*))NativeArray_1_GetEnumerator_m715F0D8F7B8F47734D62294D193B357E3DAFDFDC_gshared)(__this, method);
 }
-// System.Void Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRHumanBody>::Dispose()
-inline void Enumerator_Dispose_m4CB3FA20348E113538842E240B3906A19AC6C166 (Enumerator_t4684A3B2EF4932BDD7B7BA77FBE925A2858235F0* __this, const RuntimeMethod* method)
+// System.Void Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRAnchor>::Dispose()
+inline void Enumerator_Dispose_mF69D4ACD38C3EA25EC9280A912BDA953A0B309B3 (Enumerator_t6F8582E7CB46ABAB8F6FDFA62CAFDDD5EF6AB953* __this, const RuntimeMethod* method)
 {
-	((  void (*) (Enumerator_t4684A3B2EF4932BDD7B7BA77FBE925A2858235F0*, const RuntimeMethod*))Enumerator_Dispose_m4CB3FA20348E113538842E240B3906A19AC6C166_gshared)(__this, method);
+	((  void (*) (Enumerator_t6F8582E7CB46ABAB8F6FDFA62CAFDDD5EF6AB953*, const RuntimeMethod*))Enumerator_Dispose_mF69D4ACD38C3EA25EC9280A912BDA953A0B309B3_gshared)(__this, method);
 }
-// T Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRHumanBody>::get_Current()
-inline XRHumanBody_t88EF91F599A4F22EABB233F85DE7782EE8B86692 Enumerator_get_Current_m0E26F83CF06A0660F43F30F6425902AC487178C7 (Enumerator_t4684A3B2EF4932BDD7B7BA77FBE925A2858235F0* __this, const RuntimeMethod* method)
+// T Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRAnchor>::get_Current()
+inline XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 Enumerator_get_Current_m0FB9E0CDF48720C23EF12B33C7D51DBCC9959681 (Enumerator_t6F8582E7CB46ABAB8F6FDFA62CAFDDD5EF6AB953* __this, const RuntimeMethod* method)
 {
-	return ((  XRHumanBody_t88EF91F599A4F22EABB233F85DE7782EE8B86692 (*) (Enumerator_t4684A3B2EF4932BDD7B7BA77FBE925A2858235F0*, const RuntimeMethod*))Enumerator_get_Current_m0E26F83CF06A0660F43F30F6425902AC487178C7_gshared)(__this, method);
+	return ((  XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 (*) (Enumerator_t6F8582E7CB46ABAB8F6FDFA62CAFDDD5EF6AB953*, const RuntimeMethod*))Enumerator_get_Current_m0FB9E0CDF48720C23EF12B33C7D51DBCC9959681_gshared)(__this, method);
 }
-// System.Boolean Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRHumanBody>::MoveNext()
-inline bool Enumerator_MoveNext_mCABC4D658526DEFE9ECF08AED5D5F32ADDFBBAB7 (Enumerator_t4684A3B2EF4932BDD7B7BA77FBE925A2858235F0* __this, const RuntimeMethod* method)
+// System.Boolean Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRAnchor>::MoveNext()
+inline bool Enumerator_MoveNext_m3D4D3AE7BBF856539A509727B1A453CB1FCE2873 (Enumerator_t6F8582E7CB46ABAB8F6FDFA62CAFDDD5EF6AB953* __this, const RuntimeMethod* method)
 {
-	return ((  bool (*) (Enumerator_t4684A3B2EF4932BDD7B7BA77FBE925A2858235F0*, const RuntimeMethod*))Enumerator_MoveNext_mCABC4D658526DEFE9ECF08AED5D5F32ADDFBBAB7_gshared)(__this, method);
+	return ((  bool (*) (Enumerator_t6F8582E7CB46ABAB8F6FDFA62CAFDDD5EF6AB953*, const RuntimeMethod*))Enumerator_MoveNext_m3D4D3AE7BBF856539A509727B1A453CB1FCE2873_gshared)(__this, method);
 }
-// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRHumanBody>::get_updated()
-inline NativeArray_1_t5B6781386C81B6DAD0A46599F36186F644DC17D0 TrackableChanges_1_get_updated_mC79BCE7C56B99C53E6340EB5683F7DEDF1C3AA8E_inline (TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6* __this, const RuntimeMethod* method)
+// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRAnchor>::get_updated()
+inline NativeArray_1_tAE2F2F17B6A4F98F44324897A00F6A9D2151DC3A TrackableChanges_1_get_updated_mF8CD50C65A76F68ED3EFCE8A4316153A2CAF3999_inline (TrackableChanges_1_t6971CD7F709E7353F4365FE06A109B21A0F0C931* __this, const RuntimeMethod* method)
 {
-	return ((  NativeArray_1_t5B6781386C81B6DAD0A46599F36186F644DC17D0 (*) (TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6*, const RuntimeMethod*))TrackableChanges_1_get_updated_mC79BCE7C56B99C53E6340EB5683F7DEDF1C3AA8E_gshared_inline)(__this, method);
+	return ((  NativeArray_1_tAE2F2F17B6A4F98F44324897A00F6A9D2151DC3A (*) (TrackableChanges_1_t6971CD7F709E7353F4365FE06A109B21A0F0C931*, const RuntimeMethod*))TrackableChanges_1_get_updated_mF8CD50C65A76F68ED3EFCE8A4316153A2CAF3999_gshared_inline)(__this, method);
 }
-// Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.TrackableId> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRHumanBody>::get_removed()
-inline NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E TrackableChanges_1_get_removed_m9ED605C97CF3E20830DA7B6811B123B09C1B2585_inline (TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6* __this, const RuntimeMethod* method)
+// Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.TrackableId> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRAnchor>::get_removed()
+inline NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E TrackableChanges_1_get_removed_m0E574DBEEC409628E125B65A3437EA9C9D73F06F_inline (TrackableChanges_1_t6971CD7F709E7353F4365FE06A109B21A0F0C931* __this, const RuntimeMethod* method)
 {
-	return ((  NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E (*) (TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6*, const RuntimeMethod*))TrackableChanges_1_get_removed_m9ED605C97CF3E20830DA7B6811B123B09C1B2585_gshared_inline)(__this, method);
+	return ((  NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E (*) (TrackableChanges_1_t6971CD7F709E7353F4365FE06A109B21A0F0C931*, const RuntimeMethod*))TrackableChanges_1_get_removed_m0E574DBEEC409628E125B65A3437EA9C9D73F06F_gshared_inline)(__this, method);
 }
 // Unity.Collections.NativeArray`1/Enumerator<T> Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.TrackableId>::GetEnumerator()
 inline Enumerator_tC8A26D390552986367A8B556DCF22FAAF6E7AAAD NativeArray_1_GetEnumerator_mE980205B99190A020484F10CBAC64EB8C743AAF0 (NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E* __this, const RuntimeMethod* method)
@@ -7744,12 +6173,144 @@ inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Object_Instantiate_
 }
 // System.Void UnityEngine.Object::set_name(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* __this, String_t* ___value0, const RuntimeMethod* method) ;
+// UnityEngine.XR.ARSubsystems.TrackableId UnityEngine.XR.ARSubsystems.XRAnchor::get_trackableId()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 XRAnchor_get_trackableId_m0F50E81D0152D0BA4152EF9B66F648EF9FC664AE_inline (XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82* __this, const RuntimeMethod* method) ;
+// UnityEngine.Pose UnityEngine.XR.ARSubsystems.XRAnchor::get_pose()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 XRAnchor_get_pose_m2347783C1262EEFBC0B817EF0357FA4BB4BF053F_inline (XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Object::Destroy(UnityEngine.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___obj0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XREnvironmentProbe>::Dispose()
+inline void TrackableChanges_1_Dispose_m83C5617202AF34BF17844B80195A0238CF7589CB (TrackableChanges_1_t03BF8B384A61E7421A4748384189C50C3A2C323F* __this, const RuntimeMethod* method)
+{
+	((  void (*) (TrackableChanges_1_t03BF8B384A61E7421A4748384189C50C3A2C323F*, const RuntimeMethod*))TrackableChanges_1_Dispose_m83C5617202AF34BF17844B80195A0238CF7589CB_gshared)(__this, method);
+}
+// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XREnvironmentProbe>::get_added()
+inline NativeArray_1_t27110FD746D2F878E09169A93400CE1027082DA2 TrackableChanges_1_get_added_m8E0E28C84E03CC94A82F70D77D5E8F753F39363A_inline (TrackableChanges_1_t03BF8B384A61E7421A4748384189C50C3A2C323F* __this, const RuntimeMethod* method)
+{
+	return ((  NativeArray_1_t27110FD746D2F878E09169A93400CE1027082DA2 (*) (TrackableChanges_1_t03BF8B384A61E7421A4748384189C50C3A2C323F*, const RuntimeMethod*))TrackableChanges_1_get_added_m8E0E28C84E03CC94A82F70D77D5E8F753F39363A_gshared_inline)(__this, method);
+}
+// Unity.Collections.NativeArray`1/Enumerator<T> Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.XREnvironmentProbe>::GetEnumerator()
+inline Enumerator_t8A9E97CA5C90C762E693D02011DD73E7870F3BD2 NativeArray_1_GetEnumerator_m841C992D910D6224AFA3A6455730BBC57AA93600 (NativeArray_1_t27110FD746D2F878E09169A93400CE1027082DA2* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_t8A9E97CA5C90C762E693D02011DD73E7870F3BD2 (*) (NativeArray_1_t27110FD746D2F878E09169A93400CE1027082DA2*, const RuntimeMethod*))NativeArray_1_GetEnumerator_m841C992D910D6224AFA3A6455730BBC57AA93600_gshared)(__this, method);
+}
+// System.Void Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XREnvironmentProbe>::Dispose()
+inline void Enumerator_Dispose_m5FA16B93D03F31304C8879E2186706041E54C5DF (Enumerator_t8A9E97CA5C90C762E693D02011DD73E7870F3BD2* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_t8A9E97CA5C90C762E693D02011DD73E7870F3BD2*, const RuntimeMethod*))Enumerator_Dispose_m5FA16B93D03F31304C8879E2186706041E54C5DF_gshared)(__this, method);
+}
+// T Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XREnvironmentProbe>::get_Current()
+inline XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 Enumerator_get_Current_m9481DF20F1D73C2C1813EBEEC03FEAB12BEF74ED (Enumerator_t8A9E97CA5C90C762E693D02011DD73E7870F3BD2* __this, const RuntimeMethod* method)
+{
+	return ((  XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 (*) (Enumerator_t8A9E97CA5C90C762E693D02011DD73E7870F3BD2*, const RuntimeMethod*))Enumerator_get_Current_m9481DF20F1D73C2C1813EBEEC03FEAB12BEF74ED_gshared)(__this, method);
+}
+// System.Boolean Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XREnvironmentProbe>::MoveNext()
+inline bool Enumerator_MoveNext_m8270D0DDE3ECF7A166EBC2747D4809AB27F6D238 (Enumerator_t8A9E97CA5C90C762E693D02011DD73E7870F3BD2* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_t8A9E97CA5C90C762E693D02011DD73E7870F3BD2*, const RuntimeMethod*))Enumerator_MoveNext_m8270D0DDE3ECF7A166EBC2747D4809AB27F6D238_gshared)(__this, method);
+}
+// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XREnvironmentProbe>::get_updated()
+inline NativeArray_1_t27110FD746D2F878E09169A93400CE1027082DA2 TrackableChanges_1_get_updated_mB7A87D602027E36E117065D68A04692716D37388_inline (TrackableChanges_1_t03BF8B384A61E7421A4748384189C50C3A2C323F* __this, const RuntimeMethod* method)
+{
+	return ((  NativeArray_1_t27110FD746D2F878E09169A93400CE1027082DA2 (*) (TrackableChanges_1_t03BF8B384A61E7421A4748384189C50C3A2C323F*, const RuntimeMethod*))TrackableChanges_1_get_updated_mB7A87D602027E36E117065D68A04692716D37388_gshared_inline)(__this, method);
+}
+// Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.TrackableId> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XREnvironmentProbe>::get_removed()
+inline NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E TrackableChanges_1_get_removed_mB692C4B8E9682871345D028184FD08CA66224E56_inline (TrackableChanges_1_t03BF8B384A61E7421A4748384189C50C3A2C323F* __this, const RuntimeMethod* method)
+{
+	return ((  NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E (*) (TrackableChanges_1_t03BF8B384A61E7421A4748384189C50C3A2C323F*, const RuntimeMethod*))TrackableChanges_1_get_removed_mB692C4B8E9682871345D028184FD08CA66224E56_gshared_inline)(__this, method);
+}
+// UnityEngine.XR.ARSubsystems.TrackableId UnityEngine.XR.ARSubsystems.XREnvironmentProbe::get_trackableId()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 XREnvironmentProbe_get_trackableId_m7B20AFD8D153397E7270F72C81B32043DA83C57F_inline (XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9* __this, const RuntimeMethod* method) ;
+// UnityEngine.Pose UnityEngine.XR.ARSubsystems.XREnvironmentProbe::get_pose()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 XREnvironmentProbe_get_pose_m56C2FCB790DC220FAE0339EFC82055360984CAF0_inline (XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRFace>::Dispose()
+inline void TrackableChanges_1_Dispose_m8D027CBE51AE683E048A1C10C98D707FD0408A0E (TrackableChanges_1_t244050823CF4D8F3C9DFAE4AB0CEFA639C719119* __this, const RuntimeMethod* method)
+{
+	((  void (*) (TrackableChanges_1_t244050823CF4D8F3C9DFAE4AB0CEFA639C719119*, const RuntimeMethod*))TrackableChanges_1_Dispose_m8D027CBE51AE683E048A1C10C98D707FD0408A0E_gshared)(__this, method);
+}
+// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRFace>::get_added()
+inline NativeArray_1_t944085523DA105D6BBD308E9159C874CE60B3009 TrackableChanges_1_get_added_mC976D7B10EA3881871F38F0098CB782D2B4F3CC0_inline (TrackableChanges_1_t244050823CF4D8F3C9DFAE4AB0CEFA639C719119* __this, const RuntimeMethod* method)
+{
+	return ((  NativeArray_1_t944085523DA105D6BBD308E9159C874CE60B3009 (*) (TrackableChanges_1_t244050823CF4D8F3C9DFAE4AB0CEFA639C719119*, const RuntimeMethod*))TrackableChanges_1_get_added_mC976D7B10EA3881871F38F0098CB782D2B4F3CC0_gshared_inline)(__this, method);
+}
+// Unity.Collections.NativeArray`1/Enumerator<T> Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.XRFace>::GetEnumerator()
+inline Enumerator_t03EC424AAB00E50A639522E4490FAC2B29B80F11 NativeArray_1_GetEnumerator_m9D250B38EACD7902C608E5625555327F3803DC41 (NativeArray_1_t944085523DA105D6BBD308E9159C874CE60B3009* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_t03EC424AAB00E50A639522E4490FAC2B29B80F11 (*) (NativeArray_1_t944085523DA105D6BBD308E9159C874CE60B3009*, const RuntimeMethod*))NativeArray_1_GetEnumerator_m9D250B38EACD7902C608E5625555327F3803DC41_gshared)(__this, method);
+}
+// System.Void Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRFace>::Dispose()
+inline void Enumerator_Dispose_m84E9F7FC3BDC4F752EC10DC8EFE1551646F0C8D1 (Enumerator_t03EC424AAB00E50A639522E4490FAC2B29B80F11* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_t03EC424AAB00E50A639522E4490FAC2B29B80F11*, const RuntimeMethod*))Enumerator_Dispose_m84E9F7FC3BDC4F752EC10DC8EFE1551646F0C8D1_gshared)(__this, method);
+}
+// T Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRFace>::get_Current()
+inline XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB Enumerator_get_Current_mBEBB844F02024390539313429D6EEE527D55D69C (Enumerator_t03EC424AAB00E50A639522E4490FAC2B29B80F11* __this, const RuntimeMethod* method)
+{
+	return ((  XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB (*) (Enumerator_t03EC424AAB00E50A639522E4490FAC2B29B80F11*, const RuntimeMethod*))Enumerator_get_Current_mBEBB844F02024390539313429D6EEE527D55D69C_gshared)(__this, method);
+}
+// System.Boolean Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRFace>::MoveNext()
+inline bool Enumerator_MoveNext_m42CA670C820B92DEC79BA4610D1853D157755300 (Enumerator_t03EC424AAB00E50A639522E4490FAC2B29B80F11* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_t03EC424AAB00E50A639522E4490FAC2B29B80F11*, const RuntimeMethod*))Enumerator_MoveNext_m42CA670C820B92DEC79BA4610D1853D157755300_gshared)(__this, method);
+}
+// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRFace>::get_updated()
+inline NativeArray_1_t944085523DA105D6BBD308E9159C874CE60B3009 TrackableChanges_1_get_updated_m7600C09050F548113163F28357515FA195925891_inline (TrackableChanges_1_t244050823CF4D8F3C9DFAE4AB0CEFA639C719119* __this, const RuntimeMethod* method)
+{
+	return ((  NativeArray_1_t944085523DA105D6BBD308E9159C874CE60B3009 (*) (TrackableChanges_1_t244050823CF4D8F3C9DFAE4AB0CEFA639C719119*, const RuntimeMethod*))TrackableChanges_1_get_updated_m7600C09050F548113163F28357515FA195925891_gshared_inline)(__this, method);
+}
+// Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.TrackableId> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRFace>::get_removed()
+inline NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E TrackableChanges_1_get_removed_m8B0967F38BE46C987E2C0A104323BBCD97AB8927_inline (TrackableChanges_1_t244050823CF4D8F3C9DFAE4AB0CEFA639C719119* __this, const RuntimeMethod* method)
+{
+	return ((  NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E (*) (TrackableChanges_1_t244050823CF4D8F3C9DFAE4AB0CEFA639C719119*, const RuntimeMethod*))TrackableChanges_1_get_removed_m8B0967F38BE46C987E2C0A104323BBCD97AB8927_gshared_inline)(__this, method);
+}
+// UnityEngine.XR.ARSubsystems.TrackableId UnityEngine.XR.ARSubsystems.XRFace::get_trackableId()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 XRFace_get_trackableId_m9FC29FB643FFBAB989AB8179F57CDB52D14737B3_inline (XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB* __this, const RuntimeMethod* method) ;
+// UnityEngine.Pose UnityEngine.XR.ARSubsystems.XRFace::get_pose()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 XRFace_get_pose_m1625DED173751F25873C4BB6650238A195CD04EE_inline (XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRHumanBody>::Dispose()
+inline void TrackableChanges_1_Dispose_m009F3E273F28D1C17F4CF3FFA9CFDF76A8F811E5 (TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6* __this, const RuntimeMethod* method)
+{
+	((  void (*) (TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6*, const RuntimeMethod*))TrackableChanges_1_Dispose_m009F3E273F28D1C17F4CF3FFA9CFDF76A8F811E5_gshared)(__this, method);
+}
+// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRHumanBody>::get_added()
+inline NativeArray_1_t5B6781386C81B6DAD0A46599F36186F644DC17D0 TrackableChanges_1_get_added_m7F31AA8A5F6934F83681E8BD6BBA797F87E5D1E0_inline (TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6* __this, const RuntimeMethod* method)
+{
+	return ((  NativeArray_1_t5B6781386C81B6DAD0A46599F36186F644DC17D0 (*) (TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6*, const RuntimeMethod*))TrackableChanges_1_get_added_m7F31AA8A5F6934F83681E8BD6BBA797F87E5D1E0_gshared_inline)(__this, method);
+}
+// Unity.Collections.NativeArray`1/Enumerator<T> Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.XRHumanBody>::GetEnumerator()
+inline Enumerator_t4684A3B2EF4932BDD7B7BA77FBE925A2858235F0 NativeArray_1_GetEnumerator_m29739A61F8F1BBA42DB3781B2CC754C8551A8D35 (NativeArray_1_t5B6781386C81B6DAD0A46599F36186F644DC17D0* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_t4684A3B2EF4932BDD7B7BA77FBE925A2858235F0 (*) (NativeArray_1_t5B6781386C81B6DAD0A46599F36186F644DC17D0*, const RuntimeMethod*))NativeArray_1_GetEnumerator_m29739A61F8F1BBA42DB3781B2CC754C8551A8D35_gshared)(__this, method);
+}
+// System.Void Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRHumanBody>::Dispose()
+inline void Enumerator_Dispose_m4CB3FA20348E113538842E240B3906A19AC6C166 (Enumerator_t4684A3B2EF4932BDD7B7BA77FBE925A2858235F0* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_t4684A3B2EF4932BDD7B7BA77FBE925A2858235F0*, const RuntimeMethod*))Enumerator_Dispose_m4CB3FA20348E113538842E240B3906A19AC6C166_gshared)(__this, method);
+}
+// T Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRHumanBody>::get_Current()
+inline XRHumanBody_t88EF91F599A4F22EABB233F85DE7782EE8B86692 Enumerator_get_Current_m0E26F83CF06A0660F43F30F6425902AC487178C7 (Enumerator_t4684A3B2EF4932BDD7B7BA77FBE925A2858235F0* __this, const RuntimeMethod* method)
+{
+	return ((  XRHumanBody_t88EF91F599A4F22EABB233F85DE7782EE8B86692 (*) (Enumerator_t4684A3B2EF4932BDD7B7BA77FBE925A2858235F0*, const RuntimeMethod*))Enumerator_get_Current_m0E26F83CF06A0660F43F30F6425902AC487178C7_gshared)(__this, method);
+}
+// System.Boolean Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARSubsystems.XRHumanBody>::MoveNext()
+inline bool Enumerator_MoveNext_mCABC4D658526DEFE9ECF08AED5D5F32ADDFBBAB7 (Enumerator_t4684A3B2EF4932BDD7B7BA77FBE925A2858235F0* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_t4684A3B2EF4932BDD7B7BA77FBE925A2858235F0*, const RuntimeMethod*))Enumerator_MoveNext_mCABC4D658526DEFE9ECF08AED5D5F32ADDFBBAB7_gshared)(__this, method);
+}
+// Unity.Collections.NativeArray`1<T> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRHumanBody>::get_updated()
+inline NativeArray_1_t5B6781386C81B6DAD0A46599F36186F644DC17D0 TrackableChanges_1_get_updated_mC79BCE7C56B99C53E6340EB5683F7DEDF1C3AA8E_inline (TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6* __this, const RuntimeMethod* method)
+{
+	return ((  NativeArray_1_t5B6781386C81B6DAD0A46599F36186F644DC17D0 (*) (TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6*, const RuntimeMethod*))TrackableChanges_1_get_updated_mC79BCE7C56B99C53E6340EB5683F7DEDF1C3AA8E_gshared_inline)(__this, method);
+}
+// Unity.Collections.NativeArray`1<UnityEngine.XR.ARSubsystems.TrackableId> UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRHumanBody>::get_removed()
+inline NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E TrackableChanges_1_get_removed_m9ED605C97CF3E20830DA7B6811B123B09C1B2585_inline (TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6* __this, const RuntimeMethod* method)
+{
+	return ((  NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E (*) (TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6*, const RuntimeMethod*))TrackableChanges_1_get_removed_m9ED605C97CF3E20830DA7B6811B123B09C1B2585_gshared_inline)(__this, method);
+}
 // UnityEngine.XR.ARSubsystems.TrackableId UnityEngine.XR.ARSubsystems.XRHumanBody::get_trackableId()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 XRHumanBody_get_trackableId_m7CC5B8BB5179303ED1424ACDC46FBFA16C30B2FD_inline (XRHumanBody_t88EF91F599A4F22EABB233F85DE7782EE8B86692* __this, const RuntimeMethod* method) ;
 // UnityEngine.Pose UnityEngine.XR.ARSubsystems.XRHumanBody::get_pose()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 XRHumanBody_get_pose_mE154F73E48997BDB6828FE12D7116E93E4D4BBCF_inline (XRHumanBody_t88EF91F599A4F22EABB233F85DE7782EE8B86692* __this, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Object::Destroy(UnityEngine.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___obj0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.XR.ARSubsystems.TrackableChanges`1<UnityEngine.XR.ARSubsystems.XRParticipant>::Dispose()
 inline void TrackableChanges_1_Dispose_mD897F6FDA80053D9BF0649ABEF887D1F083D9B4F (TrackableChanges_1_t2CDAB668CF6C2AB6D755F9C2911626A1C9140179* __this, const RuntimeMethod* method)
 {
@@ -8022,24 +6583,12 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t BoundedPlane_get_tracking
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 BoundedPlane_get_pose_mE6F416B0C7519EDA0D1AE8D8BD4D627E4CEA96CC_inline (BoundedPlane_tF51C315A8961EB42F0A1B60D47158646E5AF75CE* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.XR.ARFoundation.ARTrackable::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackable__ctor_m8074A81414BDB3B30F9863C80B10EF90C99FFD8B (ARTrackable_t1D98417758C08E98A333CDEC0C2C1688CE10B2E0* __this, const RuntimeMethod* method) ;
-// UnityEngine.XR.ARSubsystems.TrackableId UnityEngine.XR.ARSubsystems.XRAnchor::get_trackableId()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 XRAnchor_get_trackableId_m0F50E81D0152D0BA4152EF9B66F648EF9FC664AE_inline (XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82* __this, const RuntimeMethod* method) ;
 // UnityEngine.XR.ARSubsystems.TrackingState UnityEngine.XR.ARSubsystems.XRAnchor::get_trackingState()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t XRAnchor_get_trackingState_m6124A26C36CA93C25C57548576CB00C1F496ED83_inline (XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82* __this, const RuntimeMethod* method) ;
-// UnityEngine.Pose UnityEngine.XR.ARSubsystems.XRAnchor::get_pose()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 XRAnchor_get_pose_m2347783C1262EEFBC0B817EF0357FA4BB4BF053F_inline (XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82* __this, const RuntimeMethod* method) ;
-// UnityEngine.XR.ARSubsystems.TrackableId UnityEngine.XR.ARSubsystems.XREnvironmentProbe::get_trackableId()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 XREnvironmentProbe_get_trackableId_m7B20AFD8D153397E7270F72C81B32043DA83C57F_inline (XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9* __this, const RuntimeMethod* method) ;
 // UnityEngine.XR.ARSubsystems.TrackingState UnityEngine.XR.ARSubsystems.XREnvironmentProbe::get_trackingState()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t XREnvironmentProbe_get_trackingState_m4051D90D37D33EC33534368B64E5C85EA1888C83_inline (XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9* __this, const RuntimeMethod* method) ;
-// UnityEngine.Pose UnityEngine.XR.ARSubsystems.XREnvironmentProbe::get_pose()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 XREnvironmentProbe_get_pose_m56C2FCB790DC220FAE0339EFC82055360984CAF0_inline (XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9* __this, const RuntimeMethod* method) ;
-// UnityEngine.XR.ARSubsystems.TrackableId UnityEngine.XR.ARSubsystems.XRFace::get_trackableId()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 XRFace_get_trackableId_m9FC29FB643FFBAB989AB8179F57CDB52D14737B3_inline (XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB* __this, const RuntimeMethod* method) ;
 // UnityEngine.XR.ARSubsystems.TrackingState UnityEngine.XR.ARSubsystems.XRFace::get_trackingState()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t XRFace_get_trackingState_m7D5C3002DCB9FC01F7C1BE66D3F1092281E847FB_inline (XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB* __this, const RuntimeMethod* method) ;
-// UnityEngine.Pose UnityEngine.XR.ARSubsystems.XRFace::get_pose()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 XRFace_get_pose_m1625DED173751F25873C4BB6650238A195CD04EE_inline (XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB* __this, const RuntimeMethod* method) ;
 // UnityEngine.XR.ARSubsystems.TrackingState UnityEngine.XR.ARSubsystems.XRHumanBody::get_trackingState()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t XRHumanBody_get_trackingState_mE53C1B287B5BD8E021FCAC0E4550C0D551C0F79A_inline (XRHumanBody_t88EF91F599A4F22EABB233F85DE7782EE8B86692* __this, const RuntimeMethod* method) ;
 // UnityEngine.XR.ARSubsystems.TrackingState UnityEngine.XR.ARSubsystems.XRParticipant::get_trackingState()
@@ -8056,6 +6605,4821 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t XRTrackedImage_get_tracki
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t XRTrackedObject_get_trackingState_m7D1D9DD436ECB10D02D1413AB660ACBC23D60E89_inline (XRTrackedObject_t56B5A101A8698B5C95F2CBE93FCF0F8911B67E75* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.UIElements.UQuery/UQueryMatcher::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UQueryMatcher__ctor_m669C00EE8CF4DA08ED95F9A511E6627FAEA0343E (UQueryMatcher_tF8783F54BA397641240DA7025126F6301EF53FF8* __this, const RuntimeMethod* method) ;
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// UnityEngine.XR.ARFoundation.ARTrackableManager`5<TSubsystem,TSubsystemDescriptor,TProvider,TSessionRelativeData,TTrackable> UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::get_instance()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* ARTrackableManager_5_get_instance_m96D8C8121D48F3EC73066ADAF8C4197A505064C2_gshared (const RuntimeMethod* method) 
+{
+	{
+		// internal static ARTrackableManager<TSubsystem, TSubsystemDescriptor, TProvider, TSessionRelativeData, TTrackable> instance { get; private set; }
+		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0));
+		ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* L_0 = ((ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___U3CinstanceU3Ek__BackingField_7;
+		return L_0;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::set_instance(UnityEngine.XR.ARFoundation.ARTrackableManager`5<TSubsystem,TSubsystemDescriptor,TProvider,TSessionRelativeData,TTrackable>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_set_instance_m95122BD259636589ABCAB900A38316B6F68EAEF4_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// internal static ARTrackableManager<TSubsystem, TSubsystemDescriptor, TProvider, TSessionRelativeData, TTrackable> instance { get; private set; }
+		ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* L_0 = ___value0;
+		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0));
+		((ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___U3CinstanceU3Ek__BackingField_7 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___U3CinstanceU3Ek__BackingField_7), (void*)L_0);
+		return;
+	}
+}
+// UnityEngine.XR.ARFoundation.TrackableCollection`1<TTrackable> UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::get_trackables()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB ARTrackableManager_5_get_trackables_mDD96C32B69FDE5004A683DE3ACD6ABA600D3913D_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, const RuntimeMethod* method) 
+{
+	{
+		// public TrackableCollection<TTrackable> trackables => new TrackableCollection<TTrackable>(m_Trackables);
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_0 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_Trackables_9;
+		TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB L_1;
+		memset((&L_1), 0, sizeof(L_1));
+		TrackableCollection_1__ctor_mB5CA9457B08CEF46281808276A685B42D58451B8((&L_1), L_0, /*hidden argument*/il2cpp_rgctx_method(method->klass->rgctx_data, 3));
+		return L_1;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::SetTrackablesActive(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_SetTrackablesActive_m0695BC9682C29290B767B71522E0308910A6D3B6_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, bool ___active0, const RuntimeMethod* method) 
+{
+	Enumerator_tB1F784FAF2FFA20550ACDB9773EA94D5D741808D V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		// foreach (var trackable in trackables)
+		TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB L_0;
+		L_0 = ((  TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB (*) (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 4)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
+		V_1 = L_0;
+		Enumerator_tB1F784FAF2FFA20550ACDB9773EA94D5D741808D L_1;
+		L_1 = TrackableCollection_1_GetEnumerator_m40FC0BACB788B33217B7B2C3221C7D9967F2B836((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 5));
+		V_0 = L_1;
+		goto IL_0028;
+	}
+
+IL_0011:
+	{
+		// foreach (var trackable in trackables)
+		RuntimeObject* L_2;
+		L_2 = Enumerator_get_Current_m0C78B1A685CCC36524577967CE1620CB889FDC0A((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 6));
+		// trackable.gameObject.SetActive(active);
+		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_2);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
+		L_3 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_2, NULL);
+		bool L_4 = ___active0;
+		NullCheck(L_3);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, L_4, NULL);
+	}
+
+IL_0028:
+	{
+		// foreach (var trackable in trackables)
+		bool L_5;
+		L_5 = Enumerator_MoveNext_m2DFDA23C7884D9A93FF21291F1DF5DDA2C0DA27C((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 8));
+		if (L_5)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		// }
+		return;
+	}
+}
+// UnityEngine.XR.ARFoundation.ARSessionOrigin UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::get_sessionOrigin()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* ARTrackableManager_5_get_sessionOrigin_m439561881F9BB270DCC9B3310A9B623AD72637E9_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, const RuntimeMethod* method) 
+{
+	{
+		// protected ARSessionOrigin sessionOrigin { get; private set; }
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_0 = (ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3*)__this->___U3CsessionOriginU3Ek__BackingField_8;
+		return L_0;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::set_sessionOrigin(UnityEngine.XR.ARFoundation.ARSessionOrigin)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_set_sessionOrigin_m2734629B618B32F0C44F4CEC9DB2719B4E1E25FA_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// protected ARSessionOrigin sessionOrigin { get; private set; }
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_0 = ___value0;
+		__this->___U3CsessionOriginU3Ek__BackingField_8 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CsessionOriginU3Ek__BackingField_8), (void*)L_0);
+		return;
+	}
+}
+// UnityEngine.GameObject UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::GetPrefab()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ARTrackableManager_5_GetPrefab_mC37491FDE0E94EC740A35D14380B302F72E053D2_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, const RuntimeMethod* method) 
+{
+	{
+		// protected virtual GameObject GetPrefab() => null;
+		return (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_Awake_m5D53B498DB55C6E3FE0DAC1B31E67E128DAE1FC2_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3_mF7E0A4EC84273D7FF5240FC39482D1D2740F7684_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// sessionOrigin = GetComponent<ARSessionOrigin>();
+		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)__this);
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_0;
+		L_0 = Component_GetComponent_TisARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3_mF7E0A4EC84273D7FF5240FC39482D1D2740F7684((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)__this, Component_GetComponent_TisARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3_mF7E0A4EC84273D7FF5240FC39482D1D2740F7684_RuntimeMethod_var);
+		((  void (*) (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465*, ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))(__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::OnEnable()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_OnEnable_mE0038F86731B5BF8CE410087D322E5D37EDFC1F6_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t2096FCE7327B89C5101BFB38155839F3166605FB_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// base.OnEnable();
+		NullCheck((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this);
+		((  void (*) (SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		// instance = this;
+		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+		((  void (*) (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
+		// sessionOrigin.trackablesParentTransformChanged += OnTrackablesParentTransformChanged;
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_0;
+		L_0 = ((  ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* (*) (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		Action_1_t2096FCE7327B89C5101BFB38155839F3166605FB* L_1 = (Action_1_t2096FCE7327B89C5101BFB38155839F3166605FB*)il2cpp_codegen_object_new(Action_1_t2096FCE7327B89C5101BFB38155839F3166605FB_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		Action_1__ctor_mF83057A5B46235D3B94069DE8AA97564FBC38082(L_1, (RuntimeObject*)__this, (intptr_t)((void*)il2cpp_rgctx_method(method->klass->rgctx_data, 13)), NULL);
+		NullCheck(L_0);
+		ARSessionOrigin_add_trackablesParentTransformChanged_m8B8C5C69E226357AEF029402553CE5C62588189E(L_0, L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::OnDisable()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_OnDisable_m15962E1B708291A32421AE242F3FDA842E0C658B_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t2096FCE7327B89C5101BFB38155839F3166605FB_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// base.OnDisable();
+		NullCheck((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this);
+		((  void (*) (SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		// sessionOrigin.trackablesParentTransformChanged -= OnTrackablesParentTransformChanged;
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_0;
+		L_0 = ((  ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* (*) (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		Action_1_t2096FCE7327B89C5101BFB38155839F3166605FB* L_1 = (Action_1_t2096FCE7327B89C5101BFB38155839F3166605FB*)il2cpp_codegen_object_new(Action_1_t2096FCE7327B89C5101BFB38155839F3166605FB_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		Action_1__ctor_mF83057A5B46235D3B94069DE8AA97564FBC38082(L_1, (RuntimeObject*)__this, (intptr_t)((void*)il2cpp_rgctx_method(method->klass->rgctx_data, 13)), NULL);
+		NullCheck(L_0);
+		ARSessionOrigin_remove_trackablesParentTransformChanged_m1D0E4B774E4AFF63367F442D5333B0C59FBD7582(L_0, L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Boolean UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::CanBeAddedToSubsystem(TTrackable)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ARTrackableManager_5_CanBeAddedToSubsystem_m9C5BADE50675477BC0F4D8F8FACD095D1641AB51_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, RuntimeObject* ___trackable0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		// if (trackable == null)
+		RuntimeObject* L_0 = ___trackable0;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		// throw new ArgumentNullException(nameof(trackable));
+		ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* L_2 = (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129_il2cpp_TypeInfo_var)));
+		NullCheck(L_2);
+		ArgumentNullException__ctor_m444AE141157E333844FC1A9500224C2F9FD24F4B(L_2, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral0DE1CB003F08731FF13F5C138B94B1D7BB6B2B9D)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ARTrackableManager_5_CanBeAddedToSubsystem_m9C5BADE50675477BC0F4D8F8FACD095D1641AB51_RuntimeMethod_var)));
+	}
+
+IL_0019:
+	{
+		// if (!trackable.trackableId.Equals(TrackableId.invalidId))
+		RuntimeObject* L_3 = ___trackable0;
+		NullCheck((ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*)L_3);
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_4;
+		L_4 = ((  TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 (*) (ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 16)))((ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*)L_3, il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+		V_0 = L_4;
+		il2cpp_codegen_runtime_class_init_inline(TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7_il2cpp_TypeInfo_var);
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_5;
+		L_5 = TrackableId_get_invalidId_mDAEC47FD9C1E08B9D5752DA8F185E7A783DBE494_inline(NULL);
+		bool L_6;
+		L_6 = TrackableId_Equals_m7263BB158392C4F1B57BEE16D4F1FBBCF01E4A6E((&V_0), L_5, NULL);
+		if (L_6)
+		{
+			goto IL_0035;
+		}
+	}
+	{
+		// return false;
+		return (bool)0;
+	}
+
+IL_0035:
+	{
+		// if (m_Trackables.ContainsKey(trackable.trackableId))
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_7 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_Trackables_9;
+		RuntimeObject* L_8 = ___trackable0;
+		NullCheck((ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*)L_8);
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_9;
+		L_9 = ((  TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 (*) (ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 16)))((ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*)L_8, il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+		NullCheck(L_7);
+		bool L_10;
+		L_10 = ((  bool (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 18)))(L_7, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+		if (!L_10)
+		{
+			goto IL_004f;
+		}
+	}
+	{
+		// return false;
+		return (bool)0;
+	}
+
+IL_004f:
+	{
+		// if (!enabled || subsystem == null)
+		NullCheck((Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA*)__this);
+		bool L_11;
+		L_11 = Behaviour_get_enabled_mAAC9F15E9EBF552217A5AE2681589CC0BFA300C1((Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA*)__this, NULL);
+		if (!L_11)
+		{
+			goto IL_0064;
+		}
+	}
+	{
+		NullCheck((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this);
+		RuntimeObject* L_12;
+		L_12 = ((  RuntimeObject* (*) (SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		if (L_12)
+		{
+			goto IL_0072;
+		}
+	}
+
+IL_0064:
+	{
+		// trackable.pending = true;
+		RuntimeObject* L_13 = ___trackable0;
+		NullCheck((ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*)L_13);
+		((  void (*) (ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*, bool, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 21)))((ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*)L_13, (bool)1, il2cpp_rgctx_method(method->klass->rgctx_data, 21));
+		// return false;
+		return (bool)0;
+	}
+
+IL_0072:
+	{
+		// return sessionOrigin && sessionOrigin.trackablesParent;
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_14;
+		L_14 = ((  ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* (*) (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_15;
+		L_15 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_14, NULL);
+		if (!L_15)
+		{
+			goto IL_0090;
+		}
+	}
+	{
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_16;
+		L_16 = ((  ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* (*) (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		NullCheck(L_16);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17;
+		L_17 = ARSessionOrigin_get_trackablesParent_mF42C34E0B09B58DEE52CF3CC13563BE541C14F9F_inline(L_16, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_18;
+		L_18 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_17, NULL);
+		return L_18;
+	}
+
+IL_0090:
+	{
+		return (bool)0;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::OnTrackablesParentTransformChanged(UnityEngine.XR.ARFoundation.ARTrackablesParentTransformChangedEventArgs)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_OnTrackablesParentTransformChanged_m8267658BFB693FC888002F3D42D588D1C40349B5_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, ARTrackablesParentTransformChangedEventArgs_tEF673BCB9382697300AE683ED29F0BF96E4A9C8A ___eventArgs0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_tB1F784FAF2FFA20550ACDB9773EA94D5D741808D V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	RuntimeObject* V_2 = NULL;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* V_3 = NULL;
+	Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	{
+		// foreach (var trackable in trackables)
+		TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB L_0;
+		L_0 = ((  TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB (*) (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 4)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
+		V_1 = L_0;
+		Enumerator_tB1F784FAF2FFA20550ACDB9773EA94D5D741808D L_1;
+		L_1 = TrackableCollection_1_GetEnumerator_m40FC0BACB788B33217B7B2C3221C7D9967F2B836((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 5));
+		V_0 = L_1;
+		goto IL_0066;
+	}
+
+IL_0011:
+	{
+		// foreach (var trackable in trackables)
+		RuntimeObject* L_2;
+		L_2 = Enumerator_get_Current_m0C78B1A685CCC36524577967CE1620CB889FDC0A((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 6));
+		V_2 = L_2;
+		// var transform = trackable.transform;
+		RuntimeObject* L_3 = V_2;
+		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_3);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
+		L_4 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_3, NULL);
+		V_3 = L_4;
+		// if (transform.parent != eventArgs.trackablesParent)
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = V_3;
+		NullCheck(L_5);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
+		L_6 = Transform_get_parent_m65354E28A4C94EC00EBCF03532F7B0718380791E(L_5, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = ARTrackablesParentTransformChangedEventArgs_get_trackablesParent_m2B845554A63A5CB63A6FBBB19C8C96F8E0F653D6_inline((&___eventArgs0), NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_8;
+		L_8 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_6, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_7, NULL);
+		if (!L_8)
+		{
+			goto IL_0066;
+		}
+	}
+	{
+		// var desiredPose = eventArgs.trackablesParent.TransformPose(trackable.sessionRelativePose);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
+		L_9 = ARTrackablesParentTransformChangedEventArgs_get_trackablesParent_m2B845554A63A5CB63A6FBBB19C8C96F8E0F653D6_inline((&___eventArgs0), NULL);
+		RuntimeObject* L_10 = V_2;
+		NullCheck((ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*)L_10);
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_11;
+		L_11 = ((  Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 (*) (ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 22)))((ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*)L_10, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_12;
+		L_12 = TransformExtensions_TransformPose_m657A2F269CFE7ABD9E77029577861EA464E2364C(L_9, L_11, NULL);
+		V_4 = L_12;
+		// transform.SetPositionAndRotation(desiredPose.position, desiredPose.rotation);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_13 = V_3;
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_14 = V_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_14.___position_0;
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_16 = V_4;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_17 = (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974)L_16.___rotation_1;
+		NullCheck(L_13);
+		Transform_SetPositionAndRotation_m418859BF59086EEAA084FFD6F258A43FAB408F5A(L_13, L_15, L_17, NULL);
+	}
+
+IL_0066:
+	{
+		// foreach (var trackable in trackables)
+		bool L_18;
+		L_18 = Enumerator_MoveNext_m2DFDA23C7884D9A93FF21291F1DF5DDA2C0DA27C((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 8));
+		if (L_18)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_Update_mE078A9B112A1DC536DD510C615E49E06CADA2D14_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m5D1D6FDED91C2254BB2731C2A979F3016E037147_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_mCB14CFB321C975B0DF69A927ACD4BD2A63AF0368_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m572F715FD6838E37154726E5A6DB2C103236C7C6_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NativeArray_1_GetEnumerator_mE980205B99190A020484F10CBAC64EB8C743AAF0_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral26AA71BDAE4689FF6E5304BFE38FF4E0E841032B);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2DC0198B89999C6E86C5CF2260C4264FF55D7903);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCCC539F743E3F97210255E70596588570DD34D8E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE6EF062EC4F6D2568BF5B77100709C7764EAEFE6);
+		s_Il2CppMethodInitialized = true;
+	}
+	ScopedProfiler_tA2CF63F6C047FB63643D2263A4AC86C6A363EC6F V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	TrackableChanges_1_t6971CD7F709E7353F4365FE06A109B21A0F0C931 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	ScopedProfiler_tA2CF63F6C047FB63643D2263A4AC86C6A363EC6F V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	NativeArray_1_tAE2F2F17B6A4F98F44324897A00F6A9D2151DC3A V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	Enumerator_t6F8582E7CB46ABAB8F6FDFA62CAFDDD5EF6AB953 V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 V_5;
+	memset((&V_5), 0, sizeof(V_5));
+	XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 V_6;
+	memset((&V_6), 0, sizeof(V_6));
+	NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E V_7;
+	memset((&V_7), 0, sizeof(V_7));
+	Enumerator_tC8A26D390552986367A8B556DCF22FAAF6E7AAAD V_8;
+	memset((&V_8), 0, sizeof(V_8));
+	TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 V_9;
+	memset((&V_9), 0, sizeof(V_9));
+	RuntimeObject* V_10 = NULL;
+	Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A V_11;
+	memset((&V_11), 0, sizeof(V_11));
+	RuntimeObject* V_12 = NULL;
+	{
+		// if (subsystem == null || !subsystem.running)
+		NullCheck((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this);
+		RuntimeObject* L_0;
+		L_0 = ((  RuntimeObject* (*) (SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		if (!L_0)
+		{
+			goto IL_001f;
+		}
+	}
+	{
+		NullCheck((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this);
+		RuntimeObject* L_1;
+		L_1 = ((  RuntimeObject* (*) (SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		NullCheck((SubsystemWithProvider_tC72E35EE2D413A4B0635B058154BABF265F31242*)L_1);
+		bool L_2;
+		L_2 = SubsystemWithProvider_get_running_m6BF31FC3BDA38C56C0F60FEA37767A4151B22C44_inline((SubsystemWithProvider_tC72E35EE2D413A4B0635B058154BABF265F31242*)L_1, NULL);
+		if (L_2)
+		{
+			goto IL_0020;
+		}
+	}
+
+IL_001f:
+	{
+		// return;
+		return;
+	}
+
+IL_0020:
+	{
+		// using (new ScopedProfiler("GetChanges"))
+		ScopedProfiler__ctor_m652B5689DE1A3C3EF7D12801DA27FA3B40E4412F((&V_0), _stringLiteralCCC539F743E3F97210255E70596588570DD34D8E, NULL);
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_01e0:
+			{// begin finally (depth: 1)
+				ScopedProfiler_Dispose_m7B646405B4E52CC4677329D3B860BE9C17A9DAC4((&V_0), NULL);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				// using (var changes = subsystem.GetChanges(Allocator.Temp))
+				NullCheck((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this);
+				RuntimeObject* L_3;
+				L_3 = ((  RuntimeObject* (*) (SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+				NullCheck((TrackingSubsystem_4_t7A10D71D38CC667281CC808FAB8ED27CD44C8D7C*)L_3);
+				TrackableChanges_1_t6971CD7F709E7353F4365FE06A109B21A0F0C931 L_4;
+				L_4 = VirtualFuncInvoker1< TrackableChanges_1_t6971CD7F709E7353F4365FE06A109B21A0F0C931, int32_t >::Invoke(14 /* UnityEngine.XR.ARSubsystems.TrackableChanges`1<TTrackable> UnityEngine.XR.ARSubsystems.TrackingSubsystem`4<UnityEngine.XR.ARSubsystems.XRAnchor,System.Object,System.Object,System.Object>::GetChanges(Unity.Collections.Allocator) */, (TrackingSubsystem_4_t7A10D71D38CC667281CC808FAB8ED27CD44C8D7C*)L_3, (int32_t)2);
+				V_1 = L_4;
+			}
+			{
+				auto __finallyBlock = il2cpp::utils::Finally([&]
+				{
+
+FINALLY_01d2_1:
+					{// begin finally (depth: 2)
+						TrackableChanges_1_Dispose_m5DD2DC8F7FD6773D16E7C0A7C4382C2FA20DA89C((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 40));
+						return;
+					}// end finally (depth: 2)
+				});
+				try
+				{// begin try (depth: 2)
+					{
+						// using (new ScopedProfiler("ProcessAdded"))
+						ScopedProfiler_tA2CF63F6C047FB63643D2263A4AC86C6A363EC6F L_5;
+						memset((&L_5), 0, sizeof(L_5));
+						ScopedProfiler__ctor_m652B5689DE1A3C3EF7D12801DA27FA3B40E4412F((&L_5), _stringLiteralE6EF062EC4F6D2568BF5B77100709C7764EAEFE6, /*hidden argument*/NULL);
+						V_2 = L_5;
+					}
+					{
+						auto __finallyBlock = il2cpp::utils::Finally([&]
+						{
+
+FINALLY_00a9_2:
+							{// begin finally (depth: 3)
+								ScopedProfiler_Dispose_m7B646405B4E52CC4677329D3B860BE9C17A9DAC4((&V_2), NULL);
+								return;
+							}// end finally (depth: 3)
+						});
+						try
+						{// begin try (depth: 3)
+							{
+								// ClearAndSetCapacity(s_Added, changes.added.Length);
+								il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+								List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_6 = ((ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Added_11;
+								NativeArray_1_tAE2F2F17B6A4F98F44324897A00F6A9D2151DC3A L_7;
+								L_7 = TrackableChanges_1_get_added_m247464F980D46DD4B1BC63D35DEF4F0B10835FB7_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 25));
+								V_3 = L_7;
+								int32_t L_8;
+								L_8 = IL2CPP_NATIVEARRAY_GET_LENGTH(((&V_3))->___m_Length_1);
+								((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 26)))(L_6, L_8, il2cpp_rgctx_method(method->klass->rgctx_data, 26));
+								// foreach (var added in changes.added)
+								NativeArray_1_tAE2F2F17B6A4F98F44324897A00F6A9D2151DC3A L_9;
+								L_9 = TrackableChanges_1_get_added_m247464F980D46DD4B1BC63D35DEF4F0B10835FB7_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 25));
+								V_3 = L_9;
+								Enumerator_t6F8582E7CB46ABAB8F6FDFA62CAFDDD5EF6AB953 L_10;
+								L_10 = NativeArray_1_GetEnumerator_m715F0D8F7B8F47734D62294D193B357E3DAFDFDC((&V_3), il2cpp_rgctx_method(method->klass->rgctx_data, 27));
+								V_4 = L_10;
+							}
+							{
+								auto __finallyBlock = il2cpp::utils::Finally([&]
+								{
+
+FINALLY_009b_3:
+									{// begin finally (depth: 4)
+										Enumerator_Dispose_mF69D4ACD38C3EA25EC9280A912BDA953A0B309B3((&V_4), il2cpp_rgctx_method(method->klass->rgctx_data, 34));
+										return;
+									}// end finally (depth: 4)
+								});
+								try
+								{// begin try (depth: 4)
+									{
+										goto IL_0090_4;
+									}
+
+IL_0075_4:
+									{
+										// foreach (var added in changes.added)
+										XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 L_11;
+										L_11 = Enumerator_get_Current_m0FB9E0CDF48720C23EF12B33C7D51DBCC9959681((&V_4), il2cpp_rgctx_method(method->klass->rgctx_data, 28));
+										V_5 = L_11;
+										// s_Added.Add(CreateOrUpdateTrackable(added));
+										il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+										List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_12 = ((ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Added_11;
+										XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 L_13 = V_5;
+										RuntimeObject* L_14;
+										L_14 = ((  RuntimeObject* (*) (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465*, XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 29)))(__this, L_13, il2cpp_rgctx_method(method->klass->rgctx_data, 29));
+										NullCheck(L_12);
+										((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 31)))(L_12, L_14, il2cpp_rgctx_method(method->klass->rgctx_data, 31));
+									}
+
+IL_0090_4:
+									{
+										// foreach (var added in changes.added)
+										bool L_15;
+										L_15 = Enumerator_MoveNext_m3D4D3AE7BBF856539A509727B1A453CB1FCE2873((&V_4), il2cpp_rgctx_method(method->klass->rgctx_data, 32));
+										if (L_15)
+										{
+											goto IL_0075_4;
+										}
+									}
+									{
+										goto IL_00b7_2;
+									}
+								}// end try (depth: 4)
+								catch(Il2CppExceptionWrapper& e)
+								{
+									__finallyBlock.StoreException(e.ex);
+								}
+							}
+						}// end try (depth: 3)
+						catch(Il2CppExceptionWrapper& e)
+						{
+							__finallyBlock.StoreException(e.ex);
+						}
+					}
+
+IL_00b7_2:
+					{
+						// using (new ScopedProfiler("ProcessUpdated"))
+						ScopedProfiler_tA2CF63F6C047FB63643D2263A4AC86C6A363EC6F L_16;
+						memset((&L_16), 0, sizeof(L_16));
+						ScopedProfiler__ctor_m652B5689DE1A3C3EF7D12801DA27FA3B40E4412F((&L_16), _stringLiteral2DC0198B89999C6E86C5CF2260C4264FF55D7903, /*hidden argument*/NULL);
+						V_2 = L_16;
+					}
+					{
+						auto __finallyBlock = il2cpp::utils::Finally([&]
+						{
+
+FINALLY_0122_2:
+							{// begin finally (depth: 3)
+								ScopedProfiler_Dispose_m7B646405B4E52CC4677329D3B860BE9C17A9DAC4((&V_2), NULL);
+								return;
+							}// end finally (depth: 3)
+						});
+						try
+						{// begin try (depth: 3)
+							{
+								// ClearAndSetCapacity(s_Updated, changes.updated.Length);
+								il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+								List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_17 = ((ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Updated_12;
+								NativeArray_1_tAE2F2F17B6A4F98F44324897A00F6A9D2151DC3A L_18;
+								L_18 = TrackableChanges_1_get_updated_mF8CD50C65A76F68ED3EFCE8A4316153A2CAF3999_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 35));
+								V_3 = L_18;
+								int32_t L_19;
+								L_19 = IL2CPP_NATIVEARRAY_GET_LENGTH(((&V_3))->___m_Length_1);
+								((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 26)))(L_17, L_19, il2cpp_rgctx_method(method->klass->rgctx_data, 26));
+								// foreach (var updated in changes.updated)
+								NativeArray_1_tAE2F2F17B6A4F98F44324897A00F6A9D2151DC3A L_20;
+								L_20 = TrackableChanges_1_get_updated_mF8CD50C65A76F68ED3EFCE8A4316153A2CAF3999_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 35));
+								V_3 = L_20;
+								Enumerator_t6F8582E7CB46ABAB8F6FDFA62CAFDDD5EF6AB953 L_21;
+								L_21 = NativeArray_1_GetEnumerator_m715F0D8F7B8F47734D62294D193B357E3DAFDFDC((&V_3), il2cpp_rgctx_method(method->klass->rgctx_data, 27));
+								V_4 = L_21;
+							}
+							{
+								auto __finallyBlock = il2cpp::utils::Finally([&]
+								{
+
+FINALLY_0114_3:
+									{// begin finally (depth: 4)
+										Enumerator_Dispose_mF69D4ACD38C3EA25EC9280A912BDA953A0B309B3((&V_4), il2cpp_rgctx_method(method->klass->rgctx_data, 34));
+										return;
+									}// end finally (depth: 4)
+								});
+								try
+								{// begin try (depth: 4)
+									{
+										goto IL_0109_4;
+									}
+
+IL_00ee_4:
+									{
+										// foreach (var updated in changes.updated)
+										XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 L_22;
+										L_22 = Enumerator_get_Current_m0FB9E0CDF48720C23EF12B33C7D51DBCC9959681((&V_4), il2cpp_rgctx_method(method->klass->rgctx_data, 28));
+										V_6 = L_22;
+										// s_Updated.Add(CreateOrUpdateTrackable(updated));
+										il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+										List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_23 = ((ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Updated_12;
+										XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 L_24 = V_6;
+										RuntimeObject* L_25;
+										L_25 = ((  RuntimeObject* (*) (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465*, XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 29)))(__this, L_24, il2cpp_rgctx_method(method->klass->rgctx_data, 29));
+										NullCheck(L_23);
+										((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 31)))(L_23, L_25, il2cpp_rgctx_method(method->klass->rgctx_data, 31));
+									}
+
+IL_0109_4:
+									{
+										// foreach (var updated in changes.updated)
+										bool L_26;
+										L_26 = Enumerator_MoveNext_m3D4D3AE7BBF856539A509727B1A453CB1FCE2873((&V_4), il2cpp_rgctx_method(method->klass->rgctx_data, 32));
+										if (L_26)
+										{
+											goto IL_00ee_4;
+										}
+									}
+									{
+										goto IL_0130_2;
+									}
+								}// end try (depth: 4)
+								catch(Il2CppExceptionWrapper& e)
+								{
+									__finallyBlock.StoreException(e.ex);
+								}
+							}
+						}// end try (depth: 3)
+						catch(Il2CppExceptionWrapper& e)
+						{
+							__finallyBlock.StoreException(e.ex);
+						}
+					}
+
+IL_0130_2:
+					{
+						// using (new ScopedProfiler("ProcessRemoved"))
+						ScopedProfiler_tA2CF63F6C047FB63643D2263A4AC86C6A363EC6F L_27;
+						memset((&L_27), 0, sizeof(L_27));
+						ScopedProfiler__ctor_m652B5689DE1A3C3EF7D12801DA27FA3B40E4412F((&L_27), _stringLiteral26AA71BDAE4689FF6E5304BFE38FF4E0E841032B, /*hidden argument*/NULL);
+						V_2 = L_27;
+					}
+					{
+						auto __finallyBlock = il2cpp::utils::Finally([&]
+						{
+
+FINALLY_01c4_2:
+							{// begin finally (depth: 3)
+								ScopedProfiler_Dispose_m7B646405B4E52CC4677329D3B860BE9C17A9DAC4((&V_2), NULL);
+								return;
+							}// end finally (depth: 3)
+						});
+						try
+						{// begin try (depth: 3)
+							{
+								// ClearAndSetCapacity(s_Removed, changes.removed.Length);
+								il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+								List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_28 = ((ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Removed_13;
+								NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E L_29;
+								L_29 = TrackableChanges_1_get_removed_m0E574DBEEC409628E125B65A3437EA9C9D73F06F_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 36));
+								V_7 = L_29;
+								int32_t L_30;
+								L_30 = IL2CPP_NATIVEARRAY_GET_LENGTH(((&V_7))->___m_Length_1);
+								((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 26)))(L_28, L_30, il2cpp_rgctx_method(method->klass->rgctx_data, 26));
+								// foreach (var trackableId in changes.removed)
+								NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E L_31;
+								L_31 = TrackableChanges_1_get_removed_m0E574DBEEC409628E125B65A3437EA9C9D73F06F_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 36));
+								V_7 = L_31;
+								Enumerator_tC8A26D390552986367A8B556DCF22FAAF6E7AAAD L_32;
+								L_32 = NativeArray_1_GetEnumerator_mE980205B99190A020484F10CBAC64EB8C743AAF0((&V_7), NativeArray_1_GetEnumerator_mE980205B99190A020484F10CBAC64EB8C743AAF0_RuntimeMethod_var);
+								V_8 = L_32;
+							}
+							{
+								auto __finallyBlock = il2cpp::utils::Finally([&]
+								{
+
+FINALLY_01b6_3:
+									{// begin finally (depth: 4)
+										Enumerator_Dispose_m5D1D6FDED91C2254BB2731C2A979F3016E037147((&V_8), Enumerator_Dispose_m5D1D6FDED91C2254BB2731C2A979F3016E037147_RuntimeMethod_var);
+										return;
+									}// end finally (depth: 4)
+								});
+								try
+								{// begin try (depth: 4)
+									{
+										goto IL_01ab_4;
+									}
+
+IL_0169_4:
+									{
+										// foreach (var trackableId in changes.removed)
+										TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_33;
+										L_33 = Enumerator_get_Current_m572F715FD6838E37154726E5A6DB2C103236C7C6((&V_8), Enumerator_get_Current_m572F715FD6838E37154726E5A6DB2C103236C7C6_RuntimeMethod_var);
+										V_9 = L_33;
+										// if (m_Trackables.TryGetValue(trackableId, out var trackable))
+										Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_34 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_Trackables_9;
+										TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_35 = V_9;
+										NullCheck(L_34);
+										bool L_36;
+										L_36 = ((  bool (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, RuntimeObject**, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 37)))(L_34, L_35, (&V_10), il2cpp_rgctx_method(method->klass->rgctx_data, 37));
+										if (!L_36)
+										{
+											goto IL_01ab_4;
+										}
+									}
+									{
+										// m_Trackables.Remove(trackableId);
+										Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_37 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_Trackables_9;
+										TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_38 = V_9;
+										NullCheck(L_37);
+										bool L_39;
+										L_39 = ((  bool (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 38)))(L_37, L_38, il2cpp_rgctx_method(method->klass->rgctx_data, 38));
+										// if (trackable)
+										RuntimeObject* L_40 = V_10;
+										il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+										bool L_41;
+										L_41 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_40, NULL);
+										if (!L_41)
+										{
+											goto IL_01ab_4;
+										}
+									}
+									{
+										// s_Removed.Add(trackable);
+										il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+										List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_42 = ((ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Removed_13;
+										RuntimeObject* L_43 = V_10;
+										NullCheck(L_42);
+										((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 31)))(L_42, L_43, il2cpp_rgctx_method(method->klass->rgctx_data, 31));
+									}
+
+IL_01ab_4:
+									{
+										// foreach (var trackableId in changes.removed)
+										bool L_44;
+										L_44 = Enumerator_MoveNext_mCB14CFB321C975B0DF69A927ACD4BD2A63AF0368((&V_8), Enumerator_MoveNext_mCB14CFB321C975B0DF69A927ACD4BD2A63AF0368_RuntimeMethod_var);
+										if (L_44)
+										{
+											goto IL_0169_4;
+										}
+									}
+									{
+										goto IL_01ee;
+									}
+								}// end try (depth: 4)
+								catch(Il2CppExceptionWrapper& e)
+								{
+									__finallyBlock.StoreException(e.ex);
+								}
+							}
+						}// end try (depth: 3)
+						catch(Il2CppExceptionWrapper& e)
+						{
+							__finallyBlock.StoreException(e.ex);
+						}
+					}
+				}// end try (depth: 2)
+				catch(Il2CppExceptionWrapper& e)
+				{
+					__finallyBlock.StoreException(e.ex);
+				}
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_01ee:
+	{
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_022d:
+			{// begin finally (depth: 1)
+				{
+					// foreach (var removed in s_Removed)
+					il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+					List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_45 = ((ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Removed_13;
+					NullCheck(L_45);
+					Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A L_46;
+					L_46 = ((  Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 44)))(L_45, il2cpp_rgctx_method(method->klass->rgctx_data, 44));
+					V_11 = L_46;
+				}
+				{
+					auto __finallyBlock = il2cpp::utils::Finally([&]
+					{
+
+FINALLY_0257:
+						{// begin finally (depth: 2)
+							Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419((&V_11), il2cpp_rgctx_method(method->klass->rgctx_data, 49));
+							return;
+						}// end finally (depth: 2)
+					});
+					try
+					{// begin try (depth: 2)
+						{
+							goto IL_024c_1;
+						}
+
+IL_023b_1:
+						{
+							// foreach (var removed in s_Removed)
+							RuntimeObject* L_47;
+							L_47 = Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_inline((&V_11), il2cpp_rgctx_method(method->klass->rgctx_data, 45));
+							V_12 = L_47;
+							// DestroyTrackable(removed);
+							RuntimeObject* L_48 = V_12;
+							((  void (*) (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 46)))(__this, L_48, il2cpp_rgctx_method(method->klass->rgctx_data, 46));
+						}
+
+IL_024c_1:
+						{
+							// foreach (var removed in s_Removed)
+							bool L_49;
+							L_49 = Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB((&V_11), il2cpp_rgctx_method(method->klass->rgctx_data, 47));
+							if (L_49)
+							{
+								goto IL_023b_1;
+							}
+						}
+						{
+							goto IL_0265;
+						}
+					}// end try (depth: 2)
+					catch(Il2CppExceptionWrapper& e)
+					{
+						__finallyBlock.StoreException(e.ex);
+					}
+				}
+
+IL_0265:
+				{
+					// }
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				// if ((s_Added.Count) > 0 ||
+				//     (s_Updated.Count) > 0 ||
+				//     (s_Removed.Count) > 0)
+				il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+				List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_50 = ((ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Added_11;
+				NullCheck(L_50);
+				int32_t L_51;
+				L_51 = ((  int32_t (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 41)))(L_50, il2cpp_rgctx_method(method->klass->rgctx_data, 41));
+				if ((((int32_t)L_51) > ((int32_t)0)))
+				{
+					goto IL_0216_1;
+				}
+			}
+			{
+				il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+				List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_52 = ((ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Updated_12;
+				NullCheck(L_52);
+				int32_t L_53;
+				L_53 = ((  int32_t (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 41)))(L_52, il2cpp_rgctx_method(method->klass->rgctx_data, 41));
+				if ((((int32_t)L_53) > ((int32_t)0)))
+				{
+					goto IL_0216_1;
+				}
+			}
+			{
+				il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+				List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_54 = ((ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Removed_13;
+				NullCheck(L_54);
+				int32_t L_55;
+				L_55 = ((  int32_t (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 41)))(L_54, il2cpp_rgctx_method(method->klass->rgctx_data, 41));
+				if ((((int32_t)L_55) <= ((int32_t)0)))
+				{
+					goto IL_022b_1;
+				}
+			}
+
+IL_0216_1:
+			{
+				// OnTrackablesChanged(s_Added, s_Updated, s_Removed);
+				il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+				List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_56 = ((ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Added_11;
+				List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_57 = ((ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Updated_12;
+				List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_58 = ((ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Removed_13;
+				VirtualActionInvoker3< List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* >::Invoke(13 /* System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::OnTrackablesChanged(System.Collections.Generic.List`1<TTrackable>,System.Collections.Generic.List`1<TTrackable>,System.Collections.Generic.List`1<TTrackable>) */, __this, L_56, L_57, L_58);
+			}
+
+IL_022b_1:
+			{
+				// }
+				goto IL_0266;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0266:
+	{
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::OnTrackablesChanged(System.Collections.Generic.List`1<TTrackable>,System.Collections.Generic.List`1<TTrackable>,System.Collections.Generic.List`1<TTrackable>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_OnTrackablesChanged_mCB3C0486DCB2964224ABC7E86DB4047089EA47F7_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___added0, List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___updated1, List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___removed2, const RuntimeMethod* method) 
+{
+	{
+		// { }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::OnCreateTrackable(TTrackable)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_OnCreateTrackable_m918B822FA34D07E1216364408140877EAED7EEC3_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, RuntimeObject* ___trackable0, const RuntimeMethod* method) 
+{
+	{
+		// { }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::OnAfterSetSessionRelativeData(TTrackable,TSessionRelativeData)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_OnAfterSetSessionRelativeData_mCD9209560C11B491CCE647436F3E409846EB5570_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, RuntimeObject* ___trackable0, XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 ___sessionRelativeData1, const RuntimeMethod* method) 
+{
+	{
+		// { }
+		return;
+	}
+}
+// TTrackable UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::CreateTrackableImmediate(TSessionRelativeData)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ARTrackableManager_5_CreateTrackableImmediate_mA2FCE56A9737435260AE09D67AFE65A740C6361D_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 ___sessionRelativeData0, const RuntimeMethod* method) 
+{
+	RuntimeObject* V_0 = NULL;
+	{
+		// var trackable = CreateOrUpdateTrackable(sessionRelativeData);
+		XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 L_0 = ___sessionRelativeData0;
+		RuntimeObject* L_1;
+		L_1 = ((  RuntimeObject* (*) (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465*, XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 29)))(__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 29));
+		V_0 = L_1;
+		// trackable.pending = true;
+		RuntimeObject* L_2 = V_0;
+		NullCheck((ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*)L_2);
+		((  void (*) (ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*, bool, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 21)))((ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*)L_2, (bool)1, il2cpp_rgctx_method(method->klass->rgctx_data, 21));
+		// m_PendingAdds.Add(trackable.trackableId, trackable);
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_3 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_PendingAdds_10;
+		RuntimeObject* L_4 = V_0;
+		NullCheck((ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*)L_4);
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_5;
+		L_5 = ((  TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 (*) (ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 16)))((ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*)L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+		RuntimeObject* L_6 = V_0;
+		NullCheck(L_3);
+		((  void (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 50)))(L_3, L_5, L_6, il2cpp_rgctx_method(method->klass->rgctx_data, 50));
+		// return trackable;
+		RuntimeObject* L_7 = V_0;
+		return L_7;
+	}
+}
+// System.Boolean UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::DestroyPendingTrackable(UnityEngine.XR.ARSubsystems.TrackableId)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ARTrackableManager_5_DestroyPendingTrackable_m6BF008BD6A25966B6FE561A03859EEDC18726788_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 ___trackableId0, const RuntimeMethod* method) 
+{
+	RuntimeObject* V_0 = NULL;
+	{
+		// if (m_PendingAdds.TryGetValue(trackableId, out var trackable))
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_0 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_PendingAdds_10;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_1 = ___trackableId0;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = ((  bool (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, RuntimeObject**, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 37)))(L_0, L_1, (&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 37));
+		if (!L_2)
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		// m_PendingAdds.Remove(trackableId);
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_3 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_PendingAdds_10;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_4 = ___trackableId0;
+		NullCheck(L_3);
+		bool L_5;
+		L_5 = ((  bool (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 38)))(L_3, L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 38));
+		// m_Trackables.Remove(trackableId);
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_6 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_Trackables_9;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_7 = ___trackableId0;
+		NullCheck(L_6);
+		bool L_8;
+		L_8 = ((  bool (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 38)))(L_6, L_7, il2cpp_rgctx_method(method->klass->rgctx_data, 38));
+		// DestroyTrackable(trackable);
+		RuntimeObject* L_9 = V_0;
+		((  void (*) (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 46)))(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 46));
+		// return true;
+		return (bool)1;
+	}
+
+IL_0033:
+	{
+		// return false;
+		return (bool)0;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::ClearAndSetCapacity(System.Collections.Generic.List`1<TTrackable>,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_ClearAndSetCapacity_m4F1986F888F9868EF82C89CEABC5CF2013B17956_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___list0, int32_t ___capacity1, const RuntimeMethod* method) 
+{
+	{
+		// list.Clear();
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_0 = ___list0;
+		NullCheck(L_0);
+		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 51)))(L_0, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 51));
+		// if (list.Capacity < capacity)
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_1 = ___list0;
+		NullCheck(L_1);
+		int32_t L_2;
+		L_2 = ((  int32_t (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 52)))(L_1, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 52));
+		int32_t L_3 = ___capacity1;
+		if ((((int32_t)L_2) >= ((int32_t)L_3)))
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		// list.Capacity = capacity;
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_4 = ___list0;
+		int32_t L_5 = ___capacity1;
+		NullCheck(L_4);
+		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 53)))(L_4, L_5, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 53));
+	}
+
+IL_0016:
+	{
+		// }
+		return;
+	}
+}
+// System.String UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::GetTrackableName(UnityEngine.XR.ARSubsystems.TrackableId)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ARTrackableManager_5_GetTrackableName_mCF036A91D6D502C0B5FA71F61E5CB241B588BC88_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 ___trackableId0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return gameObjectName + " " + trackableId.ToString();
+		String_t* L_0;
+		L_0 = VirtualFuncInvoker0< String_t* >::Invoke(9 /* System.String UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::get_gameObjectName() */, __this);
+		String_t* L_1;
+		L_1 = TrackableId_ToString_m4BE1AD91726751D994E6FB864B231BE5D7D3F85F((&___trackableId0), NULL);
+		String_t* L_2;
+		L_2 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_0, _stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745, L_1, NULL);
+		return L_2;
+	}
+}
+// System.ValueTuple`2<UnityEngine.GameObject,System.Boolean> UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::CreateGameObjectDeactivated()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 ARTrackableManager_5_CreateGameObjectDeactivated_mDCC2BD8A2B573BBEDD49CCDEE7314DCDEA8E39FD_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ValueTuple_2__ctor_mC564D526A92ADAED1606CF8F0D6C9E846F0F4DF0_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_0 = NULL;
+	bool V_1 = false;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_2 = NULL;
+	{
+		// var prefab = GetPrefab();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
+		L_0 = VirtualFuncInvoker0< GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* >::Invoke(10 /* UnityEngine.GameObject UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::GetPrefab() */, __this);
+		V_0 = L_0;
+		// if (prefab == null)
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_2)
+		{
+			goto IL_0039;
+		}
+	}
+	{
+		// var gameObject = new GameObject();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		GameObject__ctor_m7D0340DE160786E6EFA8DABD39EC3B694DA30AAD(L_3, NULL);
+		// gameObject.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = L_3;
+		NullCheck(L_4);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)0, NULL);
+		// gameObject.transform.parent = sessionOrigin.trackablesParent;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = L_4;
+		NullCheck(L_5);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
+		L_6 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_5, NULL);
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_7;
+		L_7 = ((  ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* (*) (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		NullCheck(L_7);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
+		L_8 = ARSessionOrigin_get_trackablesParent_mF42C34E0B09B58DEE52CF3CC13563BE541C14F9F_inline(L_7, NULL);
+		NullCheck(L_6);
+		Transform_set_parent_m9BD5E563B539DD5BEC342736B03F97B38A243234(L_6, L_8, NULL);
+		// return (gameObject, true);
+		ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 L_9;
+		memset((&L_9), 0, sizeof(L_9));
+		ValueTuple_2__ctor_mC564D526A92ADAED1606CF8F0D6C9E846F0F4DF0((&L_9), L_5, (bool)1, /*hidden argument*/ValueTuple_2__ctor_mC564D526A92ADAED1606CF8F0D6C9E846F0F4DF0_RuntimeMethod_var);
+		return L_9;
+	}
+
+IL_0039:
+	{
+		// var active = prefab.activeSelf;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = V_0;
+		NullCheck(L_10);
+		bool L_11;
+		L_11 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_10, NULL);
+		V_1 = L_11;
+		// prefab.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = V_0;
+		NullCheck(L_12);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_12, (bool)0, NULL);
+		// var gameObject = Instantiate(prefab, sessionOrigin.trackablesParent);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13 = V_0;
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_14;
+		L_14 = ((  ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* (*) (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		NullCheck(L_14);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15;
+		L_15 = ARSessionOrigin_get_trackablesParent_mF42C34E0B09B58DEE52CF3CC13563BE541C14F9F_inline(L_14, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16;
+		L_16 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811(L_13, L_15, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811_RuntimeMethod_var);
+		V_2 = L_16;
+		// prefab.SetActive(active);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = V_0;
+		bool L_18 = V_1;
+		NullCheck(L_17);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_17, L_18, NULL);
+		// return (gameObject, active);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = V_2;
+		bool L_20 = V_1;
+		ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 L_21;
+		memset((&L_21), 0, sizeof(L_21));
+		ValueTuple_2__ctor_mC564D526A92ADAED1606CF8F0D6C9E846F0F4DF0((&L_21), L_19, L_20, /*hidden argument*/ValueTuple_2__ctor_mC564D526A92ADAED1606CF8F0D6C9E846F0F4DF0_RuntimeMethod_var);
+		return L_21;
+	}
+}
+// System.ValueTuple`2<UnityEngine.GameObject,System.Boolean> UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::CreateGameObjectDeactivated(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 ARTrackableManager_5_CreateGameObjectDeactivated_m1D8EE0CEC09DD88EFA4E183169C9322A4D8F7494_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, String_t* ___name0, const RuntimeMethod* method) 
+{
+	{
+		// var tuple = CreateGameObjectDeactivated();
+		ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 L_0;
+		L_0 = ((  ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 (*) (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 56)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 56));
+		// tuple.gameObject.name = name;
+		ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 L_1 = L_0;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)L_1.___Item1_0;
+		String_t* L_3 = ___name0;
+		NullCheck((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_2);
+		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_2, L_3, NULL);
+		// return tuple;
+		return L_1;
+	}
+}
+// System.ValueTuple`2<UnityEngine.GameObject,System.Boolean> UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::CreateGameObjectDeactivated(UnityEngine.XR.ARSubsystems.TrackableId)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 ARTrackableManager_5_CreateGameObjectDeactivated_mDE0781F685270374806990F37C40E37895E5FC70_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 ___trackableId0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral393DD49F8AA9554CD1BB1DA05E5D90C3A4F7CC3D);
+		s_Il2CppMethodInitialized = true;
+	}
+	ScopedProfiler_tA2CF63F6C047FB63643D2263A4AC86C6A363EC6F V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		// using (new ScopedProfiler("CreateGameObject"))
+		ScopedProfiler__ctor_m652B5689DE1A3C3EF7D12801DA27FA3B40E4412F((&V_0), _stringLiteral393DD49F8AA9554CD1BB1DA05E5D90C3A4F7CC3D, NULL);
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_001c:
+			{// begin finally (depth: 1)
+				ScopedProfiler_Dispose_m7B646405B4E52CC4677329D3B860BE9C17A9DAC4((&V_0), NULL);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			// return CreateGameObjectDeactivated(GetTrackableName(trackableId));
+			TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0 = ___trackableId0;
+			String_t* L_1;
+			L_1 = ((  String_t* (*) (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 57)))(__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 57));
+			ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 L_2;
+			L_2 = ((  ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 (*) (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465*, String_t*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 58)))(__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 58));
+			V_1 = L_2;
+			goto IL_002a;
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_002a:
+	{
+		// }
+		ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 L_3 = V_1;
+		return L_3;
+	}
+}
+// TTrackable UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::CreateTrackable(TSessionRelativeData)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ARTrackableManager_5_CreateTrackable_m802A21440A62A76359B1DBD84BC64C32A6941829_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 ___sessionRelativeData0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_0 = NULL;
+	bool V_1 = false;
+	RuntimeObject* V_2 = NULL;
+	{
+		// var (gameObject, shouldBeActive) = CreateGameObjectDeactivated(sessionRelativeData.trackableId);
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0;
+		L_0 = XRAnchor_get_trackableId_m0F50E81D0152D0BA4152EF9B66F648EF9FC664AE_inline((&___sessionRelativeData0), il2cpp_rgctx_method(method->klass->rgctx_data, 60));
+		ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 L_1;
+		L_1 = ((  ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 (*) (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 61)))(__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 61));
+		ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 L_2 = L_1;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)L_2.___Item1_0;
+		V_0 = L_3;
+		bool L_4 = (bool)L_2.___Item2_1;
+		V_1 = L_4;
+		// var trackable = gameObject.GetComponent<TTrackable>();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = V_0;
+		NullCheck(L_5);
+		RuntimeObject* L_6;
+		L_6 = ((  RuntimeObject* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 62)))(L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 62));
+		V_2 = L_6;
+		// if (trackable == null)
+		RuntimeObject* L_7 = V_2;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_8;
+		L_8 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_7, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_8)
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		// trackable = gameObject.AddComponent<TTrackable>();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = V_0;
+		NullCheck(L_9);
+		RuntimeObject* L_10;
+		L_10 = ((  RuntimeObject* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 63)))(L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 63));
+		V_2 = L_10;
+	}
+
+IL_003c:
+	{
+		// m_Trackables.Add(sessionRelativeData.trackableId, trackable);
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_11 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_Trackables_9;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_12;
+		L_12 = XRAnchor_get_trackableId_m0F50E81D0152D0BA4152EF9B66F648EF9FC664AE_inline((&___sessionRelativeData0), il2cpp_rgctx_method(method->klass->rgctx_data, 60));
+		RuntimeObject* L_13 = V_2;
+		NullCheck(L_11);
+		((  void (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 50)))(L_11, L_12, L_13, il2cpp_rgctx_method(method->klass->rgctx_data, 50));
+		// SetSessionRelativeData(trackable, sessionRelativeData);
+		RuntimeObject* L_14 = V_2;
+		XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 L_15 = ___sessionRelativeData0;
+		((  void (*) (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465*, RuntimeObject*, XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 64)))(__this, L_14, L_15, il2cpp_rgctx_method(method->klass->rgctx_data, 64));
+		// trackable.gameObject.SetActive(shouldBeActive);
+		RuntimeObject* L_16 = V_2;
+		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_16);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17;
+		L_17 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_16, NULL);
+		bool L_18 = V_1;
+		NullCheck(L_17);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_17, L_18, NULL);
+		// return trackable;
+		RuntimeObject* L_19 = V_2;
+		return L_19;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::SetSessionRelativeData(TTrackable,TSessionRelativeData)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_SetSessionRelativeData_mB0D9A7EFF3E6DA5A1D5699C192B14EB7A7651E4A_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, RuntimeObject* ___trackable0, XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 ___data1, const RuntimeMethod* method) 
+{
+	Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		// trackable.SetSessionRelativeData(data);
+		RuntimeObject* L_0 = ___trackable0;
+		XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 L_1 = ___data1;
+		NullCheck((ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*)L_0);
+		((  void (*) (ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*, XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 65)))((ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*)L_0, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 65));
+		// var worldSpacePose = sessionOrigin.trackablesParent.TransformPose(data.pose);
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_2;
+		L_2 = ((  ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* (*) (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		NullCheck(L_2);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
+		L_3 = ARSessionOrigin_get_trackablesParent_mF42C34E0B09B58DEE52CF3CC13563BE541C14F9F_inline(L_2, NULL);
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_4;
+		L_4 = XRAnchor_get_pose_m2347783C1262EEFBC0B817EF0357FA4BB4BF053F_inline((&___data1), il2cpp_rgctx_method(method->klass->rgctx_data, 66));
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_5;
+		L_5 = TransformExtensions_TransformPose_m657A2F269CFE7ABD9E77029577861EA464E2364C(L_3, L_4, NULL);
+		V_0 = L_5;
+		// trackable.transform.SetPositionAndRotation(worldSpacePose.position, worldSpacePose.rotation);
+		RuntimeObject* L_6 = ___trackable0;
+		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_6);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_6, NULL);
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_8 = V_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_8.___position_0;
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_10 = V_0;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_11 = (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974)L_10.___rotation_1;
+		NullCheck(L_7);
+		Transform_SetPositionAndRotation_m418859BF59086EEAA084FFD6F258A43FAB408F5A(L_7, L_9, L_11, NULL);
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::CreateTrackableFromExisting(TTrackable,TSessionRelativeData)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_CreateTrackableFromExisting_mCF5526DF21543913075A42855787985DC7AC97AE_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, RuntimeObject* ___existingTrackable0, XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 ___sessionRelativeData1, const RuntimeMethod* method) 
+{
+	TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		// var trackableId = sessionRelativeData.trackableId;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0;
+		L_0 = XRAnchor_get_trackableId_m0F50E81D0152D0BA4152EF9B66F648EF9FC664AE_inline((&___sessionRelativeData1), il2cpp_rgctx_method(method->klass->rgctx_data, 60));
+		V_0 = L_0;
+		// m_Trackables.Add(trackableId, existingTrackable);
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_1 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_Trackables_9;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_2 = V_0;
+		RuntimeObject* L_3 = ___existingTrackable0;
+		NullCheck(L_1);
+		((  void (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 50)))(L_1, L_2, L_3, il2cpp_rgctx_method(method->klass->rgctx_data, 50));
+		// SetSessionRelativeData(existingTrackable, sessionRelativeData);
+		RuntimeObject* L_4 = ___existingTrackable0;
+		XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 L_5 = ___sessionRelativeData1;
+		((  void (*) (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465*, RuntimeObject*, XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 64)))(__this, L_4, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 64));
+		// OnCreateTrackable(existingTrackable);
+		RuntimeObject* L_6 = ___existingTrackable0;
+		VirtualActionInvoker1< RuntimeObject* >::Invoke(14 /* System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::OnCreateTrackable(TTrackable) */, __this, L_6);
+		// OnAfterSetSessionRelativeData(existingTrackable, sessionRelativeData);
+		RuntimeObject* L_7 = ___existingTrackable0;
+		XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 L_8 = ___sessionRelativeData1;
+		VirtualActionInvoker2< RuntimeObject*, XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 >::Invoke(15 /* System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::OnAfterSetSessionRelativeData(TTrackable,TSessionRelativeData) */, __this, L_7, L_8);
+		// existingTrackable.OnAfterSetSessionRelativeData();
+		RuntimeObject* L_9 = ___existingTrackable0;
+		NullCheck((ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*)L_9);
+		VirtualActionInvoker0::Invoke(4 /* System.Void UnityEngine.XR.ARFoundation.ARTrackable`2<UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::OnAfterSetSessionRelativeData() */, (ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*)L_9);
+		// m_PendingAdds.Add(trackableId, existingTrackable);
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_10 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_PendingAdds_10;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_11 = V_0;
+		RuntimeObject* L_12 = ___existingTrackable0;
+		NullCheck(L_10);
+		((  void (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 50)))(L_10, L_11, L_12, il2cpp_rgctx_method(method->klass->rgctx_data, 50));
+		// existingTrackable.pending = true;
+		RuntimeObject* L_13 = ___existingTrackable0;
+		NullCheck((ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*)L_13);
+		((  void (*) (ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*, bool, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 21)))((ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*)L_13, (bool)1, il2cpp_rgctx_method(method->klass->rgctx_data, 21));
+		// }
+		return;
+	}
+}
+// TTrackable UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::CreateOrUpdateTrackable(TSessionRelativeData)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ARTrackableManager_5_CreateOrUpdateTrackable_mD452029C7AC3CDF9372549019A0725E322C27438_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 ___sessionRelativeData0, const RuntimeMethod* method) 
+{
+	TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	RuntimeObject* V_1 = NULL;
+	{
+		// var trackableId = sessionRelativeData.trackableId;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0;
+		L_0 = XRAnchor_get_trackableId_m0F50E81D0152D0BA4152EF9B66F648EF9FC664AE_inline((&___sessionRelativeData0), il2cpp_rgctx_method(method->klass->rgctx_data, 60));
+		V_0 = L_0;
+		// if (m_Trackables.TryGetValue(trackableId, out var trackable))
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_1 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_Trackables_9;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_2 = V_0;
+		NullCheck(L_1);
+		bool L_3;
+		L_3 = ((  bool (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, RuntimeObject**, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 37)))(L_1, L_2, (&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 37));
+		if (!L_3)
+		{
+			goto IL_0041;
+		}
+	}
+	{
+		// m_PendingAdds.Remove(trackableId);
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_4 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_PendingAdds_10;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_5 = V_0;
+		NullCheck(L_4);
+		bool L_6;
+		L_6 = ((  bool (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 38)))(L_4, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 38));
+		// trackable.pending = false;
+		RuntimeObject* L_7 = V_1;
+		NullCheck((ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*)L_7);
+		((  void (*) (ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*, bool, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 21)))((ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*)L_7, (bool)0, il2cpp_rgctx_method(method->klass->rgctx_data, 21));
+		// SetSessionRelativeData(trackable, sessionRelativeData);
+		RuntimeObject* L_8 = V_1;
+		XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 L_9 = ___sessionRelativeData0;
+		((  void (*) (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465*, RuntimeObject*, XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 64)))(__this, L_8, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 64));
+		goto IL_0050;
+	}
+
+IL_0041:
+	{
+		// trackable = CreateTrackable(sessionRelativeData);
+		XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 L_10 = ___sessionRelativeData0;
+		RuntimeObject* L_11;
+		L_11 = ((  RuntimeObject* (*) (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465*, XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 70)))(__this, L_10, il2cpp_rgctx_method(method->klass->rgctx_data, 70));
+		V_1 = L_11;
+		// OnCreateTrackable(trackable);
+		RuntimeObject* L_12 = V_1;
+		VirtualActionInvoker1< RuntimeObject* >::Invoke(14 /* System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::OnCreateTrackable(TTrackable) */, __this, L_12);
+	}
+
+IL_0050:
+	{
+		// OnAfterSetSessionRelativeData(trackable, sessionRelativeData);
+		RuntimeObject* L_13 = V_1;
+		XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 L_14 = ___sessionRelativeData0;
+		VirtualActionInvoker2< RuntimeObject*, XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82 >::Invoke(15 /* System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::OnAfterSetSessionRelativeData(TTrackable,TSessionRelativeData) */, __this, L_13, L_14);
+		// trackable.OnAfterSetSessionRelativeData();
+		RuntimeObject* L_15 = V_1;
+		NullCheck((ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*)L_15);
+		VirtualActionInvoker0::Invoke(4 /* System.Void UnityEngine.XR.ARFoundation.ARTrackable`2<UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::OnAfterSetSessionRelativeData() */, (ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*)L_15);
+		// return trackable;
+		RuntimeObject* L_16 = V_1;
+		return L_16;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::DestroyTrackable(TTrackable)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_DestroyTrackable_mCA0BA4C2684B3D750532443D831F4FBDE596F34A_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, RuntimeObject* ___trackable0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (trackable.destroyOnRemoval)
+		RuntimeObject* L_0 = ___trackable0;
+		NullCheck((ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*)L_0);
+		bool L_1;
+		L_1 = ((  bool (*) (ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 71)))((ARTrackable_2_tFF6F0375EE13CB57F97ED570DAFE3435720C68C8*)L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 71));
+		if (!L_1)
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		// Destroy(trackable.gameObject);
+		RuntimeObject* L_2 = ___trackable0;
+		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_2);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
+		L_3 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_2, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_3, NULL);
+	}
+
+IL_001d:
+	{
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5__ctor_mF16284044D9B068261AC7487F76DF7114DF8FB74_gshared (ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465* __this, const RuntimeMethod* method) 
+{
+	{
+		// protected Dictionary<TrackableId, TTrackable> m_Trackables = new Dictionary<TrackableId, TTrackable>();
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_0 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 17));
+		NullCheck(L_0);
+		((  void (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 72)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 72));
+		__this->___m_Trackables_9 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Trackables_9), (void*)L_0);
+		// protected Dictionary<TrackableId, TTrackable> m_PendingAdds = new Dictionary<TrackableId, TTrackable>();
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_1 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 17));
+		NullCheck(L_1);
+		((  void (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 72)))(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 72));
+		__this->___m_PendingAdds_10 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_PendingAdds_10), (void*)L_1);
+		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 1));
+		((  void (*) (SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 73)))((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 73));
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRAnchor,System.Object>::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5__cctor_mD0EE11CDA1610123A08960012705FE533DE17795_gshared (const RuntimeMethod* method) 
+{
+	{
+		// static List<TTrackable> s_Added = new List<TTrackable>();
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_0 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 30));
+		NullCheck(L_0);
+		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 74)))(L_0, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 74));
+		((ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___s_Added_11 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___s_Added_11), (void*)L_0);
+		// static List<TTrackable> s_Updated = new List<TTrackable>();
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_1 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 30));
+		NullCheck(L_1);
+		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 74)))(L_1, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 74));
+		((ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___s_Updated_12 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&((ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___s_Updated_12), (void*)L_1);
+		// static List<TTrackable> s_Removed = new List<TTrackable>();
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_2 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 30));
+		NullCheck(L_2);
+		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 74)))(L_2, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 74));
+		((ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___s_Removed_13 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&((ARTrackableManager_5_tBED5EDFF76C7AB0601A89EB368666CF812254465_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___s_Removed_13), (void*)L_2);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// UnityEngine.XR.ARFoundation.ARTrackableManager`5<TSubsystem,TSubsystemDescriptor,TProvider,TSessionRelativeData,TTrackable> UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::get_instance()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* ARTrackableManager_5_get_instance_m58A865D06631A5C864416712D6FC940C50556206_gshared (const RuntimeMethod* method) 
+{
+	{
+		// internal static ARTrackableManager<TSubsystem, TSubsystemDescriptor, TProvider, TSessionRelativeData, TTrackable> instance { get; private set; }
+		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0));
+		ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* L_0 = ((ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___U3CinstanceU3Ek__BackingField_7;
+		return L_0;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::set_instance(UnityEngine.XR.ARFoundation.ARTrackableManager`5<TSubsystem,TSubsystemDescriptor,TProvider,TSessionRelativeData,TTrackable>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_set_instance_m6685EB0EAE2B0D911CFFBB9D0808FD3F823C8EB6_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// internal static ARTrackableManager<TSubsystem, TSubsystemDescriptor, TProvider, TSessionRelativeData, TTrackable> instance { get; private set; }
+		ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* L_0 = ___value0;
+		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0));
+		((ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___U3CinstanceU3Ek__BackingField_7 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___U3CinstanceU3Ek__BackingField_7), (void*)L_0);
+		return;
+	}
+}
+// UnityEngine.XR.ARFoundation.TrackableCollection`1<TTrackable> UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::get_trackables()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB ARTrackableManager_5_get_trackables_m7450BE1BE8078F0C11FDB04987F83BF86A79722D_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, const RuntimeMethod* method) 
+{
+	{
+		// public TrackableCollection<TTrackable> trackables => new TrackableCollection<TTrackable>(m_Trackables);
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_0 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_Trackables_9;
+		TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB L_1;
+		memset((&L_1), 0, sizeof(L_1));
+		TrackableCollection_1__ctor_mB5CA9457B08CEF46281808276A685B42D58451B8((&L_1), L_0, /*hidden argument*/il2cpp_rgctx_method(method->klass->rgctx_data, 3));
+		return L_1;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::SetTrackablesActive(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_SetTrackablesActive_mD69688C1BC466D45C0609CF8B64920EC156A3077_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, bool ___active0, const RuntimeMethod* method) 
+{
+	Enumerator_tB1F784FAF2FFA20550ACDB9773EA94D5D741808D V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		// foreach (var trackable in trackables)
+		TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB L_0;
+		L_0 = ((  TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB (*) (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 4)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
+		V_1 = L_0;
+		Enumerator_tB1F784FAF2FFA20550ACDB9773EA94D5D741808D L_1;
+		L_1 = TrackableCollection_1_GetEnumerator_m40FC0BACB788B33217B7B2C3221C7D9967F2B836((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 5));
+		V_0 = L_1;
+		goto IL_0028;
+	}
+
+IL_0011:
+	{
+		// foreach (var trackable in trackables)
+		RuntimeObject* L_2;
+		L_2 = Enumerator_get_Current_m0C78B1A685CCC36524577967CE1620CB889FDC0A((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 6));
+		// trackable.gameObject.SetActive(active);
+		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_2);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
+		L_3 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_2, NULL);
+		bool L_4 = ___active0;
+		NullCheck(L_3);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, L_4, NULL);
+	}
+
+IL_0028:
+	{
+		// foreach (var trackable in trackables)
+		bool L_5;
+		L_5 = Enumerator_MoveNext_m2DFDA23C7884D9A93FF21291F1DF5DDA2C0DA27C((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 8));
+		if (L_5)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		// }
+		return;
+	}
+}
+// UnityEngine.XR.ARFoundation.ARSessionOrigin UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::get_sessionOrigin()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* ARTrackableManager_5_get_sessionOrigin_m97F28C466E211A2DC59B829B32D7C1F12E7BEAA2_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, const RuntimeMethod* method) 
+{
+	{
+		// protected ARSessionOrigin sessionOrigin { get; private set; }
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_0 = (ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3*)__this->___U3CsessionOriginU3Ek__BackingField_8;
+		return L_0;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::set_sessionOrigin(UnityEngine.XR.ARFoundation.ARSessionOrigin)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_set_sessionOrigin_m61039BDAE6DEA7755F790701306F99B50B392D6B_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// protected ARSessionOrigin sessionOrigin { get; private set; }
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_0 = ___value0;
+		__this->___U3CsessionOriginU3Ek__BackingField_8 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CsessionOriginU3Ek__BackingField_8), (void*)L_0);
+		return;
+	}
+}
+// UnityEngine.GameObject UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::GetPrefab()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ARTrackableManager_5_GetPrefab_m3C459BBECE63199D3B451E0C90F7909096EB20AF_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, const RuntimeMethod* method) 
+{
+	{
+		// protected virtual GameObject GetPrefab() => null;
+		return (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_Awake_m77BA1FE13A153DEA4BF00D0274E8F85F640C8953_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3_mF7E0A4EC84273D7FF5240FC39482D1D2740F7684_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// sessionOrigin = GetComponent<ARSessionOrigin>();
+		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)__this);
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_0;
+		L_0 = Component_GetComponent_TisARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3_mF7E0A4EC84273D7FF5240FC39482D1D2740F7684((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)__this, Component_GetComponent_TisARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3_mF7E0A4EC84273D7FF5240FC39482D1D2740F7684_RuntimeMethod_var);
+		((  void (*) (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884*, ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))(__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::OnEnable()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_OnEnable_mAD1372CC931E90B345BB58A268CCF433AB046FB4_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t2096FCE7327B89C5101BFB38155839F3166605FB_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// base.OnEnable();
+		NullCheck((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this);
+		((  void (*) (SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		// instance = this;
+		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+		((  void (*) (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
+		// sessionOrigin.trackablesParentTransformChanged += OnTrackablesParentTransformChanged;
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_0;
+		L_0 = ((  ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* (*) (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		Action_1_t2096FCE7327B89C5101BFB38155839F3166605FB* L_1 = (Action_1_t2096FCE7327B89C5101BFB38155839F3166605FB*)il2cpp_codegen_object_new(Action_1_t2096FCE7327B89C5101BFB38155839F3166605FB_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		Action_1__ctor_mF83057A5B46235D3B94069DE8AA97564FBC38082(L_1, (RuntimeObject*)__this, (intptr_t)((void*)il2cpp_rgctx_method(method->klass->rgctx_data, 13)), NULL);
+		NullCheck(L_0);
+		ARSessionOrigin_add_trackablesParentTransformChanged_m8B8C5C69E226357AEF029402553CE5C62588189E(L_0, L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::OnDisable()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_OnDisable_m96EBC4C188EF91289BF2D9C347B721EB04930305_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t2096FCE7327B89C5101BFB38155839F3166605FB_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// base.OnDisable();
+		NullCheck((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this);
+		((  void (*) (SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		// sessionOrigin.trackablesParentTransformChanged -= OnTrackablesParentTransformChanged;
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_0;
+		L_0 = ((  ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* (*) (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		Action_1_t2096FCE7327B89C5101BFB38155839F3166605FB* L_1 = (Action_1_t2096FCE7327B89C5101BFB38155839F3166605FB*)il2cpp_codegen_object_new(Action_1_t2096FCE7327B89C5101BFB38155839F3166605FB_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		Action_1__ctor_mF83057A5B46235D3B94069DE8AA97564FBC38082(L_1, (RuntimeObject*)__this, (intptr_t)((void*)il2cpp_rgctx_method(method->klass->rgctx_data, 13)), NULL);
+		NullCheck(L_0);
+		ARSessionOrigin_remove_trackablesParentTransformChanged_m1D0E4B774E4AFF63367F442D5333B0C59FBD7582(L_0, L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Boolean UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::CanBeAddedToSubsystem(TTrackable)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ARTrackableManager_5_CanBeAddedToSubsystem_m0868F806A39D0EF12BDF5D920F96BF8797D34F8A_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, RuntimeObject* ___trackable0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		// if (trackable == null)
+		RuntimeObject* L_0 = ___trackable0;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		// throw new ArgumentNullException(nameof(trackable));
+		ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* L_2 = (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129_il2cpp_TypeInfo_var)));
+		NullCheck(L_2);
+		ArgumentNullException__ctor_m444AE141157E333844FC1A9500224C2F9FD24F4B(L_2, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral0DE1CB003F08731FF13F5C138B94B1D7BB6B2B9D)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ARTrackableManager_5_CanBeAddedToSubsystem_m0868F806A39D0EF12BDF5D920F96BF8797D34F8A_RuntimeMethod_var)));
+	}
+
+IL_0019:
+	{
+		// if (!trackable.trackableId.Equals(TrackableId.invalidId))
+		RuntimeObject* L_3 = ___trackable0;
+		NullCheck((ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*)L_3);
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_4;
+		L_4 = ((  TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 (*) (ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 16)))((ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*)L_3, il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+		V_0 = L_4;
+		il2cpp_codegen_runtime_class_init_inline(TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7_il2cpp_TypeInfo_var);
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_5;
+		L_5 = TrackableId_get_invalidId_mDAEC47FD9C1E08B9D5752DA8F185E7A783DBE494_inline(NULL);
+		bool L_6;
+		L_6 = TrackableId_Equals_m7263BB158392C4F1B57BEE16D4F1FBBCF01E4A6E((&V_0), L_5, NULL);
+		if (L_6)
+		{
+			goto IL_0035;
+		}
+	}
+	{
+		// return false;
+		return (bool)0;
+	}
+
+IL_0035:
+	{
+		// if (m_Trackables.ContainsKey(trackable.trackableId))
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_7 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_Trackables_9;
+		RuntimeObject* L_8 = ___trackable0;
+		NullCheck((ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*)L_8);
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_9;
+		L_9 = ((  TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 (*) (ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 16)))((ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*)L_8, il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+		NullCheck(L_7);
+		bool L_10;
+		L_10 = ((  bool (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 18)))(L_7, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+		if (!L_10)
+		{
+			goto IL_004f;
+		}
+	}
+	{
+		// return false;
+		return (bool)0;
+	}
+
+IL_004f:
+	{
+		// if (!enabled || subsystem == null)
+		NullCheck((Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA*)__this);
+		bool L_11;
+		L_11 = Behaviour_get_enabled_mAAC9F15E9EBF552217A5AE2681589CC0BFA300C1((Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA*)__this, NULL);
+		if (!L_11)
+		{
+			goto IL_0064;
+		}
+	}
+	{
+		NullCheck((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this);
+		RuntimeObject* L_12;
+		L_12 = ((  RuntimeObject* (*) (SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		if (L_12)
+		{
+			goto IL_0072;
+		}
+	}
+
+IL_0064:
+	{
+		// trackable.pending = true;
+		RuntimeObject* L_13 = ___trackable0;
+		NullCheck((ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*)L_13);
+		((  void (*) (ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*, bool, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 21)))((ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*)L_13, (bool)1, il2cpp_rgctx_method(method->klass->rgctx_data, 21));
+		// return false;
+		return (bool)0;
+	}
+
+IL_0072:
+	{
+		// return sessionOrigin && sessionOrigin.trackablesParent;
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_14;
+		L_14 = ((  ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* (*) (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_15;
+		L_15 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_14, NULL);
+		if (!L_15)
+		{
+			goto IL_0090;
+		}
+	}
+	{
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_16;
+		L_16 = ((  ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* (*) (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		NullCheck(L_16);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17;
+		L_17 = ARSessionOrigin_get_trackablesParent_mF42C34E0B09B58DEE52CF3CC13563BE541C14F9F_inline(L_16, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_18;
+		L_18 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_17, NULL);
+		return L_18;
+	}
+
+IL_0090:
+	{
+		return (bool)0;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::OnTrackablesParentTransformChanged(UnityEngine.XR.ARFoundation.ARTrackablesParentTransformChangedEventArgs)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_OnTrackablesParentTransformChanged_mE325ADEA8CCE9AE946593AD9531FC31B712D70D6_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, ARTrackablesParentTransformChangedEventArgs_tEF673BCB9382697300AE683ED29F0BF96E4A9C8A ___eventArgs0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_tB1F784FAF2FFA20550ACDB9773EA94D5D741808D V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	RuntimeObject* V_2 = NULL;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* V_3 = NULL;
+	Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	{
+		// foreach (var trackable in trackables)
+		TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB L_0;
+		L_0 = ((  TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB (*) (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 4)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
+		V_1 = L_0;
+		Enumerator_tB1F784FAF2FFA20550ACDB9773EA94D5D741808D L_1;
+		L_1 = TrackableCollection_1_GetEnumerator_m40FC0BACB788B33217B7B2C3221C7D9967F2B836((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 5));
+		V_0 = L_1;
+		goto IL_0066;
+	}
+
+IL_0011:
+	{
+		// foreach (var trackable in trackables)
+		RuntimeObject* L_2;
+		L_2 = Enumerator_get_Current_m0C78B1A685CCC36524577967CE1620CB889FDC0A((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 6));
+		V_2 = L_2;
+		// var transform = trackable.transform;
+		RuntimeObject* L_3 = V_2;
+		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_3);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
+		L_4 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_3, NULL);
+		V_3 = L_4;
+		// if (transform.parent != eventArgs.trackablesParent)
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = V_3;
+		NullCheck(L_5);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
+		L_6 = Transform_get_parent_m65354E28A4C94EC00EBCF03532F7B0718380791E(L_5, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = ARTrackablesParentTransformChangedEventArgs_get_trackablesParent_m2B845554A63A5CB63A6FBBB19C8C96F8E0F653D6_inline((&___eventArgs0), NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_8;
+		L_8 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_6, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_7, NULL);
+		if (!L_8)
+		{
+			goto IL_0066;
+		}
+	}
+	{
+		// var desiredPose = eventArgs.trackablesParent.TransformPose(trackable.sessionRelativePose);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
+		L_9 = ARTrackablesParentTransformChangedEventArgs_get_trackablesParent_m2B845554A63A5CB63A6FBBB19C8C96F8E0F653D6_inline((&___eventArgs0), NULL);
+		RuntimeObject* L_10 = V_2;
+		NullCheck((ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*)L_10);
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_11;
+		L_11 = ((  Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 (*) (ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 22)))((ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*)L_10, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_12;
+		L_12 = TransformExtensions_TransformPose_m657A2F269CFE7ABD9E77029577861EA464E2364C(L_9, L_11, NULL);
+		V_4 = L_12;
+		// transform.SetPositionAndRotation(desiredPose.position, desiredPose.rotation);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_13 = V_3;
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_14 = V_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_14.___position_0;
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_16 = V_4;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_17 = (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974)L_16.___rotation_1;
+		NullCheck(L_13);
+		Transform_SetPositionAndRotation_m418859BF59086EEAA084FFD6F258A43FAB408F5A(L_13, L_15, L_17, NULL);
+	}
+
+IL_0066:
+	{
+		// foreach (var trackable in trackables)
+		bool L_18;
+		L_18 = Enumerator_MoveNext_m2DFDA23C7884D9A93FF21291F1DF5DDA2C0DA27C((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 8));
+		if (L_18)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_Update_mDC71AD4F4239A77C205025B5E2495B0DCDCF361D_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m5D1D6FDED91C2254BB2731C2A979F3016E037147_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_mCB14CFB321C975B0DF69A927ACD4BD2A63AF0368_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m572F715FD6838E37154726E5A6DB2C103236C7C6_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NativeArray_1_GetEnumerator_mE980205B99190A020484F10CBAC64EB8C743AAF0_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral26AA71BDAE4689FF6E5304BFE38FF4E0E841032B);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2DC0198B89999C6E86C5CF2260C4264FF55D7903);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCCC539F743E3F97210255E70596588570DD34D8E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE6EF062EC4F6D2568BF5B77100709C7764EAEFE6);
+		s_Il2CppMethodInitialized = true;
+	}
+	ScopedProfiler_tA2CF63F6C047FB63643D2263A4AC86C6A363EC6F V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	TrackableChanges_1_t03BF8B384A61E7421A4748384189C50C3A2C323F V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	ScopedProfiler_tA2CF63F6C047FB63643D2263A4AC86C6A363EC6F V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	NativeArray_1_t27110FD746D2F878E09169A93400CE1027082DA2 V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	Enumerator_t8A9E97CA5C90C762E693D02011DD73E7870F3BD2 V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 V_5;
+	memset((&V_5), 0, sizeof(V_5));
+	XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 V_6;
+	memset((&V_6), 0, sizeof(V_6));
+	NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E V_7;
+	memset((&V_7), 0, sizeof(V_7));
+	Enumerator_tC8A26D390552986367A8B556DCF22FAAF6E7AAAD V_8;
+	memset((&V_8), 0, sizeof(V_8));
+	TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 V_9;
+	memset((&V_9), 0, sizeof(V_9));
+	RuntimeObject* V_10 = NULL;
+	Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A V_11;
+	memset((&V_11), 0, sizeof(V_11));
+	RuntimeObject* V_12 = NULL;
+	{
+		// if (subsystem == null || !subsystem.running)
+		NullCheck((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this);
+		RuntimeObject* L_0;
+		L_0 = ((  RuntimeObject* (*) (SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		if (!L_0)
+		{
+			goto IL_001f;
+		}
+	}
+	{
+		NullCheck((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this);
+		RuntimeObject* L_1;
+		L_1 = ((  RuntimeObject* (*) (SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		NullCheck((SubsystemWithProvider_tC72E35EE2D413A4B0635B058154BABF265F31242*)L_1);
+		bool L_2;
+		L_2 = SubsystemWithProvider_get_running_m6BF31FC3BDA38C56C0F60FEA37767A4151B22C44_inline((SubsystemWithProvider_tC72E35EE2D413A4B0635B058154BABF265F31242*)L_1, NULL);
+		if (L_2)
+		{
+			goto IL_0020;
+		}
+	}
+
+IL_001f:
+	{
+		// return;
+		return;
+	}
+
+IL_0020:
+	{
+		// using (new ScopedProfiler("GetChanges"))
+		ScopedProfiler__ctor_m652B5689DE1A3C3EF7D12801DA27FA3B40E4412F((&V_0), _stringLiteralCCC539F743E3F97210255E70596588570DD34D8E, NULL);
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_01e0:
+			{// begin finally (depth: 1)
+				ScopedProfiler_Dispose_m7B646405B4E52CC4677329D3B860BE9C17A9DAC4((&V_0), NULL);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				// using (var changes = subsystem.GetChanges(Allocator.Temp))
+				NullCheck((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this);
+				RuntimeObject* L_3;
+				L_3 = ((  RuntimeObject* (*) (SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+				NullCheck((TrackingSubsystem_4_t7DE914E74A1CEE72FA08F5B2721AB39D67DAACFF*)L_3);
+				TrackableChanges_1_t03BF8B384A61E7421A4748384189C50C3A2C323F L_4;
+				L_4 = VirtualFuncInvoker1< TrackableChanges_1_t03BF8B384A61E7421A4748384189C50C3A2C323F, int32_t >::Invoke(14 /* UnityEngine.XR.ARSubsystems.TrackableChanges`1<TTrackable> UnityEngine.XR.ARSubsystems.TrackingSubsystem`4<UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object,System.Object,System.Object>::GetChanges(Unity.Collections.Allocator) */, (TrackingSubsystem_4_t7DE914E74A1CEE72FA08F5B2721AB39D67DAACFF*)L_3, (int32_t)2);
+				V_1 = L_4;
+			}
+			{
+				auto __finallyBlock = il2cpp::utils::Finally([&]
+				{
+
+FINALLY_01d2_1:
+					{// begin finally (depth: 2)
+						TrackableChanges_1_Dispose_m83C5617202AF34BF17844B80195A0238CF7589CB((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 40));
+						return;
+					}// end finally (depth: 2)
+				});
+				try
+				{// begin try (depth: 2)
+					{
+						// using (new ScopedProfiler("ProcessAdded"))
+						ScopedProfiler_tA2CF63F6C047FB63643D2263A4AC86C6A363EC6F L_5;
+						memset((&L_5), 0, sizeof(L_5));
+						ScopedProfiler__ctor_m652B5689DE1A3C3EF7D12801DA27FA3B40E4412F((&L_5), _stringLiteralE6EF062EC4F6D2568BF5B77100709C7764EAEFE6, /*hidden argument*/NULL);
+						V_2 = L_5;
+					}
+					{
+						auto __finallyBlock = il2cpp::utils::Finally([&]
+						{
+
+FINALLY_00a9_2:
+							{// begin finally (depth: 3)
+								ScopedProfiler_Dispose_m7B646405B4E52CC4677329D3B860BE9C17A9DAC4((&V_2), NULL);
+								return;
+							}// end finally (depth: 3)
+						});
+						try
+						{// begin try (depth: 3)
+							{
+								// ClearAndSetCapacity(s_Added, changes.added.Length);
+								il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+								List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_6 = ((ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Added_11;
+								NativeArray_1_t27110FD746D2F878E09169A93400CE1027082DA2 L_7;
+								L_7 = TrackableChanges_1_get_added_m8E0E28C84E03CC94A82F70D77D5E8F753F39363A_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 25));
+								V_3 = L_7;
+								int32_t L_8;
+								L_8 = IL2CPP_NATIVEARRAY_GET_LENGTH(((&V_3))->___m_Length_1);
+								((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 26)))(L_6, L_8, il2cpp_rgctx_method(method->klass->rgctx_data, 26));
+								// foreach (var added in changes.added)
+								NativeArray_1_t27110FD746D2F878E09169A93400CE1027082DA2 L_9;
+								L_9 = TrackableChanges_1_get_added_m8E0E28C84E03CC94A82F70D77D5E8F753F39363A_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 25));
+								V_3 = L_9;
+								Enumerator_t8A9E97CA5C90C762E693D02011DD73E7870F3BD2 L_10;
+								L_10 = NativeArray_1_GetEnumerator_m841C992D910D6224AFA3A6455730BBC57AA93600((&V_3), il2cpp_rgctx_method(method->klass->rgctx_data, 27));
+								V_4 = L_10;
+							}
+							{
+								auto __finallyBlock = il2cpp::utils::Finally([&]
+								{
+
+FINALLY_009b_3:
+									{// begin finally (depth: 4)
+										Enumerator_Dispose_m5FA16B93D03F31304C8879E2186706041E54C5DF((&V_4), il2cpp_rgctx_method(method->klass->rgctx_data, 34));
+										return;
+									}// end finally (depth: 4)
+								});
+								try
+								{// begin try (depth: 4)
+									{
+										goto IL_0090_4;
+									}
+
+IL_0075_4:
+									{
+										// foreach (var added in changes.added)
+										XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 L_11;
+										L_11 = Enumerator_get_Current_m9481DF20F1D73C2C1813EBEEC03FEAB12BEF74ED((&V_4), il2cpp_rgctx_method(method->klass->rgctx_data, 28));
+										V_5 = L_11;
+										// s_Added.Add(CreateOrUpdateTrackable(added));
+										il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+										List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_12 = ((ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Added_11;
+										XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 L_13 = V_5;
+										RuntimeObject* L_14;
+										L_14 = ((  RuntimeObject* (*) (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884*, XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 29)))(__this, L_13, il2cpp_rgctx_method(method->klass->rgctx_data, 29));
+										NullCheck(L_12);
+										((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 31)))(L_12, L_14, il2cpp_rgctx_method(method->klass->rgctx_data, 31));
+									}
+
+IL_0090_4:
+									{
+										// foreach (var added in changes.added)
+										bool L_15;
+										L_15 = Enumerator_MoveNext_m8270D0DDE3ECF7A166EBC2747D4809AB27F6D238((&V_4), il2cpp_rgctx_method(method->klass->rgctx_data, 32));
+										if (L_15)
+										{
+											goto IL_0075_4;
+										}
+									}
+									{
+										goto IL_00b7_2;
+									}
+								}// end try (depth: 4)
+								catch(Il2CppExceptionWrapper& e)
+								{
+									__finallyBlock.StoreException(e.ex);
+								}
+							}
+						}// end try (depth: 3)
+						catch(Il2CppExceptionWrapper& e)
+						{
+							__finallyBlock.StoreException(e.ex);
+						}
+					}
+
+IL_00b7_2:
+					{
+						// using (new ScopedProfiler("ProcessUpdated"))
+						ScopedProfiler_tA2CF63F6C047FB63643D2263A4AC86C6A363EC6F L_16;
+						memset((&L_16), 0, sizeof(L_16));
+						ScopedProfiler__ctor_m652B5689DE1A3C3EF7D12801DA27FA3B40E4412F((&L_16), _stringLiteral2DC0198B89999C6E86C5CF2260C4264FF55D7903, /*hidden argument*/NULL);
+						V_2 = L_16;
+					}
+					{
+						auto __finallyBlock = il2cpp::utils::Finally([&]
+						{
+
+FINALLY_0122_2:
+							{// begin finally (depth: 3)
+								ScopedProfiler_Dispose_m7B646405B4E52CC4677329D3B860BE9C17A9DAC4((&V_2), NULL);
+								return;
+							}// end finally (depth: 3)
+						});
+						try
+						{// begin try (depth: 3)
+							{
+								// ClearAndSetCapacity(s_Updated, changes.updated.Length);
+								il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+								List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_17 = ((ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Updated_12;
+								NativeArray_1_t27110FD746D2F878E09169A93400CE1027082DA2 L_18;
+								L_18 = TrackableChanges_1_get_updated_mB7A87D602027E36E117065D68A04692716D37388_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 35));
+								V_3 = L_18;
+								int32_t L_19;
+								L_19 = IL2CPP_NATIVEARRAY_GET_LENGTH(((&V_3))->___m_Length_1);
+								((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 26)))(L_17, L_19, il2cpp_rgctx_method(method->klass->rgctx_data, 26));
+								// foreach (var updated in changes.updated)
+								NativeArray_1_t27110FD746D2F878E09169A93400CE1027082DA2 L_20;
+								L_20 = TrackableChanges_1_get_updated_mB7A87D602027E36E117065D68A04692716D37388_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 35));
+								V_3 = L_20;
+								Enumerator_t8A9E97CA5C90C762E693D02011DD73E7870F3BD2 L_21;
+								L_21 = NativeArray_1_GetEnumerator_m841C992D910D6224AFA3A6455730BBC57AA93600((&V_3), il2cpp_rgctx_method(method->klass->rgctx_data, 27));
+								V_4 = L_21;
+							}
+							{
+								auto __finallyBlock = il2cpp::utils::Finally([&]
+								{
+
+FINALLY_0114_3:
+									{// begin finally (depth: 4)
+										Enumerator_Dispose_m5FA16B93D03F31304C8879E2186706041E54C5DF((&V_4), il2cpp_rgctx_method(method->klass->rgctx_data, 34));
+										return;
+									}// end finally (depth: 4)
+								});
+								try
+								{// begin try (depth: 4)
+									{
+										goto IL_0109_4;
+									}
+
+IL_00ee_4:
+									{
+										// foreach (var updated in changes.updated)
+										XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 L_22;
+										L_22 = Enumerator_get_Current_m9481DF20F1D73C2C1813EBEEC03FEAB12BEF74ED((&V_4), il2cpp_rgctx_method(method->klass->rgctx_data, 28));
+										V_6 = L_22;
+										// s_Updated.Add(CreateOrUpdateTrackable(updated));
+										il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+										List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_23 = ((ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Updated_12;
+										XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 L_24 = V_6;
+										RuntimeObject* L_25;
+										L_25 = ((  RuntimeObject* (*) (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884*, XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 29)))(__this, L_24, il2cpp_rgctx_method(method->klass->rgctx_data, 29));
+										NullCheck(L_23);
+										((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 31)))(L_23, L_25, il2cpp_rgctx_method(method->klass->rgctx_data, 31));
+									}
+
+IL_0109_4:
+									{
+										// foreach (var updated in changes.updated)
+										bool L_26;
+										L_26 = Enumerator_MoveNext_m8270D0DDE3ECF7A166EBC2747D4809AB27F6D238((&V_4), il2cpp_rgctx_method(method->klass->rgctx_data, 32));
+										if (L_26)
+										{
+											goto IL_00ee_4;
+										}
+									}
+									{
+										goto IL_0130_2;
+									}
+								}// end try (depth: 4)
+								catch(Il2CppExceptionWrapper& e)
+								{
+									__finallyBlock.StoreException(e.ex);
+								}
+							}
+						}// end try (depth: 3)
+						catch(Il2CppExceptionWrapper& e)
+						{
+							__finallyBlock.StoreException(e.ex);
+						}
+					}
+
+IL_0130_2:
+					{
+						// using (new ScopedProfiler("ProcessRemoved"))
+						ScopedProfiler_tA2CF63F6C047FB63643D2263A4AC86C6A363EC6F L_27;
+						memset((&L_27), 0, sizeof(L_27));
+						ScopedProfiler__ctor_m652B5689DE1A3C3EF7D12801DA27FA3B40E4412F((&L_27), _stringLiteral26AA71BDAE4689FF6E5304BFE38FF4E0E841032B, /*hidden argument*/NULL);
+						V_2 = L_27;
+					}
+					{
+						auto __finallyBlock = il2cpp::utils::Finally([&]
+						{
+
+FINALLY_01c4_2:
+							{// begin finally (depth: 3)
+								ScopedProfiler_Dispose_m7B646405B4E52CC4677329D3B860BE9C17A9DAC4((&V_2), NULL);
+								return;
+							}// end finally (depth: 3)
+						});
+						try
+						{// begin try (depth: 3)
+							{
+								// ClearAndSetCapacity(s_Removed, changes.removed.Length);
+								il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+								List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_28 = ((ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Removed_13;
+								NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E L_29;
+								L_29 = TrackableChanges_1_get_removed_mB692C4B8E9682871345D028184FD08CA66224E56_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 36));
+								V_7 = L_29;
+								int32_t L_30;
+								L_30 = IL2CPP_NATIVEARRAY_GET_LENGTH(((&V_7))->___m_Length_1);
+								((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 26)))(L_28, L_30, il2cpp_rgctx_method(method->klass->rgctx_data, 26));
+								// foreach (var trackableId in changes.removed)
+								NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E L_31;
+								L_31 = TrackableChanges_1_get_removed_mB692C4B8E9682871345D028184FD08CA66224E56_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 36));
+								V_7 = L_31;
+								Enumerator_tC8A26D390552986367A8B556DCF22FAAF6E7AAAD L_32;
+								L_32 = NativeArray_1_GetEnumerator_mE980205B99190A020484F10CBAC64EB8C743AAF0((&V_7), NativeArray_1_GetEnumerator_mE980205B99190A020484F10CBAC64EB8C743AAF0_RuntimeMethod_var);
+								V_8 = L_32;
+							}
+							{
+								auto __finallyBlock = il2cpp::utils::Finally([&]
+								{
+
+FINALLY_01b6_3:
+									{// begin finally (depth: 4)
+										Enumerator_Dispose_m5D1D6FDED91C2254BB2731C2A979F3016E037147((&V_8), Enumerator_Dispose_m5D1D6FDED91C2254BB2731C2A979F3016E037147_RuntimeMethod_var);
+										return;
+									}// end finally (depth: 4)
+								});
+								try
+								{// begin try (depth: 4)
+									{
+										goto IL_01ab_4;
+									}
+
+IL_0169_4:
+									{
+										// foreach (var trackableId in changes.removed)
+										TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_33;
+										L_33 = Enumerator_get_Current_m572F715FD6838E37154726E5A6DB2C103236C7C6((&V_8), Enumerator_get_Current_m572F715FD6838E37154726E5A6DB2C103236C7C6_RuntimeMethod_var);
+										V_9 = L_33;
+										// if (m_Trackables.TryGetValue(trackableId, out var trackable))
+										Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_34 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_Trackables_9;
+										TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_35 = V_9;
+										NullCheck(L_34);
+										bool L_36;
+										L_36 = ((  bool (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, RuntimeObject**, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 37)))(L_34, L_35, (&V_10), il2cpp_rgctx_method(method->klass->rgctx_data, 37));
+										if (!L_36)
+										{
+											goto IL_01ab_4;
+										}
+									}
+									{
+										// m_Trackables.Remove(trackableId);
+										Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_37 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_Trackables_9;
+										TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_38 = V_9;
+										NullCheck(L_37);
+										bool L_39;
+										L_39 = ((  bool (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 38)))(L_37, L_38, il2cpp_rgctx_method(method->klass->rgctx_data, 38));
+										// if (trackable)
+										RuntimeObject* L_40 = V_10;
+										il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+										bool L_41;
+										L_41 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_40, NULL);
+										if (!L_41)
+										{
+											goto IL_01ab_4;
+										}
+									}
+									{
+										// s_Removed.Add(trackable);
+										il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+										List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_42 = ((ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Removed_13;
+										RuntimeObject* L_43 = V_10;
+										NullCheck(L_42);
+										((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 31)))(L_42, L_43, il2cpp_rgctx_method(method->klass->rgctx_data, 31));
+									}
+
+IL_01ab_4:
+									{
+										// foreach (var trackableId in changes.removed)
+										bool L_44;
+										L_44 = Enumerator_MoveNext_mCB14CFB321C975B0DF69A927ACD4BD2A63AF0368((&V_8), Enumerator_MoveNext_mCB14CFB321C975B0DF69A927ACD4BD2A63AF0368_RuntimeMethod_var);
+										if (L_44)
+										{
+											goto IL_0169_4;
+										}
+									}
+									{
+										goto IL_01ee;
+									}
+								}// end try (depth: 4)
+								catch(Il2CppExceptionWrapper& e)
+								{
+									__finallyBlock.StoreException(e.ex);
+								}
+							}
+						}// end try (depth: 3)
+						catch(Il2CppExceptionWrapper& e)
+						{
+							__finallyBlock.StoreException(e.ex);
+						}
+					}
+				}// end try (depth: 2)
+				catch(Il2CppExceptionWrapper& e)
+				{
+					__finallyBlock.StoreException(e.ex);
+				}
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_01ee:
+	{
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_022d:
+			{// begin finally (depth: 1)
+				{
+					// foreach (var removed in s_Removed)
+					il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+					List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_45 = ((ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Removed_13;
+					NullCheck(L_45);
+					Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A L_46;
+					L_46 = ((  Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 44)))(L_45, il2cpp_rgctx_method(method->klass->rgctx_data, 44));
+					V_11 = L_46;
+				}
+				{
+					auto __finallyBlock = il2cpp::utils::Finally([&]
+					{
+
+FINALLY_0257:
+						{// begin finally (depth: 2)
+							Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419((&V_11), il2cpp_rgctx_method(method->klass->rgctx_data, 49));
+							return;
+						}// end finally (depth: 2)
+					});
+					try
+					{// begin try (depth: 2)
+						{
+							goto IL_024c_1;
+						}
+
+IL_023b_1:
+						{
+							// foreach (var removed in s_Removed)
+							RuntimeObject* L_47;
+							L_47 = Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_inline((&V_11), il2cpp_rgctx_method(method->klass->rgctx_data, 45));
+							V_12 = L_47;
+							// DestroyTrackable(removed);
+							RuntimeObject* L_48 = V_12;
+							((  void (*) (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 46)))(__this, L_48, il2cpp_rgctx_method(method->klass->rgctx_data, 46));
+						}
+
+IL_024c_1:
+						{
+							// foreach (var removed in s_Removed)
+							bool L_49;
+							L_49 = Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB((&V_11), il2cpp_rgctx_method(method->klass->rgctx_data, 47));
+							if (L_49)
+							{
+								goto IL_023b_1;
+							}
+						}
+						{
+							goto IL_0265;
+						}
+					}// end try (depth: 2)
+					catch(Il2CppExceptionWrapper& e)
+					{
+						__finallyBlock.StoreException(e.ex);
+					}
+				}
+
+IL_0265:
+				{
+					// }
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				// if ((s_Added.Count) > 0 ||
+				//     (s_Updated.Count) > 0 ||
+				//     (s_Removed.Count) > 0)
+				il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+				List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_50 = ((ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Added_11;
+				NullCheck(L_50);
+				int32_t L_51;
+				L_51 = ((  int32_t (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 41)))(L_50, il2cpp_rgctx_method(method->klass->rgctx_data, 41));
+				if ((((int32_t)L_51) > ((int32_t)0)))
+				{
+					goto IL_0216_1;
+				}
+			}
+			{
+				il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+				List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_52 = ((ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Updated_12;
+				NullCheck(L_52);
+				int32_t L_53;
+				L_53 = ((  int32_t (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 41)))(L_52, il2cpp_rgctx_method(method->klass->rgctx_data, 41));
+				if ((((int32_t)L_53) > ((int32_t)0)))
+				{
+					goto IL_0216_1;
+				}
+			}
+			{
+				il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+				List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_54 = ((ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Removed_13;
+				NullCheck(L_54);
+				int32_t L_55;
+				L_55 = ((  int32_t (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 41)))(L_54, il2cpp_rgctx_method(method->klass->rgctx_data, 41));
+				if ((((int32_t)L_55) <= ((int32_t)0)))
+				{
+					goto IL_022b_1;
+				}
+			}
+
+IL_0216_1:
+			{
+				// OnTrackablesChanged(s_Added, s_Updated, s_Removed);
+				il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+				List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_56 = ((ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Added_11;
+				List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_57 = ((ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Updated_12;
+				List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_58 = ((ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Removed_13;
+				VirtualActionInvoker3< List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* >::Invoke(13 /* System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::OnTrackablesChanged(System.Collections.Generic.List`1<TTrackable>,System.Collections.Generic.List`1<TTrackable>,System.Collections.Generic.List`1<TTrackable>) */, __this, L_56, L_57, L_58);
+			}
+
+IL_022b_1:
+			{
+				// }
+				goto IL_0266;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0266:
+	{
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::OnTrackablesChanged(System.Collections.Generic.List`1<TTrackable>,System.Collections.Generic.List`1<TTrackable>,System.Collections.Generic.List`1<TTrackable>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_OnTrackablesChanged_m89D804A77163112F8D0BCA60150C8F2363C1172A_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___added0, List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___updated1, List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___removed2, const RuntimeMethod* method) 
+{
+	{
+		// { }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::OnCreateTrackable(TTrackable)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_OnCreateTrackable_m0F36990F92C976CFDFBED8D27A697D087CA1F321_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, RuntimeObject* ___trackable0, const RuntimeMethod* method) 
+{
+	{
+		// { }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::OnAfterSetSessionRelativeData(TTrackable,TSessionRelativeData)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_OnAfterSetSessionRelativeData_m2A9DE0853C7B63571548DF1CF886A19FF53A912C_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, RuntimeObject* ___trackable0, XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 ___sessionRelativeData1, const RuntimeMethod* method) 
+{
+	{
+		// { }
+		return;
+	}
+}
+// TTrackable UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::CreateTrackableImmediate(TSessionRelativeData)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ARTrackableManager_5_CreateTrackableImmediate_mF4563F3A8BF5A3EE22AA9A6421B16F1B4CCB27C6_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 ___sessionRelativeData0, const RuntimeMethod* method) 
+{
+	RuntimeObject* V_0 = NULL;
+	{
+		// var trackable = CreateOrUpdateTrackable(sessionRelativeData);
+		XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 L_0 = ___sessionRelativeData0;
+		RuntimeObject* L_1;
+		L_1 = ((  RuntimeObject* (*) (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884*, XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 29)))(__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 29));
+		V_0 = L_1;
+		// trackable.pending = true;
+		RuntimeObject* L_2 = V_0;
+		NullCheck((ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*)L_2);
+		((  void (*) (ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*, bool, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 21)))((ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*)L_2, (bool)1, il2cpp_rgctx_method(method->klass->rgctx_data, 21));
+		// m_PendingAdds.Add(trackable.trackableId, trackable);
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_3 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_PendingAdds_10;
+		RuntimeObject* L_4 = V_0;
+		NullCheck((ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*)L_4);
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_5;
+		L_5 = ((  TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 (*) (ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 16)))((ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*)L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+		RuntimeObject* L_6 = V_0;
+		NullCheck(L_3);
+		((  void (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 50)))(L_3, L_5, L_6, il2cpp_rgctx_method(method->klass->rgctx_data, 50));
+		// return trackable;
+		RuntimeObject* L_7 = V_0;
+		return L_7;
+	}
+}
+// System.Boolean UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::DestroyPendingTrackable(UnityEngine.XR.ARSubsystems.TrackableId)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ARTrackableManager_5_DestroyPendingTrackable_mE413B8FCFEE3CF1BEB35EB84FD44AC82DBFE6263_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 ___trackableId0, const RuntimeMethod* method) 
+{
+	RuntimeObject* V_0 = NULL;
+	{
+		// if (m_PendingAdds.TryGetValue(trackableId, out var trackable))
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_0 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_PendingAdds_10;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_1 = ___trackableId0;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = ((  bool (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, RuntimeObject**, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 37)))(L_0, L_1, (&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 37));
+		if (!L_2)
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		// m_PendingAdds.Remove(trackableId);
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_3 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_PendingAdds_10;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_4 = ___trackableId0;
+		NullCheck(L_3);
+		bool L_5;
+		L_5 = ((  bool (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 38)))(L_3, L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 38));
+		// m_Trackables.Remove(trackableId);
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_6 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_Trackables_9;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_7 = ___trackableId0;
+		NullCheck(L_6);
+		bool L_8;
+		L_8 = ((  bool (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 38)))(L_6, L_7, il2cpp_rgctx_method(method->klass->rgctx_data, 38));
+		// DestroyTrackable(trackable);
+		RuntimeObject* L_9 = V_0;
+		((  void (*) (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 46)))(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 46));
+		// return true;
+		return (bool)1;
+	}
+
+IL_0033:
+	{
+		// return false;
+		return (bool)0;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::ClearAndSetCapacity(System.Collections.Generic.List`1<TTrackable>,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_ClearAndSetCapacity_m56DD3E8D58D3240289521E9505257B705BED2016_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___list0, int32_t ___capacity1, const RuntimeMethod* method) 
+{
+	{
+		// list.Clear();
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_0 = ___list0;
+		NullCheck(L_0);
+		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 51)))(L_0, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 51));
+		// if (list.Capacity < capacity)
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_1 = ___list0;
+		NullCheck(L_1);
+		int32_t L_2;
+		L_2 = ((  int32_t (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 52)))(L_1, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 52));
+		int32_t L_3 = ___capacity1;
+		if ((((int32_t)L_2) >= ((int32_t)L_3)))
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		// list.Capacity = capacity;
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_4 = ___list0;
+		int32_t L_5 = ___capacity1;
+		NullCheck(L_4);
+		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 53)))(L_4, L_5, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 53));
+	}
+
+IL_0016:
+	{
+		// }
+		return;
+	}
+}
+// System.String UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::GetTrackableName(UnityEngine.XR.ARSubsystems.TrackableId)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ARTrackableManager_5_GetTrackableName_mA5634107E92C59260D43DC6CDEBB663143BE49E7_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 ___trackableId0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return gameObjectName + " " + trackableId.ToString();
+		String_t* L_0;
+		L_0 = VirtualFuncInvoker0< String_t* >::Invoke(9 /* System.String UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::get_gameObjectName() */, __this);
+		String_t* L_1;
+		L_1 = TrackableId_ToString_m4BE1AD91726751D994E6FB864B231BE5D7D3F85F((&___trackableId0), NULL);
+		String_t* L_2;
+		L_2 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_0, _stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745, L_1, NULL);
+		return L_2;
+	}
+}
+// System.ValueTuple`2<UnityEngine.GameObject,System.Boolean> UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::CreateGameObjectDeactivated()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 ARTrackableManager_5_CreateGameObjectDeactivated_m68428F74A813268516C4ED8F9B67A6848C780303_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ValueTuple_2__ctor_mC564D526A92ADAED1606CF8F0D6C9E846F0F4DF0_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_0 = NULL;
+	bool V_1 = false;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_2 = NULL;
+	{
+		// var prefab = GetPrefab();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
+		L_0 = VirtualFuncInvoker0< GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* >::Invoke(10 /* UnityEngine.GameObject UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::GetPrefab() */, __this);
+		V_0 = L_0;
+		// if (prefab == null)
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_2)
+		{
+			goto IL_0039;
+		}
+	}
+	{
+		// var gameObject = new GameObject();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		GameObject__ctor_m7D0340DE160786E6EFA8DABD39EC3B694DA30AAD(L_3, NULL);
+		// gameObject.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = L_3;
+		NullCheck(L_4);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)0, NULL);
+		// gameObject.transform.parent = sessionOrigin.trackablesParent;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = L_4;
+		NullCheck(L_5);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
+		L_6 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_5, NULL);
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_7;
+		L_7 = ((  ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* (*) (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		NullCheck(L_7);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
+		L_8 = ARSessionOrigin_get_trackablesParent_mF42C34E0B09B58DEE52CF3CC13563BE541C14F9F_inline(L_7, NULL);
+		NullCheck(L_6);
+		Transform_set_parent_m9BD5E563B539DD5BEC342736B03F97B38A243234(L_6, L_8, NULL);
+		// return (gameObject, true);
+		ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 L_9;
+		memset((&L_9), 0, sizeof(L_9));
+		ValueTuple_2__ctor_mC564D526A92ADAED1606CF8F0D6C9E846F0F4DF0((&L_9), L_5, (bool)1, /*hidden argument*/ValueTuple_2__ctor_mC564D526A92ADAED1606CF8F0D6C9E846F0F4DF0_RuntimeMethod_var);
+		return L_9;
+	}
+
+IL_0039:
+	{
+		// var active = prefab.activeSelf;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = V_0;
+		NullCheck(L_10);
+		bool L_11;
+		L_11 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_10, NULL);
+		V_1 = L_11;
+		// prefab.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = V_0;
+		NullCheck(L_12);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_12, (bool)0, NULL);
+		// var gameObject = Instantiate(prefab, sessionOrigin.trackablesParent);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13 = V_0;
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_14;
+		L_14 = ((  ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* (*) (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		NullCheck(L_14);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15;
+		L_15 = ARSessionOrigin_get_trackablesParent_mF42C34E0B09B58DEE52CF3CC13563BE541C14F9F_inline(L_14, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16;
+		L_16 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811(L_13, L_15, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811_RuntimeMethod_var);
+		V_2 = L_16;
+		// prefab.SetActive(active);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = V_0;
+		bool L_18 = V_1;
+		NullCheck(L_17);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_17, L_18, NULL);
+		// return (gameObject, active);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = V_2;
+		bool L_20 = V_1;
+		ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 L_21;
+		memset((&L_21), 0, sizeof(L_21));
+		ValueTuple_2__ctor_mC564D526A92ADAED1606CF8F0D6C9E846F0F4DF0((&L_21), L_19, L_20, /*hidden argument*/ValueTuple_2__ctor_mC564D526A92ADAED1606CF8F0D6C9E846F0F4DF0_RuntimeMethod_var);
+		return L_21;
+	}
+}
+// System.ValueTuple`2<UnityEngine.GameObject,System.Boolean> UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::CreateGameObjectDeactivated(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 ARTrackableManager_5_CreateGameObjectDeactivated_mFDAE9ABE6C34426C56BA0B4CA79C131D798819A0_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, String_t* ___name0, const RuntimeMethod* method) 
+{
+	{
+		// var tuple = CreateGameObjectDeactivated();
+		ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 L_0;
+		L_0 = ((  ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 (*) (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 56)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 56));
+		// tuple.gameObject.name = name;
+		ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 L_1 = L_0;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)L_1.___Item1_0;
+		String_t* L_3 = ___name0;
+		NullCheck((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_2);
+		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_2, L_3, NULL);
+		// return tuple;
+		return L_1;
+	}
+}
+// System.ValueTuple`2<UnityEngine.GameObject,System.Boolean> UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::CreateGameObjectDeactivated(UnityEngine.XR.ARSubsystems.TrackableId)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 ARTrackableManager_5_CreateGameObjectDeactivated_m795BEC4544623394DFE04D90600E8F1C1E0F0111_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 ___trackableId0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral393DD49F8AA9554CD1BB1DA05E5D90C3A4F7CC3D);
+		s_Il2CppMethodInitialized = true;
+	}
+	ScopedProfiler_tA2CF63F6C047FB63643D2263A4AC86C6A363EC6F V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		// using (new ScopedProfiler("CreateGameObject"))
+		ScopedProfiler__ctor_m652B5689DE1A3C3EF7D12801DA27FA3B40E4412F((&V_0), _stringLiteral393DD49F8AA9554CD1BB1DA05E5D90C3A4F7CC3D, NULL);
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_001c:
+			{// begin finally (depth: 1)
+				ScopedProfiler_Dispose_m7B646405B4E52CC4677329D3B860BE9C17A9DAC4((&V_0), NULL);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			// return CreateGameObjectDeactivated(GetTrackableName(trackableId));
+			TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0 = ___trackableId0;
+			String_t* L_1;
+			L_1 = ((  String_t* (*) (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 57)))(__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 57));
+			ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 L_2;
+			L_2 = ((  ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 (*) (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884*, String_t*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 58)))(__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 58));
+			V_1 = L_2;
+			goto IL_002a;
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_002a:
+	{
+		// }
+		ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 L_3 = V_1;
+		return L_3;
+	}
+}
+// TTrackable UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::CreateTrackable(TSessionRelativeData)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ARTrackableManager_5_CreateTrackable_m3B1B1463A40BD8B364DEB7882DB82C99A7E61F00_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 ___sessionRelativeData0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_0 = NULL;
+	bool V_1 = false;
+	RuntimeObject* V_2 = NULL;
+	{
+		// var (gameObject, shouldBeActive) = CreateGameObjectDeactivated(sessionRelativeData.trackableId);
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0;
+		L_0 = XREnvironmentProbe_get_trackableId_m7B20AFD8D153397E7270F72C81B32043DA83C57F_inline((&___sessionRelativeData0), il2cpp_rgctx_method(method->klass->rgctx_data, 60));
+		ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 L_1;
+		L_1 = ((  ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 (*) (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 61)))(__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 61));
+		ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 L_2 = L_1;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)L_2.___Item1_0;
+		V_0 = L_3;
+		bool L_4 = (bool)L_2.___Item2_1;
+		V_1 = L_4;
+		// var trackable = gameObject.GetComponent<TTrackable>();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = V_0;
+		NullCheck(L_5);
+		RuntimeObject* L_6;
+		L_6 = ((  RuntimeObject* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 62)))(L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 62));
+		V_2 = L_6;
+		// if (trackable == null)
+		RuntimeObject* L_7 = V_2;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_8;
+		L_8 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_7, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_8)
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		// trackable = gameObject.AddComponent<TTrackable>();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = V_0;
+		NullCheck(L_9);
+		RuntimeObject* L_10;
+		L_10 = ((  RuntimeObject* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 63)))(L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 63));
+		V_2 = L_10;
+	}
+
+IL_003c:
+	{
+		// m_Trackables.Add(sessionRelativeData.trackableId, trackable);
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_11 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_Trackables_9;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_12;
+		L_12 = XREnvironmentProbe_get_trackableId_m7B20AFD8D153397E7270F72C81B32043DA83C57F_inline((&___sessionRelativeData0), il2cpp_rgctx_method(method->klass->rgctx_data, 60));
+		RuntimeObject* L_13 = V_2;
+		NullCheck(L_11);
+		((  void (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 50)))(L_11, L_12, L_13, il2cpp_rgctx_method(method->klass->rgctx_data, 50));
+		// SetSessionRelativeData(trackable, sessionRelativeData);
+		RuntimeObject* L_14 = V_2;
+		XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 L_15 = ___sessionRelativeData0;
+		((  void (*) (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884*, RuntimeObject*, XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 64)))(__this, L_14, L_15, il2cpp_rgctx_method(method->klass->rgctx_data, 64));
+		// trackable.gameObject.SetActive(shouldBeActive);
+		RuntimeObject* L_16 = V_2;
+		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_16);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17;
+		L_17 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_16, NULL);
+		bool L_18 = V_1;
+		NullCheck(L_17);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_17, L_18, NULL);
+		// return trackable;
+		RuntimeObject* L_19 = V_2;
+		return L_19;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::SetSessionRelativeData(TTrackable,TSessionRelativeData)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_SetSessionRelativeData_m74B74736FD6B986CB9DEC4A6276C49F364451247_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, RuntimeObject* ___trackable0, XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 ___data1, const RuntimeMethod* method) 
+{
+	Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		// trackable.SetSessionRelativeData(data);
+		RuntimeObject* L_0 = ___trackable0;
+		XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 L_1 = ___data1;
+		NullCheck((ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*)L_0);
+		((  void (*) (ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*, XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 65)))((ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*)L_0, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 65));
+		// var worldSpacePose = sessionOrigin.trackablesParent.TransformPose(data.pose);
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_2;
+		L_2 = ((  ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* (*) (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		NullCheck(L_2);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
+		L_3 = ARSessionOrigin_get_trackablesParent_mF42C34E0B09B58DEE52CF3CC13563BE541C14F9F_inline(L_2, NULL);
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_4;
+		L_4 = XREnvironmentProbe_get_pose_m56C2FCB790DC220FAE0339EFC82055360984CAF0_inline((&___data1), il2cpp_rgctx_method(method->klass->rgctx_data, 66));
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_5;
+		L_5 = TransformExtensions_TransformPose_m657A2F269CFE7ABD9E77029577861EA464E2364C(L_3, L_4, NULL);
+		V_0 = L_5;
+		// trackable.transform.SetPositionAndRotation(worldSpacePose.position, worldSpacePose.rotation);
+		RuntimeObject* L_6 = ___trackable0;
+		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_6);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_6, NULL);
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_8 = V_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_8.___position_0;
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_10 = V_0;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_11 = (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974)L_10.___rotation_1;
+		NullCheck(L_7);
+		Transform_SetPositionAndRotation_m418859BF59086EEAA084FFD6F258A43FAB408F5A(L_7, L_9, L_11, NULL);
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::CreateTrackableFromExisting(TTrackable,TSessionRelativeData)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_CreateTrackableFromExisting_m8D6FCD01C9C501C98D2A39554D910FC336278F10_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, RuntimeObject* ___existingTrackable0, XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 ___sessionRelativeData1, const RuntimeMethod* method) 
+{
+	TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		// var trackableId = sessionRelativeData.trackableId;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0;
+		L_0 = XREnvironmentProbe_get_trackableId_m7B20AFD8D153397E7270F72C81B32043DA83C57F_inline((&___sessionRelativeData1), il2cpp_rgctx_method(method->klass->rgctx_data, 60));
+		V_0 = L_0;
+		// m_Trackables.Add(trackableId, existingTrackable);
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_1 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_Trackables_9;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_2 = V_0;
+		RuntimeObject* L_3 = ___existingTrackable0;
+		NullCheck(L_1);
+		((  void (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 50)))(L_1, L_2, L_3, il2cpp_rgctx_method(method->klass->rgctx_data, 50));
+		// SetSessionRelativeData(existingTrackable, sessionRelativeData);
+		RuntimeObject* L_4 = ___existingTrackable0;
+		XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 L_5 = ___sessionRelativeData1;
+		((  void (*) (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884*, RuntimeObject*, XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 64)))(__this, L_4, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 64));
+		// OnCreateTrackable(existingTrackable);
+		RuntimeObject* L_6 = ___existingTrackable0;
+		VirtualActionInvoker1< RuntimeObject* >::Invoke(14 /* System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::OnCreateTrackable(TTrackable) */, __this, L_6);
+		// OnAfterSetSessionRelativeData(existingTrackable, sessionRelativeData);
+		RuntimeObject* L_7 = ___existingTrackable0;
+		XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 L_8 = ___sessionRelativeData1;
+		VirtualActionInvoker2< RuntimeObject*, XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 >::Invoke(15 /* System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::OnAfterSetSessionRelativeData(TTrackable,TSessionRelativeData) */, __this, L_7, L_8);
+		// existingTrackable.OnAfterSetSessionRelativeData();
+		RuntimeObject* L_9 = ___existingTrackable0;
+		NullCheck((ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*)L_9);
+		VirtualActionInvoker0::Invoke(4 /* System.Void UnityEngine.XR.ARFoundation.ARTrackable`2<UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::OnAfterSetSessionRelativeData() */, (ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*)L_9);
+		// m_PendingAdds.Add(trackableId, existingTrackable);
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_10 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_PendingAdds_10;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_11 = V_0;
+		RuntimeObject* L_12 = ___existingTrackable0;
+		NullCheck(L_10);
+		((  void (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 50)))(L_10, L_11, L_12, il2cpp_rgctx_method(method->klass->rgctx_data, 50));
+		// existingTrackable.pending = true;
+		RuntimeObject* L_13 = ___existingTrackable0;
+		NullCheck((ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*)L_13);
+		((  void (*) (ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*, bool, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 21)))((ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*)L_13, (bool)1, il2cpp_rgctx_method(method->klass->rgctx_data, 21));
+		// }
+		return;
+	}
+}
+// TTrackable UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::CreateOrUpdateTrackable(TSessionRelativeData)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ARTrackableManager_5_CreateOrUpdateTrackable_m437D9C1070BA0B702B62AE3CC4F458F4219F8BEF_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 ___sessionRelativeData0, const RuntimeMethod* method) 
+{
+	TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	RuntimeObject* V_1 = NULL;
+	{
+		// var trackableId = sessionRelativeData.trackableId;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0;
+		L_0 = XREnvironmentProbe_get_trackableId_m7B20AFD8D153397E7270F72C81B32043DA83C57F_inline((&___sessionRelativeData0), il2cpp_rgctx_method(method->klass->rgctx_data, 60));
+		V_0 = L_0;
+		// if (m_Trackables.TryGetValue(trackableId, out var trackable))
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_1 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_Trackables_9;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_2 = V_0;
+		NullCheck(L_1);
+		bool L_3;
+		L_3 = ((  bool (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, RuntimeObject**, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 37)))(L_1, L_2, (&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 37));
+		if (!L_3)
+		{
+			goto IL_0041;
+		}
+	}
+	{
+		// m_PendingAdds.Remove(trackableId);
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_4 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_PendingAdds_10;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_5 = V_0;
+		NullCheck(L_4);
+		bool L_6;
+		L_6 = ((  bool (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 38)))(L_4, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 38));
+		// trackable.pending = false;
+		RuntimeObject* L_7 = V_1;
+		NullCheck((ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*)L_7);
+		((  void (*) (ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*, bool, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 21)))((ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*)L_7, (bool)0, il2cpp_rgctx_method(method->klass->rgctx_data, 21));
+		// SetSessionRelativeData(trackable, sessionRelativeData);
+		RuntimeObject* L_8 = V_1;
+		XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 L_9 = ___sessionRelativeData0;
+		((  void (*) (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884*, RuntimeObject*, XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 64)))(__this, L_8, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 64));
+		goto IL_0050;
+	}
+
+IL_0041:
+	{
+		// trackable = CreateTrackable(sessionRelativeData);
+		XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 L_10 = ___sessionRelativeData0;
+		RuntimeObject* L_11;
+		L_11 = ((  RuntimeObject* (*) (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884*, XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 70)))(__this, L_10, il2cpp_rgctx_method(method->klass->rgctx_data, 70));
+		V_1 = L_11;
+		// OnCreateTrackable(trackable);
+		RuntimeObject* L_12 = V_1;
+		VirtualActionInvoker1< RuntimeObject* >::Invoke(14 /* System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::OnCreateTrackable(TTrackable) */, __this, L_12);
+	}
+
+IL_0050:
+	{
+		// OnAfterSetSessionRelativeData(trackable, sessionRelativeData);
+		RuntimeObject* L_13 = V_1;
+		XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 L_14 = ___sessionRelativeData0;
+		VirtualActionInvoker2< RuntimeObject*, XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9 >::Invoke(15 /* System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::OnAfterSetSessionRelativeData(TTrackable,TSessionRelativeData) */, __this, L_13, L_14);
+		// trackable.OnAfterSetSessionRelativeData();
+		RuntimeObject* L_15 = V_1;
+		NullCheck((ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*)L_15);
+		VirtualActionInvoker0::Invoke(4 /* System.Void UnityEngine.XR.ARFoundation.ARTrackable`2<UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::OnAfterSetSessionRelativeData() */, (ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*)L_15);
+		// return trackable;
+		RuntimeObject* L_16 = V_1;
+		return L_16;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::DestroyTrackable(TTrackable)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_DestroyTrackable_m6E2708CFFAA36608C0559D808BE7F8FD5DE58C71_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, RuntimeObject* ___trackable0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (trackable.destroyOnRemoval)
+		RuntimeObject* L_0 = ___trackable0;
+		NullCheck((ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*)L_0);
+		bool L_1;
+		L_1 = ((  bool (*) (ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 71)))((ARTrackable_2_t807AED088C7F182684BA1C40BCE73AD8064D05F8*)L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 71));
+		if (!L_1)
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		// Destroy(trackable.gameObject);
+		RuntimeObject* L_2 = ___trackable0;
+		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_2);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
+		L_3 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_2, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_3, NULL);
+	}
+
+IL_001d:
+	{
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5__ctor_mF7485387FF37375615237932E7042CF57337FD08_gshared (ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884* __this, const RuntimeMethod* method) 
+{
+	{
+		// protected Dictionary<TrackableId, TTrackable> m_Trackables = new Dictionary<TrackableId, TTrackable>();
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_0 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 17));
+		NullCheck(L_0);
+		((  void (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 72)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 72));
+		__this->___m_Trackables_9 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Trackables_9), (void*)L_0);
+		// protected Dictionary<TrackableId, TTrackable> m_PendingAdds = new Dictionary<TrackableId, TTrackable>();
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_1 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 17));
+		NullCheck(L_1);
+		((  void (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 72)))(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 72));
+		__this->___m_PendingAdds_10 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_PendingAdds_10), (void*)L_1);
+		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 1));
+		((  void (*) (SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 73)))((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 73));
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XREnvironmentProbe,System.Object>::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5__cctor_mFC86B099CF633DD926BF3592E5392317F7B1383B_gshared (const RuntimeMethod* method) 
+{
+	{
+		// static List<TTrackable> s_Added = new List<TTrackable>();
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_0 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 30));
+		NullCheck(L_0);
+		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 74)))(L_0, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 74));
+		((ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___s_Added_11 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___s_Added_11), (void*)L_0);
+		// static List<TTrackable> s_Updated = new List<TTrackable>();
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_1 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 30));
+		NullCheck(L_1);
+		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 74)))(L_1, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 74));
+		((ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___s_Updated_12 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&((ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___s_Updated_12), (void*)L_1);
+		// static List<TTrackable> s_Removed = new List<TTrackable>();
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_2 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 30));
+		NullCheck(L_2);
+		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 74)))(L_2, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 74));
+		((ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___s_Removed_13 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&((ARTrackableManager_5_tC56289D50DE86279687B0C8992A9F37634667884_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___s_Removed_13), (void*)L_2);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// UnityEngine.XR.ARFoundation.ARTrackableManager`5<TSubsystem,TSubsystemDescriptor,TProvider,TSessionRelativeData,TTrackable> UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::get_instance()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* ARTrackableManager_5_get_instance_mB1A64CA8662B75EF93F28B3987ACE9511EFF105B_gshared (const RuntimeMethod* method) 
+{
+	{
+		// internal static ARTrackableManager<TSubsystem, TSubsystemDescriptor, TProvider, TSessionRelativeData, TTrackable> instance { get; private set; }
+		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0));
+		ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* L_0 = ((ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___U3CinstanceU3Ek__BackingField_7;
+		return L_0;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::set_instance(UnityEngine.XR.ARFoundation.ARTrackableManager`5<TSubsystem,TSubsystemDescriptor,TProvider,TSessionRelativeData,TTrackable>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_set_instance_m3B2DCAD65B1F3278CEF8D341101D90AE80925DCA_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// internal static ARTrackableManager<TSubsystem, TSubsystemDescriptor, TProvider, TSessionRelativeData, TTrackable> instance { get; private set; }
+		ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* L_0 = ___value0;
+		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0));
+		((ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___U3CinstanceU3Ek__BackingField_7 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___U3CinstanceU3Ek__BackingField_7), (void*)L_0);
+		return;
+	}
+}
+// UnityEngine.XR.ARFoundation.TrackableCollection`1<TTrackable> UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::get_trackables()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB ARTrackableManager_5_get_trackables_m7AFA6F8E1DD9C80CB06BE955E8F797A8B086D96D_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, const RuntimeMethod* method) 
+{
+	{
+		// public TrackableCollection<TTrackable> trackables => new TrackableCollection<TTrackable>(m_Trackables);
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_0 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_Trackables_9;
+		TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB L_1;
+		memset((&L_1), 0, sizeof(L_1));
+		TrackableCollection_1__ctor_mB5CA9457B08CEF46281808276A685B42D58451B8((&L_1), L_0, /*hidden argument*/il2cpp_rgctx_method(method->klass->rgctx_data, 3));
+		return L_1;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::SetTrackablesActive(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_SetTrackablesActive_m3DE8B539AB75036A43ED0AFD10E3198F5B59682A_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, bool ___active0, const RuntimeMethod* method) 
+{
+	Enumerator_tB1F784FAF2FFA20550ACDB9773EA94D5D741808D V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		// foreach (var trackable in trackables)
+		TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB L_0;
+		L_0 = ((  TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB (*) (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 4)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
+		V_1 = L_0;
+		Enumerator_tB1F784FAF2FFA20550ACDB9773EA94D5D741808D L_1;
+		L_1 = TrackableCollection_1_GetEnumerator_m40FC0BACB788B33217B7B2C3221C7D9967F2B836((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 5));
+		V_0 = L_1;
+		goto IL_0028;
+	}
+
+IL_0011:
+	{
+		// foreach (var trackable in trackables)
+		RuntimeObject* L_2;
+		L_2 = Enumerator_get_Current_m0C78B1A685CCC36524577967CE1620CB889FDC0A((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 6));
+		// trackable.gameObject.SetActive(active);
+		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_2);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
+		L_3 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_2, NULL);
+		bool L_4 = ___active0;
+		NullCheck(L_3);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, L_4, NULL);
+	}
+
+IL_0028:
+	{
+		// foreach (var trackable in trackables)
+		bool L_5;
+		L_5 = Enumerator_MoveNext_m2DFDA23C7884D9A93FF21291F1DF5DDA2C0DA27C((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 8));
+		if (L_5)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		// }
+		return;
+	}
+}
+// UnityEngine.XR.ARFoundation.ARSessionOrigin UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::get_sessionOrigin()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* ARTrackableManager_5_get_sessionOrigin_mC3586D4DBA029063AA98BD4D85334965073665D4_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, const RuntimeMethod* method) 
+{
+	{
+		// protected ARSessionOrigin sessionOrigin { get; private set; }
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_0 = (ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3*)__this->___U3CsessionOriginU3Ek__BackingField_8;
+		return L_0;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::set_sessionOrigin(UnityEngine.XR.ARFoundation.ARSessionOrigin)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_set_sessionOrigin_m4A0DAB2CC9C2F611350A5DB97A86E04EA167D06F_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// protected ARSessionOrigin sessionOrigin { get; private set; }
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_0 = ___value0;
+		__this->___U3CsessionOriginU3Ek__BackingField_8 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CsessionOriginU3Ek__BackingField_8), (void*)L_0);
+		return;
+	}
+}
+// UnityEngine.GameObject UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::GetPrefab()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ARTrackableManager_5_GetPrefab_mF18A26521EC1846A711548FD065E6387E55265AC_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, const RuntimeMethod* method) 
+{
+	{
+		// protected virtual GameObject GetPrefab() => null;
+		return (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_Awake_m8C0525002E90961BC669B2F5AC5BF88306C17133_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3_mF7E0A4EC84273D7FF5240FC39482D1D2740F7684_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// sessionOrigin = GetComponent<ARSessionOrigin>();
+		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)__this);
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_0;
+		L_0 = Component_GetComponent_TisARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3_mF7E0A4EC84273D7FF5240FC39482D1D2740F7684((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)__this, Component_GetComponent_TisARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3_mF7E0A4EC84273D7FF5240FC39482D1D2740F7684_RuntimeMethod_var);
+		((  void (*) (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C*, ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 9)))(__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 9));
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::OnEnable()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_OnEnable_m5D5EA0FCEEB1C859F11ED79C1E1568300AF1CEC0_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t2096FCE7327B89C5101BFB38155839F3166605FB_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// base.OnEnable();
+		NullCheck((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this);
+		((  void (*) (SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)))((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
+		// instance = this;
+		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+		((  void (*) (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
+		// sessionOrigin.trackablesParentTransformChanged += OnTrackablesParentTransformChanged;
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_0;
+		L_0 = ((  ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* (*) (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		Action_1_t2096FCE7327B89C5101BFB38155839F3166605FB* L_1 = (Action_1_t2096FCE7327B89C5101BFB38155839F3166605FB*)il2cpp_codegen_object_new(Action_1_t2096FCE7327B89C5101BFB38155839F3166605FB_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		Action_1__ctor_mF83057A5B46235D3B94069DE8AA97564FBC38082(L_1, (RuntimeObject*)__this, (intptr_t)((void*)il2cpp_rgctx_method(method->klass->rgctx_data, 13)), NULL);
+		NullCheck(L_0);
+		ARSessionOrigin_add_trackablesParentTransformChanged_m8B8C5C69E226357AEF029402553CE5C62588189E(L_0, L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::OnDisable()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_OnDisable_mCBE4D38913FD36CF93CE8DA368151C49B8E471BD_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_t2096FCE7327B89C5101BFB38155839F3166605FB_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// base.OnDisable();
+		NullCheck((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this);
+		((  void (*) (SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 14)))((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		// sessionOrigin.trackablesParentTransformChanged -= OnTrackablesParentTransformChanged;
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_0;
+		L_0 = ((  ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* (*) (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		Action_1_t2096FCE7327B89C5101BFB38155839F3166605FB* L_1 = (Action_1_t2096FCE7327B89C5101BFB38155839F3166605FB*)il2cpp_codegen_object_new(Action_1_t2096FCE7327B89C5101BFB38155839F3166605FB_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		Action_1__ctor_mF83057A5B46235D3B94069DE8AA97564FBC38082(L_1, (RuntimeObject*)__this, (intptr_t)((void*)il2cpp_rgctx_method(method->klass->rgctx_data, 13)), NULL);
+		NullCheck(L_0);
+		ARSessionOrigin_remove_trackablesParentTransformChanged_m1D0E4B774E4AFF63367F442D5333B0C59FBD7582(L_0, L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Boolean UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::CanBeAddedToSubsystem(TTrackable)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ARTrackableManager_5_CanBeAddedToSubsystem_mCF4CF19E0BE32FABD1CE39E337ACE1676E8930B3_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, RuntimeObject* ___trackable0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		// if (trackable == null)
+		RuntimeObject* L_0 = ___trackable0;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		// throw new ArgumentNullException(nameof(trackable));
+		ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* L_2 = (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129_il2cpp_TypeInfo_var)));
+		NullCheck(L_2);
+		ArgumentNullException__ctor_m444AE141157E333844FC1A9500224C2F9FD24F4B(L_2, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral0DE1CB003F08731FF13F5C138B94B1D7BB6B2B9D)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ARTrackableManager_5_CanBeAddedToSubsystem_mCF4CF19E0BE32FABD1CE39E337ACE1676E8930B3_RuntimeMethod_var)));
+	}
+
+IL_0019:
+	{
+		// if (!trackable.trackableId.Equals(TrackableId.invalidId))
+		RuntimeObject* L_3 = ___trackable0;
+		NullCheck((ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*)L_3);
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_4;
+		L_4 = ((  TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 (*) (ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 16)))((ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*)L_3, il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+		V_0 = L_4;
+		il2cpp_codegen_runtime_class_init_inline(TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7_il2cpp_TypeInfo_var);
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_5;
+		L_5 = TrackableId_get_invalidId_mDAEC47FD9C1E08B9D5752DA8F185E7A783DBE494_inline(NULL);
+		bool L_6;
+		L_6 = TrackableId_Equals_m7263BB158392C4F1B57BEE16D4F1FBBCF01E4A6E((&V_0), L_5, NULL);
+		if (L_6)
+		{
+			goto IL_0035;
+		}
+	}
+	{
+		// return false;
+		return (bool)0;
+	}
+
+IL_0035:
+	{
+		// if (m_Trackables.ContainsKey(trackable.trackableId))
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_7 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_Trackables_9;
+		RuntimeObject* L_8 = ___trackable0;
+		NullCheck((ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*)L_8);
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_9;
+		L_9 = ((  TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 (*) (ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 16)))((ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*)L_8, il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+		NullCheck(L_7);
+		bool L_10;
+		L_10 = ((  bool (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 18)))(L_7, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 18));
+		if (!L_10)
+		{
+			goto IL_004f;
+		}
+	}
+	{
+		// return false;
+		return (bool)0;
+	}
+
+IL_004f:
+	{
+		// if (!enabled || subsystem == null)
+		NullCheck((Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA*)__this);
+		bool L_11;
+		L_11 = Behaviour_get_enabled_mAAC9F15E9EBF552217A5AE2681589CC0BFA300C1((Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA*)__this, NULL);
+		if (!L_11)
+		{
+			goto IL_0064;
+		}
+	}
+	{
+		NullCheck((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this);
+		RuntimeObject* L_12;
+		L_12 = ((  RuntimeObject* (*) (SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		if (L_12)
+		{
+			goto IL_0072;
+		}
+	}
+
+IL_0064:
+	{
+		// trackable.pending = true;
+		RuntimeObject* L_13 = ___trackable0;
+		NullCheck((ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*)L_13);
+		((  void (*) (ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*, bool, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 21)))((ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*)L_13, (bool)1, il2cpp_rgctx_method(method->klass->rgctx_data, 21));
+		// return false;
+		return (bool)0;
+	}
+
+IL_0072:
+	{
+		// return sessionOrigin && sessionOrigin.trackablesParent;
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_14;
+		L_14 = ((  ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* (*) (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_15;
+		L_15 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_14, NULL);
+		if (!L_15)
+		{
+			goto IL_0090;
+		}
+	}
+	{
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_16;
+		L_16 = ((  ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* (*) (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		NullCheck(L_16);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17;
+		L_17 = ARSessionOrigin_get_trackablesParent_mF42C34E0B09B58DEE52CF3CC13563BE541C14F9F_inline(L_16, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_18;
+		L_18 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_17, NULL);
+		return L_18;
+	}
+
+IL_0090:
+	{
+		return (bool)0;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::OnTrackablesParentTransformChanged(UnityEngine.XR.ARFoundation.ARTrackablesParentTransformChangedEventArgs)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_OnTrackablesParentTransformChanged_m2977B6F5BA0E86B2CE1867574228AD1B96C18BB0_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, ARTrackablesParentTransformChangedEventArgs_tEF673BCB9382697300AE683ED29F0BF96E4A9C8A ___eventArgs0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_tB1F784FAF2FFA20550ACDB9773EA94D5D741808D V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	RuntimeObject* V_2 = NULL;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* V_3 = NULL;
+	Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	{
+		// foreach (var trackable in trackables)
+		TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB L_0;
+		L_0 = ((  TrackableCollection_1_tFCC29DC30D1D7BF9DF5F84F8DF60BD67C7832EDB (*) (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 4)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
+		V_1 = L_0;
+		Enumerator_tB1F784FAF2FFA20550ACDB9773EA94D5D741808D L_1;
+		L_1 = TrackableCollection_1_GetEnumerator_m40FC0BACB788B33217B7B2C3221C7D9967F2B836((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 5));
+		V_0 = L_1;
+		goto IL_0066;
+	}
+
+IL_0011:
+	{
+		// foreach (var trackable in trackables)
+		RuntimeObject* L_2;
+		L_2 = Enumerator_get_Current_m0C78B1A685CCC36524577967CE1620CB889FDC0A((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 6));
+		V_2 = L_2;
+		// var transform = trackable.transform;
+		RuntimeObject* L_3 = V_2;
+		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_3);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
+		L_4 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_3, NULL);
+		V_3 = L_4;
+		// if (transform.parent != eventArgs.trackablesParent)
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = V_3;
+		NullCheck(L_5);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
+		L_6 = Transform_get_parent_m65354E28A4C94EC00EBCF03532F7B0718380791E(L_5, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = ARTrackablesParentTransformChangedEventArgs_get_trackablesParent_m2B845554A63A5CB63A6FBBB19C8C96F8E0F653D6_inline((&___eventArgs0), NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_8;
+		L_8 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_6, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_7, NULL);
+		if (!L_8)
+		{
+			goto IL_0066;
+		}
+	}
+	{
+		// var desiredPose = eventArgs.trackablesParent.TransformPose(trackable.sessionRelativePose);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
+		L_9 = ARTrackablesParentTransformChangedEventArgs_get_trackablesParent_m2B845554A63A5CB63A6FBBB19C8C96F8E0F653D6_inline((&___eventArgs0), NULL);
+		RuntimeObject* L_10 = V_2;
+		NullCheck((ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*)L_10);
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_11;
+		L_11 = ((  Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 (*) (ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 22)))((ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*)L_10, il2cpp_rgctx_method(method->klass->rgctx_data, 22));
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_12;
+		L_12 = TransformExtensions_TransformPose_m657A2F269CFE7ABD9E77029577861EA464E2364C(L_9, L_11, NULL);
+		V_4 = L_12;
+		// transform.SetPositionAndRotation(desiredPose.position, desiredPose.rotation);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_13 = V_3;
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_14 = V_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_14.___position_0;
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_16 = V_4;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_17 = (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974)L_16.___rotation_1;
+		NullCheck(L_13);
+		Transform_SetPositionAndRotation_m418859BF59086EEAA084FFD6F258A43FAB408F5A(L_13, L_15, L_17, NULL);
+	}
+
+IL_0066:
+	{
+		// foreach (var trackable in trackables)
+		bool L_18;
+		L_18 = Enumerator_MoveNext_m2DFDA23C7884D9A93FF21291F1DF5DDA2C0DA27C((&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 8));
+		if (L_18)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_Update_m77E246ED427B10DD7DE187848A810153F6CD3670_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m5D1D6FDED91C2254BB2731C2A979F3016E037147_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_mCB14CFB321C975B0DF69A927ACD4BD2A63AF0368_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m572F715FD6838E37154726E5A6DB2C103236C7C6_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NativeArray_1_GetEnumerator_mE980205B99190A020484F10CBAC64EB8C743AAF0_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral26AA71BDAE4689FF6E5304BFE38FF4E0E841032B);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2DC0198B89999C6E86C5CF2260C4264FF55D7903);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCCC539F743E3F97210255E70596588570DD34D8E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE6EF062EC4F6D2568BF5B77100709C7764EAEFE6);
+		s_Il2CppMethodInitialized = true;
+	}
+	ScopedProfiler_tA2CF63F6C047FB63643D2263A4AC86C6A363EC6F V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	TrackableChanges_1_t244050823CF4D8F3C9DFAE4AB0CEFA639C719119 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	ScopedProfiler_tA2CF63F6C047FB63643D2263A4AC86C6A363EC6F V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	NativeArray_1_t944085523DA105D6BBD308E9159C874CE60B3009 V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	Enumerator_t03EC424AAB00E50A639522E4490FAC2B29B80F11 V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB V_5;
+	memset((&V_5), 0, sizeof(V_5));
+	XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB V_6;
+	memset((&V_6), 0, sizeof(V_6));
+	NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E V_7;
+	memset((&V_7), 0, sizeof(V_7));
+	Enumerator_tC8A26D390552986367A8B556DCF22FAAF6E7AAAD V_8;
+	memset((&V_8), 0, sizeof(V_8));
+	TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 V_9;
+	memset((&V_9), 0, sizeof(V_9));
+	RuntimeObject* V_10 = NULL;
+	Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A V_11;
+	memset((&V_11), 0, sizeof(V_11));
+	RuntimeObject* V_12 = NULL;
+	{
+		// if (subsystem == null || !subsystem.running)
+		NullCheck((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this);
+		RuntimeObject* L_0;
+		L_0 = ((  RuntimeObject* (*) (SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		if (!L_0)
+		{
+			goto IL_001f;
+		}
+	}
+	{
+		NullCheck((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this);
+		RuntimeObject* L_1;
+		L_1 = ((  RuntimeObject* (*) (SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+		NullCheck((SubsystemWithProvider_tC72E35EE2D413A4B0635B058154BABF265F31242*)L_1);
+		bool L_2;
+		L_2 = SubsystemWithProvider_get_running_m6BF31FC3BDA38C56C0F60FEA37767A4151B22C44_inline((SubsystemWithProvider_tC72E35EE2D413A4B0635B058154BABF265F31242*)L_1, NULL);
+		if (L_2)
+		{
+			goto IL_0020;
+		}
+	}
+
+IL_001f:
+	{
+		// return;
+		return;
+	}
+
+IL_0020:
+	{
+		// using (new ScopedProfiler("GetChanges"))
+		ScopedProfiler__ctor_m652B5689DE1A3C3EF7D12801DA27FA3B40E4412F((&V_0), _stringLiteralCCC539F743E3F97210255E70596588570DD34D8E, NULL);
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_01e0:
+			{// begin finally (depth: 1)
+				ScopedProfiler_Dispose_m7B646405B4E52CC4677329D3B860BE9C17A9DAC4((&V_0), NULL);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				// using (var changes = subsystem.GetChanges(Allocator.Temp))
+				NullCheck((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this);
+				RuntimeObject* L_3;
+				L_3 = ((  RuntimeObject* (*) (SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 19)))((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 19));
+				NullCheck((TrackingSubsystem_4_t159B1435C9EEDD50D28042D569A17020B06CC9AD*)L_3);
+				TrackableChanges_1_t244050823CF4D8F3C9DFAE4AB0CEFA639C719119 L_4;
+				L_4 = VirtualFuncInvoker1< TrackableChanges_1_t244050823CF4D8F3C9DFAE4AB0CEFA639C719119, int32_t >::Invoke(14 /* UnityEngine.XR.ARSubsystems.TrackableChanges`1<TTrackable> UnityEngine.XR.ARSubsystems.TrackingSubsystem`4<UnityEngine.XR.ARSubsystems.XRFace,System.Object,System.Object,System.Object>::GetChanges(Unity.Collections.Allocator) */, (TrackingSubsystem_4_t159B1435C9EEDD50D28042D569A17020B06CC9AD*)L_3, (int32_t)2);
+				V_1 = L_4;
+			}
+			{
+				auto __finallyBlock = il2cpp::utils::Finally([&]
+				{
+
+FINALLY_01d2_1:
+					{// begin finally (depth: 2)
+						TrackableChanges_1_Dispose_m8D027CBE51AE683E048A1C10C98D707FD0408A0E((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 40));
+						return;
+					}// end finally (depth: 2)
+				});
+				try
+				{// begin try (depth: 2)
+					{
+						// using (new ScopedProfiler("ProcessAdded"))
+						ScopedProfiler_tA2CF63F6C047FB63643D2263A4AC86C6A363EC6F L_5;
+						memset((&L_5), 0, sizeof(L_5));
+						ScopedProfiler__ctor_m652B5689DE1A3C3EF7D12801DA27FA3B40E4412F((&L_5), _stringLiteralE6EF062EC4F6D2568BF5B77100709C7764EAEFE6, /*hidden argument*/NULL);
+						V_2 = L_5;
+					}
+					{
+						auto __finallyBlock = il2cpp::utils::Finally([&]
+						{
+
+FINALLY_00a9_2:
+							{// begin finally (depth: 3)
+								ScopedProfiler_Dispose_m7B646405B4E52CC4677329D3B860BE9C17A9DAC4((&V_2), NULL);
+								return;
+							}// end finally (depth: 3)
+						});
+						try
+						{// begin try (depth: 3)
+							{
+								// ClearAndSetCapacity(s_Added, changes.added.Length);
+								il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+								List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_6 = ((ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Added_11;
+								NativeArray_1_t944085523DA105D6BBD308E9159C874CE60B3009 L_7;
+								L_7 = TrackableChanges_1_get_added_mC976D7B10EA3881871F38F0098CB782D2B4F3CC0_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 25));
+								V_3 = L_7;
+								int32_t L_8;
+								L_8 = IL2CPP_NATIVEARRAY_GET_LENGTH(((&V_3))->___m_Length_1);
+								((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 26)))(L_6, L_8, il2cpp_rgctx_method(method->klass->rgctx_data, 26));
+								// foreach (var added in changes.added)
+								NativeArray_1_t944085523DA105D6BBD308E9159C874CE60B3009 L_9;
+								L_9 = TrackableChanges_1_get_added_mC976D7B10EA3881871F38F0098CB782D2B4F3CC0_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 25));
+								V_3 = L_9;
+								Enumerator_t03EC424AAB00E50A639522E4490FAC2B29B80F11 L_10;
+								L_10 = NativeArray_1_GetEnumerator_m9D250B38EACD7902C608E5625555327F3803DC41((&V_3), il2cpp_rgctx_method(method->klass->rgctx_data, 27));
+								V_4 = L_10;
+							}
+							{
+								auto __finallyBlock = il2cpp::utils::Finally([&]
+								{
+
+FINALLY_009b_3:
+									{// begin finally (depth: 4)
+										Enumerator_Dispose_m84E9F7FC3BDC4F752EC10DC8EFE1551646F0C8D1((&V_4), il2cpp_rgctx_method(method->klass->rgctx_data, 34));
+										return;
+									}// end finally (depth: 4)
+								});
+								try
+								{// begin try (depth: 4)
+									{
+										goto IL_0090_4;
+									}
+
+IL_0075_4:
+									{
+										// foreach (var added in changes.added)
+										XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB L_11;
+										L_11 = Enumerator_get_Current_mBEBB844F02024390539313429D6EEE527D55D69C((&V_4), il2cpp_rgctx_method(method->klass->rgctx_data, 28));
+										V_5 = L_11;
+										// s_Added.Add(CreateOrUpdateTrackable(added));
+										il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+										List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_12 = ((ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Added_11;
+										XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB L_13 = V_5;
+										RuntimeObject* L_14;
+										L_14 = ((  RuntimeObject* (*) (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C*, XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 29)))(__this, L_13, il2cpp_rgctx_method(method->klass->rgctx_data, 29));
+										NullCheck(L_12);
+										((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 31)))(L_12, L_14, il2cpp_rgctx_method(method->klass->rgctx_data, 31));
+									}
+
+IL_0090_4:
+									{
+										// foreach (var added in changes.added)
+										bool L_15;
+										L_15 = Enumerator_MoveNext_m42CA670C820B92DEC79BA4610D1853D157755300((&V_4), il2cpp_rgctx_method(method->klass->rgctx_data, 32));
+										if (L_15)
+										{
+											goto IL_0075_4;
+										}
+									}
+									{
+										goto IL_00b7_2;
+									}
+								}// end try (depth: 4)
+								catch(Il2CppExceptionWrapper& e)
+								{
+									__finallyBlock.StoreException(e.ex);
+								}
+							}
+						}// end try (depth: 3)
+						catch(Il2CppExceptionWrapper& e)
+						{
+							__finallyBlock.StoreException(e.ex);
+						}
+					}
+
+IL_00b7_2:
+					{
+						// using (new ScopedProfiler("ProcessUpdated"))
+						ScopedProfiler_tA2CF63F6C047FB63643D2263A4AC86C6A363EC6F L_16;
+						memset((&L_16), 0, sizeof(L_16));
+						ScopedProfiler__ctor_m652B5689DE1A3C3EF7D12801DA27FA3B40E4412F((&L_16), _stringLiteral2DC0198B89999C6E86C5CF2260C4264FF55D7903, /*hidden argument*/NULL);
+						V_2 = L_16;
+					}
+					{
+						auto __finallyBlock = il2cpp::utils::Finally([&]
+						{
+
+FINALLY_0122_2:
+							{// begin finally (depth: 3)
+								ScopedProfiler_Dispose_m7B646405B4E52CC4677329D3B860BE9C17A9DAC4((&V_2), NULL);
+								return;
+							}// end finally (depth: 3)
+						});
+						try
+						{// begin try (depth: 3)
+							{
+								// ClearAndSetCapacity(s_Updated, changes.updated.Length);
+								il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+								List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_17 = ((ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Updated_12;
+								NativeArray_1_t944085523DA105D6BBD308E9159C874CE60B3009 L_18;
+								L_18 = TrackableChanges_1_get_updated_m7600C09050F548113163F28357515FA195925891_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 35));
+								V_3 = L_18;
+								int32_t L_19;
+								L_19 = IL2CPP_NATIVEARRAY_GET_LENGTH(((&V_3))->___m_Length_1);
+								((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 26)))(L_17, L_19, il2cpp_rgctx_method(method->klass->rgctx_data, 26));
+								// foreach (var updated in changes.updated)
+								NativeArray_1_t944085523DA105D6BBD308E9159C874CE60B3009 L_20;
+								L_20 = TrackableChanges_1_get_updated_m7600C09050F548113163F28357515FA195925891_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 35));
+								V_3 = L_20;
+								Enumerator_t03EC424AAB00E50A639522E4490FAC2B29B80F11 L_21;
+								L_21 = NativeArray_1_GetEnumerator_m9D250B38EACD7902C608E5625555327F3803DC41((&V_3), il2cpp_rgctx_method(method->klass->rgctx_data, 27));
+								V_4 = L_21;
+							}
+							{
+								auto __finallyBlock = il2cpp::utils::Finally([&]
+								{
+
+FINALLY_0114_3:
+									{// begin finally (depth: 4)
+										Enumerator_Dispose_m84E9F7FC3BDC4F752EC10DC8EFE1551646F0C8D1((&V_4), il2cpp_rgctx_method(method->klass->rgctx_data, 34));
+										return;
+									}// end finally (depth: 4)
+								});
+								try
+								{// begin try (depth: 4)
+									{
+										goto IL_0109_4;
+									}
+
+IL_00ee_4:
+									{
+										// foreach (var updated in changes.updated)
+										XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB L_22;
+										L_22 = Enumerator_get_Current_mBEBB844F02024390539313429D6EEE527D55D69C((&V_4), il2cpp_rgctx_method(method->klass->rgctx_data, 28));
+										V_6 = L_22;
+										// s_Updated.Add(CreateOrUpdateTrackable(updated));
+										il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+										List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_23 = ((ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Updated_12;
+										XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB L_24 = V_6;
+										RuntimeObject* L_25;
+										L_25 = ((  RuntimeObject* (*) (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C*, XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 29)))(__this, L_24, il2cpp_rgctx_method(method->klass->rgctx_data, 29));
+										NullCheck(L_23);
+										((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 31)))(L_23, L_25, il2cpp_rgctx_method(method->klass->rgctx_data, 31));
+									}
+
+IL_0109_4:
+									{
+										// foreach (var updated in changes.updated)
+										bool L_26;
+										L_26 = Enumerator_MoveNext_m42CA670C820B92DEC79BA4610D1853D157755300((&V_4), il2cpp_rgctx_method(method->klass->rgctx_data, 32));
+										if (L_26)
+										{
+											goto IL_00ee_4;
+										}
+									}
+									{
+										goto IL_0130_2;
+									}
+								}// end try (depth: 4)
+								catch(Il2CppExceptionWrapper& e)
+								{
+									__finallyBlock.StoreException(e.ex);
+								}
+							}
+						}// end try (depth: 3)
+						catch(Il2CppExceptionWrapper& e)
+						{
+							__finallyBlock.StoreException(e.ex);
+						}
+					}
+
+IL_0130_2:
+					{
+						// using (new ScopedProfiler("ProcessRemoved"))
+						ScopedProfiler_tA2CF63F6C047FB63643D2263A4AC86C6A363EC6F L_27;
+						memset((&L_27), 0, sizeof(L_27));
+						ScopedProfiler__ctor_m652B5689DE1A3C3EF7D12801DA27FA3B40E4412F((&L_27), _stringLiteral26AA71BDAE4689FF6E5304BFE38FF4E0E841032B, /*hidden argument*/NULL);
+						V_2 = L_27;
+					}
+					{
+						auto __finallyBlock = il2cpp::utils::Finally([&]
+						{
+
+FINALLY_01c4_2:
+							{// begin finally (depth: 3)
+								ScopedProfiler_Dispose_m7B646405B4E52CC4677329D3B860BE9C17A9DAC4((&V_2), NULL);
+								return;
+							}// end finally (depth: 3)
+						});
+						try
+						{// begin try (depth: 3)
+							{
+								// ClearAndSetCapacity(s_Removed, changes.removed.Length);
+								il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+								List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_28 = ((ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Removed_13;
+								NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E L_29;
+								L_29 = TrackableChanges_1_get_removed_m8B0967F38BE46C987E2C0A104323BBCD97AB8927_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 36));
+								V_7 = L_29;
+								int32_t L_30;
+								L_30 = IL2CPP_NATIVEARRAY_GET_LENGTH(((&V_7))->___m_Length_1);
+								((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 26)))(L_28, L_30, il2cpp_rgctx_method(method->klass->rgctx_data, 26));
+								// foreach (var trackableId in changes.removed)
+								NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E L_31;
+								L_31 = TrackableChanges_1_get_removed_m8B0967F38BE46C987E2C0A104323BBCD97AB8927_inline((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 36));
+								V_7 = L_31;
+								Enumerator_tC8A26D390552986367A8B556DCF22FAAF6E7AAAD L_32;
+								L_32 = NativeArray_1_GetEnumerator_mE980205B99190A020484F10CBAC64EB8C743AAF0((&V_7), NativeArray_1_GetEnumerator_mE980205B99190A020484F10CBAC64EB8C743AAF0_RuntimeMethod_var);
+								V_8 = L_32;
+							}
+							{
+								auto __finallyBlock = il2cpp::utils::Finally([&]
+								{
+
+FINALLY_01b6_3:
+									{// begin finally (depth: 4)
+										Enumerator_Dispose_m5D1D6FDED91C2254BB2731C2A979F3016E037147((&V_8), Enumerator_Dispose_m5D1D6FDED91C2254BB2731C2A979F3016E037147_RuntimeMethod_var);
+										return;
+									}// end finally (depth: 4)
+								});
+								try
+								{// begin try (depth: 4)
+									{
+										goto IL_01ab_4;
+									}
+
+IL_0169_4:
+									{
+										// foreach (var trackableId in changes.removed)
+										TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_33;
+										L_33 = Enumerator_get_Current_m572F715FD6838E37154726E5A6DB2C103236C7C6((&V_8), Enumerator_get_Current_m572F715FD6838E37154726E5A6DB2C103236C7C6_RuntimeMethod_var);
+										V_9 = L_33;
+										// if (m_Trackables.TryGetValue(trackableId, out var trackable))
+										Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_34 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_Trackables_9;
+										TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_35 = V_9;
+										NullCheck(L_34);
+										bool L_36;
+										L_36 = ((  bool (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, RuntimeObject**, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 37)))(L_34, L_35, (&V_10), il2cpp_rgctx_method(method->klass->rgctx_data, 37));
+										if (!L_36)
+										{
+											goto IL_01ab_4;
+										}
+									}
+									{
+										// m_Trackables.Remove(trackableId);
+										Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_37 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_Trackables_9;
+										TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_38 = V_9;
+										NullCheck(L_37);
+										bool L_39;
+										L_39 = ((  bool (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 38)))(L_37, L_38, il2cpp_rgctx_method(method->klass->rgctx_data, 38));
+										// if (trackable)
+										RuntimeObject* L_40 = V_10;
+										il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+										bool L_41;
+										L_41 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_40, NULL);
+										if (!L_41)
+										{
+											goto IL_01ab_4;
+										}
+									}
+									{
+										// s_Removed.Add(trackable);
+										il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+										List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_42 = ((ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Removed_13;
+										RuntimeObject* L_43 = V_10;
+										NullCheck(L_42);
+										((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 31)))(L_42, L_43, il2cpp_rgctx_method(method->klass->rgctx_data, 31));
+									}
+
+IL_01ab_4:
+									{
+										// foreach (var trackableId in changes.removed)
+										bool L_44;
+										L_44 = Enumerator_MoveNext_mCB14CFB321C975B0DF69A927ACD4BD2A63AF0368((&V_8), Enumerator_MoveNext_mCB14CFB321C975B0DF69A927ACD4BD2A63AF0368_RuntimeMethod_var);
+										if (L_44)
+										{
+											goto IL_0169_4;
+										}
+									}
+									{
+										goto IL_01ee;
+									}
+								}// end try (depth: 4)
+								catch(Il2CppExceptionWrapper& e)
+								{
+									__finallyBlock.StoreException(e.ex);
+								}
+							}
+						}// end try (depth: 3)
+						catch(Il2CppExceptionWrapper& e)
+						{
+							__finallyBlock.StoreException(e.ex);
+						}
+					}
+				}// end try (depth: 2)
+				catch(Il2CppExceptionWrapper& e)
+				{
+					__finallyBlock.StoreException(e.ex);
+				}
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_01ee:
+	{
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_022d:
+			{// begin finally (depth: 1)
+				{
+					// foreach (var removed in s_Removed)
+					il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+					List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_45 = ((ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Removed_13;
+					NullCheck(L_45);
+					Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A L_46;
+					L_46 = ((  Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 44)))(L_45, il2cpp_rgctx_method(method->klass->rgctx_data, 44));
+					V_11 = L_46;
+				}
+				{
+					auto __finallyBlock = il2cpp::utils::Finally([&]
+					{
+
+FINALLY_0257:
+						{// begin finally (depth: 2)
+							Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419((&V_11), il2cpp_rgctx_method(method->klass->rgctx_data, 49));
+							return;
+						}// end finally (depth: 2)
+					});
+					try
+					{// begin try (depth: 2)
+						{
+							goto IL_024c_1;
+						}
+
+IL_023b_1:
+						{
+							// foreach (var removed in s_Removed)
+							RuntimeObject* L_47;
+							L_47 = Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_inline((&V_11), il2cpp_rgctx_method(method->klass->rgctx_data, 45));
+							V_12 = L_47;
+							// DestroyTrackable(removed);
+							RuntimeObject* L_48 = V_12;
+							((  void (*) (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 46)))(__this, L_48, il2cpp_rgctx_method(method->klass->rgctx_data, 46));
+						}
+
+IL_024c_1:
+						{
+							// foreach (var removed in s_Removed)
+							bool L_49;
+							L_49 = Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB((&V_11), il2cpp_rgctx_method(method->klass->rgctx_data, 47));
+							if (L_49)
+							{
+								goto IL_023b_1;
+							}
+						}
+						{
+							goto IL_0265;
+						}
+					}// end try (depth: 2)
+					catch(Il2CppExceptionWrapper& e)
+					{
+						__finallyBlock.StoreException(e.ex);
+					}
+				}
+
+IL_0265:
+				{
+					// }
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				// if ((s_Added.Count) > 0 ||
+				//     (s_Updated.Count) > 0 ||
+				//     (s_Removed.Count) > 0)
+				il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+				List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_50 = ((ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Added_11;
+				NullCheck(L_50);
+				int32_t L_51;
+				L_51 = ((  int32_t (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 41)))(L_50, il2cpp_rgctx_method(method->klass->rgctx_data, 41));
+				if ((((int32_t)L_51) > ((int32_t)0)))
+				{
+					goto IL_0216_1;
+				}
+			}
+			{
+				il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+				List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_52 = ((ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Updated_12;
+				NullCheck(L_52);
+				int32_t L_53;
+				L_53 = ((  int32_t (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 41)))(L_52, il2cpp_rgctx_method(method->klass->rgctx_data, 41));
+				if ((((int32_t)L_53) > ((int32_t)0)))
+				{
+					goto IL_0216_1;
+				}
+			}
+			{
+				il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+				List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_54 = ((ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Removed_13;
+				NullCheck(L_54);
+				int32_t L_55;
+				L_55 = ((  int32_t (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 41)))(L_54, il2cpp_rgctx_method(method->klass->rgctx_data, 41));
+				if ((((int32_t)L_55) <= ((int32_t)0)))
+				{
+					goto IL_022b_1;
+				}
+			}
+
+IL_0216_1:
+			{
+				// OnTrackablesChanged(s_Added, s_Updated, s_Removed);
+				il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 0));
+				List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_56 = ((ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Added_11;
+				List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_57 = ((ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Updated_12;
+				List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_58 = ((ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 0)))->___s_Removed_13;
+				VirtualActionInvoker3< List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* >::Invoke(13 /* System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::OnTrackablesChanged(System.Collections.Generic.List`1<TTrackable>,System.Collections.Generic.List`1<TTrackable>,System.Collections.Generic.List`1<TTrackable>) */, __this, L_56, L_57, L_58);
+			}
+
+IL_022b_1:
+			{
+				// }
+				goto IL_0266;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0266:
+	{
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::OnTrackablesChanged(System.Collections.Generic.List`1<TTrackable>,System.Collections.Generic.List`1<TTrackable>,System.Collections.Generic.List`1<TTrackable>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_OnTrackablesChanged_m7E471C78454E7BD840AD7558A5E25EF65D252ED7_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___added0, List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___updated1, List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___removed2, const RuntimeMethod* method) 
+{
+	{
+		// { }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::OnCreateTrackable(TTrackable)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_OnCreateTrackable_mFE78F6C49C569A84455D2DD7B56F1334710FECD2_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, RuntimeObject* ___trackable0, const RuntimeMethod* method) 
+{
+	{
+		// { }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::OnAfterSetSessionRelativeData(TTrackable,TSessionRelativeData)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_OnAfterSetSessionRelativeData_mB8E547A4A1F2FE5AC9CB9580AF9EE35D671A0130_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, RuntimeObject* ___trackable0, XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB ___sessionRelativeData1, const RuntimeMethod* method) 
+{
+	{
+		// { }
+		return;
+	}
+}
+// TTrackable UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::CreateTrackableImmediate(TSessionRelativeData)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ARTrackableManager_5_CreateTrackableImmediate_m4B0B3734E74E5689D30249EF4EB46940F2A97C14_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB ___sessionRelativeData0, const RuntimeMethod* method) 
+{
+	RuntimeObject* V_0 = NULL;
+	{
+		// var trackable = CreateOrUpdateTrackable(sessionRelativeData);
+		XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB L_0 = ___sessionRelativeData0;
+		RuntimeObject* L_1;
+		L_1 = ((  RuntimeObject* (*) (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C*, XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 29)))(__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 29));
+		V_0 = L_1;
+		// trackable.pending = true;
+		RuntimeObject* L_2 = V_0;
+		NullCheck((ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*)L_2);
+		((  void (*) (ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*, bool, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 21)))((ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*)L_2, (bool)1, il2cpp_rgctx_method(method->klass->rgctx_data, 21));
+		// m_PendingAdds.Add(trackable.trackableId, trackable);
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_3 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_PendingAdds_10;
+		RuntimeObject* L_4 = V_0;
+		NullCheck((ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*)L_4);
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_5;
+		L_5 = ((  TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 (*) (ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 16)))((ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*)L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 16));
+		RuntimeObject* L_6 = V_0;
+		NullCheck(L_3);
+		((  void (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 50)))(L_3, L_5, L_6, il2cpp_rgctx_method(method->klass->rgctx_data, 50));
+		// return trackable;
+		RuntimeObject* L_7 = V_0;
+		return L_7;
+	}
+}
+// System.Boolean UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::DestroyPendingTrackable(UnityEngine.XR.ARSubsystems.TrackableId)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ARTrackableManager_5_DestroyPendingTrackable_m53FC8502BA3ABAC493E33F97E45351E47A04D20D_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 ___trackableId0, const RuntimeMethod* method) 
+{
+	RuntimeObject* V_0 = NULL;
+	{
+		// if (m_PendingAdds.TryGetValue(trackableId, out var trackable))
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_0 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_PendingAdds_10;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_1 = ___trackableId0;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = ((  bool (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, RuntimeObject**, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 37)))(L_0, L_1, (&V_0), il2cpp_rgctx_method(method->klass->rgctx_data, 37));
+		if (!L_2)
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		// m_PendingAdds.Remove(trackableId);
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_3 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_PendingAdds_10;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_4 = ___trackableId0;
+		NullCheck(L_3);
+		bool L_5;
+		L_5 = ((  bool (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 38)))(L_3, L_4, il2cpp_rgctx_method(method->klass->rgctx_data, 38));
+		// m_Trackables.Remove(trackableId);
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_6 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_Trackables_9;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_7 = ___trackableId0;
+		NullCheck(L_6);
+		bool L_8;
+		L_8 = ((  bool (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 38)))(L_6, L_7, il2cpp_rgctx_method(method->klass->rgctx_data, 38));
+		// DestroyTrackable(trackable);
+		RuntimeObject* L_9 = V_0;
+		((  void (*) (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 46)))(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 46));
+		// return true;
+		return (bool)1;
+	}
+
+IL_0033:
+	{
+		// return false;
+		return (bool)0;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::ClearAndSetCapacity(System.Collections.Generic.List`1<TTrackable>,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_ClearAndSetCapacity_m3934FB208C3BD111FD8200D2FE0DF3DC573E95AB_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___list0, int32_t ___capacity1, const RuntimeMethod* method) 
+{
+	{
+		// list.Clear();
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_0 = ___list0;
+		NullCheck(L_0);
+		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 51)))(L_0, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 51));
+		// if (list.Capacity < capacity)
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_1 = ___list0;
+		NullCheck(L_1);
+		int32_t L_2;
+		L_2 = ((  int32_t (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 52)))(L_1, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 52));
+		int32_t L_3 = ___capacity1;
+		if ((((int32_t)L_2) >= ((int32_t)L_3)))
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		// list.Capacity = capacity;
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_4 = ___list0;
+		int32_t L_5 = ___capacity1;
+		NullCheck(L_4);
+		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, int32_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 53)))(L_4, L_5, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 53));
+	}
+
+IL_0016:
+	{
+		// }
+		return;
+	}
+}
+// System.String UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::GetTrackableName(UnityEngine.XR.ARSubsystems.TrackableId)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ARTrackableManager_5_GetTrackableName_m72F7D8E14F34A4F55294DD8E7FB960D2BA677E52_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 ___trackableId0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return gameObjectName + " " + trackableId.ToString();
+		String_t* L_0;
+		L_0 = VirtualFuncInvoker0< String_t* >::Invoke(9 /* System.String UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::get_gameObjectName() */, __this);
+		String_t* L_1;
+		L_1 = TrackableId_ToString_m4BE1AD91726751D994E6FB864B231BE5D7D3F85F((&___trackableId0), NULL);
+		String_t* L_2;
+		L_2 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_0, _stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745, L_1, NULL);
+		return L_2;
+	}
+}
+// System.ValueTuple`2<UnityEngine.GameObject,System.Boolean> UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::CreateGameObjectDeactivated()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 ARTrackableManager_5_CreateGameObjectDeactivated_m9FA2F53F01599E3282AAF245BD336C70362BC841_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ValueTuple_2__ctor_mC564D526A92ADAED1606CF8F0D6C9E846F0F4DF0_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_0 = NULL;
+	bool V_1 = false;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_2 = NULL;
+	{
+		// var prefab = GetPrefab();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
+		L_0 = VirtualFuncInvoker0< GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* >::Invoke(10 /* UnityEngine.GameObject UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::GetPrefab() */, __this);
+		V_0 = L_0;
+		// if (prefab == null)
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_2)
+		{
+			goto IL_0039;
+		}
+	}
+	{
+		// var gameObject = new GameObject();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)il2cpp_codegen_object_new(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		GameObject__ctor_m7D0340DE160786E6EFA8DABD39EC3B694DA30AAD(L_3, NULL);
+		// gameObject.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = L_3;
+		NullCheck(L_4);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)0, NULL);
+		// gameObject.transform.parent = sessionOrigin.trackablesParent;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = L_4;
+		NullCheck(L_5);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
+		L_6 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_5, NULL);
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_7;
+		L_7 = ((  ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* (*) (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		NullCheck(L_7);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
+		L_8 = ARSessionOrigin_get_trackablesParent_mF42C34E0B09B58DEE52CF3CC13563BE541C14F9F_inline(L_7, NULL);
+		NullCheck(L_6);
+		Transform_set_parent_m9BD5E563B539DD5BEC342736B03F97B38A243234(L_6, L_8, NULL);
+		// return (gameObject, true);
+		ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 L_9;
+		memset((&L_9), 0, sizeof(L_9));
+		ValueTuple_2__ctor_mC564D526A92ADAED1606CF8F0D6C9E846F0F4DF0((&L_9), L_5, (bool)1, /*hidden argument*/ValueTuple_2__ctor_mC564D526A92ADAED1606CF8F0D6C9E846F0F4DF0_RuntimeMethod_var);
+		return L_9;
+	}
+
+IL_0039:
+	{
+		// var active = prefab.activeSelf;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = V_0;
+		NullCheck(L_10);
+		bool L_11;
+		L_11 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_10, NULL);
+		V_1 = L_11;
+		// prefab.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = V_0;
+		NullCheck(L_12);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_12, (bool)0, NULL);
+		// var gameObject = Instantiate(prefab, sessionOrigin.trackablesParent);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13 = V_0;
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_14;
+		L_14 = ((  ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* (*) (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		NullCheck(L_14);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_15;
+		L_15 = ARSessionOrigin_get_trackablesParent_mF42C34E0B09B58DEE52CF3CC13563BE541C14F9F_inline(L_14, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16;
+		L_16 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811(L_13, L_15, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m58C654F1134533E29502629CA67645682B404811_RuntimeMethod_var);
+		V_2 = L_16;
+		// prefab.SetActive(active);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = V_0;
+		bool L_18 = V_1;
+		NullCheck(L_17);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_17, L_18, NULL);
+		// return (gameObject, active);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19 = V_2;
+		bool L_20 = V_1;
+		ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 L_21;
+		memset((&L_21), 0, sizeof(L_21));
+		ValueTuple_2__ctor_mC564D526A92ADAED1606CF8F0D6C9E846F0F4DF0((&L_21), L_19, L_20, /*hidden argument*/ValueTuple_2__ctor_mC564D526A92ADAED1606CF8F0D6C9E846F0F4DF0_RuntimeMethod_var);
+		return L_21;
+	}
+}
+// System.ValueTuple`2<UnityEngine.GameObject,System.Boolean> UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::CreateGameObjectDeactivated(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 ARTrackableManager_5_CreateGameObjectDeactivated_mD86DCAE1710B6B3B077410F1EBD42965E6779F69_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, String_t* ___name0, const RuntimeMethod* method) 
+{
+	{
+		// var tuple = CreateGameObjectDeactivated();
+		ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 L_0;
+		L_0 = ((  ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 (*) (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 56)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 56));
+		// tuple.gameObject.name = name;
+		ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 L_1 = L_0;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)L_1.___Item1_0;
+		String_t* L_3 = ___name0;
+		NullCheck((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_2);
+		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_2, L_3, NULL);
+		// return tuple;
+		return L_1;
+	}
+}
+// System.ValueTuple`2<UnityEngine.GameObject,System.Boolean> UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::CreateGameObjectDeactivated(UnityEngine.XR.ARSubsystems.TrackableId)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 ARTrackableManager_5_CreateGameObjectDeactivated_m70E25C3025FD253D62F639F86282726E6CB43030_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 ___trackableId0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral393DD49F8AA9554CD1BB1DA05E5D90C3A4F7CC3D);
+		s_Il2CppMethodInitialized = true;
+	}
+	ScopedProfiler_tA2CF63F6C047FB63643D2263A4AC86C6A363EC6F V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		// using (new ScopedProfiler("CreateGameObject"))
+		ScopedProfiler__ctor_m652B5689DE1A3C3EF7D12801DA27FA3B40E4412F((&V_0), _stringLiteral393DD49F8AA9554CD1BB1DA05E5D90C3A4F7CC3D, NULL);
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_001c:
+			{// begin finally (depth: 1)
+				ScopedProfiler_Dispose_m7B646405B4E52CC4677329D3B860BE9C17A9DAC4((&V_0), NULL);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			// return CreateGameObjectDeactivated(GetTrackableName(trackableId));
+			TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0 = ___trackableId0;
+			String_t* L_1;
+			L_1 = ((  String_t* (*) (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 57)))(__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 57));
+			ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 L_2;
+			L_2 = ((  ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 (*) (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C*, String_t*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 58)))(__this, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 58));
+			V_1 = L_2;
+			goto IL_002a;
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_002a:
+	{
+		// }
+		ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 L_3 = V_1;
+		return L_3;
+	}
+}
+// TTrackable UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::CreateTrackable(TSessionRelativeData)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ARTrackableManager_5_CreateTrackable_m803A6209E474CCD91A4294734BCC9909991E8203_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB ___sessionRelativeData0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_0 = NULL;
+	bool V_1 = false;
+	RuntimeObject* V_2 = NULL;
+	{
+		// var (gameObject, shouldBeActive) = CreateGameObjectDeactivated(sessionRelativeData.trackableId);
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0;
+		L_0 = XRFace_get_trackableId_m9FC29FB643FFBAB989AB8179F57CDB52D14737B3_inline((&___sessionRelativeData0), il2cpp_rgctx_method(method->klass->rgctx_data, 60));
+		ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 L_1;
+		L_1 = ((  ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 (*) (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 61)))(__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 61));
+		ValueTuple_2_t477D1900E61A2B12B326021780102B007FB137E9 L_2 = L_1;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)L_2.___Item1_0;
+		V_0 = L_3;
+		bool L_4 = (bool)L_2.___Item2_1;
+		V_1 = L_4;
+		// var trackable = gameObject.GetComponent<TTrackable>();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = V_0;
+		NullCheck(L_5);
+		RuntimeObject* L_6;
+		L_6 = ((  RuntimeObject* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 62)))(L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 62));
+		V_2 = L_6;
+		// if (trackable == null)
+		RuntimeObject* L_7 = V_2;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_8;
+		L_8 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_7, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_8)
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		// trackable = gameObject.AddComponent<TTrackable>();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = V_0;
+		NullCheck(L_9);
+		RuntimeObject* L_10;
+		L_10 = ((  RuntimeObject* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 63)))(L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 63));
+		V_2 = L_10;
+	}
+
+IL_003c:
+	{
+		// m_Trackables.Add(sessionRelativeData.trackableId, trackable);
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_11 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_Trackables_9;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_12;
+		L_12 = XRFace_get_trackableId_m9FC29FB643FFBAB989AB8179F57CDB52D14737B3_inline((&___sessionRelativeData0), il2cpp_rgctx_method(method->klass->rgctx_data, 60));
+		RuntimeObject* L_13 = V_2;
+		NullCheck(L_11);
+		((  void (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 50)))(L_11, L_12, L_13, il2cpp_rgctx_method(method->klass->rgctx_data, 50));
+		// SetSessionRelativeData(trackable, sessionRelativeData);
+		RuntimeObject* L_14 = V_2;
+		XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB L_15 = ___sessionRelativeData0;
+		((  void (*) (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C*, RuntimeObject*, XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 64)))(__this, L_14, L_15, il2cpp_rgctx_method(method->klass->rgctx_data, 64));
+		// trackable.gameObject.SetActive(shouldBeActive);
+		RuntimeObject* L_16 = V_2;
+		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_16);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17;
+		L_17 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_16, NULL);
+		bool L_18 = V_1;
+		NullCheck(L_17);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_17, L_18, NULL);
+		// return trackable;
+		RuntimeObject* L_19 = V_2;
+		return L_19;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::SetSessionRelativeData(TTrackable,TSessionRelativeData)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_SetSessionRelativeData_m859E42E14A4DCCFB66A45615E490DB25A058742E_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, RuntimeObject* ___trackable0, XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB ___data1, const RuntimeMethod* method) 
+{
+	Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		// trackable.SetSessionRelativeData(data);
+		RuntimeObject* L_0 = ___trackable0;
+		XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB L_1 = ___data1;
+		NullCheck((ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*)L_0);
+		((  void (*) (ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*, XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 65)))((ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*)L_0, L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 65));
+		// var worldSpacePose = sessionOrigin.trackablesParent.TransformPose(data.pose);
+		ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* L_2;
+		L_2 = ((  ARSessionOrigin_tE7B28A1A19500BCC02711397A19E330425830BC3* (*) (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 12)))(__this, il2cpp_rgctx_method(method->klass->rgctx_data, 12));
+		NullCheck(L_2);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
+		L_3 = ARSessionOrigin_get_trackablesParent_mF42C34E0B09B58DEE52CF3CC13563BE541C14F9F_inline(L_2, NULL);
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_4;
+		L_4 = XRFace_get_pose_m1625DED173751F25873C4BB6650238A195CD04EE_inline((&___data1), il2cpp_rgctx_method(method->klass->rgctx_data, 66));
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_5;
+		L_5 = TransformExtensions_TransformPose_m657A2F269CFE7ABD9E77029577861EA464E2364C(L_3, L_4, NULL);
+		V_0 = L_5;
+		// trackable.transform.SetPositionAndRotation(worldSpacePose.position, worldSpacePose.rotation);
+		RuntimeObject* L_6 = ___trackable0;
+		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_6);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_6, NULL);
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_8 = V_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2)L_8.___position_0;
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_10 = V_0;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_11 = (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974)L_10.___rotation_1;
+		NullCheck(L_7);
+		Transform_SetPositionAndRotation_m418859BF59086EEAA084FFD6F258A43FAB408F5A(L_7, L_9, L_11, NULL);
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::CreateTrackableFromExisting(TTrackable,TSessionRelativeData)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_CreateTrackableFromExisting_mCED01E9265F09704FA3DCF69C6A2207D179DC35D_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, RuntimeObject* ___existingTrackable0, XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB ___sessionRelativeData1, const RuntimeMethod* method) 
+{
+	TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		// var trackableId = sessionRelativeData.trackableId;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0;
+		L_0 = XRFace_get_trackableId_m9FC29FB643FFBAB989AB8179F57CDB52D14737B3_inline((&___sessionRelativeData1), il2cpp_rgctx_method(method->klass->rgctx_data, 60));
+		V_0 = L_0;
+		// m_Trackables.Add(trackableId, existingTrackable);
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_1 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_Trackables_9;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_2 = V_0;
+		RuntimeObject* L_3 = ___existingTrackable0;
+		NullCheck(L_1);
+		((  void (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 50)))(L_1, L_2, L_3, il2cpp_rgctx_method(method->klass->rgctx_data, 50));
+		// SetSessionRelativeData(existingTrackable, sessionRelativeData);
+		RuntimeObject* L_4 = ___existingTrackable0;
+		XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB L_5 = ___sessionRelativeData1;
+		((  void (*) (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C*, RuntimeObject*, XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 64)))(__this, L_4, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 64));
+		// OnCreateTrackable(existingTrackable);
+		RuntimeObject* L_6 = ___existingTrackable0;
+		VirtualActionInvoker1< RuntimeObject* >::Invoke(14 /* System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::OnCreateTrackable(TTrackable) */, __this, L_6);
+		// OnAfterSetSessionRelativeData(existingTrackable, sessionRelativeData);
+		RuntimeObject* L_7 = ___existingTrackable0;
+		XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB L_8 = ___sessionRelativeData1;
+		VirtualActionInvoker2< RuntimeObject*, XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB >::Invoke(15 /* System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::OnAfterSetSessionRelativeData(TTrackable,TSessionRelativeData) */, __this, L_7, L_8);
+		// existingTrackable.OnAfterSetSessionRelativeData();
+		RuntimeObject* L_9 = ___existingTrackable0;
+		NullCheck((ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*)L_9);
+		VirtualActionInvoker0::Invoke(4 /* System.Void UnityEngine.XR.ARFoundation.ARTrackable`2<UnityEngine.XR.ARSubsystems.XRFace,System.Object>::OnAfterSetSessionRelativeData() */, (ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*)L_9);
+		// m_PendingAdds.Add(trackableId, existingTrackable);
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_10 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_PendingAdds_10;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_11 = V_0;
+		RuntimeObject* L_12 = ___existingTrackable0;
+		NullCheck(L_10);
+		((  void (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 50)))(L_10, L_11, L_12, il2cpp_rgctx_method(method->klass->rgctx_data, 50));
+		// existingTrackable.pending = true;
+		RuntimeObject* L_13 = ___existingTrackable0;
+		NullCheck((ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*)L_13);
+		((  void (*) (ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*, bool, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 21)))((ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*)L_13, (bool)1, il2cpp_rgctx_method(method->klass->rgctx_data, 21));
+		// }
+		return;
+	}
+}
+// TTrackable UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::CreateOrUpdateTrackable(TSessionRelativeData)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ARTrackableManager_5_CreateOrUpdateTrackable_mD8C919E74D8EACA3606542EDAAEC315461EAA492_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB ___sessionRelativeData0, const RuntimeMethod* method) 
+{
+	TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	RuntimeObject* V_1 = NULL;
+	{
+		// var trackableId = sessionRelativeData.trackableId;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0;
+		L_0 = XRFace_get_trackableId_m9FC29FB643FFBAB989AB8179F57CDB52D14737B3_inline((&___sessionRelativeData0), il2cpp_rgctx_method(method->klass->rgctx_data, 60));
+		V_0 = L_0;
+		// if (m_Trackables.TryGetValue(trackableId, out var trackable))
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_1 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_Trackables_9;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_2 = V_0;
+		NullCheck(L_1);
+		bool L_3;
+		L_3 = ((  bool (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, RuntimeObject**, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 37)))(L_1, L_2, (&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 37));
+		if (!L_3)
+		{
+			goto IL_0041;
+		}
+	}
+	{
+		// m_PendingAdds.Remove(trackableId);
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_4 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)__this->___m_PendingAdds_10;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_5 = V_0;
+		NullCheck(L_4);
+		bool L_6;
+		L_6 = ((  bool (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 38)))(L_4, L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 38));
+		// trackable.pending = false;
+		RuntimeObject* L_7 = V_1;
+		NullCheck((ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*)L_7);
+		((  void (*) (ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*, bool, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 21)))((ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*)L_7, (bool)0, il2cpp_rgctx_method(method->klass->rgctx_data, 21));
+		// SetSessionRelativeData(trackable, sessionRelativeData);
+		RuntimeObject* L_8 = V_1;
+		XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB L_9 = ___sessionRelativeData0;
+		((  void (*) (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C*, RuntimeObject*, XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 64)))(__this, L_8, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 64));
+		goto IL_0050;
+	}
+
+IL_0041:
+	{
+		// trackable = CreateTrackable(sessionRelativeData);
+		XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB L_10 = ___sessionRelativeData0;
+		RuntimeObject* L_11;
+		L_11 = ((  RuntimeObject* (*) (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C*, XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 70)))(__this, L_10, il2cpp_rgctx_method(method->klass->rgctx_data, 70));
+		V_1 = L_11;
+		// OnCreateTrackable(trackable);
+		RuntimeObject* L_12 = V_1;
+		VirtualActionInvoker1< RuntimeObject* >::Invoke(14 /* System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::OnCreateTrackable(TTrackable) */, __this, L_12);
+	}
+
+IL_0050:
+	{
+		// OnAfterSetSessionRelativeData(trackable, sessionRelativeData);
+		RuntimeObject* L_13 = V_1;
+		XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB L_14 = ___sessionRelativeData0;
+		VirtualActionInvoker2< RuntimeObject*, XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB >::Invoke(15 /* System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::OnAfterSetSessionRelativeData(TTrackable,TSessionRelativeData) */, __this, L_13, L_14);
+		// trackable.OnAfterSetSessionRelativeData();
+		RuntimeObject* L_15 = V_1;
+		NullCheck((ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*)L_15);
+		VirtualActionInvoker0::Invoke(4 /* System.Void UnityEngine.XR.ARFoundation.ARTrackable`2<UnityEngine.XR.ARSubsystems.XRFace,System.Object>::OnAfterSetSessionRelativeData() */, (ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*)L_15);
+		// return trackable;
+		RuntimeObject* L_16 = V_1;
+		return L_16;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::DestroyTrackable(TTrackable)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5_DestroyTrackable_m3C1E8442BCD12966AC0FFFD209E3632319329EDD_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, RuntimeObject* ___trackable0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (trackable.destroyOnRemoval)
+		RuntimeObject* L_0 = ___trackable0;
+		NullCheck((ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*)L_0);
+		bool L_1;
+		L_1 = ((  bool (*) (ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 71)))((ARTrackable_2_tFCB13EC50392ED10D2F8688F2944CB9946518866*)L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 71));
+		if (!L_1)
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		// Destroy(trackable.gameObject);
+		RuntimeObject* L_2 = ___trackable0;
+		NullCheck((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_2);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
+		L_3 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B((Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*)L_2, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB((Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)L_3, NULL);
+	}
+
+IL_001d:
+	{
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5__ctor_m32A3F2A635BC7F1904CE04645BF030E9B17B5C65_gshared (ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C* __this, const RuntimeMethod* method) 
+{
+	{
+		// protected Dictionary<TrackableId, TTrackable> m_Trackables = new Dictionary<TrackableId, TTrackable>();
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_0 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 17));
+		NullCheck(L_0);
+		((  void (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 72)))(L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 72));
+		__this->___m_Trackables_9 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Trackables_9), (void*)L_0);
+		// protected Dictionary<TrackableId, TTrackable> m_PendingAdds = new Dictionary<TrackableId, TTrackable>();
+		Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4* L_1 = (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->klass->rgctx_data, 17));
+		NullCheck(L_1);
+		((  void (*) (Dictionary_2_t96E118783FA125640B6CD73897A2FE2B787E0AB4*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 72)))(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 72));
+		__this->___m_PendingAdds_10 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_PendingAdds_10), (void*)L_1);
+		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 1));
+		((  void (*) (SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 73)))((SubsystemLifecycleManager_3_t499D76783B0F91C52B19F7183F077FAD1985AD55*)__this, il2cpp_rgctx_method(method->klass->rgctx_data, 73));
+		return;
+	}
+}
+// System.Void UnityEngine.XR.ARFoundation.ARTrackableManager`5<System.Object,System.Object,System.Object,UnityEngine.XR.ARSubsystems.XRFace,System.Object>::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTrackableManager_5__cctor_mF2B7269CE5A1FA44F5B90CFA5E1C2FD45DE6BA6D_gshared (const RuntimeMethod* method) 
+{
+	{
+		// static List<TTrackable> s_Added = new List<TTrackable>();
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_0 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 30));
+		NullCheck(L_0);
+		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 74)))(L_0, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 74));
+		((ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___s_Added_11 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___s_Added_11), (void*)L_0);
+		// static List<TTrackable> s_Updated = new List<TTrackable>();
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_1 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 30));
+		NullCheck(L_1);
+		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 74)))(L_1, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 74));
+		((ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___s_Updated_12 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&((ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___s_Updated_12), (void*)L_1);
+		// static List<TTrackable> s_Removed = new List<TTrackable>();
+		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_2 = (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*)il2cpp_codegen_object_new(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 30));
+		NullCheck(L_2);
+		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 74)))(L_2, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 74));
+		((ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___s_Removed_13 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&((ARTrackableManager_5_t909CD904167EAD233803A6A9DB279E94219E1A0C_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->___s_Removed_13), (void*)L_2);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -26491,5075 +29855,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m4BF7544AC963121DB86BC32
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-void Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_Multicast(Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___obj0, const RuntimeMethod* method)
+void Action_1_Invoke_mFB243A40692032001EAFDAAFCA679DC737C9AF38_Multicast(Action_1_tF525E5733633D2EECADCEF3861F1BE51E823D195* __this, NavMeshBuildMarkup_tC2D636663691297A05F32A8B2B8CAA7108FEE8AC ___obj0, const RuntimeMethod* method)
 {
 	il2cpp_array_size_t length = __this->___delegates_13->max_length;
 	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
 	for (il2cpp_array_size_t i = 0; i < length; i++)
 	{
-		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* currentDelegate = reinterpret_cast<Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, RuntimeObject*, const RuntimeMethod*);
+		Action_1_tF525E5733633D2EECADCEF3861F1BE51E823D195* currentDelegate = reinterpret_cast<Action_1_tF525E5733633D2EECADCEF3861F1BE51E823D195*>(delegatesToInvoke[i]);
+		typedef void (*FunctionPointerType) (RuntimeObject*, NavMeshBuildMarkup_tC2D636663691297A05F32A8B2B8CAA7108FEE8AC, const RuntimeMethod*);
 		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
 	}
 }
-void Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_OpenInst(Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___obj0, const RuntimeMethod* method)
+void Action_1_Invoke_mFB243A40692032001EAFDAAFCA679DC737C9AF38_OpenInst(Action_1_tF525E5733633D2EECADCEF3861F1BE51E823D195* __this, NavMeshBuildMarkup_tC2D636663691297A05F32A8B2B8CAA7108FEE8AC ___obj0, const RuntimeMethod* method)
 {
-	NullCheck(___obj0);
-	typedef void (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
+	typedef void (*FunctionPointerType) (NavMeshBuildMarkup_tC2D636663691297A05F32A8B2B8CAA7108FEE8AC, const RuntimeMethod*);
 	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
 }
-void Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_OpenStatic(Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___obj0, const RuntimeMethod* method)
+void Action_1_Invoke_mFB243A40692032001EAFDAAFCA679DC737C9AF38_OpenStatic(Action_1_tF525E5733633D2EECADCEF3861F1BE51E823D195* __this, NavMeshBuildMarkup_tC2D636663691297A05F32A8B2B8CAA7108FEE8AC ___obj0, const RuntimeMethod* method)
 {
-	typedef void (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
+	typedef void (*FunctionPointerType) (NavMeshBuildMarkup_tC2D636663691297A05F32A8B2B8CAA7108FEE8AC, const RuntimeMethod*);
 	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
 }
-void Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_OpenStaticInvoker(Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___obj0, const RuntimeMethod* method)
+void Action_1_Invoke_mFB243A40692032001EAFDAAFCA679DC737C9AF38_OpenStaticInvoker(Action_1_tF525E5733633D2EECADCEF3861F1BE51E823D195* __this, NavMeshBuildMarkup_tC2D636663691297A05F32A8B2B8CAA7108FEE8AC ___obj0, const RuntimeMethod* method)
 {
-	InvokerActionInvoker1< RuntimeObject* >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
+	InvokerActionInvoker1< NavMeshBuildMarkup_tC2D636663691297A05F32A8B2B8CAA7108FEE8AC >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
 }
-void Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_ClosedStaticInvoker(Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___obj0, const RuntimeMethod* method)
+void Action_1_Invoke_mFB243A40692032001EAFDAAFCA679DC737C9AF38_ClosedStaticInvoker(Action_1_tF525E5733633D2EECADCEF3861F1BE51E823D195* __this, NavMeshBuildMarkup_tC2D636663691297A05F32A8B2B8CAA7108FEE8AC ___obj0, const RuntimeMethod* method)
 {
-	InvokerActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
+	InvokerActionInvoker2< RuntimeObject*, NavMeshBuildMarkup_tC2D636663691297A05F32A8B2B8CAA7108FEE8AC >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
 }
-void Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_OpenVirtual(Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___obj0, const RuntimeMethod* method)
+// System.Void System.Action`1<UnityEngine.AI.NavMeshBuildMarkup>::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m578ADDDBACA8208D722F14B432FD048405FE4A44_gshared (Action_1_tF525E5733633D2EECADCEF3861F1BE51E823D195* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
 {
-	NullCheck(___obj0);
-	VirtualActionInvoker0::Invoke(il2cpp_codegen_method_get_slot(method), ___obj0);
-}
-void Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_OpenInterface(Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___obj0, const RuntimeMethod* method)
-{
-	NullCheck(___obj0);
-	InterfaceActionInvoker0::Invoke(il2cpp_codegen_method_get_slot(method), il2cpp_codegen_method_get_declaring_type(method), ___obj0);
-}
-void Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_OpenGenericVirtual(Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___obj0, const RuntimeMethod* method)
-{
-	NullCheck(___obj0);
-	GenericVirtualActionInvoker0::Invoke(method, ___obj0);
-}
-void Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_OpenGenericInterface(Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___obj0, const RuntimeMethod* method)
-{
-	NullCheck(___obj0);
-	GenericInterfaceActionInvoker0::Invoke(method, ___obj0);
-}
-// System.Void System.Action`1<System.Object>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m2E1DFA67718FC1A0B6E5DFEB78831FFE9C059EB4_gshared (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		bool isOpen = parameterCount == 0;
-		if (isOpen)
-		{
-			if (__this->___method_is_virtual_12)
-			{
-				if (il2cpp_codegen_method_is_generic_instance_method((RuntimeMethod*)___method1))
-					if (il2cpp_codegen_method_is_interface_method((RuntimeMethod*)___method1))
-						__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_OpenGenericInterface;
-					else
-						__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_OpenGenericVirtual;
-				else
-					if (il2cpp_codegen_method_is_interface_method((RuntimeMethod*)___method1))
-						__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_OpenInterface;
-					else
-						__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_OpenVirtual;
-			}
-			else
-			{
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_OpenInst;
-			}
-		}
-		else
-		{
-			if (___object0 == NULL)
-				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-		}
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_Multicast;
-}
-// System.Void System.Action`1<System.Object>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, RuntimeObject*, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m0F2D47CE2BD275FCBD462DE8E1A533C3BBD63AAB_Multicast(Action_1_t090269A2B5C140A371E43D40D015CA8179AF6344* __this, PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t090269A2B5C140A371E43D40D015CA8179AF6344* currentDelegate = reinterpret_cast<Action_1_t090269A2B5C140A371E43D40D015CA8179AF6344*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m0F2D47CE2BD275FCBD462DE8E1A533C3BBD63AAB_OpenInst(Action_1_t090269A2B5C140A371E43D40D015CA8179AF6344* __this, PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m0F2D47CE2BD275FCBD462DE8E1A533C3BBD63AAB_OpenStatic(Action_1_t090269A2B5C140A371E43D40D015CA8179AF6344* __this, PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m0F2D47CE2BD275FCBD462DE8E1A533C3BBD63AAB_OpenStaticInvoker(Action_1_t090269A2B5C140A371E43D40D015CA8179AF6344* __this, PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m0F2D47CE2BD275FCBD462DE8E1A533C3BBD63AAB_ClosedStaticInvoker(Action_1_t090269A2B5C140A371E43D40D015CA8179AF6344* __this, PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.LowLevel.PlayerLoopSystem>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m11796ECBC640396006ACD3E4A7BA312FCF277A49_gshared (Action_1_t090269A2B5C140A371E43D40D015CA8179AF6344* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m0F2D47CE2BD275FCBD462DE8E1A533C3BBD63AAB_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m0F2D47CE2BD275FCBD462DE8E1A533C3BBD63AAB_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m0F2D47CE2BD275FCBD462DE8E1A533C3BBD63AAB_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m0F2D47CE2BD275FCBD462DE8E1A533C3BBD63AAB_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.LowLevel.PlayerLoopSystem>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m0F2D47CE2BD275FCBD462DE8E1A533C3BBD63AAB_gshared (Action_1_t090269A2B5C140A371E43D40D015CA8179AF6344* __this, PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m7449498897BB730094C31C0232711D066589CB6E_Multicast(Action_1_tEF194BAB5A8B7CCAC71ED08DB2DD45476C91047E* __this, PlayerLoopSystemInternal_tA4BFB5E55A895153CF14333B866219B77AAF1BC5 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_tEF194BAB5A8B7CCAC71ED08DB2DD45476C91047E* currentDelegate = reinterpret_cast<Action_1_tEF194BAB5A8B7CCAC71ED08DB2DD45476C91047E*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, PlayerLoopSystemInternal_tA4BFB5E55A895153CF14333B866219B77AAF1BC5, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m7449498897BB730094C31C0232711D066589CB6E_OpenInst(Action_1_tEF194BAB5A8B7CCAC71ED08DB2DD45476C91047E* __this, PlayerLoopSystemInternal_tA4BFB5E55A895153CF14333B866219B77AAF1BC5 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PlayerLoopSystemInternal_tA4BFB5E55A895153CF14333B866219B77AAF1BC5, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m7449498897BB730094C31C0232711D066589CB6E_OpenStatic(Action_1_tEF194BAB5A8B7CCAC71ED08DB2DD45476C91047E* __this, PlayerLoopSystemInternal_tA4BFB5E55A895153CF14333B866219B77AAF1BC5 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PlayerLoopSystemInternal_tA4BFB5E55A895153CF14333B866219B77AAF1BC5, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m7449498897BB730094C31C0232711D066589CB6E_OpenStaticInvoker(Action_1_tEF194BAB5A8B7CCAC71ED08DB2DD45476C91047E* __this, PlayerLoopSystemInternal_tA4BFB5E55A895153CF14333B866219B77AAF1BC5 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< PlayerLoopSystemInternal_tA4BFB5E55A895153CF14333B866219B77AAF1BC5 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m7449498897BB730094C31C0232711D066589CB6E_ClosedStaticInvoker(Action_1_tEF194BAB5A8B7CCAC71ED08DB2DD45476C91047E* __this, PlayerLoopSystemInternal_tA4BFB5E55A895153CF14333B866219B77AAF1BC5 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, PlayerLoopSystemInternal_tA4BFB5E55A895153CF14333B866219B77AAF1BC5 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.LowLevel.PlayerLoopSystemInternal>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mAFCFF662C0D5D7EF0771DC31D190BE7F3751A16A_gshared (Action_1_tEF194BAB5A8B7CCAC71ED08DB2DD45476C91047E* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m7449498897BB730094C31C0232711D066589CB6E_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m7449498897BB730094C31C0232711D066589CB6E_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m7449498897BB730094C31C0232711D066589CB6E_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m7449498897BB730094C31C0232711D066589CB6E_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.LowLevel.PlayerLoopSystemInternal>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m7449498897BB730094C31C0232711D066589CB6E_gshared (Action_1_tEF194BAB5A8B7CCAC71ED08DB2DD45476C91047E* __this, PlayerLoopSystemInternal_tA4BFB5E55A895153CF14333B866219B77AAF1BC5 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, PlayerLoopSystemInternal_tA4BFB5E55A895153CF14333B866219B77AAF1BC5, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m59678A9148018CF063E81A36FEB1DEB1B4C7C358_Multicast(Action_1_t1FB720A83B3555E719F665FB0110E7C51487F3F8* __this, PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t1FB720A83B3555E719F665FB0110E7C51487F3F8* currentDelegate = reinterpret_cast<Action_1_t1FB720A83B3555E719F665FB0110E7C51487F3F8*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m59678A9148018CF063E81A36FEB1DEB1B4C7C358_OpenInst(Action_1_t1FB720A83B3555E719F665FB0110E7C51487F3F8* __this, PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m59678A9148018CF063E81A36FEB1DEB1B4C7C358_OpenStatic(Action_1_t1FB720A83B3555E719F665FB0110E7C51487F3F8* __this, PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m59678A9148018CF063E81A36FEB1DEB1B4C7C358_OpenStaticInvoker(Action_1_t1FB720A83B3555E719F665FB0110E7C51487F3F8* __this, PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m59678A9148018CF063E81A36FEB1DEB1B4C7C358_ClosedStaticInvoker(Action_1_t1FB720A83B3555E719F665FB0110E7C51487F3F8* __this, PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.XR.Interaction.Toolkit.Filtering.PokeStateData>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m51E8C8F6D6AAA447F906F82CBA1114C86E69FF54_gshared (Action_1_t1FB720A83B3555E719F665FB0110E7C51487F3F8* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m59678A9148018CF063E81A36FEB1DEB1B4C7C358_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m59678A9148018CF063E81A36FEB1DEB1B4C7C358_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m59678A9148018CF063E81A36FEB1DEB1B4C7C358_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m59678A9148018CF063E81A36FEB1DEB1B4C7C358_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.XR.Interaction.Toolkit.Filtering.PokeStateData>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m59678A9148018CF063E81A36FEB1DEB1B4C7C358_gshared (Action_1_t1FB720A83B3555E719F665FB0110E7C51487F3F8* __this, PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, PokeStateData_t87D34716C1C477FC04D9344710D09399FE6F5032, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m2F1B31FDD10B097D66A892AAC8A326E9FC8C4139_Multicast(Action_1_t62C38AF61BFF03BE1DB5E1C54773DC9975D958CD* __this, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t62C38AF61BFF03BE1DB5E1C54773DC9975D958CD* currentDelegate = reinterpret_cast<Action_1_t62C38AF61BFF03BE1DB5E1C54773DC9975D958CD*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m2F1B31FDD10B097D66A892AAC8A326E9FC8C4139_OpenInst(Action_1_t62C38AF61BFF03BE1DB5E1C54773DC9975D958CD* __this, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m2F1B31FDD10B097D66A892AAC8A326E9FC8C4139_OpenStatic(Action_1_t62C38AF61BFF03BE1DB5E1C54773DC9975D958CD* __this, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m2F1B31FDD10B097D66A892AAC8A326E9FC8C4139_OpenStaticInvoker(Action_1_t62C38AF61BFF03BE1DB5E1C54773DC9975D958CD* __this, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m2F1B31FDD10B097D66A892AAC8A326E9FC8C4139_ClosedStaticInvoker(Action_1_t62C38AF61BFF03BE1DB5E1C54773DC9975D958CD* __this, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.Pose>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mC9BB90DB767BB1770D5639F9A4819990B3BAA0BA_gshared (Action_1_t62C38AF61BFF03BE1DB5E1C54773DC9975D958CD* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m2F1B31FDD10B097D66A892AAC8A326E9FC8C4139_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m2F1B31FDD10B097D66A892AAC8A326E9FC8C4139_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m2F1B31FDD10B097D66A892AAC8A326E9FC8C4139_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m2F1B31FDD10B097D66A892AAC8A326E9FC8C4139_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.Pose>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m2F1B31FDD10B097D66A892AAC8A326E9FC8C4139_gshared (Action_1_t62C38AF61BFF03BE1DB5E1C54773DC9975D958CD* __this, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_mF5EE2AD750327C356695EB3AA3F709CD1CE2C333_Multicast(Action_1_tEB59E92BBDCF15504B4F6E38B926550BCCBA2932* __this, PropertyMetadata_tFA5BF9DE81DE69FEB4F1C660D33AB638C2ED0941 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_tEB59E92BBDCF15504B4F6E38B926550BCCBA2932* currentDelegate = reinterpret_cast<Action_1_tEB59E92BBDCF15504B4F6E38B926550BCCBA2932*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, PropertyMetadata_tFA5BF9DE81DE69FEB4F1C660D33AB638C2ED0941, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_mF5EE2AD750327C356695EB3AA3F709CD1CE2C333_OpenInst(Action_1_tEB59E92BBDCF15504B4F6E38B926550BCCBA2932* __this, PropertyMetadata_tFA5BF9DE81DE69FEB4F1C660D33AB638C2ED0941 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PropertyMetadata_tFA5BF9DE81DE69FEB4F1C660D33AB638C2ED0941, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mF5EE2AD750327C356695EB3AA3F709CD1CE2C333_OpenStatic(Action_1_tEB59E92BBDCF15504B4F6E38B926550BCCBA2932* __this, PropertyMetadata_tFA5BF9DE81DE69FEB4F1C660D33AB638C2ED0941 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PropertyMetadata_tFA5BF9DE81DE69FEB4F1C660D33AB638C2ED0941, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mF5EE2AD750327C356695EB3AA3F709CD1CE2C333_OpenStaticInvoker(Action_1_tEB59E92BBDCF15504B4F6E38B926550BCCBA2932* __this, PropertyMetadata_tFA5BF9DE81DE69FEB4F1C660D33AB638C2ED0941 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< PropertyMetadata_tFA5BF9DE81DE69FEB4F1C660D33AB638C2ED0941 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_mF5EE2AD750327C356695EB3AA3F709CD1CE2C333_ClosedStaticInvoker(Action_1_tEB59E92BBDCF15504B4F6E38B926550BCCBA2932* __this, PropertyMetadata_tFA5BF9DE81DE69FEB4F1C660D33AB638C2ED0941 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, PropertyMetadata_tFA5BF9DE81DE69FEB4F1C660D33AB638C2ED0941 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<LitJson.PropertyMetadata>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m717DB191BE09E2E1498C46A9CF0BDD434921C4F8_gshared (Action_1_tEB59E92BBDCF15504B4F6E38B926550BCCBA2932* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mF5EE2AD750327C356695EB3AA3F709CD1CE2C333_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mF5EE2AD750327C356695EB3AA3F709CD1CE2C333_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mF5EE2AD750327C356695EB3AA3F709CD1CE2C333_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_mF5EE2AD750327C356695EB3AA3F709CD1CE2C333_Multicast;
-}
-// System.Void System.Action`1<LitJson.PropertyMetadata>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mF5EE2AD750327C356695EB3AA3F709CD1CE2C333_gshared (Action_1_tEB59E92BBDCF15504B4F6E38B926550BCCBA2932* __this, PropertyMetadata_tFA5BF9DE81DE69FEB4F1C660D33AB638C2ED0941 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, PropertyMetadata_tFA5BF9DE81DE69FEB4F1C660D33AB638C2ED0941, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m74033545688C03E784C3A15E0694453BB0858EA1_Multicast(Action_1_t0516BCDA7F518F6B8CBC3DD3E52B14D466D0EE7E* __this, PxrEventAnchorEntityCleared_tF2D8CFF76F12A6DCBD6267C3B32B90819E2629B8 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t0516BCDA7F518F6B8CBC3DD3E52B14D466D0EE7E* currentDelegate = reinterpret_cast<Action_1_t0516BCDA7F518F6B8CBC3DD3E52B14D466D0EE7E*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventAnchorEntityCleared_tF2D8CFF76F12A6DCBD6267C3B32B90819E2629B8, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m74033545688C03E784C3A15E0694453BB0858EA1_OpenInst(Action_1_t0516BCDA7F518F6B8CBC3DD3E52B14D466D0EE7E* __this, PxrEventAnchorEntityCleared_tF2D8CFF76F12A6DCBD6267C3B32B90819E2629B8 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventAnchorEntityCleared_tF2D8CFF76F12A6DCBD6267C3B32B90819E2629B8, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m74033545688C03E784C3A15E0694453BB0858EA1_OpenStatic(Action_1_t0516BCDA7F518F6B8CBC3DD3E52B14D466D0EE7E* __this, PxrEventAnchorEntityCleared_tF2D8CFF76F12A6DCBD6267C3B32B90819E2629B8 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventAnchorEntityCleared_tF2D8CFF76F12A6DCBD6267C3B32B90819E2629B8, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m74033545688C03E784C3A15E0694453BB0858EA1_OpenStaticInvoker(Action_1_t0516BCDA7F518F6B8CBC3DD3E52B14D466D0EE7E* __this, PxrEventAnchorEntityCleared_tF2D8CFF76F12A6DCBD6267C3B32B90819E2629B8 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< PxrEventAnchorEntityCleared_tF2D8CFF76F12A6DCBD6267C3B32B90819E2629B8 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m74033545688C03E784C3A15E0694453BB0858EA1_ClosedStaticInvoker(Action_1_t0516BCDA7F518F6B8CBC3DD3E52B14D466D0EE7E* __this, PxrEventAnchorEntityCleared_tF2D8CFF76F12A6DCBD6267C3B32B90819E2629B8 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, PxrEventAnchorEntityCleared_tF2D8CFF76F12A6DCBD6267C3B32B90819E2629B8 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventAnchorEntityCleared>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m3FBB855152286570CBE231FD0E464B1ED2A6081E_gshared (Action_1_t0516BCDA7F518F6B8CBC3DD3E52B14D466D0EE7E* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m74033545688C03E784C3A15E0694453BB0858EA1_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m74033545688C03E784C3A15E0694453BB0858EA1_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m74033545688C03E784C3A15E0694453BB0858EA1_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m74033545688C03E784C3A15E0694453BB0858EA1_Multicast;
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventAnchorEntityCleared>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m74033545688C03E784C3A15E0694453BB0858EA1_gshared (Action_1_t0516BCDA7F518F6B8CBC3DD3E52B14D466D0EE7E* __this, PxrEventAnchorEntityCleared_tF2D8CFF76F12A6DCBD6267C3B32B90819E2629B8 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventAnchorEntityCleared_tF2D8CFF76F12A6DCBD6267C3B32B90819E2629B8, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m89A800A72161179B380FDAECA5297871FB5FE1A6_Multicast(Action_1_t80E16328E6C04D2480ECB2CB93591FF99563B055* __this, PxrEventAnchorEntityCreated_tEE1C1CD6CF80E8702D80B4BD726F2EBC2CE5B794 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t80E16328E6C04D2480ECB2CB93591FF99563B055* currentDelegate = reinterpret_cast<Action_1_t80E16328E6C04D2480ECB2CB93591FF99563B055*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventAnchorEntityCreated_tEE1C1CD6CF80E8702D80B4BD726F2EBC2CE5B794, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m89A800A72161179B380FDAECA5297871FB5FE1A6_OpenInst(Action_1_t80E16328E6C04D2480ECB2CB93591FF99563B055* __this, PxrEventAnchorEntityCreated_tEE1C1CD6CF80E8702D80B4BD726F2EBC2CE5B794 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventAnchorEntityCreated_tEE1C1CD6CF80E8702D80B4BD726F2EBC2CE5B794, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m89A800A72161179B380FDAECA5297871FB5FE1A6_OpenStatic(Action_1_t80E16328E6C04D2480ECB2CB93591FF99563B055* __this, PxrEventAnchorEntityCreated_tEE1C1CD6CF80E8702D80B4BD726F2EBC2CE5B794 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventAnchorEntityCreated_tEE1C1CD6CF80E8702D80B4BD726F2EBC2CE5B794, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m89A800A72161179B380FDAECA5297871FB5FE1A6_OpenStaticInvoker(Action_1_t80E16328E6C04D2480ECB2CB93591FF99563B055* __this, PxrEventAnchorEntityCreated_tEE1C1CD6CF80E8702D80B4BD726F2EBC2CE5B794 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< PxrEventAnchorEntityCreated_tEE1C1CD6CF80E8702D80B4BD726F2EBC2CE5B794 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m89A800A72161179B380FDAECA5297871FB5FE1A6_ClosedStaticInvoker(Action_1_t80E16328E6C04D2480ECB2CB93591FF99563B055* __this, PxrEventAnchorEntityCreated_tEE1C1CD6CF80E8702D80B4BD726F2EBC2CE5B794 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, PxrEventAnchorEntityCreated_tEE1C1CD6CF80E8702D80B4BD726F2EBC2CE5B794 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventAnchorEntityCreated>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m78B71B956D2ADC092ABB01384CF654396AA64FF7_gshared (Action_1_t80E16328E6C04D2480ECB2CB93591FF99563B055* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m89A800A72161179B380FDAECA5297871FB5FE1A6_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m89A800A72161179B380FDAECA5297871FB5FE1A6_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m89A800A72161179B380FDAECA5297871FB5FE1A6_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m89A800A72161179B380FDAECA5297871FB5FE1A6_Multicast;
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventAnchorEntityCreated>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m89A800A72161179B380FDAECA5297871FB5FE1A6_gshared (Action_1_t80E16328E6C04D2480ECB2CB93591FF99563B055* __this, PxrEventAnchorEntityCreated_tEE1C1CD6CF80E8702D80B4BD726F2EBC2CE5B794 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventAnchorEntityCreated_tEE1C1CD6CF80E8702D80B4BD726F2EBC2CE5B794, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_mB0763F6CA1EDF6BDD227CCB7344D63A39D65BF49_Multicast(Action_1_tBE08246DA4A3CDFA74D95757E8A4F354965C27CE* __this, PxrEventAnchorEntityLoaded_t4BA53742441FD4A810A953B1A537B8043C434584 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_tBE08246DA4A3CDFA74D95757E8A4F354965C27CE* currentDelegate = reinterpret_cast<Action_1_tBE08246DA4A3CDFA74D95757E8A4F354965C27CE*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventAnchorEntityLoaded_t4BA53742441FD4A810A953B1A537B8043C434584, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_mB0763F6CA1EDF6BDD227CCB7344D63A39D65BF49_OpenInst(Action_1_tBE08246DA4A3CDFA74D95757E8A4F354965C27CE* __this, PxrEventAnchorEntityLoaded_t4BA53742441FD4A810A953B1A537B8043C434584 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventAnchorEntityLoaded_t4BA53742441FD4A810A953B1A537B8043C434584, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mB0763F6CA1EDF6BDD227CCB7344D63A39D65BF49_OpenStatic(Action_1_tBE08246DA4A3CDFA74D95757E8A4F354965C27CE* __this, PxrEventAnchorEntityLoaded_t4BA53742441FD4A810A953B1A537B8043C434584 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventAnchorEntityLoaded_t4BA53742441FD4A810A953B1A537B8043C434584, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mB0763F6CA1EDF6BDD227CCB7344D63A39D65BF49_OpenStaticInvoker(Action_1_tBE08246DA4A3CDFA74D95757E8A4F354965C27CE* __this, PxrEventAnchorEntityLoaded_t4BA53742441FD4A810A953B1A537B8043C434584 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< PxrEventAnchorEntityLoaded_t4BA53742441FD4A810A953B1A537B8043C434584 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_mB0763F6CA1EDF6BDD227CCB7344D63A39D65BF49_ClosedStaticInvoker(Action_1_tBE08246DA4A3CDFA74D95757E8A4F354965C27CE* __this, PxrEventAnchorEntityLoaded_t4BA53742441FD4A810A953B1A537B8043C434584 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, PxrEventAnchorEntityLoaded_t4BA53742441FD4A810A953B1A537B8043C434584 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventAnchorEntityLoaded>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mC5B46800AB3D542208ACEF8674AA0361F7FA2E01_gshared (Action_1_tBE08246DA4A3CDFA74D95757E8A4F354965C27CE* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mB0763F6CA1EDF6BDD227CCB7344D63A39D65BF49_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mB0763F6CA1EDF6BDD227CCB7344D63A39D65BF49_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mB0763F6CA1EDF6BDD227CCB7344D63A39D65BF49_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_mB0763F6CA1EDF6BDD227CCB7344D63A39D65BF49_Multicast;
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventAnchorEntityLoaded>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mB0763F6CA1EDF6BDD227CCB7344D63A39D65BF49_gshared (Action_1_tBE08246DA4A3CDFA74D95757E8A4F354965C27CE* __this, PxrEventAnchorEntityLoaded_t4BA53742441FD4A810A953B1A537B8043C434584 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventAnchorEntityLoaded_t4BA53742441FD4A810A953B1A537B8043C434584, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m91ADF2DD2A8BDB1E021D11454C171444EDD5CD7D_Multicast(Action_1_t458FF1DF3D360350B8FB017575308013D9A4B5DA* __this, PxrEventAnchorEntityPersisted_tD659D17AE54499B03BF70C495B26D7478E6DC44F ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t458FF1DF3D360350B8FB017575308013D9A4B5DA* currentDelegate = reinterpret_cast<Action_1_t458FF1DF3D360350B8FB017575308013D9A4B5DA*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventAnchorEntityPersisted_tD659D17AE54499B03BF70C495B26D7478E6DC44F, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m91ADF2DD2A8BDB1E021D11454C171444EDD5CD7D_OpenInst(Action_1_t458FF1DF3D360350B8FB017575308013D9A4B5DA* __this, PxrEventAnchorEntityPersisted_tD659D17AE54499B03BF70C495B26D7478E6DC44F ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventAnchorEntityPersisted_tD659D17AE54499B03BF70C495B26D7478E6DC44F, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m91ADF2DD2A8BDB1E021D11454C171444EDD5CD7D_OpenStatic(Action_1_t458FF1DF3D360350B8FB017575308013D9A4B5DA* __this, PxrEventAnchorEntityPersisted_tD659D17AE54499B03BF70C495B26D7478E6DC44F ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventAnchorEntityPersisted_tD659D17AE54499B03BF70C495B26D7478E6DC44F, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m91ADF2DD2A8BDB1E021D11454C171444EDD5CD7D_OpenStaticInvoker(Action_1_t458FF1DF3D360350B8FB017575308013D9A4B5DA* __this, PxrEventAnchorEntityPersisted_tD659D17AE54499B03BF70C495B26D7478E6DC44F ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< PxrEventAnchorEntityPersisted_tD659D17AE54499B03BF70C495B26D7478E6DC44F >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m91ADF2DD2A8BDB1E021D11454C171444EDD5CD7D_ClosedStaticInvoker(Action_1_t458FF1DF3D360350B8FB017575308013D9A4B5DA* __this, PxrEventAnchorEntityPersisted_tD659D17AE54499B03BF70C495B26D7478E6DC44F ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, PxrEventAnchorEntityPersisted_tD659D17AE54499B03BF70C495B26D7478E6DC44F >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventAnchorEntityPersisted>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mDC96D8F75860CC806F21CA93E21F68FE09928038_gshared (Action_1_t458FF1DF3D360350B8FB017575308013D9A4B5DA* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m91ADF2DD2A8BDB1E021D11454C171444EDD5CD7D_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m91ADF2DD2A8BDB1E021D11454C171444EDD5CD7D_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m91ADF2DD2A8BDB1E021D11454C171444EDD5CD7D_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m91ADF2DD2A8BDB1E021D11454C171444EDD5CD7D_Multicast;
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventAnchorEntityPersisted>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m91ADF2DD2A8BDB1E021D11454C171444EDD5CD7D_gshared (Action_1_t458FF1DF3D360350B8FB017575308013D9A4B5DA* __this, PxrEventAnchorEntityPersisted_tD659D17AE54499B03BF70C495B26D7478E6DC44F ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventAnchorEntityPersisted_tD659D17AE54499B03BF70C495B26D7478E6DC44F, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m3BCEA08398D10E1190568691BAF201F49F1E774D_Multicast(Action_1_tC456AB70EC8BFFAD1D90D487FD4CFBA8CF37EE89* __this, PxrEventAnchorEntityUnPersisted_tEB3FCFCFA64C504C11843099178FE8686DE49069 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_tC456AB70EC8BFFAD1D90D487FD4CFBA8CF37EE89* currentDelegate = reinterpret_cast<Action_1_tC456AB70EC8BFFAD1D90D487FD4CFBA8CF37EE89*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventAnchorEntityUnPersisted_tEB3FCFCFA64C504C11843099178FE8686DE49069, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m3BCEA08398D10E1190568691BAF201F49F1E774D_OpenInst(Action_1_tC456AB70EC8BFFAD1D90D487FD4CFBA8CF37EE89* __this, PxrEventAnchorEntityUnPersisted_tEB3FCFCFA64C504C11843099178FE8686DE49069 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventAnchorEntityUnPersisted_tEB3FCFCFA64C504C11843099178FE8686DE49069, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m3BCEA08398D10E1190568691BAF201F49F1E774D_OpenStatic(Action_1_tC456AB70EC8BFFAD1D90D487FD4CFBA8CF37EE89* __this, PxrEventAnchorEntityUnPersisted_tEB3FCFCFA64C504C11843099178FE8686DE49069 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventAnchorEntityUnPersisted_tEB3FCFCFA64C504C11843099178FE8686DE49069, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m3BCEA08398D10E1190568691BAF201F49F1E774D_OpenStaticInvoker(Action_1_tC456AB70EC8BFFAD1D90D487FD4CFBA8CF37EE89* __this, PxrEventAnchorEntityUnPersisted_tEB3FCFCFA64C504C11843099178FE8686DE49069 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< PxrEventAnchorEntityUnPersisted_tEB3FCFCFA64C504C11843099178FE8686DE49069 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m3BCEA08398D10E1190568691BAF201F49F1E774D_ClosedStaticInvoker(Action_1_tC456AB70EC8BFFAD1D90D487FD4CFBA8CF37EE89* __this, PxrEventAnchorEntityUnPersisted_tEB3FCFCFA64C504C11843099178FE8686DE49069 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, PxrEventAnchorEntityUnPersisted_tEB3FCFCFA64C504C11843099178FE8686DE49069 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventAnchorEntityUnPersisted>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mD1AAD64D686836A4D3841E9528953CEF8F58FA52_gshared (Action_1_tC456AB70EC8BFFAD1D90D487FD4CFBA8CF37EE89* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m3BCEA08398D10E1190568691BAF201F49F1E774D_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m3BCEA08398D10E1190568691BAF201F49F1E774D_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m3BCEA08398D10E1190568691BAF201F49F1E774D_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m3BCEA08398D10E1190568691BAF201F49F1E774D_Multicast;
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventAnchorEntityUnPersisted>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m3BCEA08398D10E1190568691BAF201F49F1E774D_gshared (Action_1_tC456AB70EC8BFFAD1D90D487FD4CFBA8CF37EE89* __this, PxrEventAnchorEntityUnPersisted_tEB3FCFCFA64C504C11843099178FE8686DE49069 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventAnchorEntityUnPersisted_tEB3FCFCFA64C504C11843099178FE8686DE49069, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m6B7A060B201CD4C954BB48589966A891178FEEDB_Multicast(Action_1_tEE4E85A3D28F201F4FDC5498736CFB20B828C030* __this, PxrEventDataBuffer_tF6D95D1CF3990CCBE471CE73261357AC77A4F0CF ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_tEE4E85A3D28F201F4FDC5498736CFB20B828C030* currentDelegate = reinterpret_cast<Action_1_tEE4E85A3D28F201F4FDC5498736CFB20B828C030*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventDataBuffer_tF6D95D1CF3990CCBE471CE73261357AC77A4F0CF, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m6B7A060B201CD4C954BB48589966A891178FEEDB_OpenInst(Action_1_tEE4E85A3D28F201F4FDC5498736CFB20B828C030* __this, PxrEventDataBuffer_tF6D95D1CF3990CCBE471CE73261357AC77A4F0CF ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventDataBuffer_tF6D95D1CF3990CCBE471CE73261357AC77A4F0CF, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m6B7A060B201CD4C954BB48589966A891178FEEDB_OpenStatic(Action_1_tEE4E85A3D28F201F4FDC5498736CFB20B828C030* __this, PxrEventDataBuffer_tF6D95D1CF3990CCBE471CE73261357AC77A4F0CF ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventDataBuffer_tF6D95D1CF3990CCBE471CE73261357AC77A4F0CF, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m6B7A060B201CD4C954BB48589966A891178FEEDB_OpenStaticInvoker(Action_1_tEE4E85A3D28F201F4FDC5498736CFB20B828C030* __this, PxrEventDataBuffer_tF6D95D1CF3990CCBE471CE73261357AC77A4F0CF ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< PxrEventDataBuffer_tF6D95D1CF3990CCBE471CE73261357AC77A4F0CF >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m6B7A060B201CD4C954BB48589966A891178FEEDB_ClosedStaticInvoker(Action_1_tEE4E85A3D28F201F4FDC5498736CFB20B828C030* __this, PxrEventDataBuffer_tF6D95D1CF3990CCBE471CE73261357AC77A4F0CF ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, PxrEventDataBuffer_tF6D95D1CF3990CCBE471CE73261357AC77A4F0CF >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventDataBuffer>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m990B1476014C20AE7888D1F489BFBB3791F9E470_gshared (Action_1_tEE4E85A3D28F201F4FDC5498736CFB20B828C030* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m6B7A060B201CD4C954BB48589966A891178FEEDB_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m6B7A060B201CD4C954BB48589966A891178FEEDB_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m6B7A060B201CD4C954BB48589966A891178FEEDB_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m6B7A060B201CD4C954BB48589966A891178FEEDB_Multicast;
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventDataBuffer>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m6B7A060B201CD4C954BB48589966A891178FEEDB_gshared (Action_1_tEE4E85A3D28F201F4FDC5498736CFB20B828C030* __this, PxrEventDataBuffer_tF6D95D1CF3990CCBE471CE73261357AC77A4F0CF ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventDataBuffer_tF6D95D1CF3990CCBE471CE73261357AC77A4F0CF, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_mFA0EFDFE1307A6B053EF4D3E8653927743FC4836_Multicast(Action_1_tDA5F46040840F1FA0E391F8406DEC3BDA167F639* __this, PxrEventRoomSceneDataDeleteResult_t929EEFD59788CB43808DD062A5E7E5E2797BBA09 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_tDA5F46040840F1FA0E391F8406DEC3BDA167F639* currentDelegate = reinterpret_cast<Action_1_tDA5F46040840F1FA0E391F8406DEC3BDA167F639*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventRoomSceneDataDeleteResult_t929EEFD59788CB43808DD062A5E7E5E2797BBA09, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_mFA0EFDFE1307A6B053EF4D3E8653927743FC4836_OpenInst(Action_1_tDA5F46040840F1FA0E391F8406DEC3BDA167F639* __this, PxrEventRoomSceneDataDeleteResult_t929EEFD59788CB43808DD062A5E7E5E2797BBA09 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventRoomSceneDataDeleteResult_t929EEFD59788CB43808DD062A5E7E5E2797BBA09, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mFA0EFDFE1307A6B053EF4D3E8653927743FC4836_OpenStatic(Action_1_tDA5F46040840F1FA0E391F8406DEC3BDA167F639* __this, PxrEventRoomSceneDataDeleteResult_t929EEFD59788CB43808DD062A5E7E5E2797BBA09 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventRoomSceneDataDeleteResult_t929EEFD59788CB43808DD062A5E7E5E2797BBA09, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mFA0EFDFE1307A6B053EF4D3E8653927743FC4836_OpenStaticInvoker(Action_1_tDA5F46040840F1FA0E391F8406DEC3BDA167F639* __this, PxrEventRoomSceneDataDeleteResult_t929EEFD59788CB43808DD062A5E7E5E2797BBA09 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< PxrEventRoomSceneDataDeleteResult_t929EEFD59788CB43808DD062A5E7E5E2797BBA09 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_mFA0EFDFE1307A6B053EF4D3E8653927743FC4836_ClosedStaticInvoker(Action_1_tDA5F46040840F1FA0E391F8406DEC3BDA167F639* __this, PxrEventRoomSceneDataDeleteResult_t929EEFD59788CB43808DD062A5E7E5E2797BBA09 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, PxrEventRoomSceneDataDeleteResult_t929EEFD59788CB43808DD062A5E7E5E2797BBA09 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventRoomSceneDataDeleteResult>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m915B9CE6D4A2D98EB838FFC3DBBBA70F2D73DA1C_gshared (Action_1_tDA5F46040840F1FA0E391F8406DEC3BDA167F639* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mFA0EFDFE1307A6B053EF4D3E8653927743FC4836_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mFA0EFDFE1307A6B053EF4D3E8653927743FC4836_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mFA0EFDFE1307A6B053EF4D3E8653927743FC4836_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_mFA0EFDFE1307A6B053EF4D3E8653927743FC4836_Multicast;
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventRoomSceneDataDeleteResult>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mFA0EFDFE1307A6B053EF4D3E8653927743FC4836_gshared (Action_1_tDA5F46040840F1FA0E391F8406DEC3BDA167F639* __this, PxrEventRoomSceneDataDeleteResult_t929EEFD59788CB43808DD062A5E7E5E2797BBA09 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventRoomSceneDataDeleteResult_t929EEFD59788CB43808DD062A5E7E5E2797BBA09, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_mC6D300641D80AFA415CAF35992379A5271C875DD_Multicast(Action_1_t0F54075BC96703B61F0A86C15C907AF90C16C6F2* __this, PxrEventRoomSceneDataSaveResult_t6CA2E5CA3E69A202D8DD935787FC9B03B8D161EC ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t0F54075BC96703B61F0A86C15C907AF90C16C6F2* currentDelegate = reinterpret_cast<Action_1_t0F54075BC96703B61F0A86C15C907AF90C16C6F2*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventRoomSceneDataSaveResult_t6CA2E5CA3E69A202D8DD935787FC9B03B8D161EC, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_mC6D300641D80AFA415CAF35992379A5271C875DD_OpenInst(Action_1_t0F54075BC96703B61F0A86C15C907AF90C16C6F2* __this, PxrEventRoomSceneDataSaveResult_t6CA2E5CA3E69A202D8DD935787FC9B03B8D161EC ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventRoomSceneDataSaveResult_t6CA2E5CA3E69A202D8DD935787FC9B03B8D161EC, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mC6D300641D80AFA415CAF35992379A5271C875DD_OpenStatic(Action_1_t0F54075BC96703B61F0A86C15C907AF90C16C6F2* __this, PxrEventRoomSceneDataSaveResult_t6CA2E5CA3E69A202D8DD935787FC9B03B8D161EC ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventRoomSceneDataSaveResult_t6CA2E5CA3E69A202D8DD935787FC9B03B8D161EC, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mC6D300641D80AFA415CAF35992379A5271C875DD_OpenStaticInvoker(Action_1_t0F54075BC96703B61F0A86C15C907AF90C16C6F2* __this, PxrEventRoomSceneDataSaveResult_t6CA2E5CA3E69A202D8DD935787FC9B03B8D161EC ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< PxrEventRoomSceneDataSaveResult_t6CA2E5CA3E69A202D8DD935787FC9B03B8D161EC >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_mC6D300641D80AFA415CAF35992379A5271C875DD_ClosedStaticInvoker(Action_1_t0F54075BC96703B61F0A86C15C907AF90C16C6F2* __this, PxrEventRoomSceneDataSaveResult_t6CA2E5CA3E69A202D8DD935787FC9B03B8D161EC ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, PxrEventRoomSceneDataSaveResult_t6CA2E5CA3E69A202D8DD935787FC9B03B8D161EC >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventRoomSceneDataSaveResult>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m19100383BA37977FCB196BDCF34FA80EBBB546D5_gshared (Action_1_t0F54075BC96703B61F0A86C15C907AF90C16C6F2* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mC6D300641D80AFA415CAF35992379A5271C875DD_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mC6D300641D80AFA415CAF35992379A5271C875DD_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mC6D300641D80AFA415CAF35992379A5271C875DD_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_mC6D300641D80AFA415CAF35992379A5271C875DD_Multicast;
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventRoomSceneDataSaveResult>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mC6D300641D80AFA415CAF35992379A5271C875DD_gshared (Action_1_t0F54075BC96703B61F0A86C15C907AF90C16C6F2* __this, PxrEventRoomSceneDataSaveResult_t6CA2E5CA3E69A202D8DD935787FC9B03B8D161EC ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventRoomSceneDataSaveResult_t6CA2E5CA3E69A202D8DD935787FC9B03B8D161EC, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m39C18B14AB6B6CC624113ECB5BBF9D3216CC861B_Multicast(Action_1_tCAFBCF7B5A94887259E3B0AF0DF9DD924BEE00E8* __this, PxrEventRoomSceneDataUpdateResult_tAD3FA94F4EB12A41AD22A328884611E48B5AE615 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_tCAFBCF7B5A94887259E3B0AF0DF9DD924BEE00E8* currentDelegate = reinterpret_cast<Action_1_tCAFBCF7B5A94887259E3B0AF0DF9DD924BEE00E8*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventRoomSceneDataUpdateResult_tAD3FA94F4EB12A41AD22A328884611E48B5AE615, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m39C18B14AB6B6CC624113ECB5BBF9D3216CC861B_OpenInst(Action_1_tCAFBCF7B5A94887259E3B0AF0DF9DD924BEE00E8* __this, PxrEventRoomSceneDataUpdateResult_tAD3FA94F4EB12A41AD22A328884611E48B5AE615 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventRoomSceneDataUpdateResult_tAD3FA94F4EB12A41AD22A328884611E48B5AE615, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m39C18B14AB6B6CC624113ECB5BBF9D3216CC861B_OpenStatic(Action_1_tCAFBCF7B5A94887259E3B0AF0DF9DD924BEE00E8* __this, PxrEventRoomSceneDataUpdateResult_tAD3FA94F4EB12A41AD22A328884611E48B5AE615 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventRoomSceneDataUpdateResult_tAD3FA94F4EB12A41AD22A328884611E48B5AE615, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m39C18B14AB6B6CC624113ECB5BBF9D3216CC861B_OpenStaticInvoker(Action_1_tCAFBCF7B5A94887259E3B0AF0DF9DD924BEE00E8* __this, PxrEventRoomSceneDataUpdateResult_tAD3FA94F4EB12A41AD22A328884611E48B5AE615 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< PxrEventRoomSceneDataUpdateResult_tAD3FA94F4EB12A41AD22A328884611E48B5AE615 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m39C18B14AB6B6CC624113ECB5BBF9D3216CC861B_ClosedStaticInvoker(Action_1_tCAFBCF7B5A94887259E3B0AF0DF9DD924BEE00E8* __this, PxrEventRoomSceneDataUpdateResult_tAD3FA94F4EB12A41AD22A328884611E48B5AE615 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, PxrEventRoomSceneDataUpdateResult_tAD3FA94F4EB12A41AD22A328884611E48B5AE615 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventRoomSceneDataUpdateResult>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m8DBAD93D622AFAC09984EC057736AB852A4BEC1F_gshared (Action_1_tCAFBCF7B5A94887259E3B0AF0DF9DD924BEE00E8* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m39C18B14AB6B6CC624113ECB5BBF9D3216CC861B_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m39C18B14AB6B6CC624113ECB5BBF9D3216CC861B_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m39C18B14AB6B6CC624113ECB5BBF9D3216CC861B_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m39C18B14AB6B6CC624113ECB5BBF9D3216CC861B_Multicast;
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventRoomSceneDataUpdateResult>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m39C18B14AB6B6CC624113ECB5BBF9D3216CC861B_gshared (Action_1_tCAFBCF7B5A94887259E3B0AF0DF9DD924BEE00E8* __this, PxrEventRoomSceneDataUpdateResult_tAD3FA94F4EB12A41AD22A328884611E48B5AE615 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventRoomSceneDataUpdateResult_tAD3FA94F4EB12A41AD22A328884611E48B5AE615, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_mB2D3F6534202EFA45F8651A8F351B271B729D571_Multicast(Action_1_t08BB27D6BBCF23B19AA3D3977C271742CAB904C3* __this, PxrEventRoomSceneLoadResultsComplete_t034B4BA239192E4D8C7AF0E917F9A702FE9D2596 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t08BB27D6BBCF23B19AA3D3977C271742CAB904C3* currentDelegate = reinterpret_cast<Action_1_t08BB27D6BBCF23B19AA3D3977C271742CAB904C3*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventRoomSceneLoadResultsComplete_t034B4BA239192E4D8C7AF0E917F9A702FE9D2596, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_mB2D3F6534202EFA45F8651A8F351B271B729D571_OpenInst(Action_1_t08BB27D6BBCF23B19AA3D3977C271742CAB904C3* __this, PxrEventRoomSceneLoadResultsComplete_t034B4BA239192E4D8C7AF0E917F9A702FE9D2596 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventRoomSceneLoadResultsComplete_t034B4BA239192E4D8C7AF0E917F9A702FE9D2596, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mB2D3F6534202EFA45F8651A8F351B271B729D571_OpenStatic(Action_1_t08BB27D6BBCF23B19AA3D3977C271742CAB904C3* __this, PxrEventRoomSceneLoadResultsComplete_t034B4BA239192E4D8C7AF0E917F9A702FE9D2596 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventRoomSceneLoadResultsComplete_t034B4BA239192E4D8C7AF0E917F9A702FE9D2596, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mB2D3F6534202EFA45F8651A8F351B271B729D571_OpenStaticInvoker(Action_1_t08BB27D6BBCF23B19AA3D3977C271742CAB904C3* __this, PxrEventRoomSceneLoadResultsComplete_t034B4BA239192E4D8C7AF0E917F9A702FE9D2596 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< PxrEventRoomSceneLoadResultsComplete_t034B4BA239192E4D8C7AF0E917F9A702FE9D2596 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_mB2D3F6534202EFA45F8651A8F351B271B729D571_ClosedStaticInvoker(Action_1_t08BB27D6BBCF23B19AA3D3977C271742CAB904C3* __this, PxrEventRoomSceneLoadResultsComplete_t034B4BA239192E4D8C7AF0E917F9A702FE9D2596 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, PxrEventRoomSceneLoadResultsComplete_t034B4BA239192E4D8C7AF0E917F9A702FE9D2596 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventRoomSceneLoadResultsComplete>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mE1AB34A68639E5481EDF78E4995639ACFD96AAAE_gshared (Action_1_t08BB27D6BBCF23B19AA3D3977C271742CAB904C3* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mB2D3F6534202EFA45F8651A8F351B271B729D571_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mB2D3F6534202EFA45F8651A8F351B271B729D571_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mB2D3F6534202EFA45F8651A8F351B271B729D571_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_mB2D3F6534202EFA45F8651A8F351B271B729D571_Multicast;
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventRoomSceneLoadResultsComplete>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mB2D3F6534202EFA45F8651A8F351B271B729D571_gshared (Action_1_t08BB27D6BBCF23B19AA3D3977C271742CAB904C3* __this, PxrEventRoomSceneLoadResultsComplete_t034B4BA239192E4D8C7AF0E917F9A702FE9D2596 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventRoomSceneLoadResultsComplete_t034B4BA239192E4D8C7AF0E917F9A702FE9D2596, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m9232F3472390B0BB7BD1CFC475FA6A225F58EBFA_Multicast(Action_1_t9C8A2CFBD48C3292C87EE19518FA210EBF1CA027* __this, PxrEventSemiAutoCandidatesUpdate_t12D08E37F16A6D64A08357F6CB23A4C352D0869E ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t9C8A2CFBD48C3292C87EE19518FA210EBF1CA027* currentDelegate = reinterpret_cast<Action_1_t9C8A2CFBD48C3292C87EE19518FA210EBF1CA027*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventSemiAutoCandidatesUpdate_t12D08E37F16A6D64A08357F6CB23A4C352D0869E, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m9232F3472390B0BB7BD1CFC475FA6A225F58EBFA_OpenInst(Action_1_t9C8A2CFBD48C3292C87EE19518FA210EBF1CA027* __this, PxrEventSemiAutoCandidatesUpdate_t12D08E37F16A6D64A08357F6CB23A4C352D0869E ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventSemiAutoCandidatesUpdate_t12D08E37F16A6D64A08357F6CB23A4C352D0869E, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m9232F3472390B0BB7BD1CFC475FA6A225F58EBFA_OpenStatic(Action_1_t9C8A2CFBD48C3292C87EE19518FA210EBF1CA027* __this, PxrEventSemiAutoCandidatesUpdate_t12D08E37F16A6D64A08357F6CB23A4C352D0869E ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventSemiAutoCandidatesUpdate_t12D08E37F16A6D64A08357F6CB23A4C352D0869E, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m9232F3472390B0BB7BD1CFC475FA6A225F58EBFA_OpenStaticInvoker(Action_1_t9C8A2CFBD48C3292C87EE19518FA210EBF1CA027* __this, PxrEventSemiAutoCandidatesUpdate_t12D08E37F16A6D64A08357F6CB23A4C352D0869E ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< PxrEventSemiAutoCandidatesUpdate_t12D08E37F16A6D64A08357F6CB23A4C352D0869E >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m9232F3472390B0BB7BD1CFC475FA6A225F58EBFA_ClosedStaticInvoker(Action_1_t9C8A2CFBD48C3292C87EE19518FA210EBF1CA027* __this, PxrEventSemiAutoCandidatesUpdate_t12D08E37F16A6D64A08357F6CB23A4C352D0869E ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, PxrEventSemiAutoCandidatesUpdate_t12D08E37F16A6D64A08357F6CB23A4C352D0869E >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventSemiAutoCandidatesUpdate>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m1BDB6563036E63DD740C6B058B4F62B0E71664DC_gshared (Action_1_t9C8A2CFBD48C3292C87EE19518FA210EBF1CA027* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m9232F3472390B0BB7BD1CFC475FA6A225F58EBFA_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m9232F3472390B0BB7BD1CFC475FA6A225F58EBFA_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m9232F3472390B0BB7BD1CFC475FA6A225F58EBFA_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m9232F3472390B0BB7BD1CFC475FA6A225F58EBFA_Multicast;
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventSemiAutoCandidatesUpdate>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m9232F3472390B0BB7BD1CFC475FA6A225F58EBFA_gshared (Action_1_t9C8A2CFBD48C3292C87EE19518FA210EBF1CA027* __this, PxrEventSemiAutoCandidatesUpdate_t12D08E37F16A6D64A08357F6CB23A4C352D0869E ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventSemiAutoCandidatesUpdate_t12D08E37F16A6D64A08357F6CB23A4C352D0869E, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m15F9D47EF73C49B12E0C1D0A5BE2EBB34BB592F2_Multicast(Action_1_t0EBA64AE68C5EE7668204C4EC9DE8DE4A6F2C888* __this, PxrEventSpatialAnchorDeleteResult_t5BD947B67D4AF616A68D4491E0D5B85918B003CC ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t0EBA64AE68C5EE7668204C4EC9DE8DE4A6F2C888* currentDelegate = reinterpret_cast<Action_1_t0EBA64AE68C5EE7668204C4EC9DE8DE4A6F2C888*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventSpatialAnchorDeleteResult_t5BD947B67D4AF616A68D4491E0D5B85918B003CC, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m15F9D47EF73C49B12E0C1D0A5BE2EBB34BB592F2_OpenInst(Action_1_t0EBA64AE68C5EE7668204C4EC9DE8DE4A6F2C888* __this, PxrEventSpatialAnchorDeleteResult_t5BD947B67D4AF616A68D4491E0D5B85918B003CC ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventSpatialAnchorDeleteResult_t5BD947B67D4AF616A68D4491E0D5B85918B003CC, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m15F9D47EF73C49B12E0C1D0A5BE2EBB34BB592F2_OpenStatic(Action_1_t0EBA64AE68C5EE7668204C4EC9DE8DE4A6F2C888* __this, PxrEventSpatialAnchorDeleteResult_t5BD947B67D4AF616A68D4491E0D5B85918B003CC ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventSpatialAnchorDeleteResult_t5BD947B67D4AF616A68D4491E0D5B85918B003CC, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m15F9D47EF73C49B12E0C1D0A5BE2EBB34BB592F2_OpenStaticInvoker(Action_1_t0EBA64AE68C5EE7668204C4EC9DE8DE4A6F2C888* __this, PxrEventSpatialAnchorDeleteResult_t5BD947B67D4AF616A68D4491E0D5B85918B003CC ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< PxrEventSpatialAnchorDeleteResult_t5BD947B67D4AF616A68D4491E0D5B85918B003CC >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m15F9D47EF73C49B12E0C1D0A5BE2EBB34BB592F2_ClosedStaticInvoker(Action_1_t0EBA64AE68C5EE7668204C4EC9DE8DE4A6F2C888* __this, PxrEventSpatialAnchorDeleteResult_t5BD947B67D4AF616A68D4491E0D5B85918B003CC ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, PxrEventSpatialAnchorDeleteResult_t5BD947B67D4AF616A68D4491E0D5B85918B003CC >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventSpatialAnchorDeleteResult>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m6809D535CF76F0CCB95E018ECF5E21ABE5AE6FC4_gshared (Action_1_t0EBA64AE68C5EE7668204C4EC9DE8DE4A6F2C888* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m15F9D47EF73C49B12E0C1D0A5BE2EBB34BB592F2_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m15F9D47EF73C49B12E0C1D0A5BE2EBB34BB592F2_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m15F9D47EF73C49B12E0C1D0A5BE2EBB34BB592F2_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m15F9D47EF73C49B12E0C1D0A5BE2EBB34BB592F2_Multicast;
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventSpatialAnchorDeleteResult>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m15F9D47EF73C49B12E0C1D0A5BE2EBB34BB592F2_gshared (Action_1_t0EBA64AE68C5EE7668204C4EC9DE8DE4A6F2C888* __this, PxrEventSpatialAnchorDeleteResult_t5BD947B67D4AF616A68D4491E0D5B85918B003CC ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventSpatialAnchorDeleteResult_t5BD947B67D4AF616A68D4491E0D5B85918B003CC, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m6D35E0AE7A54040B71ABB34E2047F1E629A19A35_Multicast(Action_1_t89C351745B14DEE5459D5315E343CF7FCB74581B* __this, PxrEventSpatialAnchorLoadResults_t38389A5A532C4CC6E75193AAC80627B80430650C ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t89C351745B14DEE5459D5315E343CF7FCB74581B* currentDelegate = reinterpret_cast<Action_1_t89C351745B14DEE5459D5315E343CF7FCB74581B*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventSpatialAnchorLoadResults_t38389A5A532C4CC6E75193AAC80627B80430650C, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m6D35E0AE7A54040B71ABB34E2047F1E629A19A35_OpenInst(Action_1_t89C351745B14DEE5459D5315E343CF7FCB74581B* __this, PxrEventSpatialAnchorLoadResults_t38389A5A532C4CC6E75193AAC80627B80430650C ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventSpatialAnchorLoadResults_t38389A5A532C4CC6E75193AAC80627B80430650C, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m6D35E0AE7A54040B71ABB34E2047F1E629A19A35_OpenStatic(Action_1_t89C351745B14DEE5459D5315E343CF7FCB74581B* __this, PxrEventSpatialAnchorLoadResults_t38389A5A532C4CC6E75193AAC80627B80430650C ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventSpatialAnchorLoadResults_t38389A5A532C4CC6E75193AAC80627B80430650C, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m6D35E0AE7A54040B71ABB34E2047F1E629A19A35_OpenStaticInvoker(Action_1_t89C351745B14DEE5459D5315E343CF7FCB74581B* __this, PxrEventSpatialAnchorLoadResults_t38389A5A532C4CC6E75193AAC80627B80430650C ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< PxrEventSpatialAnchorLoadResults_t38389A5A532C4CC6E75193AAC80627B80430650C >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m6D35E0AE7A54040B71ABB34E2047F1E629A19A35_ClosedStaticInvoker(Action_1_t89C351745B14DEE5459D5315E343CF7FCB74581B* __this, PxrEventSpatialAnchorLoadResults_t38389A5A532C4CC6E75193AAC80627B80430650C ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, PxrEventSpatialAnchorLoadResults_t38389A5A532C4CC6E75193AAC80627B80430650C >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventSpatialAnchorLoadResults>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mC50070428EDFB1E6FF31BCBB5E526DD0CABE47A3_gshared (Action_1_t89C351745B14DEE5459D5315E343CF7FCB74581B* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m6D35E0AE7A54040B71ABB34E2047F1E629A19A35_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m6D35E0AE7A54040B71ABB34E2047F1E629A19A35_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m6D35E0AE7A54040B71ABB34E2047F1E629A19A35_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m6D35E0AE7A54040B71ABB34E2047F1E629A19A35_Multicast;
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventSpatialAnchorLoadResults>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m6D35E0AE7A54040B71ABB34E2047F1E629A19A35_gshared (Action_1_t89C351745B14DEE5459D5315E343CF7FCB74581B* __this, PxrEventSpatialAnchorLoadResults_t38389A5A532C4CC6E75193AAC80627B80430650C ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventSpatialAnchorLoadResults_t38389A5A532C4CC6E75193AAC80627B80430650C, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m1211FC2D7DB6DB01DEDB9F4AEBBF1B6D0B5899A6_Multicast(Action_1_t15F614222681BBA326EF9BB8725C201A4096469A* __this, PxrEventSpatialAnchorLoadResultsAvailable_tB2231DF88975F6BB2BC60E7CC621555652064684 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t15F614222681BBA326EF9BB8725C201A4096469A* currentDelegate = reinterpret_cast<Action_1_t15F614222681BBA326EF9BB8725C201A4096469A*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventSpatialAnchorLoadResultsAvailable_tB2231DF88975F6BB2BC60E7CC621555652064684, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m1211FC2D7DB6DB01DEDB9F4AEBBF1B6D0B5899A6_OpenInst(Action_1_t15F614222681BBA326EF9BB8725C201A4096469A* __this, PxrEventSpatialAnchorLoadResultsAvailable_tB2231DF88975F6BB2BC60E7CC621555652064684 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventSpatialAnchorLoadResultsAvailable_tB2231DF88975F6BB2BC60E7CC621555652064684, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m1211FC2D7DB6DB01DEDB9F4AEBBF1B6D0B5899A6_OpenStatic(Action_1_t15F614222681BBA326EF9BB8725C201A4096469A* __this, PxrEventSpatialAnchorLoadResultsAvailable_tB2231DF88975F6BB2BC60E7CC621555652064684 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventSpatialAnchorLoadResultsAvailable_tB2231DF88975F6BB2BC60E7CC621555652064684, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m1211FC2D7DB6DB01DEDB9F4AEBBF1B6D0B5899A6_OpenStaticInvoker(Action_1_t15F614222681BBA326EF9BB8725C201A4096469A* __this, PxrEventSpatialAnchorLoadResultsAvailable_tB2231DF88975F6BB2BC60E7CC621555652064684 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< PxrEventSpatialAnchorLoadResultsAvailable_tB2231DF88975F6BB2BC60E7CC621555652064684 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m1211FC2D7DB6DB01DEDB9F4AEBBF1B6D0B5899A6_ClosedStaticInvoker(Action_1_t15F614222681BBA326EF9BB8725C201A4096469A* __this, PxrEventSpatialAnchorLoadResultsAvailable_tB2231DF88975F6BB2BC60E7CC621555652064684 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, PxrEventSpatialAnchorLoadResultsAvailable_tB2231DF88975F6BB2BC60E7CC621555652064684 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventSpatialAnchorLoadResultsAvailable>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m3FA15E98C3D9A8739EFDE699B60476B25B524D28_gshared (Action_1_t15F614222681BBA326EF9BB8725C201A4096469A* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m1211FC2D7DB6DB01DEDB9F4AEBBF1B6D0B5899A6_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m1211FC2D7DB6DB01DEDB9F4AEBBF1B6D0B5899A6_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m1211FC2D7DB6DB01DEDB9F4AEBBF1B6D0B5899A6_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m1211FC2D7DB6DB01DEDB9F4AEBBF1B6D0B5899A6_Multicast;
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventSpatialAnchorLoadResultsAvailable>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m1211FC2D7DB6DB01DEDB9F4AEBBF1B6D0B5899A6_gshared (Action_1_t15F614222681BBA326EF9BB8725C201A4096469A* __this, PxrEventSpatialAnchorLoadResultsAvailable_tB2231DF88975F6BB2BC60E7CC621555652064684 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventSpatialAnchorLoadResultsAvailable_tB2231DF88975F6BB2BC60E7CC621555652064684, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m4BC54D1607DFADCA0195FA07049FC728D9D30F0D_Multicast(Action_1_t58E5EED64CDA983FD77791B422319A72DD74EBFC* __this, PxrEventSpatialAnchorLoadResultsComplete_t13F411575AC590A738AAC499B1D595F1D3A83DB8 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t58E5EED64CDA983FD77791B422319A72DD74EBFC* currentDelegate = reinterpret_cast<Action_1_t58E5EED64CDA983FD77791B422319A72DD74EBFC*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventSpatialAnchorLoadResultsComplete_t13F411575AC590A738AAC499B1D595F1D3A83DB8, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m4BC54D1607DFADCA0195FA07049FC728D9D30F0D_OpenInst(Action_1_t58E5EED64CDA983FD77791B422319A72DD74EBFC* __this, PxrEventSpatialAnchorLoadResultsComplete_t13F411575AC590A738AAC499B1D595F1D3A83DB8 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventSpatialAnchorLoadResultsComplete_t13F411575AC590A738AAC499B1D595F1D3A83DB8, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m4BC54D1607DFADCA0195FA07049FC728D9D30F0D_OpenStatic(Action_1_t58E5EED64CDA983FD77791B422319A72DD74EBFC* __this, PxrEventSpatialAnchorLoadResultsComplete_t13F411575AC590A738AAC499B1D595F1D3A83DB8 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventSpatialAnchorLoadResultsComplete_t13F411575AC590A738AAC499B1D595F1D3A83DB8, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m4BC54D1607DFADCA0195FA07049FC728D9D30F0D_OpenStaticInvoker(Action_1_t58E5EED64CDA983FD77791B422319A72DD74EBFC* __this, PxrEventSpatialAnchorLoadResultsComplete_t13F411575AC590A738AAC499B1D595F1D3A83DB8 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< PxrEventSpatialAnchorLoadResultsComplete_t13F411575AC590A738AAC499B1D595F1D3A83DB8 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m4BC54D1607DFADCA0195FA07049FC728D9D30F0D_ClosedStaticInvoker(Action_1_t58E5EED64CDA983FD77791B422319A72DD74EBFC* __this, PxrEventSpatialAnchorLoadResultsComplete_t13F411575AC590A738AAC499B1D595F1D3A83DB8 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, PxrEventSpatialAnchorLoadResultsComplete_t13F411575AC590A738AAC499B1D595F1D3A83DB8 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventSpatialAnchorLoadResultsComplete>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m10209D6373C77D91D92E4BE8DC9493DC46240F0F_gshared (Action_1_t58E5EED64CDA983FD77791B422319A72DD74EBFC* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m4BC54D1607DFADCA0195FA07049FC728D9D30F0D_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m4BC54D1607DFADCA0195FA07049FC728D9D30F0D_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m4BC54D1607DFADCA0195FA07049FC728D9D30F0D_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m4BC54D1607DFADCA0195FA07049FC728D9D30F0D_Multicast;
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventSpatialAnchorLoadResultsComplete>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m4BC54D1607DFADCA0195FA07049FC728D9D30F0D_gshared (Action_1_t58E5EED64CDA983FD77791B422319A72DD74EBFC* __this, PxrEventSpatialAnchorLoadResultsComplete_t13F411575AC590A738AAC499B1D595F1D3A83DB8 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventSpatialAnchorLoadResultsComplete_t13F411575AC590A738AAC499B1D595F1D3A83DB8, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m44AAD4FD6075821E43FB8907959C0ED3B215FF92_Multicast(Action_1_t938E856EC1E857F4BDD1713F383CCB8CEA2EA435* __this, PxrEventSpatialAnchorSaveResult_tCC0847643822AC5399A67FBCDAD220483A15B11D ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t938E856EC1E857F4BDD1713F383CCB8CEA2EA435* currentDelegate = reinterpret_cast<Action_1_t938E856EC1E857F4BDD1713F383CCB8CEA2EA435*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventSpatialAnchorSaveResult_tCC0847643822AC5399A67FBCDAD220483A15B11D, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m44AAD4FD6075821E43FB8907959C0ED3B215FF92_OpenInst(Action_1_t938E856EC1E857F4BDD1713F383CCB8CEA2EA435* __this, PxrEventSpatialAnchorSaveResult_tCC0847643822AC5399A67FBCDAD220483A15B11D ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventSpatialAnchorSaveResult_tCC0847643822AC5399A67FBCDAD220483A15B11D, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m44AAD4FD6075821E43FB8907959C0ED3B215FF92_OpenStatic(Action_1_t938E856EC1E857F4BDD1713F383CCB8CEA2EA435* __this, PxrEventSpatialAnchorSaveResult_tCC0847643822AC5399A67FBCDAD220483A15B11D ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventSpatialAnchorSaveResult_tCC0847643822AC5399A67FBCDAD220483A15B11D, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m44AAD4FD6075821E43FB8907959C0ED3B215FF92_OpenStaticInvoker(Action_1_t938E856EC1E857F4BDD1713F383CCB8CEA2EA435* __this, PxrEventSpatialAnchorSaveResult_tCC0847643822AC5399A67FBCDAD220483A15B11D ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< PxrEventSpatialAnchorSaveResult_tCC0847643822AC5399A67FBCDAD220483A15B11D >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m44AAD4FD6075821E43FB8907959C0ED3B215FF92_ClosedStaticInvoker(Action_1_t938E856EC1E857F4BDD1713F383CCB8CEA2EA435* __this, PxrEventSpatialAnchorSaveResult_tCC0847643822AC5399A67FBCDAD220483A15B11D ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, PxrEventSpatialAnchorSaveResult_tCC0847643822AC5399A67FBCDAD220483A15B11D >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventSpatialAnchorSaveResult>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m1CACF889482CD2A396AB326C730EB8713796BA3C_gshared (Action_1_t938E856EC1E857F4BDD1713F383CCB8CEA2EA435* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m44AAD4FD6075821E43FB8907959C0ED3B215FF92_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m44AAD4FD6075821E43FB8907959C0ED3B215FF92_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m44AAD4FD6075821E43FB8907959C0ED3B215FF92_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m44AAD4FD6075821E43FB8907959C0ED3B215FF92_Multicast;
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventSpatialAnchorSaveResult>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m44AAD4FD6075821E43FB8907959C0ED3B215FF92_gshared (Action_1_t938E856EC1E857F4BDD1713F383CCB8CEA2EA435* __this, PxrEventSpatialAnchorSaveResult_tCC0847643822AC5399A67FBCDAD220483A15B11D ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventSpatialAnchorSaveResult_tCC0847643822AC5399A67FBCDAD220483A15B11D, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_mADA68FD1F419F2A3AD30075BA361617B1196A9F4_Multicast(Action_1_t6D269C2D4522A2B4E6EF723760BF87F01272FF51* __this, PxrEventSpatialSceneCaptured_t8E8608600DB18CCBBC50BCC317F63E4A6C17D071 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t6D269C2D4522A2B4E6EF723760BF87F01272FF51* currentDelegate = reinterpret_cast<Action_1_t6D269C2D4522A2B4E6EF723760BF87F01272FF51*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventSpatialSceneCaptured_t8E8608600DB18CCBBC50BCC317F63E4A6C17D071, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_mADA68FD1F419F2A3AD30075BA361617B1196A9F4_OpenInst(Action_1_t6D269C2D4522A2B4E6EF723760BF87F01272FF51* __this, PxrEventSpatialSceneCaptured_t8E8608600DB18CCBBC50BCC317F63E4A6C17D071 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventSpatialSceneCaptured_t8E8608600DB18CCBBC50BCC317F63E4A6C17D071, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mADA68FD1F419F2A3AD30075BA361617B1196A9F4_OpenStatic(Action_1_t6D269C2D4522A2B4E6EF723760BF87F01272FF51* __this, PxrEventSpatialSceneCaptured_t8E8608600DB18CCBBC50BCC317F63E4A6C17D071 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventSpatialSceneCaptured_t8E8608600DB18CCBBC50BCC317F63E4A6C17D071, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mADA68FD1F419F2A3AD30075BA361617B1196A9F4_OpenStaticInvoker(Action_1_t6D269C2D4522A2B4E6EF723760BF87F01272FF51* __this, PxrEventSpatialSceneCaptured_t8E8608600DB18CCBBC50BCC317F63E4A6C17D071 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< PxrEventSpatialSceneCaptured_t8E8608600DB18CCBBC50BCC317F63E4A6C17D071 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_mADA68FD1F419F2A3AD30075BA361617B1196A9F4_ClosedStaticInvoker(Action_1_t6D269C2D4522A2B4E6EF723760BF87F01272FF51* __this, PxrEventSpatialSceneCaptured_t8E8608600DB18CCBBC50BCC317F63E4A6C17D071 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, PxrEventSpatialSceneCaptured_t8E8608600DB18CCBBC50BCC317F63E4A6C17D071 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventSpatialSceneCaptured>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m8CC5E3E8B4FEB7CBF560FCF940D38A45BC425828_gshared (Action_1_t6D269C2D4522A2B4E6EF723760BF87F01272FF51* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mADA68FD1F419F2A3AD30075BA361617B1196A9F4_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mADA68FD1F419F2A3AD30075BA361617B1196A9F4_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mADA68FD1F419F2A3AD30075BA361617B1196A9F4_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_mADA68FD1F419F2A3AD30075BA361617B1196A9F4_Multicast;
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventSpatialSceneCaptured>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mADA68FD1F419F2A3AD30075BA361617B1196A9F4_gshared (Action_1_t6D269C2D4522A2B4E6EF723760BF87F01272FF51* __this, PxrEventSpatialSceneCaptured_t8E8608600DB18CCBBC50BCC317F63E4A6C17D071 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventSpatialSceneCaptured_t8E8608600DB18CCBBC50BCC317F63E4A6C17D071, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m96BD9BCDFBDCDB10B7FBCDD9F18A9D31A709E6A4_Multicast(Action_1_t5BEBCD62AEA6CA0890665B0164180DCD30923A1D* __this, PxrEventSpatialTrackingStateInfo_t3C2991FCF3ABABEE677E706F785B5986C67AC9F0 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t5BEBCD62AEA6CA0890665B0164180DCD30923A1D* currentDelegate = reinterpret_cast<Action_1_t5BEBCD62AEA6CA0890665B0164180DCD30923A1D*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventSpatialTrackingStateInfo_t3C2991FCF3ABABEE677E706F785B5986C67AC9F0, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m96BD9BCDFBDCDB10B7FBCDD9F18A9D31A709E6A4_OpenInst(Action_1_t5BEBCD62AEA6CA0890665B0164180DCD30923A1D* __this, PxrEventSpatialTrackingStateInfo_t3C2991FCF3ABABEE677E706F785B5986C67AC9F0 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventSpatialTrackingStateInfo_t3C2991FCF3ABABEE677E706F785B5986C67AC9F0, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m96BD9BCDFBDCDB10B7FBCDD9F18A9D31A709E6A4_OpenStatic(Action_1_t5BEBCD62AEA6CA0890665B0164180DCD30923A1D* __this, PxrEventSpatialTrackingStateInfo_t3C2991FCF3ABABEE677E706F785B5986C67AC9F0 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventSpatialTrackingStateInfo_t3C2991FCF3ABABEE677E706F785B5986C67AC9F0, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m96BD9BCDFBDCDB10B7FBCDD9F18A9D31A709E6A4_OpenStaticInvoker(Action_1_t5BEBCD62AEA6CA0890665B0164180DCD30923A1D* __this, PxrEventSpatialTrackingStateInfo_t3C2991FCF3ABABEE677E706F785B5986C67AC9F0 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< PxrEventSpatialTrackingStateInfo_t3C2991FCF3ABABEE677E706F785B5986C67AC9F0 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m96BD9BCDFBDCDB10B7FBCDD9F18A9D31A709E6A4_ClosedStaticInvoker(Action_1_t5BEBCD62AEA6CA0890665B0164180DCD30923A1D* __this, PxrEventSpatialTrackingStateInfo_t3C2991FCF3ABABEE677E706F785B5986C67AC9F0 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, PxrEventSpatialTrackingStateInfo_t3C2991FCF3ABABEE677E706F785B5986C67AC9F0 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventSpatialTrackingStateInfo>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mE969BA2016370AB92448B1DBFE71CAE9B95B49E8_gshared (Action_1_t5BEBCD62AEA6CA0890665B0164180DCD30923A1D* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m96BD9BCDFBDCDB10B7FBCDD9F18A9D31A709E6A4_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m96BD9BCDFBDCDB10B7FBCDD9F18A9D31A709E6A4_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m96BD9BCDFBDCDB10B7FBCDD9F18A9D31A709E6A4_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m96BD9BCDFBDCDB10B7FBCDD9F18A9D31A709E6A4_Multicast;
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventSpatialTrackingStateInfo>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m96BD9BCDFBDCDB10B7FBCDD9F18A9D31A709E6A4_gshared (Action_1_t5BEBCD62AEA6CA0890665B0164180DCD30923A1D* __this, PxrEventSpatialTrackingStateInfo_t3C2991FCF3ABABEE677E706F785B5986C67AC9F0 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventSpatialTrackingStateInfo_t3C2991FCF3ABABEE677E706F785B5986C67AC9F0, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m57F2B82F7B34A7F3C4018A7D799D6E99CA2EAEF4_Multicast(Action_1_t19FFBD94C207F8B26A37C05BB7827FD13935EAF7* __this, PxrEventSpatialTrackingStateUpdate_t95BA84576C74D3BC3DEFA6B2EBCDE9957DF10723 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t19FFBD94C207F8B26A37C05BB7827FD13935EAF7* currentDelegate = reinterpret_cast<Action_1_t19FFBD94C207F8B26A37C05BB7827FD13935EAF7*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventSpatialTrackingStateUpdate_t95BA84576C74D3BC3DEFA6B2EBCDE9957DF10723, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m57F2B82F7B34A7F3C4018A7D799D6E99CA2EAEF4_OpenInst(Action_1_t19FFBD94C207F8B26A37C05BB7827FD13935EAF7* __this, PxrEventSpatialTrackingStateUpdate_t95BA84576C74D3BC3DEFA6B2EBCDE9957DF10723 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventSpatialTrackingStateUpdate_t95BA84576C74D3BC3DEFA6B2EBCDE9957DF10723, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m57F2B82F7B34A7F3C4018A7D799D6E99CA2EAEF4_OpenStatic(Action_1_t19FFBD94C207F8B26A37C05BB7827FD13935EAF7* __this, PxrEventSpatialTrackingStateUpdate_t95BA84576C74D3BC3DEFA6B2EBCDE9957DF10723 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrEventSpatialTrackingStateUpdate_t95BA84576C74D3BC3DEFA6B2EBCDE9957DF10723, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m57F2B82F7B34A7F3C4018A7D799D6E99CA2EAEF4_OpenStaticInvoker(Action_1_t19FFBD94C207F8B26A37C05BB7827FD13935EAF7* __this, PxrEventSpatialTrackingStateUpdate_t95BA84576C74D3BC3DEFA6B2EBCDE9957DF10723 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< PxrEventSpatialTrackingStateUpdate_t95BA84576C74D3BC3DEFA6B2EBCDE9957DF10723 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m57F2B82F7B34A7F3C4018A7D799D6E99CA2EAEF4_ClosedStaticInvoker(Action_1_t19FFBD94C207F8B26A37C05BB7827FD13935EAF7* __this, PxrEventSpatialTrackingStateUpdate_t95BA84576C74D3BC3DEFA6B2EBCDE9957DF10723 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, PxrEventSpatialTrackingStateUpdate_t95BA84576C74D3BC3DEFA6B2EBCDE9957DF10723 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventSpatialTrackingStateUpdate>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m89CE8D268647BD55967CE077A5456331A9FE3314_gshared (Action_1_t19FFBD94C207F8B26A37C05BB7827FD13935EAF7* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m57F2B82F7B34A7F3C4018A7D799D6E99CA2EAEF4_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m57F2B82F7B34A7F3C4018A7D799D6E99CA2EAEF4_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m57F2B82F7B34A7F3C4018A7D799D6E99CA2EAEF4_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m57F2B82F7B34A7F3C4018A7D799D6E99CA2EAEF4_Multicast;
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrEventSpatialTrackingStateUpdate>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m57F2B82F7B34A7F3C4018A7D799D6E99CA2EAEF4_gshared (Action_1_t19FFBD94C207F8B26A37C05BB7827FD13935EAF7* __this, PxrEventSpatialTrackingStateUpdate_t95BA84576C74D3BC3DEFA6B2EBCDE9957DF10723 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, PxrEventSpatialTrackingStateUpdate_t95BA84576C74D3BC3DEFA6B2EBCDE9957DF10723, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m071A8543AC40B1D8914868B4910053491E0346D4_Multicast(Action_1_tB3F88746E4C15C38959C37E7120EBF026E706AA8* __this, PxrSemiAutoRoomCaptureCandidatesUpdate_t20AF62F67CCA449A4F8CC2BD014DF3D55D90D9EF ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_tB3F88746E4C15C38959C37E7120EBF026E706AA8* currentDelegate = reinterpret_cast<Action_1_tB3F88746E4C15C38959C37E7120EBF026E706AA8*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, PxrSemiAutoRoomCaptureCandidatesUpdate_t20AF62F67CCA449A4F8CC2BD014DF3D55D90D9EF, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m071A8543AC40B1D8914868B4910053491E0346D4_OpenInst(Action_1_tB3F88746E4C15C38959C37E7120EBF026E706AA8* __this, PxrSemiAutoRoomCaptureCandidatesUpdate_t20AF62F67CCA449A4F8CC2BD014DF3D55D90D9EF ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrSemiAutoRoomCaptureCandidatesUpdate_t20AF62F67CCA449A4F8CC2BD014DF3D55D90D9EF, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m071A8543AC40B1D8914868B4910053491E0346D4_OpenStatic(Action_1_tB3F88746E4C15C38959C37E7120EBF026E706AA8* __this, PxrSemiAutoRoomCaptureCandidatesUpdate_t20AF62F67CCA449A4F8CC2BD014DF3D55D90D9EF ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (PxrSemiAutoRoomCaptureCandidatesUpdate_t20AF62F67CCA449A4F8CC2BD014DF3D55D90D9EF, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m071A8543AC40B1D8914868B4910053491E0346D4_OpenStaticInvoker(Action_1_tB3F88746E4C15C38959C37E7120EBF026E706AA8* __this, PxrSemiAutoRoomCaptureCandidatesUpdate_t20AF62F67CCA449A4F8CC2BD014DF3D55D90D9EF ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< PxrSemiAutoRoomCaptureCandidatesUpdate_t20AF62F67CCA449A4F8CC2BD014DF3D55D90D9EF >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m071A8543AC40B1D8914868B4910053491E0346D4_ClosedStaticInvoker(Action_1_tB3F88746E4C15C38959C37E7120EBF026E706AA8* __this, PxrSemiAutoRoomCaptureCandidatesUpdate_t20AF62F67CCA449A4F8CC2BD014DF3D55D90D9EF ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, PxrSemiAutoRoomCaptureCandidatesUpdate_t20AF62F67CCA449A4F8CC2BD014DF3D55D90D9EF >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrSemiAutoRoomCaptureCandidatesUpdate>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m2DEEE459169591FE205CCC0980727FBAEFDB6B32_gshared (Action_1_tB3F88746E4C15C38959C37E7120EBF026E706AA8* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m071A8543AC40B1D8914868B4910053491E0346D4_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m071A8543AC40B1D8914868B4910053491E0346D4_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m071A8543AC40B1D8914868B4910053491E0346D4_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m071A8543AC40B1D8914868B4910053491E0346D4_Multicast;
-}
-// System.Void System.Action`1<Unity.XR.PXR.PxrSemiAutoRoomCaptureCandidatesUpdate>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m071A8543AC40B1D8914868B4910053491E0346D4_gshared (Action_1_tB3F88746E4C15C38959C37E7120EBF026E706AA8* __this, PxrSemiAutoRoomCaptureCandidatesUpdate_t20AF62F67CCA449A4F8CC2BD014DF3D55D90D9EF ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, PxrSemiAutoRoomCaptureCandidatesUpdate_t20AF62F67CCA449A4F8CC2BD014DF3D55D90D9EF, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m42814F47C764FAAC33D06892D0F3BF0A620290E1_Multicast(Action_1_tD0624B0C9A4314C84D75B0C2A563B322540AB9AE* __this, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_tD0624B0C9A4314C84D75B0C2A563B322540AB9AE* currentDelegate = reinterpret_cast<Action_1_tD0624B0C9A4314C84D75B0C2A563B322540AB9AE*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m42814F47C764FAAC33D06892D0F3BF0A620290E1_OpenInst(Action_1_tD0624B0C9A4314C84D75B0C2A563B322540AB9AE* __this, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m42814F47C764FAAC33D06892D0F3BF0A620290E1_OpenStatic(Action_1_tD0624B0C9A4314C84D75B0C2A563B322540AB9AE* __this, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m42814F47C764FAAC33D06892D0F3BF0A620290E1_OpenStaticInvoker(Action_1_tD0624B0C9A4314C84D75B0C2A563B322540AB9AE* __this, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m42814F47C764FAAC33D06892D0F3BF0A620290E1_ClosedStaticInvoker(Action_1_tD0624B0C9A4314C84D75B0C2A563B322540AB9AE* __this, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.Quaternion>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m481669CFBDADF4015FB0F255EA1C18D7DF497119_gshared (Action_1_tD0624B0C9A4314C84D75B0C2A563B322540AB9AE* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m42814F47C764FAAC33D06892D0F3BF0A620290E1_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m42814F47C764FAAC33D06892D0F3BF0A620290E1_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m42814F47C764FAAC33D06892D0F3BF0A620290E1_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m42814F47C764FAAC33D06892D0F3BF0A620290E1_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.Quaternion>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m42814F47C764FAAC33D06892D0F3BF0A620290E1_gshared (Action_1_tD0624B0C9A4314C84D75B0C2A563B322540AB9AE* __this, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_mBD0D65B7B73E5F82ADEB2C262F657AB4C6D3881E_Multicast(Action_1_t39CC104F93D48513594959A5D74E69F27CB86D5E* __this, RangePositionInfo_t27BA7EB1EC12061DD5ACFD24BD71A915D412223F ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t39CC104F93D48513594959A5D74E69F27CB86D5E* currentDelegate = reinterpret_cast<Action_1_t39CC104F93D48513594959A5D74E69F27CB86D5E*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, RangePositionInfo_t27BA7EB1EC12061DD5ACFD24BD71A915D412223F, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_mBD0D65B7B73E5F82ADEB2C262F657AB4C6D3881E_OpenInst(Action_1_t39CC104F93D48513594959A5D74E69F27CB86D5E* __this, RangePositionInfo_t27BA7EB1EC12061DD5ACFD24BD71A915D412223F ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (RangePositionInfo_t27BA7EB1EC12061DD5ACFD24BD71A915D412223F, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mBD0D65B7B73E5F82ADEB2C262F657AB4C6D3881E_OpenStatic(Action_1_t39CC104F93D48513594959A5D74E69F27CB86D5E* __this, RangePositionInfo_t27BA7EB1EC12061DD5ACFD24BD71A915D412223F ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (RangePositionInfo_t27BA7EB1EC12061DD5ACFD24BD71A915D412223F, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mBD0D65B7B73E5F82ADEB2C262F657AB4C6D3881E_OpenStaticInvoker(Action_1_t39CC104F93D48513594959A5D74E69F27CB86D5E* __this, RangePositionInfo_t27BA7EB1EC12061DD5ACFD24BD71A915D412223F ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< RangePositionInfo_t27BA7EB1EC12061DD5ACFD24BD71A915D412223F >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_mBD0D65B7B73E5F82ADEB2C262F657AB4C6D3881E_ClosedStaticInvoker(Action_1_t39CC104F93D48513594959A5D74E69F27CB86D5E* __this, RangePositionInfo_t27BA7EB1EC12061DD5ACFD24BD71A915D412223F ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, RangePositionInfo_t27BA7EB1EC12061DD5ACFD24BD71A915D412223F >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<System.Xml.Schema.RangePositionInfo>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m3EC804F7028FE1B6EFFEB81E5AB83C1349EEEDE6_gshared (Action_1_t39CC104F93D48513594959A5D74E69F27CB86D5E* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mBD0D65B7B73E5F82ADEB2C262F657AB4C6D3881E_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mBD0D65B7B73E5F82ADEB2C262F657AB4C6D3881E_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mBD0D65B7B73E5F82ADEB2C262F657AB4C6D3881E_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_mBD0D65B7B73E5F82ADEB2C262F657AB4C6D3881E_Multicast;
-}
-// System.Void System.Action`1<System.Xml.Schema.RangePositionInfo>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mBD0D65B7B73E5F82ADEB2C262F657AB4C6D3881E_gshared (Action_1_t39CC104F93D48513594959A5D74E69F27CB86D5E* __this, RangePositionInfo_t27BA7EB1EC12061DD5ACFD24BD71A915D412223F ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, RangePositionInfo_t27BA7EB1EC12061DD5ACFD24BD71A915D412223F, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m84DD01FB2B6658A6472FCD1D377228EA803FBA39_Multicast(Action_1_tD9564038902E921666D3553B1D0CC836506BA577* __this, RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_tD9564038902E921666D3553B1D0CC836506BA577* currentDelegate = reinterpret_cast<Action_1_tD9564038902E921666D3553B1D0CC836506BA577*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m84DD01FB2B6658A6472FCD1D377228EA803FBA39_OpenInst(Action_1_tD9564038902E921666D3553B1D0CC836506BA577* __this, RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m84DD01FB2B6658A6472FCD1D377228EA803FBA39_OpenStatic(Action_1_tD9564038902E921666D3553B1D0CC836506BA577* __this, RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m84DD01FB2B6658A6472FCD1D377228EA803FBA39_OpenStaticInvoker(Action_1_tD9564038902E921666D3553B1D0CC836506BA577* __this, RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m84DD01FB2B6658A6472FCD1D377228EA803FBA39_ClosedStaticInvoker(Action_1_tD9564038902E921666D3553B1D0CC836506BA577* __this, RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.RaycastHit>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m223CDD8A34BD344D48918F2981854B15D608237F_gshared (Action_1_tD9564038902E921666D3553B1D0CC836506BA577* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m84DD01FB2B6658A6472FCD1D377228EA803FBA39_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m84DD01FB2B6658A6472FCD1D377228EA803FBA39_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m84DD01FB2B6658A6472FCD1D377228EA803FBA39_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m84DD01FB2B6658A6472FCD1D377228EA803FBA39_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.RaycastHit>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m84DD01FB2B6658A6472FCD1D377228EA803FBA39_gshared (Action_1_tD9564038902E921666D3553B1D0CC836506BA577* __this, RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m8B1225F91C0F5DC60033006E3CC24844AD7B4CC2_Multicast(Action_1_tB190FB6312D47E8191741EA92FB16E944FB8422E* __this, RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_tB190FB6312D47E8191741EA92FB16E944FB8422E* currentDelegate = reinterpret_cast<Action_1_tB190FB6312D47E8191741EA92FB16E944FB8422E*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m8B1225F91C0F5DC60033006E3CC24844AD7B4CC2_OpenInst(Action_1_tB190FB6312D47E8191741EA92FB16E944FB8422E* __this, RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m8B1225F91C0F5DC60033006E3CC24844AD7B4CC2_OpenStatic(Action_1_tB190FB6312D47E8191741EA92FB16E944FB8422E* __this, RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m8B1225F91C0F5DC60033006E3CC24844AD7B4CC2_OpenStaticInvoker(Action_1_tB190FB6312D47E8191741EA92FB16E944FB8422E* __this, RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m8B1225F91C0F5DC60033006E3CC24844AD7B4CC2_ClosedStaticInvoker(Action_1_tB190FB6312D47E8191741EA92FB16E944FB8422E* __this, RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.RaycastHit2D>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m0D9B18D5B1BD3FBAE0B793A58BFBA4468A1733FD_gshared (Action_1_tB190FB6312D47E8191741EA92FB16E944FB8422E* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m8B1225F91C0F5DC60033006E3CC24844AD7B4CC2_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m8B1225F91C0F5DC60033006E3CC24844AD7B4CC2_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m8B1225F91C0F5DC60033006E3CC24844AD7B4CC2_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m8B1225F91C0F5DC60033006E3CC24844AD7B4CC2_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.RaycastHit2D>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m8B1225F91C0F5DC60033006E3CC24844AD7B4CC2_gshared (Action_1_tB190FB6312D47E8191741EA92FB16E944FB8422E* __this, RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m8266E5AF67DE65AEE8C922BD63B1B74159F97FBC_Multicast(Action_1_t03385AB239814E9CBE8F8EE1A653171DABEF4738* __this, RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t03385AB239814E9CBE8F8EE1A653171DABEF4738* currentDelegate = reinterpret_cast<Action_1_t03385AB239814E9CBE8F8EE1A653171DABEF4738*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m8266E5AF67DE65AEE8C922BD63B1B74159F97FBC_OpenInst(Action_1_t03385AB239814E9CBE8F8EE1A653171DABEF4738* __this, RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m8266E5AF67DE65AEE8C922BD63B1B74159F97FBC_OpenStatic(Action_1_t03385AB239814E9CBE8F8EE1A653171DABEF4738* __this, RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m8266E5AF67DE65AEE8C922BD63B1B74159F97FBC_OpenStaticInvoker(Action_1_t03385AB239814E9CBE8F8EE1A653171DABEF4738* __this, RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m8266E5AF67DE65AEE8C922BD63B1B74159F97FBC_ClosedStaticInvoker(Action_1_t03385AB239814E9CBE8F8EE1A653171DABEF4738* __this, RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.EventSystems.RaycastResult>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m1E44B47D45048DB4F3DA91859E6EBF3505065C14_gshared (Action_1_t03385AB239814E9CBE8F8EE1A653171DABEF4738* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m8266E5AF67DE65AEE8C922BD63B1B74159F97FBC_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m8266E5AF67DE65AEE8C922BD63B1B74159F97FBC_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m8266E5AF67DE65AEE8C922BD63B1B74159F97FBC_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m8266E5AF67DE65AEE8C922BD63B1B74159F97FBC_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.EventSystems.RaycastResult>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m8266E5AF67DE65AEE8C922BD63B1B74159F97FBC_gshared (Action_1_t03385AB239814E9CBE8F8EE1A653171DABEF4738* __this, RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m832C7E616CA49CAD3758D06DEC4EE30C587D49AF_Multicast(Action_1_t7D7D8AAD5A6C2503AD767CE28606E49F24A77310* __this, RenderChainTextEntry_t3B07A86ED897E1859552D13B1CF046F585CF9D11 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t7D7D8AAD5A6C2503AD767CE28606E49F24A77310* currentDelegate = reinterpret_cast<Action_1_t7D7D8AAD5A6C2503AD767CE28606E49F24A77310*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, RenderChainTextEntry_t3B07A86ED897E1859552D13B1CF046F585CF9D11, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m832C7E616CA49CAD3758D06DEC4EE30C587D49AF_OpenInst(Action_1_t7D7D8AAD5A6C2503AD767CE28606E49F24A77310* __this, RenderChainTextEntry_t3B07A86ED897E1859552D13B1CF046F585CF9D11 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (RenderChainTextEntry_t3B07A86ED897E1859552D13B1CF046F585CF9D11, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m832C7E616CA49CAD3758D06DEC4EE30C587D49AF_OpenStatic(Action_1_t7D7D8AAD5A6C2503AD767CE28606E49F24A77310* __this, RenderChainTextEntry_t3B07A86ED897E1859552D13B1CF046F585CF9D11 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (RenderChainTextEntry_t3B07A86ED897E1859552D13B1CF046F585CF9D11, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m832C7E616CA49CAD3758D06DEC4EE30C587D49AF_OpenStaticInvoker(Action_1_t7D7D8AAD5A6C2503AD767CE28606E49F24A77310* __this, RenderChainTextEntry_t3B07A86ED897E1859552D13B1CF046F585CF9D11 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< RenderChainTextEntry_t3B07A86ED897E1859552D13B1CF046F585CF9D11 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m832C7E616CA49CAD3758D06DEC4EE30C587D49AF_ClosedStaticInvoker(Action_1_t7D7D8AAD5A6C2503AD767CE28606E49F24A77310* __this, RenderChainTextEntry_t3B07A86ED897E1859552D13B1CF046F585CF9D11 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, RenderChainTextEntry_t3B07A86ED897E1859552D13B1CF046F585CF9D11 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.UIElements.UIR.RenderChainTextEntry>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m97C173224209FDC1FFD11FBCEE3B781B178FB2B7_gshared (Action_1_t7D7D8AAD5A6C2503AD767CE28606E49F24A77310* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m832C7E616CA49CAD3758D06DEC4EE30C587D49AF_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m832C7E616CA49CAD3758D06DEC4EE30C587D49AF_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m832C7E616CA49CAD3758D06DEC4EE30C587D49AF_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m832C7E616CA49CAD3758D06DEC4EE30C587D49AF_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.UIElements.UIR.RenderChainTextEntry>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m832C7E616CA49CAD3758D06DEC4EE30C587D49AF_gshared (Action_1_t7D7D8AAD5A6C2503AD767CE28606E49F24A77310* __this, RenderChainTextEntry_t3B07A86ED897E1859552D13B1CF046F585CF9D11 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, RenderChainTextEntry_t3B07A86ED897E1859552D13B1CF046F585CF9D11, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m3D73B757BD40EB65E99F25EE3557756D417617CD_Multicast(Action_1_tB5BD5F83968E0055E0F2474D44E0F203D1396193* __this, RendererList_t84DD8775E9B0759757DE88FBCB50A06A7C80D20E ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_tB5BD5F83968E0055E0F2474D44E0F203D1396193* currentDelegate = reinterpret_cast<Action_1_tB5BD5F83968E0055E0F2474D44E0F203D1396193*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, RendererList_t84DD8775E9B0759757DE88FBCB50A06A7C80D20E, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m3D73B757BD40EB65E99F25EE3557756D417617CD_OpenInst(Action_1_tB5BD5F83968E0055E0F2474D44E0F203D1396193* __this, RendererList_t84DD8775E9B0759757DE88FBCB50A06A7C80D20E ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (RendererList_t84DD8775E9B0759757DE88FBCB50A06A7C80D20E, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m3D73B757BD40EB65E99F25EE3557756D417617CD_OpenStatic(Action_1_tB5BD5F83968E0055E0F2474D44E0F203D1396193* __this, RendererList_t84DD8775E9B0759757DE88FBCB50A06A7C80D20E ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (RendererList_t84DD8775E9B0759757DE88FBCB50A06A7C80D20E, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m3D73B757BD40EB65E99F25EE3557756D417617CD_OpenStaticInvoker(Action_1_tB5BD5F83968E0055E0F2474D44E0F203D1396193* __this, RendererList_t84DD8775E9B0759757DE88FBCB50A06A7C80D20E ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< RendererList_t84DD8775E9B0759757DE88FBCB50A06A7C80D20E >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m3D73B757BD40EB65E99F25EE3557756D417617CD_ClosedStaticInvoker(Action_1_tB5BD5F83968E0055E0F2474D44E0F203D1396193* __this, RendererList_t84DD8775E9B0759757DE88FBCB50A06A7C80D20E ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, RendererList_t84DD8775E9B0759757DE88FBCB50A06A7C80D20E >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.Rendering.RendererUtils.RendererList>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mE09FE1CFE171869D12715492B68D35E348C328DC_gshared (Action_1_tB5BD5F83968E0055E0F2474D44E0F203D1396193* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m3D73B757BD40EB65E99F25EE3557756D417617CD_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m3D73B757BD40EB65E99F25EE3557756D417617CD_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m3D73B757BD40EB65E99F25EE3557756D417617CD_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m3D73B757BD40EB65E99F25EE3557756D417617CD_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.Rendering.RendererUtils.RendererList>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m3D73B757BD40EB65E99F25EE3557756D417617CD_gshared (Action_1_tB5BD5F83968E0055E0F2474D44E0F203D1396193* __this, RendererList_t84DD8775E9B0759757DE88FBCB50A06A7C80D20E ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, RendererList_t84DD8775E9B0759757DE88FBCB50A06A7C80D20E, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m4870A7505640D085BEFB240188F3D8B09041335E_Multicast(Action_1_t93D9ECEA7055ECFE152198CB2BD3C91F0A54B4BF* __this, RendererListHandle_t21AFDDE69B0048546497B890088B880F8080C62D ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t93D9ECEA7055ECFE152198CB2BD3C91F0A54B4BF* currentDelegate = reinterpret_cast<Action_1_t93D9ECEA7055ECFE152198CB2BD3C91F0A54B4BF*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, RendererListHandle_t21AFDDE69B0048546497B890088B880F8080C62D, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m4870A7505640D085BEFB240188F3D8B09041335E_OpenInst(Action_1_t93D9ECEA7055ECFE152198CB2BD3C91F0A54B4BF* __this, RendererListHandle_t21AFDDE69B0048546497B890088B880F8080C62D ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (RendererListHandle_t21AFDDE69B0048546497B890088B880F8080C62D, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m4870A7505640D085BEFB240188F3D8B09041335E_OpenStatic(Action_1_t93D9ECEA7055ECFE152198CB2BD3C91F0A54B4BF* __this, RendererListHandle_t21AFDDE69B0048546497B890088B880F8080C62D ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (RendererListHandle_t21AFDDE69B0048546497B890088B880F8080C62D, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m4870A7505640D085BEFB240188F3D8B09041335E_OpenStaticInvoker(Action_1_t93D9ECEA7055ECFE152198CB2BD3C91F0A54B4BF* __this, RendererListHandle_t21AFDDE69B0048546497B890088B880F8080C62D ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< RendererListHandle_t21AFDDE69B0048546497B890088B880F8080C62D >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m4870A7505640D085BEFB240188F3D8B09041335E_ClosedStaticInvoker(Action_1_t93D9ECEA7055ECFE152198CB2BD3C91F0A54B4BF* __this, RendererListHandle_t21AFDDE69B0048546497B890088B880F8080C62D ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, RendererListHandle_t21AFDDE69B0048546497B890088B880F8080C62D >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.Experimental.Rendering.RenderGraphModule.RendererListHandle>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mED1A70552A5F1D40CDE7AB6BD6E598703A57604E_gshared (Action_1_t93D9ECEA7055ECFE152198CB2BD3C91F0A54B4BF* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m4870A7505640D085BEFB240188F3D8B09041335E_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m4870A7505640D085BEFB240188F3D8B09041335E_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m4870A7505640D085BEFB240188F3D8B09041335E_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m4870A7505640D085BEFB240188F3D8B09041335E_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.Experimental.Rendering.RenderGraphModule.RendererListHandle>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m4870A7505640D085BEFB240188F3D8B09041335E_gshared (Action_1_t93D9ECEA7055ECFE152198CB2BD3C91F0A54B4BF* __this, RendererListHandle_t21AFDDE69B0048546497B890088B880F8080C62D ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, RendererListHandle_t21AFDDE69B0048546497B890088B880F8080C62D, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_mB47CFC850A1A54A6B71464B5387D1718116F2C21_Multicast(Action_1_t1953259FFC626CB4D1EB46D608F3222477CCA6D7* __this, ResourceHandle_t0B9B0555328A08152F1EDA2BE4024446D670531A ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t1953259FFC626CB4D1EB46D608F3222477CCA6D7* currentDelegate = reinterpret_cast<Action_1_t1953259FFC626CB4D1EB46D608F3222477CCA6D7*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, ResourceHandle_t0B9B0555328A08152F1EDA2BE4024446D670531A, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_mB47CFC850A1A54A6B71464B5387D1718116F2C21_OpenInst(Action_1_t1953259FFC626CB4D1EB46D608F3222477CCA6D7* __this, ResourceHandle_t0B9B0555328A08152F1EDA2BE4024446D670531A ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (ResourceHandle_t0B9B0555328A08152F1EDA2BE4024446D670531A, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mB47CFC850A1A54A6B71464B5387D1718116F2C21_OpenStatic(Action_1_t1953259FFC626CB4D1EB46D608F3222477CCA6D7* __this, ResourceHandle_t0B9B0555328A08152F1EDA2BE4024446D670531A ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (ResourceHandle_t0B9B0555328A08152F1EDA2BE4024446D670531A, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mB47CFC850A1A54A6B71464B5387D1718116F2C21_OpenStaticInvoker(Action_1_t1953259FFC626CB4D1EB46D608F3222477CCA6D7* __this, ResourceHandle_t0B9B0555328A08152F1EDA2BE4024446D670531A ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< ResourceHandle_t0B9B0555328A08152F1EDA2BE4024446D670531A >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_mB47CFC850A1A54A6B71464B5387D1718116F2C21_ClosedStaticInvoker(Action_1_t1953259FFC626CB4D1EB46D608F3222477CCA6D7* __this, ResourceHandle_t0B9B0555328A08152F1EDA2BE4024446D670531A ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, ResourceHandle_t0B9B0555328A08152F1EDA2BE4024446D670531A >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.Experimental.Rendering.RenderGraphModule.ResourceHandle>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m9513386E002DE49EE9FCB8D5FCB85AE876852AE5_gshared (Action_1_t1953259FFC626CB4D1EB46D608F3222477CCA6D7* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mB47CFC850A1A54A6B71464B5387D1718116F2C21_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mB47CFC850A1A54A6B71464B5387D1718116F2C21_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mB47CFC850A1A54A6B71464B5387D1718116F2C21_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_mB47CFC850A1A54A6B71464B5387D1718116F2C21_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.Experimental.Rendering.RenderGraphModule.ResourceHandle>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mB47CFC850A1A54A6B71464B5387D1718116F2C21_gshared (Action_1_t1953259FFC626CB4D1EB46D608F3222477CCA6D7* __this, ResourceHandle_t0B9B0555328A08152F1EDA2BE4024446D670531A ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, ResourceHandle_t0B9B0555328A08152F1EDA2BE4024446D670531A, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m02274FB3E1E2B735EBF943DA01B340C7B6B8CF83_Multicast(Action_1_tB0037EB63A784B363B381F64BD4D0E1EB6D88FD6* __this, RuleMatcher_t327CFEB02C81AA20E639DE949DCBBAB5E92FF28E ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_tB0037EB63A784B363B381F64BD4D0E1EB6D88FD6* currentDelegate = reinterpret_cast<Action_1_tB0037EB63A784B363B381F64BD4D0E1EB6D88FD6*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, RuleMatcher_t327CFEB02C81AA20E639DE949DCBBAB5E92FF28E, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m02274FB3E1E2B735EBF943DA01B340C7B6B8CF83_OpenInst(Action_1_tB0037EB63A784B363B381F64BD4D0E1EB6D88FD6* __this, RuleMatcher_t327CFEB02C81AA20E639DE949DCBBAB5E92FF28E ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (RuleMatcher_t327CFEB02C81AA20E639DE949DCBBAB5E92FF28E, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m02274FB3E1E2B735EBF943DA01B340C7B6B8CF83_OpenStatic(Action_1_tB0037EB63A784B363B381F64BD4D0E1EB6D88FD6* __this, RuleMatcher_t327CFEB02C81AA20E639DE949DCBBAB5E92FF28E ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (RuleMatcher_t327CFEB02C81AA20E639DE949DCBBAB5E92FF28E, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m02274FB3E1E2B735EBF943DA01B340C7B6B8CF83_OpenStaticInvoker(Action_1_tB0037EB63A784B363B381F64BD4D0E1EB6D88FD6* __this, RuleMatcher_t327CFEB02C81AA20E639DE949DCBBAB5E92FF28E ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< RuleMatcher_t327CFEB02C81AA20E639DE949DCBBAB5E92FF28E >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m02274FB3E1E2B735EBF943DA01B340C7B6B8CF83_ClosedStaticInvoker(Action_1_tB0037EB63A784B363B381F64BD4D0E1EB6D88FD6* __this, RuleMatcher_t327CFEB02C81AA20E639DE949DCBBAB5E92FF28E ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, RuleMatcher_t327CFEB02C81AA20E639DE949DCBBAB5E92FF28E >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.UIElements.RuleMatcher>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m48F2665785D80309EB32857A176BEBFFF6191FD8_gshared (Action_1_tB0037EB63A784B363B381F64BD4D0E1EB6D88FD6* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m02274FB3E1E2B735EBF943DA01B340C7B6B8CF83_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m02274FB3E1E2B735EBF943DA01B340C7B6B8CF83_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m02274FB3E1E2B735EBF943DA01B340C7B6B8CF83_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m02274FB3E1E2B735EBF943DA01B340C7B6B8CF83_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.UIElements.RuleMatcher>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m02274FB3E1E2B735EBF943DA01B340C7B6B8CF83_gshared (Action_1_tB0037EB63A784B363B381F64BD4D0E1EB6D88FD6* __this, RuleMatcher_t327CFEB02C81AA20E639DE949DCBBAB5E92FF28E ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, RuleMatcher_t327CFEB02C81AA20E639DE949DCBBAB5E92FF28E, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m6B2D1082803A5D82DD36A34D9127E57C7AFCC5FC_Multicast(Action_1_t9544EB93A9EF3B557A4A37F89E5E5CDF670EDF3A* __this, int8_t ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t9544EB93A9EF3B557A4A37F89E5E5CDF670EDF3A* currentDelegate = reinterpret_cast<Action_1_t9544EB93A9EF3B557A4A37F89E5E5CDF670EDF3A*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, int8_t, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m6B2D1082803A5D82DD36A34D9127E57C7AFCC5FC_OpenInst(Action_1_t9544EB93A9EF3B557A4A37F89E5E5CDF670EDF3A* __this, int8_t ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (int8_t, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m6B2D1082803A5D82DD36A34D9127E57C7AFCC5FC_OpenStatic(Action_1_t9544EB93A9EF3B557A4A37F89E5E5CDF670EDF3A* __this, int8_t ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (int8_t, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m6B2D1082803A5D82DD36A34D9127E57C7AFCC5FC_OpenStaticInvoker(Action_1_t9544EB93A9EF3B557A4A37F89E5E5CDF670EDF3A* __this, int8_t ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< int8_t >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m6B2D1082803A5D82DD36A34D9127E57C7AFCC5FC_ClosedStaticInvoker(Action_1_t9544EB93A9EF3B557A4A37F89E5E5CDF670EDF3A* __this, int8_t ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, int8_t >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<System.SByte>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m531AB3526C90BBF207410B137C34517D80F069EE_gshared (Action_1_t9544EB93A9EF3B557A4A37F89E5E5CDF670EDF3A* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m6B2D1082803A5D82DD36A34D9127E57C7AFCC5FC_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m6B2D1082803A5D82DD36A34D9127E57C7AFCC5FC_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m6B2D1082803A5D82DD36A34D9127E57C7AFCC5FC_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m6B2D1082803A5D82DD36A34D9127E57C7AFCC5FC_Multicast;
-}
-// System.Void System.Action`1<System.SByte>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m6B2D1082803A5D82DD36A34D9127E57C7AFCC5FC_gshared (Action_1_t9544EB93A9EF3B557A4A37F89E5E5CDF670EDF3A* __this, int8_t ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, int8_t, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m2A7ED0C3F773820791EAA34BC86B24745CABB081_Multicast(Action_1_t92C5FDA781FC11766BA810CAA0C836E80A7FFE4C* __this, SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t92C5FDA781FC11766BA810CAA0C836E80A7FFE4C* currentDelegate = reinterpret_cast<Action_1_t92C5FDA781FC11766BA810CAA0C836E80A7FFE4C*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m2A7ED0C3F773820791EAA34BC86B24745CABB081_OpenInst(Action_1_t92C5FDA781FC11766BA810CAA0C836E80A7FFE4C* __this, SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m2A7ED0C3F773820791EAA34BC86B24745CABB081_OpenStatic(Action_1_t92C5FDA781FC11766BA810CAA0C836E80A7FFE4C* __this, SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m2A7ED0C3F773820791EAA34BC86B24745CABB081_OpenStaticInvoker(Action_1_t92C5FDA781FC11766BA810CAA0C836E80A7FFE4C* __this, SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m2A7ED0C3F773820791EAA34BC86B24745CABB081_ClosedStaticInvoker(Action_1_t92C5FDA781FC11766BA810CAA0C836E80A7FFE4C* __this, SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.UIElements.StyleSheets.SelectorMatchRecord>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mEE72BC5A026CCBD288B219E577DFF4DC8E2B52BC_gshared (Action_1_t92C5FDA781FC11766BA810CAA0C836E80A7FFE4C* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m2A7ED0C3F773820791EAA34BC86B24745CABB081_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m2A7ED0C3F773820791EAA34BC86B24745CABB081_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m2A7ED0C3F773820791EAA34BC86B24745CABB081_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m2A7ED0C3F773820791EAA34BC86B24745CABB081_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.UIElements.StyleSheets.SelectorMatchRecord>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m2A7ED0C3F773820791EAA34BC86B24745CABB081_gshared (Action_1_t92C5FDA781FC11766BA810CAA0C836E80A7FFE4C* __this, SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_mA8F89FB04FEA0F48A4F22EC84B5F9ADB2914341F_Multicast(Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* __this, float ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* currentDelegate = reinterpret_cast<Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, float, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_mA8F89FB04FEA0F48A4F22EC84B5F9ADB2914341F_OpenInst(Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* __this, float ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (float, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mA8F89FB04FEA0F48A4F22EC84B5F9ADB2914341F_OpenStatic(Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* __this, float ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (float, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mA8F89FB04FEA0F48A4F22EC84B5F9ADB2914341F_OpenStaticInvoker(Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* __this, float ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< float >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_mA8F89FB04FEA0F48A4F22EC84B5F9ADB2914341F_ClosedStaticInvoker(Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* __this, float ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, float >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<System.Single>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m770CD2F8BB65F2EDA5128CA2F96D71C35B23E859_gshared (Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mA8F89FB04FEA0F48A4F22EC84B5F9ADB2914341F_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mA8F89FB04FEA0F48A4F22EC84B5F9ADB2914341F_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mA8F89FB04FEA0F48A4F22EC84B5F9ADB2914341F_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_mA8F89FB04FEA0F48A4F22EC84B5F9ADB2914341F_Multicast;
-}
-// System.Void System.Action`1<System.Single>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mA8F89FB04FEA0F48A4F22EC84B5F9ADB2914341F_gshared (Action_1_t310F18CB4338A2740CA701F160C62E2C3198E66A* __this, float ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, float, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m1BF4E87C0D9A4EFB9417D23A61A97D3A6BEDE2B6_Multicast(Action_1_t3104132B6015C879F4B3C59428F1B9C5DAAE0FD3* __this, StylePropertyName_tCBE2B561C690538C8514BF56426AC486DC35B6FF ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t3104132B6015C879F4B3C59428F1B9C5DAAE0FD3* currentDelegate = reinterpret_cast<Action_1_t3104132B6015C879F4B3C59428F1B9C5DAAE0FD3*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, StylePropertyName_tCBE2B561C690538C8514BF56426AC486DC35B6FF, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m1BF4E87C0D9A4EFB9417D23A61A97D3A6BEDE2B6_OpenInst(Action_1_t3104132B6015C879F4B3C59428F1B9C5DAAE0FD3* __this, StylePropertyName_tCBE2B561C690538C8514BF56426AC486DC35B6FF ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (StylePropertyName_tCBE2B561C690538C8514BF56426AC486DC35B6FF, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m1BF4E87C0D9A4EFB9417D23A61A97D3A6BEDE2B6_OpenStatic(Action_1_t3104132B6015C879F4B3C59428F1B9C5DAAE0FD3* __this, StylePropertyName_tCBE2B561C690538C8514BF56426AC486DC35B6FF ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (StylePropertyName_tCBE2B561C690538C8514BF56426AC486DC35B6FF, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m1BF4E87C0D9A4EFB9417D23A61A97D3A6BEDE2B6_OpenStaticInvoker(Action_1_t3104132B6015C879F4B3C59428F1B9C5DAAE0FD3* __this, StylePropertyName_tCBE2B561C690538C8514BF56426AC486DC35B6FF ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< StylePropertyName_tCBE2B561C690538C8514BF56426AC486DC35B6FF >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m1BF4E87C0D9A4EFB9417D23A61A97D3A6BEDE2B6_ClosedStaticInvoker(Action_1_t3104132B6015C879F4B3C59428F1B9C5DAAE0FD3* __this, StylePropertyName_tCBE2B561C690538C8514BF56426AC486DC35B6FF ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, StylePropertyName_tCBE2B561C690538C8514BF56426AC486DC35B6FF >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.UIElements.StylePropertyName>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mD08F7B98323967E94C8ACB7850CAF37133F26FC9_gshared (Action_1_t3104132B6015C879F4B3C59428F1B9C5DAAE0FD3* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m1BF4E87C0D9A4EFB9417D23A61A97D3A6BEDE2B6_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m1BF4E87C0D9A4EFB9417D23A61A97D3A6BEDE2B6_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m1BF4E87C0D9A4EFB9417D23A61A97D3A6BEDE2B6_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m1BF4E87C0D9A4EFB9417D23A61A97D3A6BEDE2B6_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.UIElements.StylePropertyName>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m1BF4E87C0D9A4EFB9417D23A61A97D3A6BEDE2B6_gshared (Action_1_t3104132B6015C879F4B3C59428F1B9C5DAAE0FD3* __this, StylePropertyName_tCBE2B561C690538C8514BF56426AC486DC35B6FF ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, StylePropertyName_tCBE2B561C690538C8514BF56426AC486DC35B6FF, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m936CB7A542E770E4B2625BA4C429C05C2A762939_Multicast(Action_1_t01BBD70132EC9C777FD7A1202C563EB8CF818918* __this, StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t01BBD70132EC9C777FD7A1202C563EB8CF818918* currentDelegate = reinterpret_cast<Action_1_t01BBD70132EC9C777FD7A1202C563EB8CF818918*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m936CB7A542E770E4B2625BA4C429C05C2A762939_OpenInst(Action_1_t01BBD70132EC9C777FD7A1202C563EB8CF818918* __this, StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m936CB7A542E770E4B2625BA4C429C05C2A762939_OpenStatic(Action_1_t01BBD70132EC9C777FD7A1202C563EB8CF818918* __this, StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m936CB7A542E770E4B2625BA4C429C05C2A762939_OpenStaticInvoker(Action_1_t01BBD70132EC9C777FD7A1202C563EB8CF818918* __this, StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m936CB7A542E770E4B2625BA4C429C05C2A762939_ClosedStaticInvoker(Action_1_t01BBD70132EC9C777FD7A1202C563EB8CF818918* __this, StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.UIElements.StyleSheets.StylePropertyValue>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mC977E7AB188956F87BE7C9E946CE38882D2F9756_gshared (Action_1_t01BBD70132EC9C777FD7A1202C563EB8CF818918* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m936CB7A542E770E4B2625BA4C429C05C2A762939_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m936CB7A542E770E4B2625BA4C429C05C2A762939_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m936CB7A542E770E4B2625BA4C429C05C2A762939_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m936CB7A542E770E4B2625BA4C429C05C2A762939_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.UIElements.StyleSheets.StylePropertyValue>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m936CB7A542E770E4B2625BA4C429C05C2A762939_gshared (Action_1_t01BBD70132EC9C777FD7A1202C563EB8CF818918* __this, StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_mE8C576C0A5C5A5C381770DBEDC59B0903EF3A764_Multicast(Action_1_t6D5F08ECE8E1419CFB2D849F9D5BFA0EEA07B0D7* __this, StyleSelectorPart_tEE5B8ADC7D114C7486CC8301FF96C114FF3C9470 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t6D5F08ECE8E1419CFB2D849F9D5BFA0EEA07B0D7* currentDelegate = reinterpret_cast<Action_1_t6D5F08ECE8E1419CFB2D849F9D5BFA0EEA07B0D7*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, StyleSelectorPart_tEE5B8ADC7D114C7486CC8301FF96C114FF3C9470, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_mE8C576C0A5C5A5C381770DBEDC59B0903EF3A764_OpenInst(Action_1_t6D5F08ECE8E1419CFB2D849F9D5BFA0EEA07B0D7* __this, StyleSelectorPart_tEE5B8ADC7D114C7486CC8301FF96C114FF3C9470 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (StyleSelectorPart_tEE5B8ADC7D114C7486CC8301FF96C114FF3C9470, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mE8C576C0A5C5A5C381770DBEDC59B0903EF3A764_OpenStatic(Action_1_t6D5F08ECE8E1419CFB2D849F9D5BFA0EEA07B0D7* __this, StyleSelectorPart_tEE5B8ADC7D114C7486CC8301FF96C114FF3C9470 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (StyleSelectorPart_tEE5B8ADC7D114C7486CC8301FF96C114FF3C9470, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mE8C576C0A5C5A5C381770DBEDC59B0903EF3A764_OpenStaticInvoker(Action_1_t6D5F08ECE8E1419CFB2D849F9D5BFA0EEA07B0D7* __this, StyleSelectorPart_tEE5B8ADC7D114C7486CC8301FF96C114FF3C9470 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< StyleSelectorPart_tEE5B8ADC7D114C7486CC8301FF96C114FF3C9470 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_mE8C576C0A5C5A5C381770DBEDC59B0903EF3A764_ClosedStaticInvoker(Action_1_t6D5F08ECE8E1419CFB2D849F9D5BFA0EEA07B0D7* __this, StyleSelectorPart_tEE5B8ADC7D114C7486CC8301FF96C114FF3C9470 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, StyleSelectorPart_tEE5B8ADC7D114C7486CC8301FF96C114FF3C9470 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.UIElements.StyleSelectorPart>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mE0F819668A27C4B10312D24ED0BE341359FEC0B5_gshared (Action_1_t6D5F08ECE8E1419CFB2D849F9D5BFA0EEA07B0D7* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mE8C576C0A5C5A5C381770DBEDC59B0903EF3A764_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mE8C576C0A5C5A5C381770DBEDC59B0903EF3A764_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mE8C576C0A5C5A5C381770DBEDC59B0903EF3A764_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_mE8C576C0A5C5A5C381770DBEDC59B0903EF3A764_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.UIElements.StyleSelectorPart>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mE8C576C0A5C5A5C381770DBEDC59B0903EF3A764_gshared (Action_1_t6D5F08ECE8E1419CFB2D849F9D5BFA0EEA07B0D7* __this, StyleSelectorPart_tEE5B8ADC7D114C7486CC8301FF96C114FF3C9470 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, StyleSelectorPart_tEE5B8ADC7D114C7486CC8301FF96C114FF3C9470, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_mC802EB20C3B210A35DBF5206E06C93F77F436B9A_Multicast(Action_1_t0017BECCF03CD9F57758F6E00F11467544CAA765* __this, StyleSyntaxToken_tE4474F86F800F298F966FFDE947528453E769E0C ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t0017BECCF03CD9F57758F6E00F11467544CAA765* currentDelegate = reinterpret_cast<Action_1_t0017BECCF03CD9F57758F6E00F11467544CAA765*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, StyleSyntaxToken_tE4474F86F800F298F966FFDE947528453E769E0C, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_mC802EB20C3B210A35DBF5206E06C93F77F436B9A_OpenInst(Action_1_t0017BECCF03CD9F57758F6E00F11467544CAA765* __this, StyleSyntaxToken_tE4474F86F800F298F966FFDE947528453E769E0C ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (StyleSyntaxToken_tE4474F86F800F298F966FFDE947528453E769E0C, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mC802EB20C3B210A35DBF5206E06C93F77F436B9A_OpenStatic(Action_1_t0017BECCF03CD9F57758F6E00F11467544CAA765* __this, StyleSyntaxToken_tE4474F86F800F298F966FFDE947528453E769E0C ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (StyleSyntaxToken_tE4474F86F800F298F966FFDE947528453E769E0C, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mC802EB20C3B210A35DBF5206E06C93F77F436B9A_OpenStaticInvoker(Action_1_t0017BECCF03CD9F57758F6E00F11467544CAA765* __this, StyleSyntaxToken_tE4474F86F800F298F966FFDE947528453E769E0C ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< StyleSyntaxToken_tE4474F86F800F298F966FFDE947528453E769E0C >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_mC802EB20C3B210A35DBF5206E06C93F77F436B9A_ClosedStaticInvoker(Action_1_t0017BECCF03CD9F57758F6E00F11467544CAA765* __this, StyleSyntaxToken_tE4474F86F800F298F966FFDE947528453E769E0C ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, StyleSyntaxToken_tE4474F86F800F298F966FFDE947528453E769E0C >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.UIElements.StyleSheets.Syntax.StyleSyntaxToken>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m7B06CBB7A4B5937E760BCCFCDB03E8756C8EF050_gshared (Action_1_t0017BECCF03CD9F57758F6E00F11467544CAA765* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mC802EB20C3B210A35DBF5206E06C93F77F436B9A_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mC802EB20C3B210A35DBF5206E06C93F77F436B9A_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mC802EB20C3B210A35DBF5206E06C93F77F436B9A_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_mC802EB20C3B210A35DBF5206E06C93F77F436B9A_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.UIElements.StyleSheets.Syntax.StyleSyntaxToken>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mC802EB20C3B210A35DBF5206E06C93F77F436B9A_gshared (Action_1_t0017BECCF03CD9F57758F6E00F11467544CAA765* __this, StyleSyntaxToken_tE4474F86F800F298F966FFDE947528453E769E0C ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, StyleSyntaxToken_tE4474F86F800F298F966FFDE947528453E769E0C, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m637589E5389D447FA565243E701F9638FF379444_Multicast(Action_1_t8FDB42FA0057B33A522A9A961AFB57C008636F27* __this, StyleValue_t56307594EC04E04EFBCC3220595B4AAD66FF93C5 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t8FDB42FA0057B33A522A9A961AFB57C008636F27* currentDelegate = reinterpret_cast<Action_1_t8FDB42FA0057B33A522A9A961AFB57C008636F27*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, StyleValue_t56307594EC04E04EFBCC3220595B4AAD66FF93C5, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m637589E5389D447FA565243E701F9638FF379444_OpenInst(Action_1_t8FDB42FA0057B33A522A9A961AFB57C008636F27* __this, StyleValue_t56307594EC04E04EFBCC3220595B4AAD66FF93C5 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (StyleValue_t56307594EC04E04EFBCC3220595B4AAD66FF93C5, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m637589E5389D447FA565243E701F9638FF379444_OpenStatic(Action_1_t8FDB42FA0057B33A522A9A961AFB57C008636F27* __this, StyleValue_t56307594EC04E04EFBCC3220595B4AAD66FF93C5 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (StyleValue_t56307594EC04E04EFBCC3220595B4AAD66FF93C5, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m637589E5389D447FA565243E701F9638FF379444_OpenStaticInvoker(Action_1_t8FDB42FA0057B33A522A9A961AFB57C008636F27* __this, StyleValue_t56307594EC04E04EFBCC3220595B4AAD66FF93C5 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< StyleValue_t56307594EC04E04EFBCC3220595B4AAD66FF93C5 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m637589E5389D447FA565243E701F9638FF379444_ClosedStaticInvoker(Action_1_t8FDB42FA0057B33A522A9A961AFB57C008636F27* __this, StyleValue_t56307594EC04E04EFBCC3220595B4AAD66FF93C5 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, StyleValue_t56307594EC04E04EFBCC3220595B4AAD66FF93C5 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.UIElements.StyleSheets.StyleValue>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m5362F98E307312D1CD97CDEB3536AA2956836B60_gshared (Action_1_t8FDB42FA0057B33A522A9A961AFB57C008636F27* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m637589E5389D447FA565243E701F9638FF379444_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m637589E5389D447FA565243E701F9638FF379444_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m637589E5389D447FA565243E701F9638FF379444_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m637589E5389D447FA565243E701F9638FF379444_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.UIElements.StyleSheets.StyleValue>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m637589E5389D447FA565243E701F9638FF379444_gshared (Action_1_t8FDB42FA0057B33A522A9A961AFB57C008636F27* __this, StyleValue_t56307594EC04E04EFBCC3220595B4AAD66FF93C5 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, StyleValue_t56307594EC04E04EFBCC3220595B4AAD66FF93C5, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m62FE2AECA5BB4F077CF09F1690A2494515D14FCB_Multicast(Action_1_t701048A3F596A40A59BF140B250A3AD5305BEC5C* __this, StyleValueManaged_t68DFBEC1594279E4DC56634FD5092318D1E9A5F4 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t701048A3F596A40A59BF140B250A3AD5305BEC5C* currentDelegate = reinterpret_cast<Action_1_t701048A3F596A40A59BF140B250A3AD5305BEC5C*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, StyleValueManaged_t68DFBEC1594279E4DC56634FD5092318D1E9A5F4, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m62FE2AECA5BB4F077CF09F1690A2494515D14FCB_OpenInst(Action_1_t701048A3F596A40A59BF140B250A3AD5305BEC5C* __this, StyleValueManaged_t68DFBEC1594279E4DC56634FD5092318D1E9A5F4 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (StyleValueManaged_t68DFBEC1594279E4DC56634FD5092318D1E9A5F4, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m62FE2AECA5BB4F077CF09F1690A2494515D14FCB_OpenStatic(Action_1_t701048A3F596A40A59BF140B250A3AD5305BEC5C* __this, StyleValueManaged_t68DFBEC1594279E4DC56634FD5092318D1E9A5F4 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (StyleValueManaged_t68DFBEC1594279E4DC56634FD5092318D1E9A5F4, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m62FE2AECA5BB4F077CF09F1690A2494515D14FCB_OpenStaticInvoker(Action_1_t701048A3F596A40A59BF140B250A3AD5305BEC5C* __this, StyleValueManaged_t68DFBEC1594279E4DC56634FD5092318D1E9A5F4 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< StyleValueManaged_t68DFBEC1594279E4DC56634FD5092318D1E9A5F4 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m62FE2AECA5BB4F077CF09F1690A2494515D14FCB_ClosedStaticInvoker(Action_1_t701048A3F596A40A59BF140B250A3AD5305BEC5C* __this, StyleValueManaged_t68DFBEC1594279E4DC56634FD5092318D1E9A5F4 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, StyleValueManaged_t68DFBEC1594279E4DC56634FD5092318D1E9A5F4 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.UIElements.StyleSheets.StyleValueManaged>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m98D31D6E7A7F08E8A9856D7556E8C425E7FD3996_gshared (Action_1_t701048A3F596A40A59BF140B250A3AD5305BEC5C* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m62FE2AECA5BB4F077CF09F1690A2494515D14FCB_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m62FE2AECA5BB4F077CF09F1690A2494515D14FCB_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m62FE2AECA5BB4F077CF09F1690A2494515D14FCB_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m62FE2AECA5BB4F077CF09F1690A2494515D14FCB_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.UIElements.StyleSheets.StyleValueManaged>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m62FE2AECA5BB4F077CF09F1690A2494515D14FCB_gshared (Action_1_t701048A3F596A40A59BF140B250A3AD5305BEC5C* __this, StyleValueManaged_t68DFBEC1594279E4DC56634FD5092318D1E9A5F4 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, StyleValueManaged_t68DFBEC1594279E4DC56634FD5092318D1E9A5F4, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m048E1AA7D9775F7754F77E7CFB9C83DF2D890436_Multicast(Action_1_t473E1FC7B10AE23DF991B9F7A0798DA7743C7F49* __this, StyleVariable_t5D4DEC936102A13961F4F2C6214B83D6CDC56269 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t473E1FC7B10AE23DF991B9F7A0798DA7743C7F49* currentDelegate = reinterpret_cast<Action_1_t473E1FC7B10AE23DF991B9F7A0798DA7743C7F49*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, StyleVariable_t5D4DEC936102A13961F4F2C6214B83D6CDC56269, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m048E1AA7D9775F7754F77E7CFB9C83DF2D890436_OpenInst(Action_1_t473E1FC7B10AE23DF991B9F7A0798DA7743C7F49* __this, StyleVariable_t5D4DEC936102A13961F4F2C6214B83D6CDC56269 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (StyleVariable_t5D4DEC936102A13961F4F2C6214B83D6CDC56269, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m048E1AA7D9775F7754F77E7CFB9C83DF2D890436_OpenStatic(Action_1_t473E1FC7B10AE23DF991B9F7A0798DA7743C7F49* __this, StyleVariable_t5D4DEC936102A13961F4F2C6214B83D6CDC56269 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (StyleVariable_t5D4DEC936102A13961F4F2C6214B83D6CDC56269, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m048E1AA7D9775F7754F77E7CFB9C83DF2D890436_OpenStaticInvoker(Action_1_t473E1FC7B10AE23DF991B9F7A0798DA7743C7F49* __this, StyleVariable_t5D4DEC936102A13961F4F2C6214B83D6CDC56269 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< StyleVariable_t5D4DEC936102A13961F4F2C6214B83D6CDC56269 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m048E1AA7D9775F7754F77E7CFB9C83DF2D890436_ClosedStaticInvoker(Action_1_t473E1FC7B10AE23DF991B9F7A0798DA7743C7F49* __this, StyleVariable_t5D4DEC936102A13961F4F2C6214B83D6CDC56269 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, StyleVariable_t5D4DEC936102A13961F4F2C6214B83D6CDC56269 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.UIElements.StyleVariable>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m200723AE6002DABC56CA6C151F694E29790C428A_gshared (Action_1_t473E1FC7B10AE23DF991B9F7A0798DA7743C7F49* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m048E1AA7D9775F7754F77E7CFB9C83DF2D890436_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m048E1AA7D9775F7754F77E7CFB9C83DF2D890436_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m048E1AA7D9775F7754F77E7CFB9C83DF2D890436_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m048E1AA7D9775F7754F77E7CFB9C83DF2D890436_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.UIElements.StyleVariable>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m048E1AA7D9775F7754F77E7CFB9C83DF2D890436_gshared (Action_1_t473E1FC7B10AE23DF991B9F7A0798DA7743C7F49* __this, StyleVariable_t5D4DEC936102A13961F4F2C6214B83D6CDC56269 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, StyleVariable_t5D4DEC936102A13961F4F2C6214B83D6CDC56269, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m84AF6E3EF16EB2FD449332B35ACAD2A95328E0EA_Multicast(Action_1_t81C1E63293911894C4354C6E1293F63A5D512D4D* __this, Substring_t2E16755269E6716C22074D6BC0A9099915E67849 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t81C1E63293911894C4354C6E1293F63A5D512D4D* currentDelegate = reinterpret_cast<Action_1_t81C1E63293911894C4354C6E1293F63A5D512D4D*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, Substring_t2E16755269E6716C22074D6BC0A9099915E67849, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m84AF6E3EF16EB2FD449332B35ACAD2A95328E0EA_OpenInst(Action_1_t81C1E63293911894C4354C6E1293F63A5D512D4D* __this, Substring_t2E16755269E6716C22074D6BC0A9099915E67849 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (Substring_t2E16755269E6716C22074D6BC0A9099915E67849, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m84AF6E3EF16EB2FD449332B35ACAD2A95328E0EA_OpenStatic(Action_1_t81C1E63293911894C4354C6E1293F63A5D512D4D* __this, Substring_t2E16755269E6716C22074D6BC0A9099915E67849 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (Substring_t2E16755269E6716C22074D6BC0A9099915E67849, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m84AF6E3EF16EB2FD449332B35ACAD2A95328E0EA_OpenStaticInvoker(Action_1_t81C1E63293911894C4354C6E1293F63A5D512D4D* __this, Substring_t2E16755269E6716C22074D6BC0A9099915E67849 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< Substring_t2E16755269E6716C22074D6BC0A9099915E67849 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m84AF6E3EF16EB2FD449332B35ACAD2A95328E0EA_ClosedStaticInvoker(Action_1_t81C1E63293911894C4354C6E1293F63A5D512D4D* __this, Substring_t2E16755269E6716C22074D6BC0A9099915E67849 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, Substring_t2E16755269E6716C22074D6BC0A9099915E67849 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.InputSystem.Utilities.Substring>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mC102859C32274FFA55EC4CA6249561030B05043D_gshared (Action_1_t81C1E63293911894C4354C6E1293F63A5D512D4D* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m84AF6E3EF16EB2FD449332B35ACAD2A95328E0EA_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m84AF6E3EF16EB2FD449332B35ACAD2A95328E0EA_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m84AF6E3EF16EB2FD449332B35ACAD2A95328E0EA_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m84AF6E3EF16EB2FD449332B35ACAD2A95328E0EA_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.InputSystem.Utilities.Substring>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m84AF6E3EF16EB2FD449332B35ACAD2A95328E0EA_gshared (Action_1_t81C1E63293911894C4354C6E1293F63A5D512D4D* __this, Substring_t2E16755269E6716C22074D6BC0A9099915E67849 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, Substring_t2E16755269E6716C22074D6BC0A9099915E67849, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m9D57A362365E6B308CA2F172DE995A7DE5EA5CE7_Multicast(Action_1_t3CA76D608A67A30E535C626537063BAF8FE972D0* __this, TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t3CA76D608A67A30E535C626537063BAF8FE972D0* currentDelegate = reinterpret_cast<Action_1_t3CA76D608A67A30E535C626537063BAF8FE972D0*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m9D57A362365E6B308CA2F172DE995A7DE5EA5CE7_OpenInst(Action_1_t3CA76D608A67A30E535C626537063BAF8FE972D0* __this, TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m9D57A362365E6B308CA2F172DE995A7DE5EA5CE7_OpenStatic(Action_1_t3CA76D608A67A30E535C626537063BAF8FE972D0* __this, TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m9D57A362365E6B308CA2F172DE995A7DE5EA5CE7_OpenStaticInvoker(Action_1_t3CA76D608A67A30E535C626537063BAF8FE972D0* __this, TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m9D57A362365E6B308CA2F172DE995A7DE5EA5CE7_ClosedStaticInvoker(Action_1_t3CA76D608A67A30E535C626537063BAF8FE972D0* __this, TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<System.TimeSpan>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mD3B03534E0760BBDA5BEB234CF44FEA2FB74F56C_gshared (Action_1_t3CA76D608A67A30E535C626537063BAF8FE972D0* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m9D57A362365E6B308CA2F172DE995A7DE5EA5CE7_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m9D57A362365E6B308CA2F172DE995A7DE5EA5CE7_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m9D57A362365E6B308CA2F172DE995A7DE5EA5CE7_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m9D57A362365E6B308CA2F172DE995A7DE5EA5CE7_Multicast;
-}
-// System.Void System.Action`1<System.TimeSpan>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m9D57A362365E6B308CA2F172DE995A7DE5EA5CE7_gshared (Action_1_t3CA76D608A67A30E535C626537063BAF8FE972D0* __this, TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m0FDCEBDDF5784A43BCC4633CD1C5DA8EF396DBD5_Multicast(Action_1_t42ADFE3801D27254F622BE4C06E4F1091DE42AFA* __this, TimeValue_t45AE43B219493F9459363F32C79E8986B5F82E0E ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t42ADFE3801D27254F622BE4C06E4F1091DE42AFA* currentDelegate = reinterpret_cast<Action_1_t42ADFE3801D27254F622BE4C06E4F1091DE42AFA*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, TimeValue_t45AE43B219493F9459363F32C79E8986B5F82E0E, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m0FDCEBDDF5784A43BCC4633CD1C5DA8EF396DBD5_OpenInst(Action_1_t42ADFE3801D27254F622BE4C06E4F1091DE42AFA* __this, TimeValue_t45AE43B219493F9459363F32C79E8986B5F82E0E ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (TimeValue_t45AE43B219493F9459363F32C79E8986B5F82E0E, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m0FDCEBDDF5784A43BCC4633CD1C5DA8EF396DBD5_OpenStatic(Action_1_t42ADFE3801D27254F622BE4C06E4F1091DE42AFA* __this, TimeValue_t45AE43B219493F9459363F32C79E8986B5F82E0E ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (TimeValue_t45AE43B219493F9459363F32C79E8986B5F82E0E, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m0FDCEBDDF5784A43BCC4633CD1C5DA8EF396DBD5_OpenStaticInvoker(Action_1_t42ADFE3801D27254F622BE4C06E4F1091DE42AFA* __this, TimeValue_t45AE43B219493F9459363F32C79E8986B5F82E0E ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< TimeValue_t45AE43B219493F9459363F32C79E8986B5F82E0E >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m0FDCEBDDF5784A43BCC4633CD1C5DA8EF396DBD5_ClosedStaticInvoker(Action_1_t42ADFE3801D27254F622BE4C06E4F1091DE42AFA* __this, TimeValue_t45AE43B219493F9459363F32C79E8986B5F82E0E ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, TimeValue_t45AE43B219493F9459363F32C79E8986B5F82E0E >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.UIElements.TimeValue>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m75372B872856329273190DD222DC81BC4403431E_gshared (Action_1_t42ADFE3801D27254F622BE4C06E4F1091DE42AFA* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m0FDCEBDDF5784A43BCC4633CD1C5DA8EF396DBD5_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m0FDCEBDDF5784A43BCC4633CD1C5DA8EF396DBD5_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m0FDCEBDDF5784A43BCC4633CD1C5DA8EF396DBD5_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m0FDCEBDDF5784A43BCC4633CD1C5DA8EF396DBD5_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.UIElements.TimeValue>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m0FDCEBDDF5784A43BCC4633CD1C5DA8EF396DBD5_gshared (Action_1_t42ADFE3801D27254F622BE4C06E4F1091DE42AFA* __this, TimeValue_t45AE43B219493F9459363F32C79E8986B5F82E0E ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, TimeValue_t45AE43B219493F9459363F32C79E8986B5F82E0E, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m604FD4DB9EADE3BD6B11AD7740D31F54E7B88CBE_Multicast(Action_1_t05F6A7FC9FBB588EC4A828E23375838E340354CB* __this, TimerState_t82C7C29B095D6ACDC06AC172C269E9D5F0508ECE ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t05F6A7FC9FBB588EC4A828E23375838E340354CB* currentDelegate = reinterpret_cast<Action_1_t05F6A7FC9FBB588EC4A828E23375838E340354CB*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, TimerState_t82C7C29B095D6ACDC06AC172C269E9D5F0508ECE, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m604FD4DB9EADE3BD6B11AD7740D31F54E7B88CBE_OpenInst(Action_1_t05F6A7FC9FBB588EC4A828E23375838E340354CB* __this, TimerState_t82C7C29B095D6ACDC06AC172C269E9D5F0508ECE ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (TimerState_t82C7C29B095D6ACDC06AC172C269E9D5F0508ECE, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m604FD4DB9EADE3BD6B11AD7740D31F54E7B88CBE_OpenStatic(Action_1_t05F6A7FC9FBB588EC4A828E23375838E340354CB* __this, TimerState_t82C7C29B095D6ACDC06AC172C269E9D5F0508ECE ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (TimerState_t82C7C29B095D6ACDC06AC172C269E9D5F0508ECE, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m604FD4DB9EADE3BD6B11AD7740D31F54E7B88CBE_OpenStaticInvoker(Action_1_t05F6A7FC9FBB588EC4A828E23375838E340354CB* __this, TimerState_t82C7C29B095D6ACDC06AC172C269E9D5F0508ECE ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< TimerState_t82C7C29B095D6ACDC06AC172C269E9D5F0508ECE >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m604FD4DB9EADE3BD6B11AD7740D31F54E7B88CBE_ClosedStaticInvoker(Action_1_t05F6A7FC9FBB588EC4A828E23375838E340354CB* __this, TimerState_t82C7C29B095D6ACDC06AC172C269E9D5F0508ECE ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, TimerState_t82C7C29B095D6ACDC06AC172C269E9D5F0508ECE >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.UIElements.TimerState>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mE69EF7642D4840F2095C4588AAFAC6E9F09C2BC4_gshared (Action_1_t05F6A7FC9FBB588EC4A828E23375838E340354CB* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m604FD4DB9EADE3BD6B11AD7740D31F54E7B88CBE_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m604FD4DB9EADE3BD6B11AD7740D31F54E7B88CBE_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m604FD4DB9EADE3BD6B11AD7740D31F54E7B88CBE_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m604FD4DB9EADE3BD6B11AD7740D31F54E7B88CBE_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.UIElements.TimerState>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m604FD4DB9EADE3BD6B11AD7740D31F54E7B88CBE_gshared (Action_1_t05F6A7FC9FBB588EC4A828E23375838E340354CB* __this, TimerState_t82C7C29B095D6ACDC06AC172C269E9D5F0508ECE ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, TimerState_t82C7C29B095D6ACDC06AC172C269E9D5F0508ECE, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m0D1B008F45FF9A3A79FFFEF7E58688B9002ACD3A_Multicast(Action_1_tB9951FC7E63341E8FF985E49D0A293DA6DDACC77* __this, UICharInfo_t24C2EA0F2F3A938100C271891D9DEB015ABA5FBD ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_tB9951FC7E63341E8FF985E49D0A293DA6DDACC77* currentDelegate = reinterpret_cast<Action_1_tB9951FC7E63341E8FF985E49D0A293DA6DDACC77*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, UICharInfo_t24C2EA0F2F3A938100C271891D9DEB015ABA5FBD, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m0D1B008F45FF9A3A79FFFEF7E58688B9002ACD3A_OpenInst(Action_1_tB9951FC7E63341E8FF985E49D0A293DA6DDACC77* __this, UICharInfo_t24C2EA0F2F3A938100C271891D9DEB015ABA5FBD ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (UICharInfo_t24C2EA0F2F3A938100C271891D9DEB015ABA5FBD, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m0D1B008F45FF9A3A79FFFEF7E58688B9002ACD3A_OpenStatic(Action_1_tB9951FC7E63341E8FF985E49D0A293DA6DDACC77* __this, UICharInfo_t24C2EA0F2F3A938100C271891D9DEB015ABA5FBD ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (UICharInfo_t24C2EA0F2F3A938100C271891D9DEB015ABA5FBD, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m0D1B008F45FF9A3A79FFFEF7E58688B9002ACD3A_OpenStaticInvoker(Action_1_tB9951FC7E63341E8FF985E49D0A293DA6DDACC77* __this, UICharInfo_t24C2EA0F2F3A938100C271891D9DEB015ABA5FBD ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< UICharInfo_t24C2EA0F2F3A938100C271891D9DEB015ABA5FBD >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m0D1B008F45FF9A3A79FFFEF7E58688B9002ACD3A_ClosedStaticInvoker(Action_1_tB9951FC7E63341E8FF985E49D0A293DA6DDACC77* __this, UICharInfo_t24C2EA0F2F3A938100C271891D9DEB015ABA5FBD ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, UICharInfo_t24C2EA0F2F3A938100C271891D9DEB015ABA5FBD >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.UICharInfo>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mAAECF89FD7C003739A55C7140005754886110F15_gshared (Action_1_tB9951FC7E63341E8FF985E49D0A293DA6DDACC77* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m0D1B008F45FF9A3A79FFFEF7E58688B9002ACD3A_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m0D1B008F45FF9A3A79FFFEF7E58688B9002ACD3A_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m0D1B008F45FF9A3A79FFFEF7E58688B9002ACD3A_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m0D1B008F45FF9A3A79FFFEF7E58688B9002ACD3A_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.UICharInfo>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m0D1B008F45FF9A3A79FFFEF7E58688B9002ACD3A_gshared (Action_1_tB9951FC7E63341E8FF985E49D0A293DA6DDACC77* __this, UICharInfo_t24C2EA0F2F3A938100C271891D9DEB015ABA5FBD ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, UICharInfo_t24C2EA0F2F3A938100C271891D9DEB015ABA5FBD, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m6A5FDF7FE3DE3CE36942837160308BB7D10AC2F6_Multicast(Action_1_t59246BF77C1095A0F51FE1BCDD0A2A914173131C* __this, UILineInfo_tC6FF4F85BD2316FADA2148A1789B3FF0B05A6CAC ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t59246BF77C1095A0F51FE1BCDD0A2A914173131C* currentDelegate = reinterpret_cast<Action_1_t59246BF77C1095A0F51FE1BCDD0A2A914173131C*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, UILineInfo_tC6FF4F85BD2316FADA2148A1789B3FF0B05A6CAC, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m6A5FDF7FE3DE3CE36942837160308BB7D10AC2F6_OpenInst(Action_1_t59246BF77C1095A0F51FE1BCDD0A2A914173131C* __this, UILineInfo_tC6FF4F85BD2316FADA2148A1789B3FF0B05A6CAC ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (UILineInfo_tC6FF4F85BD2316FADA2148A1789B3FF0B05A6CAC, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m6A5FDF7FE3DE3CE36942837160308BB7D10AC2F6_OpenStatic(Action_1_t59246BF77C1095A0F51FE1BCDD0A2A914173131C* __this, UILineInfo_tC6FF4F85BD2316FADA2148A1789B3FF0B05A6CAC ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (UILineInfo_tC6FF4F85BD2316FADA2148A1789B3FF0B05A6CAC, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m6A5FDF7FE3DE3CE36942837160308BB7D10AC2F6_OpenStaticInvoker(Action_1_t59246BF77C1095A0F51FE1BCDD0A2A914173131C* __this, UILineInfo_tC6FF4F85BD2316FADA2148A1789B3FF0B05A6CAC ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< UILineInfo_tC6FF4F85BD2316FADA2148A1789B3FF0B05A6CAC >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m6A5FDF7FE3DE3CE36942837160308BB7D10AC2F6_ClosedStaticInvoker(Action_1_t59246BF77C1095A0F51FE1BCDD0A2A914173131C* __this, UILineInfo_tC6FF4F85BD2316FADA2148A1789B3FF0B05A6CAC ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, UILineInfo_tC6FF4F85BD2316FADA2148A1789B3FF0B05A6CAC >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.UILineInfo>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m3D0E29640D8C5C47DC521E92C28D2E50DC7F5512_gshared (Action_1_t59246BF77C1095A0F51FE1BCDD0A2A914173131C* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m6A5FDF7FE3DE3CE36942837160308BB7D10AC2F6_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m6A5FDF7FE3DE3CE36942837160308BB7D10AC2F6_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m6A5FDF7FE3DE3CE36942837160308BB7D10AC2F6_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m6A5FDF7FE3DE3CE36942837160308BB7D10AC2F6_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.UILineInfo>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m6A5FDF7FE3DE3CE36942837160308BB7D10AC2F6_gshared (Action_1_t59246BF77C1095A0F51FE1BCDD0A2A914173131C* __this, UILineInfo_tC6FF4F85BD2316FADA2148A1789B3FF0B05A6CAC ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, UILineInfo_tC6FF4F85BD2316FADA2148A1789B3FF0B05A6CAC, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_mFD1F42F289230C3DFE6775BC238851D272ECDBC9_Multicast(Action_1_t1F149523898B0E3185EF5726203627492497D292* __this, UIVertex_tF5C663F4BBC786C9D56C28016FF66E6C6BF85207 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t1F149523898B0E3185EF5726203627492497D292* currentDelegate = reinterpret_cast<Action_1_t1F149523898B0E3185EF5726203627492497D292*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, UIVertex_tF5C663F4BBC786C9D56C28016FF66E6C6BF85207, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_mFD1F42F289230C3DFE6775BC238851D272ECDBC9_OpenInst(Action_1_t1F149523898B0E3185EF5726203627492497D292* __this, UIVertex_tF5C663F4BBC786C9D56C28016FF66E6C6BF85207 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (UIVertex_tF5C663F4BBC786C9D56C28016FF66E6C6BF85207, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mFD1F42F289230C3DFE6775BC238851D272ECDBC9_OpenStatic(Action_1_t1F149523898B0E3185EF5726203627492497D292* __this, UIVertex_tF5C663F4BBC786C9D56C28016FF66E6C6BF85207 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (UIVertex_tF5C663F4BBC786C9D56C28016FF66E6C6BF85207, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mFD1F42F289230C3DFE6775BC238851D272ECDBC9_OpenStaticInvoker(Action_1_t1F149523898B0E3185EF5726203627492497D292* __this, UIVertex_tF5C663F4BBC786C9D56C28016FF66E6C6BF85207 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< UIVertex_tF5C663F4BBC786C9D56C28016FF66E6C6BF85207 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_mFD1F42F289230C3DFE6775BC238851D272ECDBC9_ClosedStaticInvoker(Action_1_t1F149523898B0E3185EF5726203627492497D292* __this, UIVertex_tF5C663F4BBC786C9D56C28016FF66E6C6BF85207 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, UIVertex_tF5C663F4BBC786C9D56C28016FF66E6C6BF85207 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.UIVertex>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m5FC82B86F144188FFFCC2BBBE2E4B74737668295_gshared (Action_1_t1F149523898B0E3185EF5726203627492497D292* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mFD1F42F289230C3DFE6775BC238851D272ECDBC9_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mFD1F42F289230C3DFE6775BC238851D272ECDBC9_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mFD1F42F289230C3DFE6775BC238851D272ECDBC9_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_mFD1F42F289230C3DFE6775BC238851D272ECDBC9_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.UIVertex>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mFD1F42F289230C3DFE6775BC238851D272ECDBC9_gshared (Action_1_t1F149523898B0E3185EF5726203627492497D292* __this, UIVertex_tF5C663F4BBC786C9D56C28016FF66E6C6BF85207 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, UIVertex_tF5C663F4BBC786C9D56C28016FF66E6C6BF85207, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_mDF45B70181B3A404FE8A9CC408FDA01ADFEAEB61_Multicast(Action_1_t2DE95E477A86F144593CC7965E86728C71D0E75D* __this, uint16_t ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t2DE95E477A86F144593CC7965E86728C71D0E75D* currentDelegate = reinterpret_cast<Action_1_t2DE95E477A86F144593CC7965E86728C71D0E75D*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, uint16_t, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_mDF45B70181B3A404FE8A9CC408FDA01ADFEAEB61_OpenInst(Action_1_t2DE95E477A86F144593CC7965E86728C71D0E75D* __this, uint16_t ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (uint16_t, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mDF45B70181B3A404FE8A9CC408FDA01ADFEAEB61_OpenStatic(Action_1_t2DE95E477A86F144593CC7965E86728C71D0E75D* __this, uint16_t ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (uint16_t, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mDF45B70181B3A404FE8A9CC408FDA01ADFEAEB61_OpenStaticInvoker(Action_1_t2DE95E477A86F144593CC7965E86728C71D0E75D* __this, uint16_t ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< uint16_t >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_mDF45B70181B3A404FE8A9CC408FDA01ADFEAEB61_ClosedStaticInvoker(Action_1_t2DE95E477A86F144593CC7965E86728C71D0E75D* __this, uint16_t ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, uint16_t >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<System.UInt16>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m2EAAD0E7DA413138F7E7B4E79A0122FB0580D409_gshared (Action_1_t2DE95E477A86F144593CC7965E86728C71D0E75D* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mDF45B70181B3A404FE8A9CC408FDA01ADFEAEB61_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mDF45B70181B3A404FE8A9CC408FDA01ADFEAEB61_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mDF45B70181B3A404FE8A9CC408FDA01ADFEAEB61_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_mDF45B70181B3A404FE8A9CC408FDA01ADFEAEB61_Multicast;
-}
-// System.Void System.Action`1<System.UInt16>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mDF45B70181B3A404FE8A9CC408FDA01ADFEAEB61_gshared (Action_1_t2DE95E477A86F144593CC7965E86728C71D0E75D* __this, uint16_t ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, uint16_t, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_mA1BDAC0ADA0ABAC07CC491658788A24E6DC8B7EE_Multicast(Action_1_t831946BFD83EBA9DE498D3E682F1D4F14D17878D* __this, uint32_t ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t831946BFD83EBA9DE498D3E682F1D4F14D17878D* currentDelegate = reinterpret_cast<Action_1_t831946BFD83EBA9DE498D3E682F1D4F14D17878D*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, uint32_t, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_mA1BDAC0ADA0ABAC07CC491658788A24E6DC8B7EE_OpenInst(Action_1_t831946BFD83EBA9DE498D3E682F1D4F14D17878D* __this, uint32_t ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (uint32_t, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mA1BDAC0ADA0ABAC07CC491658788A24E6DC8B7EE_OpenStatic(Action_1_t831946BFD83EBA9DE498D3E682F1D4F14D17878D* __this, uint32_t ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (uint32_t, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mA1BDAC0ADA0ABAC07CC491658788A24E6DC8B7EE_OpenStaticInvoker(Action_1_t831946BFD83EBA9DE498D3E682F1D4F14D17878D* __this, uint32_t ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< uint32_t >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_mA1BDAC0ADA0ABAC07CC491658788A24E6DC8B7EE_ClosedStaticInvoker(Action_1_t831946BFD83EBA9DE498D3E682F1D4F14D17878D* __this, uint32_t ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, uint32_t >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<System.UInt32>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mC5661DE4A0FC29B44AD8AA24B09B5FE5390A3333_gshared (Action_1_t831946BFD83EBA9DE498D3E682F1D4F14D17878D* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mA1BDAC0ADA0ABAC07CC491658788A24E6DC8B7EE_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mA1BDAC0ADA0ABAC07CC491658788A24E6DC8B7EE_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mA1BDAC0ADA0ABAC07CC491658788A24E6DC8B7EE_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_mA1BDAC0ADA0ABAC07CC491658788A24E6DC8B7EE_Multicast;
-}
-// System.Void System.Action`1<System.UInt32>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mA1BDAC0ADA0ABAC07CC491658788A24E6DC8B7EE_gshared (Action_1_t831946BFD83EBA9DE498D3E682F1D4F14D17878D* __this, uint32_t ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, uint32_t, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_mD21E1BBC413B52214AE1643F8570EB10B0C004CF_Multicast(Action_1_t2F07B42BD085A4AC03ECE5676157E93B9A344C1C* __this, uint64_t ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t2F07B42BD085A4AC03ECE5676157E93B9A344C1C* currentDelegate = reinterpret_cast<Action_1_t2F07B42BD085A4AC03ECE5676157E93B9A344C1C*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, uint64_t, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_mD21E1BBC413B52214AE1643F8570EB10B0C004CF_OpenInst(Action_1_t2F07B42BD085A4AC03ECE5676157E93B9A344C1C* __this, uint64_t ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (uint64_t, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mD21E1BBC413B52214AE1643F8570EB10B0C004CF_OpenStatic(Action_1_t2F07B42BD085A4AC03ECE5676157E93B9A344C1C* __this, uint64_t ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (uint64_t, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mD21E1BBC413B52214AE1643F8570EB10B0C004CF_OpenStaticInvoker(Action_1_t2F07B42BD085A4AC03ECE5676157E93B9A344C1C* __this, uint64_t ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< uint64_t >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_mD21E1BBC413B52214AE1643F8570EB10B0C004CF_ClosedStaticInvoker(Action_1_t2F07B42BD085A4AC03ECE5676157E93B9A344C1C* __this, uint64_t ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, uint64_t >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<System.UInt64>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m9D03744CB4F9BFE4C8A4B2FF3970EF3F22389E8D_gshared (Action_1_t2F07B42BD085A4AC03ECE5676157E93B9A344C1C* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mD21E1BBC413B52214AE1643F8570EB10B0C004CF_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mD21E1BBC413B52214AE1643F8570EB10B0C004CF_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mD21E1BBC413B52214AE1643F8570EB10B0C004CF_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_mD21E1BBC413B52214AE1643F8570EB10B0C004CF_Multicast;
-}
-// System.Void System.Action`1<System.UInt64>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mD21E1BBC413B52214AE1643F8570EB10B0C004CF_gshared (Action_1_t2F07B42BD085A4AC03ECE5676157E93B9A344C1C* __this, uint64_t ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, uint64_t, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_mD4E9FB41DD3CDB1E4712CF831BCB82F84B1CC39E_Multicast(Action_1_t3F4EEB7C225C6BBE1549938D6708722DBB39C2DC* __this, UsageHint_tFD7259AF9E91500CF1D0CE602394B40FD2397AB1 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t3F4EEB7C225C6BBE1549938D6708722DBB39C2DC* currentDelegate = reinterpret_cast<Action_1_t3F4EEB7C225C6BBE1549938D6708722DBB39C2DC*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, UsageHint_tFD7259AF9E91500CF1D0CE602394B40FD2397AB1, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_mD4E9FB41DD3CDB1E4712CF831BCB82F84B1CC39E_OpenInst(Action_1_t3F4EEB7C225C6BBE1549938D6708722DBB39C2DC* __this, UsageHint_tFD7259AF9E91500CF1D0CE602394B40FD2397AB1 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (UsageHint_tFD7259AF9E91500CF1D0CE602394B40FD2397AB1, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mD4E9FB41DD3CDB1E4712CF831BCB82F84B1CC39E_OpenStatic(Action_1_t3F4EEB7C225C6BBE1549938D6708722DBB39C2DC* __this, UsageHint_tFD7259AF9E91500CF1D0CE602394B40FD2397AB1 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (UsageHint_tFD7259AF9E91500CF1D0CE602394B40FD2397AB1, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_mD4E9FB41DD3CDB1E4712CF831BCB82F84B1CC39E_OpenStaticInvoker(Action_1_t3F4EEB7C225C6BBE1549938D6708722DBB39C2DC* __this, UsageHint_tFD7259AF9E91500CF1D0CE602394B40FD2397AB1 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< UsageHint_tFD7259AF9E91500CF1D0CE602394B40FD2397AB1 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_mD4E9FB41DD3CDB1E4712CF831BCB82F84B1CC39E_ClosedStaticInvoker(Action_1_t3F4EEB7C225C6BBE1549938D6708722DBB39C2DC* __this, UsageHint_tFD7259AF9E91500CF1D0CE602394B40FD2397AB1 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, UsageHint_tFD7259AF9E91500CF1D0CE602394B40FD2397AB1 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.InputSystem.XR.UsageHint>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m454DC768A7A5AA4052E18727BE122AA35CCC37C2_gshared (Action_1_t3F4EEB7C225C6BBE1549938D6708722DBB39C2DC* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mD4E9FB41DD3CDB1E4712CF831BCB82F84B1CC39E_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mD4E9FB41DD3CDB1E4712CF831BCB82F84B1CC39E_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mD4E9FB41DD3CDB1E4712CF831BCB82F84B1CC39E_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_mD4E9FB41DD3CDB1E4712CF831BCB82F84B1CC39E_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.InputSystem.XR.UsageHint>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mD4E9FB41DD3CDB1E4712CF831BCB82F84B1CC39E_gshared (Action_1_t3F4EEB7C225C6BBE1549938D6708722DBB39C2DC* __this, UsageHint_tFD7259AF9E91500CF1D0CE602394B40FD2397AB1 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, UsageHint_tFD7259AF9E91500CF1D0CE602394B40FD2397AB1, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m3C60C84018CAD36C0EC956A14935394A7DD116C6_Multicast(Action_1_t17E52B12DC24FA6C9DD52F87043C85BEA889BB81* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t17E52B12DC24FA6C9DD52F87043C85BEA889BB81* currentDelegate = reinterpret_cast<Action_1_t17E52B12DC24FA6C9DD52F87043C85BEA889BB81*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m3C60C84018CAD36C0EC956A14935394A7DD116C6_OpenInst(Action_1_t17E52B12DC24FA6C9DD52F87043C85BEA889BB81* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m3C60C84018CAD36C0EC956A14935394A7DD116C6_OpenStatic(Action_1_t17E52B12DC24FA6C9DD52F87043C85BEA889BB81* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m3C60C84018CAD36C0EC956A14935394A7DD116C6_OpenStaticInvoker(Action_1_t17E52B12DC24FA6C9DD52F87043C85BEA889BB81* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m3C60C84018CAD36C0EC956A14935394A7DD116C6_ClosedStaticInvoker(Action_1_t17E52B12DC24FA6C9DD52F87043C85BEA889BB81* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.Vector2>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m23EDF9F259C0FB6CB9AF2E2B6D9931C08F510841_gshared (Action_1_t17E52B12DC24FA6C9DD52F87043C85BEA889BB81* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m3C60C84018CAD36C0EC956A14935394A7DD116C6_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m3C60C84018CAD36C0EC956A14935394A7DD116C6_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m3C60C84018CAD36C0EC956A14935394A7DD116C6_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m3C60C84018CAD36C0EC956A14935394A7DD116C6_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.Vector2>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m3C60C84018CAD36C0EC956A14935394A7DD116C6_gshared (Action_1_t17E52B12DC24FA6C9DD52F87043C85BEA889BB81* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m211AB6C2AA7326F6BFC8338EC888360A219AFF41_Multicast(Action_1_t2EDB30EAB747FDF563DD6410FC76AF861A09A0C2* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t2EDB30EAB747FDF563DD6410FC76AF861A09A0C2* currentDelegate = reinterpret_cast<Action_1_t2EDB30EAB747FDF563DD6410FC76AF861A09A0C2*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m211AB6C2AA7326F6BFC8338EC888360A219AFF41_OpenInst(Action_1_t2EDB30EAB747FDF563DD6410FC76AF861A09A0C2* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m211AB6C2AA7326F6BFC8338EC888360A219AFF41_OpenStatic(Action_1_t2EDB30EAB747FDF563DD6410FC76AF861A09A0C2* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m211AB6C2AA7326F6BFC8338EC888360A219AFF41_OpenStaticInvoker(Action_1_t2EDB30EAB747FDF563DD6410FC76AF861A09A0C2* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m211AB6C2AA7326F6BFC8338EC888360A219AFF41_ClosedStaticInvoker(Action_1_t2EDB30EAB747FDF563DD6410FC76AF861A09A0C2* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.Vector3>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mE9E1859293BB35881CCC94B4A6E0A0E9997E046C_gshared (Action_1_t2EDB30EAB747FDF563DD6410FC76AF861A09A0C2* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m211AB6C2AA7326F6BFC8338EC888360A219AFF41_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m211AB6C2AA7326F6BFC8338EC888360A219AFF41_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m211AB6C2AA7326F6BFC8338EC888360A219AFF41_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m211AB6C2AA7326F6BFC8338EC888360A219AFF41_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.Vector3>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m211AB6C2AA7326F6BFC8338EC888360A219AFF41_gshared (Action_1_t2EDB30EAB747FDF563DD6410FC76AF861A09A0C2* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m9293612C0DEA13BB9B5CADE956F799DE325BBD4B_Multicast(Action_1_t84D0CA347FC997E1202ECA3ED828B057841444EF* __this, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t84D0CA347FC997E1202ECA3ED828B057841444EF* currentDelegate = reinterpret_cast<Action_1_t84D0CA347FC997E1202ECA3ED828B057841444EF*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m9293612C0DEA13BB9B5CADE956F799DE325BBD4B_OpenInst(Action_1_t84D0CA347FC997E1202ECA3ED828B057841444EF* __this, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m9293612C0DEA13BB9B5CADE956F799DE325BBD4B_OpenStatic(Action_1_t84D0CA347FC997E1202ECA3ED828B057841444EF* __this, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m9293612C0DEA13BB9B5CADE956F799DE325BBD4B_OpenStaticInvoker(Action_1_t84D0CA347FC997E1202ECA3ED828B057841444EF* __this, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m9293612C0DEA13BB9B5CADE956F799DE325BBD4B_ClosedStaticInvoker(Action_1_t84D0CA347FC997E1202ECA3ED828B057841444EF* __this, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.Vector4>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mC4C8E02D42FD0C1E029D25D85467BCB66649EEED_gshared (Action_1_t84D0CA347FC997E1202ECA3ED828B057841444EF* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m9293612C0DEA13BB9B5CADE956F799DE325BBD4B_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m9293612C0DEA13BB9B5CADE956F799DE325BBD4B_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m9293612C0DEA13BB9B5CADE956F799DE325BBD4B_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m9293612C0DEA13BB9B5CADE956F799DE325BBD4B_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.Vector4>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m9293612C0DEA13BB9B5CADE956F799DE325BBD4B_gshared (Action_1_t84D0CA347FC997E1202ECA3ED828B057841444EF* __this, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m4298A6EF344901142C650584A3B102A0582873A6_Multicast(Action_1_t8211FDBB28EEB761B566A466344EDAFA85BC3023* __this, X509ChainStatus_t5A57DDA24AA1FCA9F2B8D70B767CDDF388E4A80D ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t8211FDBB28EEB761B566A466344EDAFA85BC3023* currentDelegate = reinterpret_cast<Action_1_t8211FDBB28EEB761B566A466344EDAFA85BC3023*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, X509ChainStatus_t5A57DDA24AA1FCA9F2B8D70B767CDDF388E4A80D, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m4298A6EF344901142C650584A3B102A0582873A6_OpenInst(Action_1_t8211FDBB28EEB761B566A466344EDAFA85BC3023* __this, X509ChainStatus_t5A57DDA24AA1FCA9F2B8D70B767CDDF388E4A80D ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (X509ChainStatus_t5A57DDA24AA1FCA9F2B8D70B767CDDF388E4A80D, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m4298A6EF344901142C650584A3B102A0582873A6_OpenStatic(Action_1_t8211FDBB28EEB761B566A466344EDAFA85BC3023* __this, X509ChainStatus_t5A57DDA24AA1FCA9F2B8D70B767CDDF388E4A80D ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (X509ChainStatus_t5A57DDA24AA1FCA9F2B8D70B767CDDF388E4A80D, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m4298A6EF344901142C650584A3B102A0582873A6_OpenStaticInvoker(Action_1_t8211FDBB28EEB761B566A466344EDAFA85BC3023* __this, X509ChainStatus_t5A57DDA24AA1FCA9F2B8D70B767CDDF388E4A80D ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< X509ChainStatus_t5A57DDA24AA1FCA9F2B8D70B767CDDF388E4A80D >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m4298A6EF344901142C650584A3B102A0582873A6_ClosedStaticInvoker(Action_1_t8211FDBB28EEB761B566A466344EDAFA85BC3023* __this, X509ChainStatus_t5A57DDA24AA1FCA9F2B8D70B767CDDF388E4A80D ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, X509ChainStatus_t5A57DDA24AA1FCA9F2B8D70B767CDDF388E4A80D >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<System.Security.Cryptography.X509Certificates.X509ChainStatus>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m5ECF344163CCC3E91986F78D4365ECB3A0816D50_gshared (Action_1_t8211FDBB28EEB761B566A466344EDAFA85BC3023* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m4298A6EF344901142C650584A3B102A0582873A6_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m4298A6EF344901142C650584A3B102A0582873A6_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m4298A6EF344901142C650584A3B102A0582873A6_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m4298A6EF344901142C650584A3B102A0582873A6_Multicast;
-}
-// System.Void System.Action`1<System.Security.Cryptography.X509Certificates.X509ChainStatus>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m4298A6EF344901142C650584A3B102A0582873A6_gshared (Action_1_t8211FDBB28EEB761B566A466344EDAFA85BC3023* __this, X509ChainStatus_t5A57DDA24AA1FCA9F2B8D70B767CDDF388E4A80D ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, X509ChainStatus_t5A57DDA24AA1FCA9F2B8D70B767CDDF388E4A80D, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m14B5F0EFFF227D076151E00CACE917B6512254B8_Multicast(Action_1_tC8CC18F6848AAE74469E78A12EC004873F4332A7* __this, XRFeatureDescriptor_t690E672A6BBBEFBB8AF221485C1884507EAFB5B2 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_tC8CC18F6848AAE74469E78A12EC004873F4332A7* currentDelegate = reinterpret_cast<Action_1_tC8CC18F6848AAE74469E78A12EC004873F4332A7*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, XRFeatureDescriptor_t690E672A6BBBEFBB8AF221485C1884507EAFB5B2, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m14B5F0EFFF227D076151E00CACE917B6512254B8_OpenInst(Action_1_tC8CC18F6848AAE74469E78A12EC004873F4332A7* __this, XRFeatureDescriptor_t690E672A6BBBEFBB8AF221485C1884507EAFB5B2 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (XRFeatureDescriptor_t690E672A6BBBEFBB8AF221485C1884507EAFB5B2, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m14B5F0EFFF227D076151E00CACE917B6512254B8_OpenStatic(Action_1_tC8CC18F6848AAE74469E78A12EC004873F4332A7* __this, XRFeatureDescriptor_t690E672A6BBBEFBB8AF221485C1884507EAFB5B2 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (XRFeatureDescriptor_t690E672A6BBBEFBB8AF221485C1884507EAFB5B2, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m14B5F0EFFF227D076151E00CACE917B6512254B8_OpenStaticInvoker(Action_1_tC8CC18F6848AAE74469E78A12EC004873F4332A7* __this, XRFeatureDescriptor_t690E672A6BBBEFBB8AF221485C1884507EAFB5B2 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< XRFeatureDescriptor_t690E672A6BBBEFBB8AF221485C1884507EAFB5B2 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m14B5F0EFFF227D076151E00CACE917B6512254B8_ClosedStaticInvoker(Action_1_tC8CC18F6848AAE74469E78A12EC004873F4332A7* __this, XRFeatureDescriptor_t690E672A6BBBEFBB8AF221485C1884507EAFB5B2 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, XRFeatureDescriptor_t690E672A6BBBEFBB8AF221485C1884507EAFB5B2 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.InputSystem.XR.XRFeatureDescriptor>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m73845D30C178FF12B157C7665DB272680F4D4157_gshared (Action_1_tC8CC18F6848AAE74469E78A12EC004873F4332A7* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m14B5F0EFFF227D076151E00CACE917B6512254B8_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m14B5F0EFFF227D076151E00CACE917B6512254B8_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m14B5F0EFFF227D076151E00CACE917B6512254B8_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m14B5F0EFFF227D076151E00CACE917B6512254B8_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.InputSystem.XR.XRFeatureDescriptor>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m14B5F0EFFF227D076151E00CACE917B6512254B8_gshared (Action_1_tC8CC18F6848AAE74469E78A12EC004873F4332A7* __this, XRFeatureDescriptor_t690E672A6BBBEFBB8AF221485C1884507EAFB5B2 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, XRFeatureDescriptor_t690E672A6BBBEFBB8AF221485C1884507EAFB5B2, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m837A3425C5ACC1668A36725C68884FAE8EA82735_Multicast(Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752* __this, XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752* currentDelegate = reinterpret_cast<Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m837A3425C5ACC1668A36725C68884FAE8EA82735_OpenInst(Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752* __this, XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m837A3425C5ACC1668A36725C68884FAE8EA82735_OpenStatic(Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752* __this, XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m837A3425C5ACC1668A36725C68884FAE8EA82735_OpenStaticInvoker(Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752* __this, XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m837A3425C5ACC1668A36725C68884FAE8EA82735_ClosedStaticInvoker(Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752* __this, XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.XR.Hands.XRHand>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m853F8C94BDD185D55096797BC53A6FF2038389BC_gshared (Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m837A3425C5ACC1668A36725C68884FAE8EA82735_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m837A3425C5ACC1668A36725C68884FAE8EA82735_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m837A3425C5ACC1668A36725C68884FAE8EA82735_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m837A3425C5ACC1668A36725C68884FAE8EA82735_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.XR.Hands.XRHand>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m837A3425C5ACC1668A36725C68884FAE8EA82735_gshared (Action_1_tEACFE9A51FCD1C277802D684B9FCD40906039752* __this, XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471 ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, XRHand_t42370E2B19E7613E9C8FFA4A4B749C91FF021471, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m0D1DB9EA639FC121D071208CB0B6240B4E12B7CC_Multicast(Action_1_t290119641EBA3C1EAC8AF78274C63CE01C3046D8* __this, XRNodeState_t683158812A1D80A6BC73DB97405BB0B795A9111A ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t290119641EBA3C1EAC8AF78274C63CE01C3046D8* currentDelegate = reinterpret_cast<Action_1_t290119641EBA3C1EAC8AF78274C63CE01C3046D8*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, XRNodeState_t683158812A1D80A6BC73DB97405BB0B795A9111A, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m0D1DB9EA639FC121D071208CB0B6240B4E12B7CC_OpenInst(Action_1_t290119641EBA3C1EAC8AF78274C63CE01C3046D8* __this, XRNodeState_t683158812A1D80A6BC73DB97405BB0B795A9111A ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (XRNodeState_t683158812A1D80A6BC73DB97405BB0B795A9111A, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m0D1DB9EA639FC121D071208CB0B6240B4E12B7CC_OpenStatic(Action_1_t290119641EBA3C1EAC8AF78274C63CE01C3046D8* __this, XRNodeState_t683158812A1D80A6BC73DB97405BB0B795A9111A ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (XRNodeState_t683158812A1D80A6BC73DB97405BB0B795A9111A, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m0D1DB9EA639FC121D071208CB0B6240B4E12B7CC_OpenStaticInvoker(Action_1_t290119641EBA3C1EAC8AF78274C63CE01C3046D8* __this, XRNodeState_t683158812A1D80A6BC73DB97405BB0B795A9111A ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< XRNodeState_t683158812A1D80A6BC73DB97405BB0B795A9111A >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m0D1DB9EA639FC121D071208CB0B6240B4E12B7CC_ClosedStaticInvoker(Action_1_t290119641EBA3C1EAC8AF78274C63CE01C3046D8* __this, XRNodeState_t683158812A1D80A6BC73DB97405BB0B795A9111A ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, XRNodeState_t683158812A1D80A6BC73DB97405BB0B795A9111A >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.XR.XRNodeState>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m6D3D98B6AD92F8A445ED7484E7B073E7CA45B8E4_gshared (Action_1_t290119641EBA3C1EAC8AF78274C63CE01C3046D8* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m0D1DB9EA639FC121D071208CB0B6240B4E12B7CC_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m0D1DB9EA639FC121D071208CB0B6240B4E12B7CC_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m0D1DB9EA639FC121D071208CB0B6240B4E12B7CC_OpenStatic;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		if (___object0 == NULL)
-			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m0D1DB9EA639FC121D071208CB0B6240B4E12B7CC_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.XR.XRNodeState>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m0D1DB9EA639FC121D071208CB0B6240B4E12B7CC_gshared (Action_1_t290119641EBA3C1EAC8AF78274C63CE01C3046D8* __this, XRNodeState_t683158812A1D80A6BC73DB97405BB0B795A9111A ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, XRNodeState_t683158812A1D80A6BC73DB97405BB0B795A9111A, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m0E54BDD51F2CD11AA320D7F962FC4B10F1D80DFB_Multicast(Action_1_t66705B6D063592F5BBA926F05597B1FDCECB3293* __this, XRReferenceImage_tB2544D6E18E55CD44F4EED1B0573A6A7154C1E2F ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t66705B6D063592F5BBA926F05597B1FDCECB3293* currentDelegate = reinterpret_cast<Action_1_t66705B6D063592F5BBA926F05597B1FDCECB3293*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, XRReferenceImage_tB2544D6E18E55CD44F4EED1B0573A6A7154C1E2F, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m0E54BDD51F2CD11AA320D7F962FC4B10F1D80DFB_OpenInst(Action_1_t66705B6D063592F5BBA926F05597B1FDCECB3293* __this, XRReferenceImage_tB2544D6E18E55CD44F4EED1B0573A6A7154C1E2F ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (XRReferenceImage_tB2544D6E18E55CD44F4EED1B0573A6A7154C1E2F, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m0E54BDD51F2CD11AA320D7F962FC4B10F1D80DFB_OpenStatic(Action_1_t66705B6D063592F5BBA926F05597B1FDCECB3293* __this, XRReferenceImage_tB2544D6E18E55CD44F4EED1B0573A6A7154C1E2F ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (XRReferenceImage_tB2544D6E18E55CD44F4EED1B0573A6A7154C1E2F, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m0E54BDD51F2CD11AA320D7F962FC4B10F1D80DFB_OpenStaticInvoker(Action_1_t66705B6D063592F5BBA926F05597B1FDCECB3293* __this, XRReferenceImage_tB2544D6E18E55CD44F4EED1B0573A6A7154C1E2F ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< XRReferenceImage_tB2544D6E18E55CD44F4EED1B0573A6A7154C1E2F >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m0E54BDD51F2CD11AA320D7F962FC4B10F1D80DFB_ClosedStaticInvoker(Action_1_t66705B6D063592F5BBA926F05597B1FDCECB3293* __this, XRReferenceImage_tB2544D6E18E55CD44F4EED1B0573A6A7154C1E2F ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, XRReferenceImage_tB2544D6E18E55CD44F4EED1B0573A6A7154C1E2F >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.XR.ARSubsystems.XRReferenceImage>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mAB1EDD80DB7FFA451D79CCE830B0934DBD37290B_gshared (Action_1_t66705B6D063592F5BBA926F05597B1FDCECB3293* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
 	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
 	__this->___method_3 = ___method1;
 	__this->___m_target_2 = ___object0;
@@ -31571,12 +29898,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mAB1EDD80DB7FFA451D79CCE8
 		bool isOpen = parameterCount == 1;
 		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
 			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m0E54BDD51F2CD11AA320D7F962FC4B10F1D80DFB_OpenStaticInvoker;
+				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mFB243A40692032001EAFDAAFCA679DC737C9AF38_OpenStaticInvoker;
 			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m0E54BDD51F2CD11AA320D7F962FC4B10F1D80DFB_ClosedStaticInvoker;
+				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mFB243A40692032001EAFDAAFCA679DC737C9AF38_ClosedStaticInvoker;
 		else
 			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m0E54BDD51F2CD11AA320D7F962FC4B10F1D80DFB_OpenStatic;
+				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mFB243A40692032001EAFDAAFCA679DC737C9AF38_OpenStatic;
 			else
 				{
 					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -31590,12 +29917,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mAB1EDD80DB7FFA451D79CCE8
 		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m0E54BDD51F2CD11AA320D7F962FC4B10F1D80DFB_Multicast;
+	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_mFB243A40692032001EAFDAAFCA679DC737C9AF38_Multicast;
 }
-// System.Void System.Action`1<UnityEngine.XR.ARSubsystems.XRReferenceImage>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m0E54BDD51F2CD11AA320D7F962FC4B10F1D80DFB_gshared (Action_1_t66705B6D063592F5BBA926F05597B1FDCECB3293* __this, XRReferenceImage_tB2544D6E18E55CD44F4EED1B0573A6A7154C1E2F ___obj0, const RuntimeMethod* method) 
+// System.Void System.Action`1<UnityEngine.AI.NavMeshBuildMarkup>::Invoke(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mFB243A40692032001EAFDAAFCA679DC737C9AF38_gshared (Action_1_tF525E5733633D2EECADCEF3861F1BE51E823D195* __this, NavMeshBuildMarkup_tC2D636663691297A05F32A8B2B8CAA7108FEE8AC ___obj0, const RuntimeMethod* method) 
 {
-	typedef void (*FunctionPointerType) (RuntimeObject*, XRReferenceImage_tB2544D6E18E55CD44F4EED1B0573A6A7154C1E2F, const RuntimeMethod*);
+	typedef void (*FunctionPointerType) (RuntimeObject*, NavMeshBuildMarkup_tC2D636663691297A05F32A8B2B8CAA7108FEE8AC, const RuntimeMethod*);
 	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
 }
 #ifdef __clang__
@@ -31606,37 +29933,37 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m0E54BDD51F2CD11AA320D7F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-void Action_1_Invoke_m5AD5B3012CB011C751DB3DC4A60801D18C5C5335_Multicast(Action_1_tEB948825D936789B1E02F85CD5D223A8C08F1586* __this, XRReferenceObject_tDC04E77BBDCC6428C8B852A7CF1208DD2AF9AE14 ___obj0, const RuntimeMethod* method)
+void Action_1_Invoke_mDBC7DADD1B79B8C55DED17981C1251160863A9D2_Multicast(Action_1_t1A796349365CD92A950A9B137A7731CFF8B1BF88* __this, NavMeshBuildSource_tAC4DFC9A75D986628DC167421C2ECB3606F0C5DD ___obj0, const RuntimeMethod* method)
 {
 	il2cpp_array_size_t length = __this->___delegates_13->max_length;
 	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
 	for (il2cpp_array_size_t i = 0; i < length; i++)
 	{
-		Action_1_tEB948825D936789B1E02F85CD5D223A8C08F1586* currentDelegate = reinterpret_cast<Action_1_tEB948825D936789B1E02F85CD5D223A8C08F1586*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, XRReferenceObject_tDC04E77BBDCC6428C8B852A7CF1208DD2AF9AE14, const RuntimeMethod*);
+		Action_1_t1A796349365CD92A950A9B137A7731CFF8B1BF88* currentDelegate = reinterpret_cast<Action_1_t1A796349365CD92A950A9B137A7731CFF8B1BF88*>(delegatesToInvoke[i]);
+		typedef void (*FunctionPointerType) (RuntimeObject*, NavMeshBuildSource_tAC4DFC9A75D986628DC167421C2ECB3606F0C5DD, const RuntimeMethod*);
 		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
 	}
 }
-void Action_1_Invoke_m5AD5B3012CB011C751DB3DC4A60801D18C5C5335_OpenInst(Action_1_tEB948825D936789B1E02F85CD5D223A8C08F1586* __this, XRReferenceObject_tDC04E77BBDCC6428C8B852A7CF1208DD2AF9AE14 ___obj0, const RuntimeMethod* method)
+void Action_1_Invoke_mDBC7DADD1B79B8C55DED17981C1251160863A9D2_OpenInst(Action_1_t1A796349365CD92A950A9B137A7731CFF8B1BF88* __this, NavMeshBuildSource_tAC4DFC9A75D986628DC167421C2ECB3606F0C5DD ___obj0, const RuntimeMethod* method)
 {
-	typedef void (*FunctionPointerType) (XRReferenceObject_tDC04E77BBDCC6428C8B852A7CF1208DD2AF9AE14, const RuntimeMethod*);
+	typedef void (*FunctionPointerType) (NavMeshBuildSource_tAC4DFC9A75D986628DC167421C2ECB3606F0C5DD, const RuntimeMethod*);
 	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
 }
-void Action_1_Invoke_m5AD5B3012CB011C751DB3DC4A60801D18C5C5335_OpenStatic(Action_1_tEB948825D936789B1E02F85CD5D223A8C08F1586* __this, XRReferenceObject_tDC04E77BBDCC6428C8B852A7CF1208DD2AF9AE14 ___obj0, const RuntimeMethod* method)
+void Action_1_Invoke_mDBC7DADD1B79B8C55DED17981C1251160863A9D2_OpenStatic(Action_1_t1A796349365CD92A950A9B137A7731CFF8B1BF88* __this, NavMeshBuildSource_tAC4DFC9A75D986628DC167421C2ECB3606F0C5DD ___obj0, const RuntimeMethod* method)
 {
-	typedef void (*FunctionPointerType) (XRReferenceObject_tDC04E77BBDCC6428C8B852A7CF1208DD2AF9AE14, const RuntimeMethod*);
+	typedef void (*FunctionPointerType) (NavMeshBuildSource_tAC4DFC9A75D986628DC167421C2ECB3606F0C5DD, const RuntimeMethod*);
 	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
 }
-void Action_1_Invoke_m5AD5B3012CB011C751DB3DC4A60801D18C5C5335_OpenStaticInvoker(Action_1_tEB948825D936789B1E02F85CD5D223A8C08F1586* __this, XRReferenceObject_tDC04E77BBDCC6428C8B852A7CF1208DD2AF9AE14 ___obj0, const RuntimeMethod* method)
+void Action_1_Invoke_mDBC7DADD1B79B8C55DED17981C1251160863A9D2_OpenStaticInvoker(Action_1_t1A796349365CD92A950A9B137A7731CFF8B1BF88* __this, NavMeshBuildSource_tAC4DFC9A75D986628DC167421C2ECB3606F0C5DD ___obj0, const RuntimeMethod* method)
 {
-	InvokerActionInvoker1< XRReferenceObject_tDC04E77BBDCC6428C8B852A7CF1208DD2AF9AE14 >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
+	InvokerActionInvoker1< NavMeshBuildSource_tAC4DFC9A75D986628DC167421C2ECB3606F0C5DD >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
 }
-void Action_1_Invoke_m5AD5B3012CB011C751DB3DC4A60801D18C5C5335_ClosedStaticInvoker(Action_1_tEB948825D936789B1E02F85CD5D223A8C08F1586* __this, XRReferenceObject_tDC04E77BBDCC6428C8B852A7CF1208DD2AF9AE14 ___obj0, const RuntimeMethod* method)
+void Action_1_Invoke_mDBC7DADD1B79B8C55DED17981C1251160863A9D2_ClosedStaticInvoker(Action_1_t1A796349365CD92A950A9B137A7731CFF8B1BF88* __this, NavMeshBuildSource_tAC4DFC9A75D986628DC167421C2ECB3606F0C5DD ___obj0, const RuntimeMethod* method)
 {
-	InvokerActionInvoker2< RuntimeObject*, XRReferenceObject_tDC04E77BBDCC6428C8B852A7CF1208DD2AF9AE14 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
+	InvokerActionInvoker2< RuntimeObject*, NavMeshBuildSource_tAC4DFC9A75D986628DC167421C2ECB3606F0C5DD >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
 }
-// System.Void System.Action`1<UnityEngine.XR.ARSubsystems.XRReferenceObject>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mF39B8A880723D379C138405025BDD30395F18FB0_gshared (Action_1_tEB948825D936789B1E02F85CD5D223A8C08F1586* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
+// System.Void System.Action`1<UnityEngine.AI.NavMeshBuildSource>::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m77DFE6B324F3D475281E3E45D3337FB24D53ED22_gshared (Action_1_t1A796349365CD92A950A9B137A7731CFF8B1BF88* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
 {
 	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
 	__this->___method_3 = ___method1;
@@ -31649,12 +29976,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mF39B8A880723D379C1384050
 		bool isOpen = parameterCount == 1;
 		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
 			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m5AD5B3012CB011C751DB3DC4A60801D18C5C5335_OpenStaticInvoker;
+				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mDBC7DADD1B79B8C55DED17981C1251160863A9D2_OpenStaticInvoker;
 			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m5AD5B3012CB011C751DB3DC4A60801D18C5C5335_ClosedStaticInvoker;
+				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mDBC7DADD1B79B8C55DED17981C1251160863A9D2_ClosedStaticInvoker;
 		else
 			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m5AD5B3012CB011C751DB3DC4A60801D18C5C5335_OpenStatic;
+				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_mDBC7DADD1B79B8C55DED17981C1251160863A9D2_OpenStatic;
 			else
 				{
 					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -31668,12 +29995,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_mF39B8A880723D379C1384050
 		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m5AD5B3012CB011C751DB3DC4A60801D18C5C5335_Multicast;
+	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_mDBC7DADD1B79B8C55DED17981C1251160863A9D2_Multicast;
 }
-// System.Void System.Action`1<UnityEngine.XR.ARSubsystems.XRReferenceObject>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m5AD5B3012CB011C751DB3DC4A60801D18C5C5335_gshared (Action_1_tEB948825D936789B1E02F85CD5D223A8C08F1586* __this, XRReferenceObject_tDC04E77BBDCC6428C8B852A7CF1208DD2AF9AE14 ___obj0, const RuntimeMethod* method) 
+// System.Void System.Action`1<UnityEngine.AI.NavMeshBuildSource>::Invoke(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mDBC7DADD1B79B8C55DED17981C1251160863A9D2_gshared (Action_1_t1A796349365CD92A950A9B137A7731CFF8B1BF88* __this, NavMeshBuildSource_tAC4DFC9A75D986628DC167421C2ECB3606F0C5DD ___obj0, const RuntimeMethod* method) 
 {
-	typedef void (*FunctionPointerType) (RuntimeObject*, XRReferenceObject_tDC04E77BBDCC6428C8B852A7CF1208DD2AF9AE14, const RuntimeMethod*);
+	typedef void (*FunctionPointerType) (RuntimeObject*, NavMeshBuildSource_tAC4DFC9A75D986628DC167421C2ECB3606F0C5DD, const RuntimeMethod*);
 	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
 }
 #ifdef __clang__
@@ -31714,6 +30041,54 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool SubsystemWithProvider_get_ru
 {
 	{
 		bool L_0 = __this->___U3CrunningU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 XRAnchor_get_trackableId_m0F50E81D0152D0BA4152EF9B66F648EF9FC664AE_inline (XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82* __this, const RuntimeMethod* method) 
+{
+	{
+		// public TrackableId trackableId => m_Id;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0 = __this->___m_Id_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 XRAnchor_get_pose_m2347783C1262EEFBC0B817EF0357FA4BB4BF053F_inline (XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82* __this, const RuntimeMethod* method) 
+{
+	{
+		// public Pose pose => m_Pose;
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_0 = __this->___m_Pose_2;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 XREnvironmentProbe_get_trackableId_m7B20AFD8D153397E7270F72C81B32043DA83C57F_inline (XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9* __this, const RuntimeMethod* method) 
+{
+	{
+		// get => m_TrackableId;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0 = __this->___m_TrackableId_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 XREnvironmentProbe_get_pose_m56C2FCB790DC220FAE0339EFC82055360984CAF0_inline (XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9* __this, const RuntimeMethod* method) 
+{
+	{
+		// get => m_Pose;
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_0 = __this->___m_Pose_3;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 XRFace_get_trackableId_m9FC29FB643FFBAB989AB8179F57CDB52D14737B3_inline (XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB* __this, const RuntimeMethod* method) 
+{
+	{
+		// public TrackableId trackableId => m_TrackableId;
+		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0 = __this->___m_TrackableId_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 XRFace_get_pose_m1625DED173751F25873C4BB6650238A195CD04EE_inline (XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB* __this, const RuntimeMethod* method) 
+{
+	{
+		// public Pose pose => m_Pose;
+		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_0 = __this->___m_Pose_1;
 		return L_0;
 	}
 }
@@ -31853,35 +30228,11 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Pose_t06BA69EAA6E9FAF60056D519A87
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 XRAnchor_get_trackableId_m0F50E81D0152D0BA4152EF9B66F648EF9FC664AE_inline (XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82* __this, const RuntimeMethod* method) 
-{
-	{
-		// public TrackableId trackableId => m_Id;
-		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0 = __this->___m_Id_1;
-		return L_0;
-	}
-}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t XRAnchor_get_trackingState_m6124A26C36CA93C25C57548576CB00C1F496ED83_inline (XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82* __this, const RuntimeMethod* method) 
 {
 	{
 		// public TrackingState trackingState => m_TrackingState;
 		int32_t L_0 = __this->___m_TrackingState_3;
-		return L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 XRAnchor_get_pose_m2347783C1262EEFBC0B817EF0357FA4BB4BF053F_inline (XRAnchor_tDD427E66CAA09DE7B058EA76223EF7DC3880FE82* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Pose pose => m_Pose;
-		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_0 = __this->___m_Pose_2;
-		return L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 XREnvironmentProbe_get_trackableId_m7B20AFD8D153397E7270F72C81B32043DA83C57F_inline (XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9* __this, const RuntimeMethod* method) 
-{
-	{
-		// get => m_TrackableId;
-		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0 = __this->___m_TrackableId_1;
 		return L_0;
 	}
 }
@@ -31893,35 +30244,11 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t XREnvironmentProbe_get_tr
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 XREnvironmentProbe_get_pose_m56C2FCB790DC220FAE0339EFC82055360984CAF0_inline (XREnvironmentProbe_tAA657FAB648E2599B519F9FD66A1CEED65034DD9* __this, const RuntimeMethod* method) 
-{
-	{
-		// get => m_Pose;
-		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_0 = __this->___m_Pose_3;
-		return L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 XRFace_get_trackableId_m9FC29FB643FFBAB989AB8179F57CDB52D14737B3_inline (XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB* __this, const RuntimeMethod* method) 
-{
-	{
-		// public TrackableId trackableId => m_TrackableId;
-		TrackableId_t49EAE8AA4B9584E314518723DC22B66496D47AD7 L_0 = __this->___m_TrackableId_0;
-		return L_0;
-	}
-}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t XRFace_get_trackingState_m7D5C3002DCB9FC01F7C1BE66D3F1092281E847FB_inline (XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB* __this, const RuntimeMethod* method) 
 {
 	{
 		// public TrackingState trackingState => m_TrackingState;
 		int32_t L_0 = __this->___m_TrackingState_2;
-		return L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 XRFace_get_pose_m1625DED173751F25873C4BB6650238A195CD04EE_inline (XRFace_t235F951F4AC7CC6A0CA6829CECA05210D64982FB* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Pose pose => m_Pose;
-		Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 L_0 = __this->___m_Pose_1;
 		return L_0;
 	}
 }
@@ -31981,6 +30308,85 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t XRTrackedObject_get_track
 		return L_0;
 	}
 }
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_tAE2F2F17B6A4F98F44324897A00F6A9D2151DC3A TrackableChanges_1_get_added_m247464F980D46DD4B1BC63D35DEF4F0B10835FB7_gshared_inline (TrackableChanges_1_t6971CD7F709E7353F4365FE06A109B21A0F0C931* __this, const RuntimeMethod* method) 
+{
+	{
+		// public NativeArray<T> added => m_Added;
+		NativeArray_1_tAE2F2F17B6A4F98F44324897A00F6A9D2151DC3A L_0 = (NativeArray_1_tAE2F2F17B6A4F98F44324897A00F6A9D2151DC3A)__this->___m_Added_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_tAE2F2F17B6A4F98F44324897A00F6A9D2151DC3A TrackableChanges_1_get_updated_mF8CD50C65A76F68ED3EFCE8A4316153A2CAF3999_gshared_inline (TrackableChanges_1_t6971CD7F709E7353F4365FE06A109B21A0F0C931* __this, const RuntimeMethod* method) 
+{
+	{
+		// public NativeArray<T> updated => m_Updated;
+		NativeArray_1_tAE2F2F17B6A4F98F44324897A00F6A9D2151DC3A L_0 = (NativeArray_1_tAE2F2F17B6A4F98F44324897A00F6A9D2151DC3A)__this->___m_Updated_2;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E TrackableChanges_1_get_removed_m0E574DBEEC409628E125B65A3437EA9C9D73F06F_gshared_inline (TrackableChanges_1_t6971CD7F709E7353F4365FE06A109B21A0F0C931* __this, const RuntimeMethod* method) 
+{
+	{
+		// public NativeArray<TrackableId> removed => m_Removed;
+		NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E L_0 = (NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E)__this->___m_Removed_3;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->____current_3;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_t27110FD746D2F878E09169A93400CE1027082DA2 TrackableChanges_1_get_added_m8E0E28C84E03CC94A82F70D77D5E8F753F39363A_gshared_inline (TrackableChanges_1_t03BF8B384A61E7421A4748384189C50C3A2C323F* __this, const RuntimeMethod* method) 
+{
+	{
+		// public NativeArray<T> added => m_Added;
+		NativeArray_1_t27110FD746D2F878E09169A93400CE1027082DA2 L_0 = (NativeArray_1_t27110FD746D2F878E09169A93400CE1027082DA2)__this->___m_Added_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_t27110FD746D2F878E09169A93400CE1027082DA2 TrackableChanges_1_get_updated_mB7A87D602027E36E117065D68A04692716D37388_gshared_inline (TrackableChanges_1_t03BF8B384A61E7421A4748384189C50C3A2C323F* __this, const RuntimeMethod* method) 
+{
+	{
+		// public NativeArray<T> updated => m_Updated;
+		NativeArray_1_t27110FD746D2F878E09169A93400CE1027082DA2 L_0 = (NativeArray_1_t27110FD746D2F878E09169A93400CE1027082DA2)__this->___m_Updated_2;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E TrackableChanges_1_get_removed_mB692C4B8E9682871345D028184FD08CA66224E56_gshared_inline (TrackableChanges_1_t03BF8B384A61E7421A4748384189C50C3A2C323F* __this, const RuntimeMethod* method) 
+{
+	{
+		// public NativeArray<TrackableId> removed => m_Removed;
+		NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E L_0 = (NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E)__this->___m_Removed_3;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_t944085523DA105D6BBD308E9159C874CE60B3009 TrackableChanges_1_get_added_mC976D7B10EA3881871F38F0098CB782D2B4F3CC0_gshared_inline (TrackableChanges_1_t244050823CF4D8F3C9DFAE4AB0CEFA639C719119* __this, const RuntimeMethod* method) 
+{
+	{
+		// public NativeArray<T> added => m_Added;
+		NativeArray_1_t944085523DA105D6BBD308E9159C874CE60B3009 L_0 = (NativeArray_1_t944085523DA105D6BBD308E9159C874CE60B3009)__this->___m_Added_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_t944085523DA105D6BBD308E9159C874CE60B3009 TrackableChanges_1_get_updated_m7600C09050F548113163F28357515FA195925891_gshared_inline (TrackableChanges_1_t244050823CF4D8F3C9DFAE4AB0CEFA639C719119* __this, const RuntimeMethod* method) 
+{
+	{
+		// public NativeArray<T> updated => m_Updated;
+		NativeArray_1_t944085523DA105D6BBD308E9159C874CE60B3009 L_0 = (NativeArray_1_t944085523DA105D6BBD308E9159C874CE60B3009)__this->___m_Updated_2;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E TrackableChanges_1_get_removed_m8B0967F38BE46C987E2C0A104323BBCD97AB8927_gshared_inline (TrackableChanges_1_t244050823CF4D8F3C9DFAE4AB0CEFA639C719119* __this, const RuntimeMethod* method) 
+{
+	{
+		// public NativeArray<TrackableId> removed => m_Removed;
+		NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E L_0 = (NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E)__this->___m_Removed_3;
+		return L_0;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_t5B6781386C81B6DAD0A46599F36186F644DC17D0 TrackableChanges_1_get_added_m7F31AA8A5F6934F83681E8BD6BBA797F87E5D1E0_gshared_inline (TrackableChanges_1_tAB0D56187755251BCF253FBC179ABFC1B18E00C6* __this, const RuntimeMethod* method) 
 {
 	{
@@ -32002,13 +30408,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NativeArray_1_t7A26520FDE477098D7
 	{
 		// public NativeArray<TrackableId> removed => m_Removed;
 		NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E L_0 = (NativeArray_1_t7A26520FDE477098D7B2CC8D14E778889D50A15E)__this->___m_Removed_3;
-		return L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) 
-{
-	{
-		RuntimeObject* L_0 = (RuntimeObject*)__this->____current_3;
 		return L_0;
 	}
 }

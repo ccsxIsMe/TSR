@@ -1478,6 +1478,14 @@ struct Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D_StaticFields
 // System.Runtime.Remoting.Messaging.Header
 struct Header_tE9EAA72E5EE33410AC8378F656AFC9D3D17372B2  : public RuntimeObject
 {
+	// System.String System.Runtime.Remoting.Messaging.Header::HeaderNamespace
+	String_t* ___HeaderNamespace_0;
+	// System.Boolean System.Runtime.Remoting.Messaging.Header::MustUnderstand
+	bool ___MustUnderstand_1;
+	// System.String System.Runtime.Remoting.Messaging.Header::Name
+	String_t* ___Name_2;
+	// System.Object System.Runtime.Remoting.Messaging.Header::Value
+	RuntimeObject* ___Value_3;
 };
 
 // System.Runtime.Serialization.Formatters.Binary.IOUtil
@@ -2397,9 +2405,9 @@ struct Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C
 struct Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE  : public MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE
 {
 	// System.IO.Stream/ReadWriteTask System.IO.Stream::_activeReadWriteTask
-	ReadWriteTask_t0821BF49EE38596C7734E86E1A6A39D769BE2C05* ____activeReadWriteTask_2;
+	ReadWriteTask_t0821BF49EE38596C7734E86E1A6A39D769BE2C05* ____activeReadWriteTask_3;
 	// System.Threading.SemaphoreSlim System.IO.Stream::_asyncActiveSemaphore
-	SemaphoreSlim_t0D5CB5685D9BFA5BF95CEC6E7395490F933E8DB2* ____asyncActiveSemaphore_3;
+	SemaphoreSlim_t0D5CB5685D9BFA5BF95CEC6E7395490F933E8DB2* ____asyncActiveSemaphore_4;
 };
 
 struct Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE_StaticFields
@@ -20831,7 +20839,7 @@ IL_0011:
 		bool L_5 = ___ignoreCase2;
 		NullCheck(L_3);
 		Type_t* L_6;
-		L_6 = VirtualFuncInvoker3< Type_t*, String_t*, bool, bool >::Invoke(21 /* System.Type System.Reflection.Assembly::GetType(System.String,System.Boolean,System.Boolean) */, L_3, L_4, (bool)0, L_5);
+		L_6 = VirtualFuncInvoker3< Type_t*, String_t*, bool, bool >::Invoke(25 /* System.Type System.Reflection.Assembly::GetType(System.String,System.Boolean,System.Boolean) */, L_3, L_4, (bool)0, L_5);
 		return L_6;
 	}
 }

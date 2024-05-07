@@ -3159,6 +3159,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Single_IsNaN_mFE637F6ECA9F76
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* Decimal_Min_mD0D90AE64B5773B8DB1E0903B7CE775A3709BBEA (Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* ___d10, Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* ___d21, const RuntimeMethod* method) ;
 // System.Decimal System.Decimal::Round(System.Decimal,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F Decimal_Round_m1DD2AAA2C9C8D2A1CDA6ECCC2724A075616FF624 (Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F ___d0, int32_t ___decimals1, const RuntimeMethod* method) ;
+// System.Double System.Math::Round(System.Double,System.Int32,System.MidpointRounding)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Round_m8DB2F61CB73B9E71E54149290ABD5DC8A68890D1 (double ___value0, int32_t ___digits1, int32_t ___mode2, const RuntimeMethod* method) ;
 // System.Double System.Math::ModF(System.Double,System.Double*)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_ModF_m0F96CE4FC43C89BECCE17B6EFB51B01D39BD0EBB (double ___x0, double* ___intptr1, const RuntimeMethod* method) ;
 // System.Void System.ArithmeticException::.ctor(System.String)
@@ -15517,6 +15519,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Decimal_tDA6C877282B2D789CF97C0949661CC11D643
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Round_mB530CF218F9F19E1B24262B07EE4F5A365D60DDB (double ___a0, const RuntimeMethod* method) 
 {
 	return bankers_round(___a0);
+}
+// System.Double System.Math::Round(System.Double,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Round_m0BD20E38C73A9283F2EC89E6DF9CCC80A7752C38 (double ___value0, int32_t ___digits1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		double L_0 = ___value0;
+		int32_t L_1 = ___digits1;
+		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		double L_2;
+		L_2 = Math_Round_m8DB2F61CB73B9E71E54149290ABD5DC8A68890D1(L_0, L_1, 0, NULL);
+		return L_2;
+	}
 }
 // System.Double System.Math::Round(System.Double,System.Int32,System.MidpointRounding)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Math_Round_m8DB2F61CB73B9E71E54149290ABD5DC8A68890D1 (double ___value0, int32_t ___digits1, int32_t ___mode2, const RuntimeMethod* method) 
