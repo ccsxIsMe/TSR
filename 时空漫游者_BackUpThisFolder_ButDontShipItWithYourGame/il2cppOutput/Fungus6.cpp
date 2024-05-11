@@ -7588,7 +7588,7 @@ IL_003e:
 			Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_9 = ___stream0;
 			NullCheck(L_9);
 			int64_t L_10;
-			L_10 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(30 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_9, ((int64_t)((int32_t)-8)), 1);
+			L_10 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(31 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, L_9, ((int64_t)((int32_t)-8)), 1);
 			// return magic == DUMP_CHUNK_MAGIC;
 			V_1 = (bool)((((int64_t)L_8) == ((int64_t)((int64_t)1877195438928383261LL)))? 1 : 0);
 			goto IL_0041;

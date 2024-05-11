@@ -23,7 +23,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Park Photo Scanned Assets/Demo Scene/Park_Demo.unity
     guid: 31258193a982c194687d948e47bc8888
-  - enabled: 1
+  - enabled: 0
     path: Assets/Easy Build System/Demos & Add-Ons/Demos/[XR] First Person - Modular
       Building Demo.unity
     guid: 73bc8850393e888498a4ca0d4c9ca9fd

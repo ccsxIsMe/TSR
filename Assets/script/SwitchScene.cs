@@ -27,6 +27,11 @@ public class SwitchScene : MonoBehaviour
         }
     }
 
+    public void SwitchToBegining()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     public void easySwitch()
     {
         SceneManager.LoadScene(1);
