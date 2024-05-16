@@ -12,128 +12,123 @@ using UnityEngine.UI;
 public class testTry2 : MonoBehaviour
 {
     public Text targetText;
-
-    private static readonly string appId = "3033545828";
-    private static readonly string appKey = "WttGndHenwVnTuSe";
-    private static readonly string uri = "/vivogpt/completions";
-    private static readonly string domain = "api-ai.vivo.com.cn";
-    private static readonly string method = "POST";
+    private AudioSource audioSource;
 
     void Start()
     {
-        StartCoroutine(SyncVivoGPT("你好，你是谁？"));
+        audioSource = GetComponent<AudioSource>();
+        //StartCoroutine(GenerateText("介绍原神", HandleTextResponse));
+        //StartCoroutine(GenerateAudio("介绍原神", "xiaofu", HandleAudioResponse));
+    }
+
+    private void HandleTextResponse(string generatedText)
+    {
+        // 输出生成的文本结果
+        Debug.Log("生成的文本结果：\n" + generatedText);
+        StartCoroutine(GenerateAudio(generatedText, "xiaofu", HandleAudioResponse));
+    }
+    private void HandleAudioResponse(AudioClip generatedAudio)
+    {
+        // 将生成的音频播放出来
+        audioSource.clip = generatedAudio;
+        audioSource.Play();
     }
 
     public void talk(string playerWord)
     {
-        StartCoroutine(SyncVivoGPT(playerWord));
+        StartCoroutine(GenerateText(playerWord, HandleTextResponse));
     }
 
-    // 这里的prompt就是输入的内容，content是返回的结果
-    // 例如：
-    // prompt:你好
-    // content：嗨！我是蓝心小V，和你相遇真的好开心！如果你有任何疑问或者想聊聊天，我都在这里哦。分享一点快乐或者是奇思妙想给我吧，我们一起让对话变得有趣起来！你今天有什么新奇的事想要告诉我吗？😊
-    //private IEnumerator Start()
-    //{
-    //    var prompt = "你好";
-    //    yield return StartCoroutine(SyncVivoGPT(prompt));
-    //}
+    // Base URL for the API
+    private string baseURL = "http://114.115.210.247:6464";
 
-    private IEnumerator SyncVivoGPT(string prompt)
+    // Method to generate text using the model
+    public IEnumerator GenerateText(string prompt, System.Action<string> callback)
     {
-        var client = new HttpClient();
-        var paramsDict = new Dictionary<string, string>
-    {
-        { "requestId", Guid.NewGuid().ToString() }
-    };
+        Debug.Log("1");
+        // Construct the request URL
+        string url = baseURL + "/generate";
 
-        var data = new
-        {
-            prompt = prompt,
-            model = "vivo-BlueLM-TB",
-            sessionId = Guid.NewGuid().ToString(),
-            extra = new { temperature = 0.9 }
-        };
+        // Construct the request body
+        Dictionary<string, string> requestBody = new Dictionary<string, string>();
+        requestBody.Add("prompt", prompt);
+        string requestBodyJson = JsonUtility.ToJson(requestBody);
 
-        var headers = GenSignHeaders(appId, appKey, method, uri, paramsDict);
-        client.DefaultRequestHeaders.TryAddWithoutValidation("Content-Type", "application/json");
-        foreach (var header in headers)
-            client.DefaultRequestHeaders.TryAddWithoutValidation(header.Key, header.Value);
-
-        var content = new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(data), Encoding.UTF8, "application/json");
-        var url = $"https://{domain}{uri}?{BuildQueryString(paramsDict)}";
+        // Set up the request
         var request = new UnityWebRequest(url, "POST");
-        byte[] bodyRaw = Encoding.UTF8.GetBytes(Newtonsoft.Json.JsonConvert.SerializeObject(data));
+        byte[] bodyRaw = Encoding.UTF8.GetBytes(requestBodyJson);
         request.uploadHandler = new UploadHandlerRaw(bodyRaw);
         request.downloadHandler = new DownloadHandlerBuffer();
+        request.SetRequestHeader("Content-Type", "application/json");
 
+        // Send the request
         yield return request.SendWebRequest();
+        Debug.Log("2");
 
-        if (request.result == UnityWebRequest.Result.Success)
+        // Check for errors
+        if (request.result != UnityWebRequest.Result.Success)
         {
-            var responseContent = request.downloadHandler.text;
-            var responseObj = Newtonsoft.Json.JsonConvert.DeserializeObject<Response>(responseContent);
-            if (responseObj.code == 0 && responseObj.data != null)
-                Debug.Log(responseObj.data.content);
+            Debug.LogError(request.error);
         }
         else
         {
-            Debug.LogError($"Error: {request.error}");
+            Debug.Log("3");
+            // Parse the response
+            string responseJson = request.downloadHandler.text;
+            APITextResponse responseData = JsonUtility.FromJson<APITextResponse>(responseJson);
+
+            // Callback with the generated text
+            callback(responseData.data.content);
         }
     }
 
-    public class Response
+    // Method to generate audio from text
+    public IEnumerator GenerateAudio(string text, string vcn, System.Action<AudioClip> callback)
     {
-        public int code { get; set; }
-        public Data data { get; set; }
-    }
+        // Construct the request URL
+        string url = baseURL + "/generate_audio";
 
-    public class Data
-    {
-        public string content { get; set; }
-    }
+        // Construct the request body
+        Dictionary<string, string> requestBody = new Dictionary<string, string>();
+        requestBody.Add("text", text);
+        requestBody.Add("vcn", vcn);
+        string requestBodyJson = JsonUtility.ToJson(requestBody);
 
+        // Set up the request
+        var request = new UnityWebRequest(url, "POST");
+        byte[] bodyRaw = Encoding.UTF8.GetBytes(requestBodyJson);
+        request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+        request.downloadHandler = new DownloadHandlerAudioClip("generatedAudio.wav", AudioType.WAV);
+        request.SetRequestHeader("Content-Type", "application/json");
 
-    private Dictionary<string, string> GenSignHeaders(string appId, string appKey, string method, string uri, Dictionary<string, string> query)
-    {
-        var timestamp = DateTimeOffset.Now.ToUnixTimeSeconds().ToString();
-        var nonce = GenerateNonce();
-        var canonicalQueryString = BuildQueryString(query);
-        var signedHeadersString = $"x-ai-gateway-app-id:{appId}\nx-ai-gateway-timestamp:{timestamp}\nx-ai-gateway-nonce:{nonce}";
-        var signingString = $"{method}\n{uri}\n{canonicalQueryString}\n{appId}\n{timestamp}\n{signedHeadersString}";
-        var signature = GenerateSignature(appKey, signingString);
+        // Send the request
+        yield return request.SendWebRequest();
 
-        return new Dictionary<string, string>
+        // Check for errors
+        if (request.result != UnityWebRequest.Result.Success)
         {
-            { "X-AI-GATEWAY-APP-ID", appId },
-            { "X-AI-GATEWAY-TIMESTAMP", timestamp },
-            { "X-AI-GATEWAY-NONCE", nonce },
-            { "X-AI-GATEWAY-SIGNED-HEADERS", "x-ai-gateway-app-id;x-ai-gateway-timestamp;x-ai-gateway-nonce" },
-            { "X-AI-GATEWAY-SIGNATURE", signature }
-        };
-    }
-
-    private string BuildQueryString(Dictionary<string, string> queryParams)
-    {
-        return string.Join("&", queryParams.Select(kv => $"{Uri.EscapeDataString(kv.Key)}={Uri.EscapeDataString(kv.Value)}"));
-    }
-
-    private string GenerateNonce(int length = 8)
-    {
-        const string chars = "abcdefghijklmnopqrstuvwxyz0123456789";
-        var random = new System.Random();
-        return new string(Enumerable.Repeat(chars, length).Select(s => s[random.Next(s.Length)]).ToArray());
-    }
-
-    private string GenerateSignature(string key, string data)
-    {
-        var encoding = new UTF8Encoding();
-        byte[] keyByte = encoding.GetBytes(key);
-        byte[] messageBytes = encoding.GetBytes(data);
-        using (var hmacsha256 = new HMACSHA256(keyByte))
+            Debug.LogError(request.error);
+        }
+        else
         {
-            byte[] hashmessage = hmacsha256.ComputeHash(messageBytes);
-            return Convert.ToBase64String(hashmessage);
+            // Get the audio clip from the response
+            AudioClip audioClip = DownloadHandlerAudioClip.GetContent(request);
+
+            // Callback with the generated audio clip
+            callback(audioClip);
         }
     }
+}
+
+// Class to hold the response data for text generation
+[System.Serializable]
+public class APITextResponse
+{
+    public APITextData data;
+}
+
+[System.Serializable]
+public class APITextData
+{
+    public string content;
 }
