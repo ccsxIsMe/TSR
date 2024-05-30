@@ -27,14 +27,14 @@ public class Chapter : MonoBehaviour
 
     public void CompleteChapter2()
     {
-        CompleteChapterAsync(login.nameValue, "ch2"); // Start CompleteChapterAsync method in parallel
+        //CompleteChapterAsync(login.nameValue, "ch2"); // Start CompleteChapterAsync method in parallel
     }
     public void CompleteChapter3()
     {
-        CompleteChapterAsync(login.nameValue, "ch3"); // Start CompleteChapterAsync method in parallel
+        //CompleteChapterAsync(login.nameValue, "ch3"); // Start CompleteChapterAsync method in parallel
     }
 
-    private async Task CompleteChapterAsync(string account, string chapterName)
+    private async Task<int> CompleteChapterAsync(string account, string chapterName)
     {
         // Constructing the query parameters
         var builder = new UriBuilder($"{_baseUri}/completeChapter");
@@ -57,6 +57,7 @@ public class Chapter : MonoBehaviour
         {
             Debug.LogError("Error: " + responseBody);
         }
+        return 0;
     }
 
 }
