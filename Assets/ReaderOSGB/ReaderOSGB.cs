@@ -220,6 +220,8 @@ namespace osgEx
 
         void Start()
         {
+            _fileOrPathName = Path.Combine(Application.persistentDataPath, _fileOrPathName);
+            // 使用路径 `path` 来加载你的文件，加载方法依赖于你如何处理这种文件类型
             _pagingRequestHandler = new Task(PagingTask());
             if (_template == null)
                 _template = new Material(Shader.Find("Standard"));
