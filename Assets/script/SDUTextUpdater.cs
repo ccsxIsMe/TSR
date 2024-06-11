@@ -48,7 +48,7 @@ public class SDUTextUpdater : MonoBehaviour
     {
         robotText.SetActive(true);
         targetText.text = "稍等...";
-        robotWord.talk("请你介绍山东大学中心校区操场");
+        robotWord.talk("请你介绍山东大学中心校区体育馆");
         myAnimator.SetBool("startTalk", true);
         Invoke("stopAnim", 5f);
     }
