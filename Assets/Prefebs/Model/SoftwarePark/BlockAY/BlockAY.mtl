@@ -1,0 +1,1136 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v5.2.0)
+
+newmtl Default_Material
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+
+newmtl BlockAY_1.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_1.jpg
+
+newmtl BlockAY_2.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_2.jpg
+
+newmtl BlockAY_3.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_3.jpg
+
+newmtl BlockAY_4.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_4.jpg
+
+newmtl BlockAY_5.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_5.jpg
+
+newmtl BlockAY_6.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_6.jpg
+
+newmtl BlockAY_7.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_7.jpg
+
+newmtl BlockAY_8.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_8.jpg
+
+newmtl BlockAY_9.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_9.jpg
+
+newmtl BlockAY_10.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_10.jpg
+
+newmtl BlockAY_11.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_11.jpg
+
+newmtl BlockAY_12.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_12.jpg
+
+newmtl BlockAY_13.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_13.jpg
+
+newmtl BlockAY_14.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_14.jpg
+
+newmtl BlockAY_15.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_15.jpg
+
+newmtl BlockAY_16.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_16.jpg
+
+newmtl BlockAY_17.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_17.jpg
+
+newmtl BlockAY_18.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_18.jpg
+
+newmtl BlockAY_19.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_19.jpg
+
+newmtl BlockAY_20.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_20.jpg
+
+newmtl BlockAY_21.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_21.jpg
+
+newmtl BlockAY_22.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_22.jpg
+
+newmtl BlockAY_23.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_23.jpg
+
+newmtl BlockAY_24.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_24.jpg
+
+newmtl BlockAY_25.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_25.jpg
+
+newmtl BlockAY_26.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_26.jpg
+
+newmtl BlockAY_27.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_27.jpg
+
+newmtl BlockAY_28.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_28.jpg
+
+newmtl BlockAY_29.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_29.jpg
+
+newmtl BlockAY_30.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_30.jpg
+
+newmtl BlockAY_31.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_31.jpg
+
+newmtl BlockAY_32.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_32.jpg
+
+newmtl BlockAY_33.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_33.jpg
+
+newmtl BlockAY_34.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_34.jpg
+
+newmtl BlockAY_35.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_35.jpg
+
+newmtl BlockAY_36.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_36.jpg
+
+newmtl BlockAY_37.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_37.jpg
+
+newmtl BlockAY_38.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_38.jpg
+
+newmtl BlockAY_39.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_39.jpg
+
+newmtl BlockAY_40.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_40.jpg
+
+newmtl BlockAY_41.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_41.jpg
+
+newmtl BlockAY_42.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_42.jpg
+
+newmtl BlockAY_43.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_43.jpg
+
+newmtl BlockAY_44.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_44.jpg
+
+newmtl BlockAY_45.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_45.jpg
+
+newmtl BlockAY_46.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_46.jpg
+
+newmtl BlockAY_47.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_47.jpg
+
+newmtl BlockAY_48.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_48.jpg
+
+newmtl BlockAY_49.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_49.jpg
+
+newmtl BlockAY_50.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_50.jpg
+
+newmtl BlockAY_51.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_51.jpg
+
+newmtl BlockAY_52.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_52.jpg
+
+newmtl BlockAY_53.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_53.jpg
+
+newmtl BlockAY_54.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_54.jpg
+
+newmtl BlockAY_55.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_55.jpg
+
+newmtl BlockAY_56.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_56.jpg
+
+newmtl BlockAY_57.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_57.jpg
+
+newmtl BlockAY_58.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_58.jpg
+
+newmtl BlockAY_59.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_59.jpg
+
+newmtl BlockAY_60.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_60.jpg
+
+newmtl BlockAY_61.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_61.jpg
+
+newmtl BlockAY_62.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_62.jpg
+
+newmtl BlockAY_63.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_63.jpg
+
+newmtl BlockAY_64.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_64.jpg
+
+newmtl BlockAY_65.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_65.jpg
+
+newmtl BlockAY_66.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_66.jpg
+
+newmtl BlockAY_67.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_67.jpg
+
+newmtl BlockAY_68.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_68.jpg
+
+newmtl BlockAY_69.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_69.jpg
+
+newmtl BlockAY_70.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_70.jpg
+
+newmtl BlockAY_71.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_71.jpg
+
+newmtl BlockAY_72.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_72.jpg
+
+newmtl BlockAY_73.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_73.jpg
+
+newmtl BlockAY_74.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_74.jpg
+
+newmtl BlockAY_75.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_75.jpg
+
+newmtl BlockAY_76.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_76.jpg
+
+newmtl BlockAY_77.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_77.jpg
+
+newmtl BlockAY_78.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_78.jpg
+
+newmtl BlockAY_79.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_79.jpg
+
+newmtl BlockAY_80.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_80.jpg
+
+newmtl BlockAY_81.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_81.jpg
+
+newmtl BlockAY_82.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_82.jpg
+
+newmtl BlockAY_83.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_83.jpg
+
+newmtl BlockAY_84.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_84.jpg
+
+newmtl BlockAY_85.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_85.jpg
+
+newmtl BlockAY_86.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_86.jpg
+
+newmtl BlockAY_87.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_87.jpg
+
+newmtl BlockAY_88.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_88.jpg
+
+newmtl BlockAY_89.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_89.jpg
+
+newmtl BlockAY_90.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_90.jpg
+
+newmtl BlockAY_91.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_91.jpg
+
+newmtl BlockAY_92.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_92.jpg
+
+newmtl BlockAY_93.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_93.jpg
+
+newmtl BlockAY_94.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_94.jpg
+
+newmtl BlockAY_95.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_95.jpg
+
+newmtl BlockAY_96.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_96.jpg
+
+newmtl BlockAY_97.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_97.jpg
+
+newmtl BlockAY_98.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_98.jpg
+
+newmtl BlockAY_99.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_99.jpg
+
+newmtl BlockAY_100.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_100.jpg
+
+newmtl BlockAY_101.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_101.jpg
+
+newmtl BlockAY_102.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_102.jpg
+
+newmtl BlockAY_103.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_103.jpg
+
+newmtl BlockAY_104.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_104.jpg
+
+newmtl BlockAY_105.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_105.jpg
+
+newmtl BlockAY_106.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_106.jpg
+
+newmtl BlockAY_107.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_107.jpg
+
+newmtl BlockAY_108.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_108.jpg
+
+newmtl BlockAY_109.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_109.jpg
+
+newmtl BlockAY_110.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_110.jpg
+
+newmtl BlockAY_111.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_111.jpg
+
+newmtl BlockAY_112.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_112.jpg
+
+newmtl BlockAY_113.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_113.jpg
+
+newmtl BlockAY_114.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_114.jpg
+
+newmtl BlockAY_115.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_115.jpg
+
+newmtl BlockAY_116.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_116.jpg
+
+newmtl BlockAY_117.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_117.jpg
+
+newmtl BlockAY_118.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_118.jpg
+
+newmtl BlockAY_119.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_119.jpg
+
+newmtl BlockAY_120.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_120.jpg
+
+newmtl BlockAY_121.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_121.jpg
+
+newmtl BlockAY_122.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_122.jpg
+
+newmtl BlockAY_123.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_123.jpg
+
+newmtl BlockAY_124.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_124.jpg
+
+newmtl BlockAY_125.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_125.jpg
+
+newmtl BlockAY_126.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_126.jpg
+
+newmtl BlockAY_127.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_127.jpg
+
+newmtl BlockAY_128.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_128.jpg
+
+newmtl BlockAY_129.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_129.jpg
+
+newmtl BlockAY_130.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_130.jpg
+
+newmtl BlockAY_131.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_131.jpg
+
+newmtl BlockAY_132.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_132.jpg
+
+newmtl BlockAY_133.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_133.jpg
+
+newmtl BlockAY_134.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_134.jpg
+
+newmtl BlockAY_135.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_135.jpg
+
+newmtl BlockAY_136.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_136.jpg
+
+newmtl BlockAY_137.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_137.jpg
+
+newmtl BlockAY_138.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_138.jpg
+
+newmtl BlockAY_139.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_139.jpg
+
+newmtl BlockAY_140.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_140.jpg
+
+newmtl BlockAY_141.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_141.jpg
+
+newmtl BlockAY_142.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_142.jpg
+
+newmtl BlockAY_143.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_143.jpg
+
+newmtl BlockAY_144.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_144.jpg
+
+newmtl BlockAY_145.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_145.jpg
+
+newmtl BlockAY_146.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_146.jpg
+
+newmtl BlockAY_147.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_147.jpg
+
+newmtl BlockAY_148.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_148.jpg
+
+newmtl BlockAY_149.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_149.jpg
+
+newmtl BlockAY_150.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_150.jpg
+
+newmtl BlockAY_151.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_151.jpg
+
+newmtl BlockAY_152.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_152.jpg
+
+newmtl BlockAY_153.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_153.jpg
+
+newmtl BlockAY_154.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_154.jpg
+
+newmtl BlockAY_155.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_155.jpg
+
+newmtl BlockAY_156.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_156.jpg
+
+newmtl BlockAY_157.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_157.jpg
+
+newmtl BlockAY_158.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_158.jpg
+
+newmtl BlockAY_159.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_159.jpg
+
+newmtl BlockAY_160.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_160.jpg
+
+newmtl BlockAY_161.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_161.jpg
+
+newmtl BlockAY_162.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_162.jpg
+
+newmtl BlockAY_163.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_163.jpg
+
+newmtl BlockAY_164.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_164.jpg
+
+newmtl BlockAY_165.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_165.jpg
+
+newmtl BlockAY_166.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_166.jpg
+
+newmtl BlockAY_167.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_167.jpg
+
+newmtl BlockAY_168.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_168.jpg
+
+newmtl BlockAY_169.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_169.jpg
+
+newmtl BlockAY_170.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_170.jpg
+
+newmtl BlockAY_171.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_171.jpg
+
+newmtl BlockAY_172.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_172.jpg
+
+newmtl BlockAY_173.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_173.jpg
+
+newmtl BlockAY_174.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_174.jpg
+
+newmtl BlockAY_175.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_175.jpg
+
+newmtl BlockAY_176.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_176.jpg
+
+newmtl BlockAY_177.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_177.jpg
+
+newmtl BlockAY_178.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_178.jpg
+
+newmtl BlockAY_179.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_179.jpg
+
+newmtl BlockAY_180.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_180.jpg
+
+newmtl BlockAY_181.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_181.jpg
+
+newmtl BlockAY_182.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_182.jpg
+
+newmtl BlockAY_183.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_183.jpg
+
+newmtl BlockAY_184.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_184.jpg
+
+newmtl BlockAY_185.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_185.jpg
+
+newmtl BlockAY_186.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_186.jpg
+
+newmtl BlockAY_187.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_187.jpg
+
+newmtl BlockAY_188.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAY_188.jpg
+

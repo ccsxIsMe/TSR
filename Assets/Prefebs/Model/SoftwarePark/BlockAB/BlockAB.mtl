@@ -1,0 +1,1148 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v5.2.0)
+
+newmtl Default_Material
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+
+newmtl BlockAB_1.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_1.jpg
+
+newmtl BlockAB_2.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_2.jpg
+
+newmtl BlockAB_3.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_3.jpg
+
+newmtl BlockAB_4.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_4.jpg
+
+newmtl BlockAB_5.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_5.jpg
+
+newmtl BlockAB_6.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_6.jpg
+
+newmtl BlockAB_7.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_7.jpg
+
+newmtl BlockAB_8.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_8.jpg
+
+newmtl BlockAB_9.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_9.jpg
+
+newmtl BlockAB_10.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_10.jpg
+
+newmtl BlockAB_11.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_11.jpg
+
+newmtl BlockAB_12.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_12.jpg
+
+newmtl BlockAB_13.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_13.jpg
+
+newmtl BlockAB_14.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_14.jpg
+
+newmtl BlockAB_15.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_15.jpg
+
+newmtl BlockAB_16.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_16.jpg
+
+newmtl BlockAB_17.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_17.jpg
+
+newmtl BlockAB_18.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_18.jpg
+
+newmtl BlockAB_19.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_19.jpg
+
+newmtl BlockAB_20.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_20.jpg
+
+newmtl BlockAB_21.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_21.jpg
+
+newmtl BlockAB_22.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_22.jpg
+
+newmtl BlockAB_23.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_23.jpg
+
+newmtl BlockAB_24.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_24.jpg
+
+newmtl BlockAB_25.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_25.jpg
+
+newmtl BlockAB_26.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_26.jpg
+
+newmtl BlockAB_27.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_27.jpg
+
+newmtl BlockAB_28.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_28.jpg
+
+newmtl BlockAB_29.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_29.jpg
+
+newmtl BlockAB_30.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_30.jpg
+
+newmtl BlockAB_31.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_31.jpg
+
+newmtl BlockAB_32.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_32.jpg
+
+newmtl BlockAB_33.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_33.jpg
+
+newmtl BlockAB_34.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_34.jpg
+
+newmtl BlockAB_35.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_35.jpg
+
+newmtl BlockAB_36.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_36.jpg
+
+newmtl BlockAB_37.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_37.jpg
+
+newmtl BlockAB_38.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_38.jpg
+
+newmtl BlockAB_39.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_39.jpg
+
+newmtl BlockAB_40.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_40.jpg
+
+newmtl BlockAB_41.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_41.jpg
+
+newmtl BlockAB_42.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_42.jpg
+
+newmtl BlockAB_43.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_43.jpg
+
+newmtl BlockAB_44.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_44.jpg
+
+newmtl BlockAB_45.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_45.jpg
+
+newmtl BlockAB_46.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_46.jpg
+
+newmtl BlockAB_47.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_47.jpg
+
+newmtl BlockAB_48.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_48.jpg
+
+newmtl BlockAB_49.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_49.jpg
+
+newmtl BlockAB_50.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_50.jpg
+
+newmtl BlockAB_51.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_51.jpg
+
+newmtl BlockAB_52.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_52.jpg
+
+newmtl BlockAB_53.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_53.jpg
+
+newmtl BlockAB_54.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_54.jpg
+
+newmtl BlockAB_55.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_55.jpg
+
+newmtl BlockAB_56.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_56.jpg
+
+newmtl BlockAB_57.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_57.jpg
+
+newmtl BlockAB_58.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_58.jpg
+
+newmtl BlockAB_59.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_59.jpg
+
+newmtl BlockAB_60.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_60.jpg
+
+newmtl BlockAB_61.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_61.jpg
+
+newmtl BlockAB_62.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_62.jpg
+
+newmtl BlockAB_63.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_63.jpg
+
+newmtl BlockAB_64.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_64.jpg
+
+newmtl BlockAB_65.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_65.jpg
+
+newmtl BlockAB_66.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_66.jpg
+
+newmtl BlockAB_67.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_67.jpg
+
+newmtl BlockAB_68.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_68.jpg
+
+newmtl BlockAB_69.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_69.jpg
+
+newmtl BlockAB_70.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_70.jpg
+
+newmtl BlockAB_71.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_71.jpg
+
+newmtl BlockAB_72.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_72.jpg
+
+newmtl BlockAB_73.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_73.jpg
+
+newmtl BlockAB_74.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_74.jpg
+
+newmtl BlockAB_75.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_75.jpg
+
+newmtl BlockAB_76.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_76.jpg
+
+newmtl BlockAB_77.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_77.jpg
+
+newmtl BlockAB_78.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_78.jpg
+
+newmtl BlockAB_79.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_79.jpg
+
+newmtl BlockAB_80.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_80.jpg
+
+newmtl BlockAB_81.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_81.jpg
+
+newmtl BlockAB_82.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_82.jpg
+
+newmtl BlockAB_83.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_83.jpg
+
+newmtl BlockAB_84.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_84.jpg
+
+newmtl BlockAB_85.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_85.jpg
+
+newmtl BlockAB_86.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_86.jpg
+
+newmtl BlockAB_87.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_87.jpg
+
+newmtl BlockAB_88.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_88.jpg
+
+newmtl BlockAB_89.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_89.jpg
+
+newmtl BlockAB_90.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_90.jpg
+
+newmtl BlockAB_91.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_91.jpg
+
+newmtl BlockAB_92.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_92.jpg
+
+newmtl BlockAB_93.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_93.jpg
+
+newmtl BlockAB_94.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_94.jpg
+
+newmtl BlockAB_95.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_95.jpg
+
+newmtl BlockAB_96.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_96.jpg
+
+newmtl BlockAB_97.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_97.jpg
+
+newmtl BlockAB_98.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_98.jpg
+
+newmtl BlockAB_99.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_99.jpg
+
+newmtl BlockAB_100.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_100.jpg
+
+newmtl BlockAB_101.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_101.jpg
+
+newmtl BlockAB_102.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_102.jpg
+
+newmtl BlockAB_103.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_103.jpg
+
+newmtl BlockAB_104.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_104.jpg
+
+newmtl BlockAB_105.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_105.jpg
+
+newmtl BlockAB_106.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_106.jpg
+
+newmtl BlockAB_107.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_107.jpg
+
+newmtl BlockAB_108.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_108.jpg
+
+newmtl BlockAB_109.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_109.jpg
+
+newmtl BlockAB_110.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_110.jpg
+
+newmtl BlockAB_111.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_111.jpg
+
+newmtl BlockAB_112.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_112.jpg
+
+newmtl BlockAB_113.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_113.jpg
+
+newmtl BlockAB_114.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_114.jpg
+
+newmtl BlockAB_115.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_115.jpg
+
+newmtl BlockAB_116.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_116.jpg
+
+newmtl BlockAB_117.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_117.jpg
+
+newmtl BlockAB_118.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_118.jpg
+
+newmtl BlockAB_119.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_119.jpg
+
+newmtl BlockAB_120.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_120.jpg
+
+newmtl BlockAB_121.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_121.jpg
+
+newmtl BlockAB_122.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_122.jpg
+
+newmtl BlockAB_123.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_123.jpg
+
+newmtl BlockAB_124.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_124.jpg
+
+newmtl BlockAB_125.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_125.jpg
+
+newmtl BlockAB_126.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_126.jpg
+
+newmtl BlockAB_127.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_127.jpg
+
+newmtl BlockAB_128.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_128.jpg
+
+newmtl BlockAB_129.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_129.jpg
+
+newmtl BlockAB_130.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_130.jpg
+
+newmtl BlockAB_131.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_131.jpg
+
+newmtl BlockAB_132.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_132.jpg
+
+newmtl BlockAB_133.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_133.jpg
+
+newmtl BlockAB_134.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_134.jpg
+
+newmtl BlockAB_135.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_135.jpg
+
+newmtl BlockAB_136.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_136.jpg
+
+newmtl BlockAB_137.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_137.jpg
+
+newmtl BlockAB_138.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_138.jpg
+
+newmtl BlockAB_139.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_139.jpg
+
+newmtl BlockAB_140.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_140.jpg
+
+newmtl BlockAB_141.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_141.jpg
+
+newmtl BlockAB_142.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_142.jpg
+
+newmtl BlockAB_143.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_143.jpg
+
+newmtl BlockAB_144.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_144.jpg
+
+newmtl BlockAB_145.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_145.jpg
+
+newmtl BlockAB_146.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_146.jpg
+
+newmtl BlockAB_147.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_147.jpg
+
+newmtl BlockAB_148.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_148.jpg
+
+newmtl BlockAB_149.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_149.jpg
+
+newmtl BlockAB_150.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_150.jpg
+
+newmtl BlockAB_151.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_151.jpg
+
+newmtl BlockAB_152.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_152.jpg
+
+newmtl BlockAB_153.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_153.jpg
+
+newmtl BlockAB_154.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_154.jpg
+
+newmtl BlockAB_155.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_155.jpg
+
+newmtl BlockAB_156.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_156.jpg
+
+newmtl BlockAB_157.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_157.jpg
+
+newmtl BlockAB_158.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_158.jpg
+
+newmtl BlockAB_159.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_159.jpg
+
+newmtl BlockAB_160.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_160.jpg
+
+newmtl BlockAB_161.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_161.jpg
+
+newmtl BlockAB_162.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_162.jpg
+
+newmtl BlockAB_163.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_163.jpg
+
+newmtl BlockAB_164.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_164.jpg
+
+newmtl BlockAB_165.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_165.jpg
+
+newmtl BlockAB_166.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_166.jpg
+
+newmtl BlockAB_167.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_167.jpg
+
+newmtl BlockAB_168.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_168.jpg
+
+newmtl BlockAB_169.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_169.jpg
+
+newmtl BlockAB_170.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_170.jpg
+
+newmtl BlockAB_171.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_171.jpg
+
+newmtl BlockAB_172.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_172.jpg
+
+newmtl BlockAB_173.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_173.jpg
+
+newmtl BlockAB_174.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_174.jpg
+
+newmtl BlockAB_175.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_175.jpg
+
+newmtl BlockAB_176.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_176.jpg
+
+newmtl BlockAB_177.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_177.jpg
+
+newmtl BlockAB_178.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_178.jpg
+
+newmtl BlockAB_179.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_179.jpg
+
+newmtl BlockAB_180.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_180.jpg
+
+newmtl BlockAB_181.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_181.jpg
+
+newmtl BlockAB_182.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_182.jpg
+
+newmtl BlockAB_183.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_183.jpg
+
+newmtl BlockAB_184.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_184.jpg
+
+newmtl BlockAB_185.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_185.jpg
+
+newmtl BlockAB_186.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_186.jpg
+
+newmtl BlockAB_187.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_187.jpg
+
+newmtl BlockAB_188.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_188.jpg
+
+newmtl BlockAB_189.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_189.jpg
+
+newmtl BlockAB_190.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockAB_190.jpg
+

@@ -1,0 +1,116 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v5.2.0)
+
+newmtl Default_Material
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+
+newmtl Tile_+002_+000_1.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd Tile_+002_+000_1.jpg
+
+newmtl Tile_+002_+000_2.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd Tile_+002_+000_2.jpg
+
+newmtl Tile_+002_+000_3.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd Tile_+002_+000_3.jpg
+
+newmtl Tile_+002_+000_4.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd Tile_+002_+000_4.jpg
+
+newmtl Tile_+002_+000_5.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd Tile_+002_+000_5.jpg
+
+newmtl Tile_+002_+000_6.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd Tile_+002_+000_6.jpg
+
+newmtl Tile_+002_+000_7.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd Tile_+002_+000_7.jpg
+
+newmtl Tile_+002_+000_8.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd Tile_+002_+000_8.jpg
+
+newmtl Tile_+002_+000_9.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd Tile_+002_+000_9.jpg
+
+newmtl Tile_+002_+000_10.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd Tile_+002_+000_10.jpg
+
+newmtl Tile_+002_+000_11.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd Tile_+002_+000_11.jpg
+
+newmtl Tile_+002_+000_12.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd Tile_+002_+000_12.jpg
+
+newmtl Tile_+002_+000_13.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd Tile_+002_+000_13.jpg
+
+newmtl Tile_+002_+000_14.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd Tile_+002_+000_14.jpg
+
+newmtl Tile_+002_+000_15.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd Tile_+002_+000_15.jpg
+
+newmtl Tile_+002_+000_16.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd Tile_+002_+000_16.jpg
+
+newmtl Tile_+002_+000_17.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd Tile_+002_+000_17.jpg
+
+newmtl Tile_+002_+000_18.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd Tile_+002_+000_18.jpg
+

@@ -10,7 +10,7 @@ public class TextUpdater : MonoBehaviour
     public GameObject libaiText;
     public GameObject libai;
     private Animator myAnimator;
-    private testTry libaiWord;
+    private GetUrlLiBai libaiWord;
 
     void Start()
     {
@@ -20,7 +20,8 @@ public class TextUpdater : MonoBehaviour
         //    inputField.onValueChanged.AddListener(UpdateTargetText);
         //}
         myAnimator= libai.GetComponent<Animator>();
-        libaiWord = libai.GetComponent<testTry>();
+        libaiWord = libai.GetComponent<GetUrlLiBai>();
+        //ChangeMyTextA();
     }
 
     //void UpdateTargetText(string newText)

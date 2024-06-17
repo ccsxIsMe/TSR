@@ -34,14 +34,20 @@ EditorBuildSettings:
     path: Assets/Scenes/startConstruct.unity
     guid: 0d373eb01431b344fbeed0587e1a377f
   - enabled: 0
-    path: Assets/Scenes/Level1.unity
-    guid: 543e89b8b18950e4b8a590545c239a9b
-  - enabled: 0
     path: Assets/Scenes/Level2.unity
     guid: e921e1119ce765342bca8d795494e0cd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SDUScene.unity
     guid: d8c62ba1f6f9b644493a08b9e30a5a23
+  - enabled: 1
+    path: Assets/Scenes/Center.unity
+    guid: 8d24a34a458620643a76dca99c1e930b
+  - enabled: 1
+    path: Assets/Scenes/SoftwarePark.unity
+    guid: 0c67b3dc9b73dd74a9beca31c646ed8c
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: 543e89b8b18950e4b8a590545c239a9b
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 61681252bc0612b41b24c8417f4ebb9e, type: 2}
     Unity.XR.PICO.LivePreview.Settings: {fileID: 11400000, guid: 9f453be1aa5c6464392f37bf205a68ee, type: 2}

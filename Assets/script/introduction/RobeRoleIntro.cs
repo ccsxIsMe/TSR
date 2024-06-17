@@ -11,11 +11,11 @@ public class RobeRoleIntro : MonoBehaviour
     public Text targetText;
     public GameObject building;
     public GameObject buildingInput;
-    private TourAI buildingAI;
+    private GetUrlWorld buildingAI;
 
     private void Start()
     {
-        buildingAI = building.GetComponent<TourAI>();
+        buildingAI = building.GetComponent<GetUrlWorld>();
     }
     public void HistoryA()
     {

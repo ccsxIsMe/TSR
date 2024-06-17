@@ -1,0 +1,1022 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v5.2.0)
+
+newmtl Default_Material
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+
+newmtl BlockXB_1.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_1.jpg
+
+newmtl BlockXB_2.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_2.jpg
+
+newmtl BlockXB_3.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_3.jpg
+
+newmtl BlockXB_4.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_4.jpg
+
+newmtl BlockXB_5.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_5.jpg
+
+newmtl BlockXB_6.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_6.jpg
+
+newmtl BlockXB_7.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_7.jpg
+
+newmtl BlockXB_8.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_8.jpg
+
+newmtl BlockXB_9.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_9.jpg
+
+newmtl BlockXB_10.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_10.jpg
+
+newmtl BlockXB_11.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_11.jpg
+
+newmtl BlockXB_12.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_12.jpg
+
+newmtl BlockXB_13.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_13.jpg
+
+newmtl BlockXB_14.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_14.jpg
+
+newmtl BlockXB_15.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_15.jpg
+
+newmtl BlockXB_16.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_16.jpg
+
+newmtl BlockXB_17.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_17.jpg
+
+newmtl BlockXB_18.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_18.jpg
+
+newmtl BlockXB_19.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_19.jpg
+
+newmtl BlockXB_20.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_20.jpg
+
+newmtl BlockXB_21.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_21.jpg
+
+newmtl BlockXB_22.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_22.jpg
+
+newmtl BlockXB_23.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_23.jpg
+
+newmtl BlockXB_24.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_24.jpg
+
+newmtl BlockXB_25.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_25.jpg
+
+newmtl BlockXB_26.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_26.jpg
+
+newmtl BlockXB_27.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_27.jpg
+
+newmtl BlockXB_28.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_28.jpg
+
+newmtl BlockXB_29.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_29.jpg
+
+newmtl BlockXB_30.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_30.jpg
+
+newmtl BlockXB_31.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_31.jpg
+
+newmtl BlockXB_32.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_32.jpg
+
+newmtl BlockXB_33.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_33.jpg
+
+newmtl BlockXB_34.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_34.jpg
+
+newmtl BlockXB_35.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_35.jpg
+
+newmtl BlockXB_36.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_36.jpg
+
+newmtl BlockXB_37.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_37.jpg
+
+newmtl BlockXB_38.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_38.jpg
+
+newmtl BlockXB_39.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_39.jpg
+
+newmtl BlockXB_40.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_40.jpg
+
+newmtl BlockXB_41.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_41.jpg
+
+newmtl BlockXB_42.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_42.jpg
+
+newmtl BlockXB_43.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_43.jpg
+
+newmtl BlockXB_44.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_44.jpg
+
+newmtl BlockXB_45.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_45.jpg
+
+newmtl BlockXB_46.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_46.jpg
+
+newmtl BlockXB_47.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_47.jpg
+
+newmtl BlockXB_48.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_48.jpg
+
+newmtl BlockXB_49.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_49.jpg
+
+newmtl BlockXB_50.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_50.jpg
+
+newmtl BlockXB_51.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_51.jpg
+
+newmtl BlockXB_52.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_52.jpg
+
+newmtl BlockXB_53.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_53.jpg
+
+newmtl BlockXB_54.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_54.jpg
+
+newmtl BlockXB_55.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_55.jpg
+
+newmtl BlockXB_56.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_56.jpg
+
+newmtl BlockXB_57.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_57.jpg
+
+newmtl BlockXB_58.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_58.jpg
+
+newmtl BlockXB_59.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_59.jpg
+
+newmtl BlockXB_60.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_60.jpg
+
+newmtl BlockXB_61.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_61.jpg
+
+newmtl BlockXB_62.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_62.jpg
+
+newmtl BlockXB_63.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_63.jpg
+
+newmtl BlockXB_64.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_64.jpg
+
+newmtl BlockXB_65.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_65.jpg
+
+newmtl BlockXB_66.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_66.jpg
+
+newmtl BlockXB_67.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_67.jpg
+
+newmtl BlockXB_68.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_68.jpg
+
+newmtl BlockXB_69.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_69.jpg
+
+newmtl BlockXB_70.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_70.jpg
+
+newmtl BlockXB_71.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_71.jpg
+
+newmtl BlockXB_72.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_72.jpg
+
+newmtl BlockXB_73.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_73.jpg
+
+newmtl BlockXB_74.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_74.jpg
+
+newmtl BlockXB_75.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_75.jpg
+
+newmtl BlockXB_76.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_76.jpg
+
+newmtl BlockXB_77.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_77.jpg
+
+newmtl BlockXB_78.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_78.jpg
+
+newmtl BlockXB_79.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_79.jpg
+
+newmtl BlockXB_80.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_80.jpg
+
+newmtl BlockXB_81.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_81.jpg
+
+newmtl BlockXB_82.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_82.jpg
+
+newmtl BlockXB_83.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_83.jpg
+
+newmtl BlockXB_84.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_84.jpg
+
+newmtl BlockXB_85.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_85.jpg
+
+newmtl BlockXB_86.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_86.jpg
+
+newmtl BlockXB_87.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_87.jpg
+
+newmtl BlockXB_88.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_88.jpg
+
+newmtl BlockXB_89.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_89.jpg
+
+newmtl BlockXB_90.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_90.jpg
+
+newmtl BlockXB_91.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_91.jpg
+
+newmtl BlockXB_92.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_92.jpg
+
+newmtl BlockXB_93.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_93.jpg
+
+newmtl BlockXB_94.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_94.jpg
+
+newmtl BlockXB_95.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_95.jpg
+
+newmtl BlockXB_96.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_96.jpg
+
+newmtl BlockXB_97.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_97.jpg
+
+newmtl BlockXB_98.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_98.jpg
+
+newmtl BlockXB_99.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_99.jpg
+
+newmtl BlockXB_100.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_100.jpg
+
+newmtl BlockXB_101.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_101.jpg
+
+newmtl BlockXB_102.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_102.jpg
+
+newmtl BlockXB_103.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_103.jpg
+
+newmtl BlockXB_104.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_104.jpg
+
+newmtl BlockXB_105.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_105.jpg
+
+newmtl BlockXB_106.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_106.jpg
+
+newmtl BlockXB_107.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_107.jpg
+
+newmtl BlockXB_108.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_108.jpg
+
+newmtl BlockXB_109.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_109.jpg
+
+newmtl BlockXB_110.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_110.jpg
+
+newmtl BlockXB_111.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_111.jpg
+
+newmtl BlockXB_112.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_112.jpg
+
+newmtl BlockXB_113.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_113.jpg
+
+newmtl BlockXB_114.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_114.jpg
+
+newmtl BlockXB_115.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_115.jpg
+
+newmtl BlockXB_116.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_116.jpg
+
+newmtl BlockXB_117.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_117.jpg
+
+newmtl BlockXB_118.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_118.jpg
+
+newmtl BlockXB_119.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_119.jpg
+
+newmtl BlockXB_120.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_120.jpg
+
+newmtl BlockXB_121.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_121.jpg
+
+newmtl BlockXB_122.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_122.jpg
+
+newmtl BlockXB_123.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_123.jpg
+
+newmtl BlockXB_124.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_124.jpg
+
+newmtl BlockXB_125.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_125.jpg
+
+newmtl BlockXB_126.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_126.jpg
+
+newmtl BlockXB_127.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_127.jpg
+
+newmtl BlockXB_128.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_128.jpg
+
+newmtl BlockXB_129.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_129.jpg
+
+newmtl BlockXB_130.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_130.jpg
+
+newmtl BlockXB_131.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_131.jpg
+
+newmtl BlockXB_132.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_132.jpg
+
+newmtl BlockXB_133.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_133.jpg
+
+newmtl BlockXB_134.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_134.jpg
+
+newmtl BlockXB_135.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_135.jpg
+
+newmtl BlockXB_136.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_136.jpg
+
+newmtl BlockXB_137.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_137.jpg
+
+newmtl BlockXB_138.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_138.jpg
+
+newmtl BlockXB_139.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_139.jpg
+
+newmtl BlockXB_140.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_140.jpg
+
+newmtl BlockXB_141.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_141.jpg
+
+newmtl BlockXB_142.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_142.jpg
+
+newmtl BlockXB_143.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_143.jpg
+
+newmtl BlockXB_144.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_144.jpg
+
+newmtl BlockXB_145.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_145.jpg
+
+newmtl BlockXB_146.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_146.jpg
+
+newmtl BlockXB_147.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_147.jpg
+
+newmtl BlockXB_148.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_148.jpg
+
+newmtl BlockXB_149.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_149.jpg
+
+newmtl BlockXB_150.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_150.jpg
+
+newmtl BlockXB_151.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_151.jpg
+
+newmtl BlockXB_152.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_152.jpg
+
+newmtl BlockXB_153.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_153.jpg
+
+newmtl BlockXB_154.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_154.jpg
+
+newmtl BlockXB_155.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_155.jpg
+
+newmtl BlockXB_156.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_156.jpg
+
+newmtl BlockXB_157.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_157.jpg
+
+newmtl BlockXB_158.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_158.jpg
+
+newmtl BlockXB_159.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_159.jpg
+
+newmtl BlockXB_160.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_160.jpg
+
+newmtl BlockXB_161.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_161.jpg
+
+newmtl BlockXB_162.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_162.jpg
+
+newmtl BlockXB_163.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_163.jpg
+
+newmtl BlockXB_164.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_164.jpg
+
+newmtl BlockXB_165.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_165.jpg
+
+newmtl BlockXB_166.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_166.jpg
+
+newmtl BlockXB_167.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_167.jpg
+
+newmtl BlockXB_168.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_168.jpg
+
+newmtl BlockXB_169.jpg
+Kd 1 1 1
+Ka 1 1 1
+illum 1
+map_Kd BlockXB_169.jpg
+
